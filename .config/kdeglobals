@@ -1,0 +1,159 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=36,36,36
+ColorAmount=0.5
+ColorEffect=3
+ContrastAmount=0.5
+ContrastEffect=0
+Enable=
+IntensityAmount=0
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=10,10,10
+ColorAmount=0.4
+ColorEffect=3
+ContrastAmount=0.4
+ContrastEffect=0
+Enable=true
+IntensityAmount=-0.2
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=34,34,34
+BackgroundNormal=0,0,0
+DecorationFocus=52,120,218
+DecorationHover=0,161,236
+ForegroundActive=61,174,233
+ForegroundInactive=199,199,199
+ForegroundLink=0,100,255
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=241,241,241
+ForegroundPositive=36,173,89
+ForegroundVisited=115,115,158
+
+[Colors:Complementary]
+BackgroundAlternate=59,64,69
+BackgroundNormal=49,54,59
+DecorationFocus=30,146,255
+DecorationHover=61,174,230
+ForegroundActive=246,116,0
+ForegroundInactive=175,176,179
+ForegroundLink=61,174,230
+ForegroundNegative=237,21,21
+ForegroundNeutral=201,206,59
+ForegroundNormal=239,240,241
+ForegroundPositive=17,209,22
+ForegroundVisited=61,174,230
+
+[Colors:Selection]
+BackgroundAlternate=29,153,243
+BackgroundNormal=27,145,213
+DecorationFocus=52,120,218
+DecorationHover=0,161,236
+ForegroundActive=252,252,252
+ForegroundInactive=241,241,241
+ForegroundLink=0,100,255
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=241,241,241
+ForegroundPositive=36,173,89
+ForegroundVisited=115,115,158
+
+[Colors:Tooltip]
+BackgroundAlternate=77,77,77
+BackgroundNormal=0,0,0
+DecorationFocus=52,120,218
+DecorationHover=0,161,236
+ForegroundActive=61,174,233
+ForegroundInactive=199,199,199
+ForegroundLink=0,100,255
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=36,173,89
+ForegroundVisited=115,115,158
+
+[Colors:View]
+BackgroundAlternate=34,34,34
+BackgroundNormal=5,5,5
+DecorationFocus=52,120,218
+DecorationHover=0,161,236
+ForegroundActive=61,174,233
+ForegroundInactive=199,199,199
+ForegroundLink=0,100,255
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=241,241,241
+ForegroundPositive=36,173,89
+ForegroundVisited=115,115,158
+
+[Colors:Window]
+BackgroundAlternate=34,34,34
+BackgroundNormal=1,1,1
+DecorationFocus=52,120,218
+DecorationHover=0,161,236
+ForegroundActive=61,174,233
+ForegroundInactive=199,199,199
+ForegroundLink=0,100,255
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=36,173,89
+ForegroundVisited=115,115,158
+
+[DirSelect Dialog]
+DirSelectDialog Size=844,598
+History Items[$e]=file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
+
+[General]
+AllowKDEAppsToRememberWindowPositions=false
+BrowserApplication=brave-browser.desktop
+ColorSchemeHash=da6550f3b3208e01405562291c2e960517702087
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+
+[KDE]
+LookAndFeelPackage=org.kde.breezedark.desktop
+SingleClick=false
+widgetStyle=Breeze
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=154
+View Style=DetailTree
+
+[KScreen]
+ScreenScaleFactors=HDMI-0=1;DP-0=1;DP-1=1;DP-2=1;DP-3=1;DP-4=1;DP-5=1;HDMI-1-1=1;DP-1-1=1;HDMI-1-2=1;
+
+[Shortcuts]
+SubstringCompletion=
+
+[WM]
+activeBackground=0,0,0
+activeBlend=255,255,255
+activeForeground=239,240,241
+inactiveBackground=10,10,10
+inactiveBlend=3,3,3
+inactiveForeground=144,144,144

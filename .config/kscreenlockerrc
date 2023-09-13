@@ -1,0 +1,12 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+Autolock=false
+
+[Greeter]
+WallpaperPlugin=a2n.blur
+
+[Greeter][Wallpaper][a2n.blur][General]
+Image=/home/eren/Pictures/Green/vincent-van-zalinge-l5ET_Exyz5g-unsplash.jpg
+PreviewImage=/home/eren/Pictures/Green/vincent-van-zalinge-l5ET_Exyz5g-unsplash.jpg

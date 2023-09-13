@@ -1,0 +1,12 @@
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+
+[language-server.mdpls]
+command = "mdpls"
+
+[language-server.mdpls.config]
+markdown.preview.serveStatic = true
+
+[[language]]
+name = "markdown"
+language-servers = [ "mdpls" ]

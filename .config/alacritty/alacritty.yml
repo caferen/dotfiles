@@ -1,0 +1,12 @@
+colors:
+  primary:
+    background: '0x000000'
+
+  cursor:
+    cursor: '0xE9E0C9'
+    text: '0x000000'
+
+import:
+  - ~/.config/alacritty/platform.yml
+
+

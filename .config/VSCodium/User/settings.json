@@ -1,0 +1,42 @@
+{
+    "editor.formatOnSave": true,
+    "editor.cursorStyle": "block",
+    "rust-analyzer.debug.openDebugPane": true,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "gitlens.telemetry.enabled": false,
+    "explorer.confirmDelete": false,
+    "update.showReleaseNotes": false,
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.openRepositoryInParentFolders": "never",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.fontFamily": "MesloLGS NF",
+    "window.zoomLevel": 1,
+    "editor.stickyScroll.enabled": true,
+    "workbench.activityBar.visible": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.titleBarStyle": "custom",
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.gpuAcceleration": "on",
+    "workbench.colorCustomizations": {
+        "editorInlayHint.foreground": "#696969",
+        "editorInlayHint.background": "#0000",
+        "editorInlayHint.typeBackground": "#0000",
+        "editorInlayHint.parameterBackground": "#0000"
+    },
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.lineNumbers": "relative",
+    "editor.tabCompletion": "on",
+    "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+    "rust-analyzer.check.command": "clippy",
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.minimap.showSlider": "always",
+    "workbench.sideBar.location": "right",
+    "glassit.alpha": 255
+}

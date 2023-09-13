@@ -1,0 +1,44 @@
+add_newline = false
+
+format = """
+$os\
+$directory\
+$git_branch\
+$git_status\
+$git_state\
+$git_metrics
+$character"""
+
+right_format = """
+$cmd_duration
+$status"""
+
+[os]
+disabled = false
+
+[os.symbols]
+Arch = "  "
+Macos = "  "
+Windows = " 󰍲 "
+
+[git_status]
+ahead = "⇡$count "
+behind = "⇣$count "
+deleted = "🗑 $count "
+diverged = " $count "
+stashed = "📦 $count "
+modified = "!$count "
+staged = "+$count "
+renamed = " $count "
+untracked = "?$count "
+format = '$all_status$ahead_behind'
+
+[git_metrics]
+disabled = false
+
+[directory]
+truncate_to_repo = false
+
+[character]
+success_symbol = ' [\$](bold green)'
+error_symbol = ' [\$](bold red)'

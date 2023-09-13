@@ -1,0 +1,78 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[0560a036-cc3c-4b5a-89b3-c6ac0b802be7]
+Description=WhatsApp
+desktops=2270ee32-8054-4275-a49d-464ab4e132ca
+desktopsrule=2
+wmclass=crx_hnpfjngllnobngcgfapefoaidbinmjnm brave-browser
+wmclasscomplete=true
+wmclassmatch=1
+
+[1]
+Description=Games
+desktops=2270ee32-8054-4275-a49d-464ab4e132ca
+desktopsrule=2
+wmclass=steam_app
+wmclassmatch=2
+
+[3831a4dc-52e9-4235-91a2-baac6a16a491]
+Description=Settings for waydroid.com.whatsapp
+desktops=2270ee32-8054-4275-a49d-464ab4e132ca
+desktopsrule=2
+wmclass=waydroid.com.whatsapp
+wmclassmatch=1
+
+[564f5b37-d298-4740-9afe-b84ff66f9827]
+Description=3D
+desktops=20593a7f-f39b-4473-9972-6c5ff8c01c01
+desktopsrule=2
+wmclass=cura|blender
+wmclassmatch=3
+
+[6a054f9c-a13b-40fc-9f94-e248dd11e477]
+Description=Spawn on main
+screenrule=3
+wmclass=brave
+wmclassmatch=3
+
+[82625423-0a7f-4028-8b63-1783e9e7c93f]
+Description=Spawn on main
+screenrule=4
+types=1
+
+[General]
+count=1
+rules=1
+
+[a5e7974e-bb3b-4a50-b4df-fc2062a66203]
+Description=Gaming
+desktops=d387e5ce-0dde-467d-bc85-5881ab6c5580
+desktopsrule=2
+wmclass=discord|steam
+wmclassmatch=3
+
+[c9aab07d-cddc-4467-a302-c6155694c69c]
+Description=Spawn on main
+screenrule=4
+types=1
+
+[cec82a44-2a65-4411-8067-4bf0b9c79bd3]
+Description=Games
+desktops=3d167bf8-36d9-434d-a584-a1d30f5d137c
+desktopsrule=2
+wmclass=steam_app
+wmclassmatch=2
+
+[db888104-e3f5-439c-810c-7638e8565a86]
+Description=WhatsApp
+desktops=2270ee32-8054-4275-a49d-464ab4e132ca
+desktopsrule=2
+wmclass=crx_hnpfjngllnobngcgfapefoaidbinmjnm brave-browser
+wmclasscomplete=true
+wmclassmatch=1
+
+[fdad2fbc-3dd9-4daf-aadb-a1941512abc0]
+Description=Spawn on main
+screenrule=3
+types=1

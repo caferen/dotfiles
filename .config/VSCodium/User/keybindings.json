@@ -1,0 +1,53 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+meta+i",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+meta+e",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+c",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly && neovim.mode != 'insert'"
+    },
+    {
+        "key": "meta+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusActiveEditorGroup",
+                "workbench.action.closePanel",
+            ]
+        }
+    },
+    {
+        "key": "meta+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                "terminal.focus",
+            ]
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "vscode-neovim.escape",
+                "workbench.action.files.save"
+            ]
+        }
+    },
+    {
+        "key": "/",
+        "command": "-vscode-neovim.send",
+    },
+]
