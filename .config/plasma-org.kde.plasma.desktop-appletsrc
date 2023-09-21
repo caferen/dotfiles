@@ -139,16 +139,24 @@ PreloadWeight=42
 extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod
 knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod
 
-[Containments][127]
-ItemGeometries-1920x1080=
+[Containments][128]
+ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
-activityId=88e160bc-b567-46c4-a655-6ccf22af56b7
+activityId=ea79d688-7785-4ee2-b12f-6a7fa13b6ec7
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][128][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][128][Wallpaper][org.kde.image][General]
+Image=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
+SlidePaths=/usr/share/wallpapers/
 
 [Containments][50]
 activityId=
