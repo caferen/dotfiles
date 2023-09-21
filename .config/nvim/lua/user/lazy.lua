@@ -67,7 +67,6 @@ require("lazy").setup({
 
     "jiangmiao/auto-pairs",
     "projekt0n/github-nvim-theme",
-    { 'LhKipp/nvim-nu',            opts = {} },
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
     { "lewis6991/gitsigns.nvim",   opts = { current_line_blame = true } },
