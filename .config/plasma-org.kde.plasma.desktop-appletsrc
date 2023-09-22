@@ -149,30 +149,35 @@ PreloadWeight=100
 popupHeight=574
 popupWidth=729
 
+[Containments][133][Applets][134][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
 [Containments][133][Applets][134][Configuration][General]
 favoritesPortedToKAstats=true
+icon=/usr/share/pixmaps/archlinux-logo.png
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][133][Applets][134][Configuration][Shortcuts]
 global=Alt+F1
-
-[Containments][133][Applets][135]
-immutability=1
-plugin=org.kde.plasma.pager
 
 [Containments][133][Applets][136]
 immutability=1
 plugin=org.kde.plasma.icontasks
 
+[Containments][133][Applets][136][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
 [Containments][133][Applets][136][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser
+indicateAudioStreams=false
+launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:spotify-launcher.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
+showOnlyCurrentActivity=false
+showOnlyCurrentDesktop=false
 
 [Containments][133][Applets][137]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
-
-[Containments][133][Applets][147]
-immutability=1
-plugin=org.kde.plasma.digitalclock
 
 [Containments][133][Applets][148]
 immutability=1
@@ -195,7 +200,7 @@ DialogHeight=93
 DialogWidth=2560
 
 [Containments][133][General]
-AppletOrder=134;135;136;67;137;147;148
+AppletOrder=134;136;67;137;148
 
 [Containments][139]
 activityId=
@@ -278,6 +283,10 @@ plugin=org.kde.plasma.bluetooth
 
 [Containments][139][Applets][151][Configuration]
 PreloadWeight=42
+
+[Containments][139][Applets][154]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
 
 [Containments][139][Configuration]
 PreloadWeight=42

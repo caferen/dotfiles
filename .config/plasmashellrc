@@ -3,8 +3,8 @@
 2 screens: Width=1076
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:///usr/share/pixmaps/archlinux-logo.svg,file:///usr/share/pixmaps/archlinux-logo.png
-Recent URLs[$e]=file:$HOME/Pictures/,file:///usr/share/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/
+Recent Files[$e]=archlinux-logo.svg,file:///usr/share/pixmaps/archlinux-logo.png,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:///usr/share/pixmaps/archlinux-logo.svg
+Recent URLs[$e]=file:$HOME/Pictures/,file:///usr/share/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/
 detailViewIconSize=128
 
 [KPropertiesDialog]
@@ -39,8 +39,9 @@ maxLength=2524
 minLength=124
 
 [PlasmaViews][Panel 133]
+floating=0
 panelOpacity=1
-panelVisibility=2
+panelVisibility=3
 
 [PlasmaViews][Panel 133][Defaults]
 thickness=54
