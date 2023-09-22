@@ -14,7 +14,7 @@ detailViewIconSize=128
 2560x1440 screen: Width=427
 
 [PlasmaTransientsConfig]
-PreloadWeight=18
+PreloadWeight=0
 
 [PlasmaViews][Panel 110]
 panelOpacity=1
@@ -37,6 +37,13 @@ thickness=44
 [PlasmaViews][Panel 112][Horizontal2560]
 maxLength=2524
 minLength=124
+
+[PlasmaViews][Panel 133]
+panelOpacity=1
+panelVisibility=2
+
+[PlasmaViews][Panel 133][Defaults]
+thickness=54
 
 [PlasmaViews][Panel 3]
 alignment=2
@@ -78,12 +85,12 @@ alignment=2
 
 [PlasmaViews][Panel 64][Defaults]
 maxLength=857
-minLength=215
+minLength=350
 thickness=32
 
 [PlasmaViews][Panel 64][Horizontal2560]
 maxLength=857
-minLength=215
+minLength=350
 
 [PlasmaViews][Panel 87][Defaults]
 thickness=54
