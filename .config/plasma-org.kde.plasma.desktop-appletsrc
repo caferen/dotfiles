@@ -5,37 +5,6 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][112]
-activityId=
-formfactor=2
-immutability=1
-lastScreen=0
-location=4
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][112][Applets][115]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][112][Applets][115][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
-[Containments][112][Applets][115][Configuration][General]
-indicateAudioStreams=false
-launchers=applications:org.kde.dolphin.desktop,applications:brave-browser.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,applications:spotify-launcher.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:Alacritty.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
-showOnlyCurrentActivity=false
-showOnlyCurrentDesktop=false
-wheelEnabled=false
-
-[Containments][112][ConfigDialog]
-DialogHeight=93
-DialogWidth=2560
-
-[Containments][112][General]
-AppletOrder=115
-
 [Containments][118]
 activityId=
 formfactor=2
@@ -154,6 +123,10 @@ wallpaperplugin=org.kde.image
 DialogHeight=660
 DialogWidth=880
 
+[Containments][128][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=697
+
 [Containments][128][Wallpaper][org.kde.image][General]
 Image=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
 SlidePaths=/usr/share/wallpapers/
@@ -254,7 +227,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=3
+location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -312,7 +285,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=3
+location=4
 plugin=org.kde.plasma.private.systemtray
 popupHeight=528
 popupWidth=528
