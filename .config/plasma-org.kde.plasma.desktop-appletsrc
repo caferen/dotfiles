@@ -262,7 +262,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][133][Applets][160][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=85
+PreloadWeight=100
 
 [Containments][133][Applets][160][Configuration][Appearance]
 chartFace=org.kde.ksysguard.linechart
@@ -287,6 +287,26 @@ rangeToY=9
 rangeToYMultiplier=1048576
 rangeToYUnit=202
 
+[Containments][133][Applets][165]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.memory
+
+[Containments][133][Applets][165][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+PreloadWeight=65
+
+[Containments][133][Applets][165][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Memory Usage
+
+[Containments][133][Applets][165][Configuration][SensorColors]
+memory/physical/used=27,145,213
+
+[Containments][133][Applets][165][Configuration][Sensors]
+highPrioritySensorIds=["memory/physical/used"]
+lowPrioritySensorIds=["memory/physical/total"]
+totalSensors=["memory/physical/usedPercent"]
+
 [Containments][133][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -300,7 +320,7 @@ DialogHeight=93
 DialogWidth=2560
 
 [Containments][133][General]
-AppletOrder=158;159;160;157;134;136;156;67;137;155;148
+AppletOrder=158;159;160;165;157;134;136;156;67;137;155;148
 
 [Containments][139]
 activityId=
@@ -389,7 +409,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][139][Applets][154][Configuration]
-PreloadWeight=34
+PreloadWeight=10
 
 [Containments][139][Configuration]
 PreloadWeight=42
