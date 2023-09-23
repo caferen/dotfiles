@@ -117,7 +117,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=a2n.blur
+wallpaperplugin=org.kde.image
 
 [Containments][128][ConfigDialog]
 DialogHeight=660
@@ -133,7 +133,6 @@ SlidePaths=/usr/share/wallpapers/
 
 [Containments][128][Wallpaper][org.kde.image][General]
 Image=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
-PreviewImage=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][133]
@@ -177,7 +176,7 @@ DialogWidth=880
 [Containments][133][Applets][136][Configuration][General]
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:spotify-launcher.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,preferred://browser,applications:librewolf.desktop,applications:Alacritty.desktop,applications:spotify-launcher.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
 
@@ -227,7 +226,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][133][Applets][159][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][133][Applets][159][Configuration][Appearance]
 chartFace=org.kde.ksysguard.barchart
@@ -389,7 +388,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][139][Applets][154][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 
 [Containments][139][Configuration]
 PreloadWeight=42
