@@ -177,7 +177,7 @@ DialogWidth=880
 [Containments][133][Applets][136][Configuration][General]
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:librewolf.desktop,applications:Alacritty.desktop,applications:spotify-launcher.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:librewolf.desktop,applications:Alacritty.desktop,applications:spotify-launcher.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
 
