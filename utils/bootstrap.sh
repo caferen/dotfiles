@@ -22,14 +22,11 @@ install_yay() {
 }
 
 get_dotfiles() {
+    pacman_install rsync
     if [[ ! -d $HOME/utils ]]; then
         rm -rf $HOME/dotfiles
         gh repo clone dotfiles $HOME/dotfiles
-        (
-            cd $HOME/dotfiles
-            cp -r $HOME/dotfiles/* $HOME
-            cp -r $HOME/dotfiles/.* $HOME
-        )
+        rsync -r $HOME/dotfiles/ $HOME
         rm -rf $HOME/dotfiles
     fi
 }
@@ -128,13 +125,12 @@ if uname -r | grep -v microsoft; then
     yay_install linux-headers nvidia coolercontrol lm-sensors libusb xclip
     plasma
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
-    yay_install cuda discord steam blender cura-bin mangohud gamemode
+    # yay_install cuda discord steam blender cura-bin mangohud gamemode
 
-    echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+    # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable coolercontrold.service
-
     sudo systemctl enable systemd-resolved.service
 
     [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0       0" | sudo tee -a /etc/fstab)
