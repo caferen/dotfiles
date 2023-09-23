@@ -11,7 +11,7 @@ wmclassmatch=1
 
 [1]
 Description=Games
-desktops=2270ee32-8054-4275-a49d-464ab4e132ca
+desktops=d8ede2da-91c3-490c-b030-5f64290c1b4a
 desktopsrule=2
 wmclass=steam_app
 wmclassmatch=2

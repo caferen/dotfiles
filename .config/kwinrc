@@ -4,9 +4,7 @@ update_info=bismuth_new_logger.upd:bismuth-new-logger,kwin.upd:replace-scalein-w
 [Desktops]
 Id_1=22a72181-ba3c-4c4d-b429-7dd1b370bc30
 Id_2=d8ede2da-91c3-490c-b030-5f64290c1b4a
-Id_3=3d167bf8-36d9-434d-a584-a1d30f5d137c
-Id_4=2270ee32-8054-4275-a49d-464ab4e132ca
-Number=4
+Number=2
 Rows=1
 
 [Effect-blur]
@@ -25,6 +23,13 @@ selective-virtual-desktopsEnabled=true
 wobblywindowsEnabled=true
 
 [Script-bismuth]
+enableMonocleLayout=false
+enableQuarterLayout=true
+enableSpiralLayout=false
+enableSpreadLayout=false
+enableStairLayout=false
+enableThreeColumnLayout=false
+enableTileLayout=false
 ignoreClass=yakuake,spectacle,Conky,zoom,Friends List
 ignoreTitle=Friends List
 screenGapBottom=10

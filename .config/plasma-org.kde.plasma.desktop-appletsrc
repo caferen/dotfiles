@@ -217,10 +217,6 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
-[Containments][133][Applets][158]
-immutability=1
-plugin=org.kde.plasma.pager
-
 [Containments][133][Applets][159]
 immutability=1
 plugin=org.kde.plasma.systemmonitor
@@ -293,7 +289,7 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][133][Applets][165][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][133][Applets][165][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -320,7 +316,7 @@ DialogHeight=93
 DialogWidth=2560
 
 [Containments][133][General]
-AppletOrder=158;159;160;165;157;134;136;156;67;137;155;148
+AppletOrder=159;160;165;157;134;136;156;67;137;155;148
 
 [Containments][139]
 activityId=
