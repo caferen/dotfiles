@@ -41,10 +41,10 @@ minLength=124
 [PlasmaViews][Panel 133]
 floating=0
 panelOpacity=1
-panelVisibility=3
+panelVisibility=0
 
 [PlasmaViews][Panel 133][Defaults]
-thickness=54
+thickness=50
 
 [PlasmaViews][Panel 3]
 alignment=2

@@ -127,7 +127,7 @@ install_python
 if uname -r | grep -v microsoft; then
     yay_install linux-headers nvidia coolercontrol lm-sensors libusb xclip
     plasma
-    yay_install ttf-meslo-nerd-font-powerlevel10k alacritty polybar brave-bin vscodium-bin
+    yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
     yay_install cuda discord steam blender cura-bin mangohud gamemode
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
