@@ -35,7 +35,6 @@ map('n', '<leader>w', tb.grep_string, { desc = 'search current [w]ord' })
 map('n', '<leader>/', tb.live_grep, { desc = '[<leader>/] Fuzzily search in current workspace' })
 
 pcall(require('telescope').load_extension, 'fzf')
-pcall(require("telescope").load_extension("ui-select"))
 
 local path = vim.fn.argv(0)
 vim.api.nvim_create_autocmd('VimEnter', {
