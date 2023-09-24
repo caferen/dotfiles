@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/eren/.config/polybar/start.sh
+Icon=dialog-scripts
+Name=start.sh
+Type=Application
+X-KDE-AutostartScript=true
