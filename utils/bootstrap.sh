@@ -97,7 +97,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 }
 
 plasma() {
-    yay_install plasma-desktop dolphin ark networkmanager sddm plasma-nm \
+    yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
         plasma-pa kscreen bluedevil spectacle kwin-bismuth wireplumber
     sudo systemctl enable sddm.service
     sudo systemctl enable NetworkManager.service
@@ -115,7 +115,7 @@ install_yay
 configure_git_and_github
 get_dotfiles
 configure_shell
-yay_install neovim-git ripgrep
+yay_install neovim-git ripgrep unzip
 helix
 
 yay_install cronie syncthing gocryptfs

@@ -16,8 +16,8 @@
 !VSCodium/User/keybindings.json
 !wireplumber
 !wireplumber/**
-!nushell
-!nushell/**
+!cura
+!cura/**
 !alacritty
 !alacritty/**
 !starship.toml

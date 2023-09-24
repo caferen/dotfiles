@@ -1,0 +1,1103 @@
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Application.initialize [163]: Initializing UltiMaker Cura
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Application.initialize [164]: App Version 5.4.0
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Application.initialize [165]: Api Version 8.4.0
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Application.initialize [166]: Build type None
+2023-09-24 13:45:36,017 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib/uranium must be a folder.
+2023-09-24 13:45:36,017 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib64/uranium must be a folder.
+2023-09-24 13:45:36,017 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib32/uranium must be a folder.
+2023-09-24 13:45:36,017 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/ultimaker-cura/plugins must be a folder.
+2023-09-24 13:45:36,017 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/Resources/uranium/plugins must be a folder.
+2023-09-24 13:45:36,017 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/Resources/cura/plugins must be a folder.
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [481]: Initializing storage paths
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [491]: Config storage path is /home/eren/.config/cura/5.4
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [499]: Data storage path is /home/eren/.local/share/cura/5.4
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [511]: Cache storage path is /home/eren/.cache/cura/5.4
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Resources._copyLatestDirsIfPresent [536]: Found config: ['/home/eren/.config/cura'] and data: ['/home/eren/.local/share/cura']
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Resources._copyLatestDirsIfPresent [540]: Latest config path: None and latest data path: None
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.Qt.QtApplication.initialize [164]: Preferences file not found, ignore and use default language 'en_US'
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /opt/ultimaker-cura/share/cura/resources/bundled_packages/cura.json
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /opt/ultimaker-cura/share/uranium/resources/bundled_packages/uranium.json
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [124]: Trying OpenGL context 4.1...
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [132]: Yay, we got at least OpenGL 4.1 core: 4.1 Core profile
+2023-09-24 13:45:36,017 - DEBUG - [MainThread] UM.Qt.QtApplication.initialize [192]: Detected most suitable OpenGL context version: 4.1 Core profile
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.Qt.QtApplication.initialize [199]: Initializing job queue ...
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.Qt.QtApplication.initialize [203]: Initializing version upgrade manager ...
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /opt/ultimaker-cura/share/cura/resources/bundled_packages/cura.json
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /opt/ultimaker-cura/share/uranium/resources/bundled_packages/uranium.json
+2023-09-24 13:45:36,017 - INFO - [MainThread] UM.PackageManager._loadManagementData [203]: User package management file /home/eren/.local/share/cura/5.4/packages.json doesn't exist, do nothing
+2023-09-24 13:45:36,018 - INFO - [MainThread] UM.PackageManager._removeAllScheduledPackages [280]: Attempting to remove the following scheduled packages: - 
+2023-09-24 13:45:36,018 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib/cura must be a folder.
+2023-09-24 13:45:36,018 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/libx32/cura must be a folder.
+2023-09-24 13:45:36,018 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib32/cura must be a folder.
+2023-09-24 13:45:36,018 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib64/cura must be a folder.
+2023-09-24 13:45:36,018 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FileLogger 1.0.1
+2023-09-24 13:45:36,028 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraDrive 1.2.0
+2023-09-24 13:45:36,047 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin USBPrinting 1.0.2
+2023-09-24 13:45:36,053 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin MonitorStage 1.0.1
+2023-09-24 13:45:36,061 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UFPWriter 1.0.1
+2023-09-24 13:45:36,064 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PrepareStage 1.0.1
+2023-09-24 13:45:36,074 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin 3MFWriter 1.0.1
+2023-09-24 13:45:36,080 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin ImageReader 1.0.1
+2023-09-24 13:45:36,084 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin ModelChecker 1.0.1
+2023-09-24 13:45:36,091 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UltimakerMachineActions 1.0.1
+2023-09-24 13:45:36,096 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade47to48 1.0.0
+2023-09-24 13:45:36,101 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade30to31 1.0.1
+2023-09-24 13:45:36,106 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade22to24 1.0.1
+2023-09-24 13:45:36,109 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade460to462 1.0.0
+2023-09-24 13:45:36,117 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade21to22 1.0.1
+2023-09-24 13:45:36,121 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade462to47 1.0.0
+2023-09-24 13:45:36,125 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade413to50 1.0.0
+2023-09-24 13:45:36,131 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade49to410 1.0.0
+2023-09-24 13:45:36,137 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade34to35 1.0.1
+2023-09-24 13:45:36,144 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade41to42 1.0.0
+2023-09-24 13:45:36,150 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade45to46 1.0.0
+2023-09-24 13:45:36,155 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade33to34 1.0.1
+2023-09-24 13:45:36,159 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade43to44 1.0.0
+2023-09-24 13:45:36,166 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade411to412 1.0.0
+2023-09-24 13:45:36,172 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade44to45 1.0.0
+2023-09-24 13:45:36,176 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade48to49 1.0.0
+2023-09-24 13:45:36,181 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade52to53 1.0.0
+2023-09-24 13:45:36,186 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade32to33 1.0.1
+2023-09-24 13:45:36,189 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade35to40 1.0.0
+2023-09-24 13:45:36,194 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade42to43 1.0.0
+2023-09-24 13:45:36,197 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade53to54 1.0.0
+2023-09-24 13:45:36,201 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade27to30 1.0.1
+2023-09-24 13:45:36,204 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade40to41 1.0.1
+2023-09-24 13:45:36,207 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade26to27 1.0.1
+2023-09-24 13:45:36,212 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade25to26 1.0.1
+2023-09-24 13:45:36,221 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin X3DReader 1.0.1
+2023-09-24 13:45:36,236 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin 3MFReader 1.0.1
+2023-09-24 13:45:36,241 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PreviewStage 1.0.1
+2023-09-24 13:45:36,254 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin XmlMaterialProfile 1.0.1
+2023-09-24 13:45:36,259 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeGzWriter 1.0.1
+2023-09-24 13:45:36,267 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SolidView 1.0.1
+2023-09-24 13:45:36,271 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SupportEraser 1.0.1
+2023-09-24 13:45:36,277 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin XRayView 1.0.1
+2023-09-24 13:45:36,284 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SliceInfoPlugin 1.0.1
+2023-09-24 13:45:36,290 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin AMFReader 1.0.0
+2023-09-24 13:45:36,301 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeReader 1.0.1
+2023-09-24 13:45:36,322 - INFO - [MainThread] CuraEngineBackend.CuraEngineBackend.__init__ [96]: Found CuraEngine at: /opt/ultimaker-cura/CuraEngine
+2023-09-24 13:45:36,323 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraEngineBackend 1.0.1
+2023-09-24 13:45:36,325 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [192]: Socket state changed to Listening
+2023-09-24 13:45:36,327 - INFO - [MainThread] UM.Backend.Backend.startEngine [95]: Started engine process: /opt/ultimaker-cura/CuraEngine
+2023-09-24 13:45:36,327 - DEBUG - [MainThread] UM.Backend.Backend._backendLog [115]: [Backend] Calling engine with: ['/opt/ultimaker-cura/CuraEngine', 'connect', '127.0.0.1:49674', '']
+2023-09-24 13:45:36,331 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin LegacyProfileReader 1.0.1
+2023-09-24 13:45:36,336 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:45:36,336 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] Cura_SteamEngine version 5.4.0
+2023-09-24 13:45:36,337 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] Copyright (C) 2022 Ultimaker
+2023-09-24 13:45:36,337 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:45:36,337 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] This program is free software: you can redistribute it and/or modify
+2023-09-24 13:45:36,337 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] it under the terms of the GNU Affero General Public License as published by
+2023-09-24 13:45:36,338 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] the Free Software Foundation, either version 3 of the License, or
+2023-09-24 13:45:36,338 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] (at your option) any later version.
+2023-09-24 13:45:36,338 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] This program is distributed in the hope that it will be useful,
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] GNU Affero General Public License for more details.
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] You should have received a copy of the GNU Affero General Public License
+2023-09-24 13:45:36,339 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.
+2023-09-24 13:45:36,340 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] [2023-09-24 13:45:36.332] [info] Connecting to 127.0.0.1:49674
+2023-09-24 13:45:36,361 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin DigitalLibrary 1.1.0
+2023-09-24 13:45:36,362 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [196]: Socket state changed to Connected
+2023-09-24 13:45:36,362 - DEBUG - [MainThread] UM.Backend.Backend._onSocketStateChanged [185]: Backend connected on port 49674
+2023-09-24 13:45:36,376 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SimulationView 1.0.1
+2023-09-24 13:45:36,382 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin RemovableDriveOutputDevice 1.0.1
+2023-09-24 13:45:36,384 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeGzReader 1.0.1
+2023-09-24 13:45:36,389 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PerObjectSettingsTool 1.0.1
+2023-09-24 13:45:36,392 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin TrimeshReader 1.0.0
+2023-09-24 13:45:36,395 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin MachineSettingsAction 1.0.1
+2023-09-24 13:45:36,398 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UFPReader 1.0.0
+2023-09-24 13:45:36,401 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeWriter 1.0.1
+2023-09-24 13:45:36,406 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FirmwareUpdateChecker 1.0.1
+2023-09-24 13:45:36,409 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraProfileWriter 1.0.1
+2023-09-24 13:45:36,466 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UM3NetworkPrinting 2.0.0
+2023-09-24 13:45:36,469 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FirmwareUpdater 1.0.1
+2023-09-24 13:45:36,494 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [145]: No auth data to retrieve the access_token from
+2023-09-24 13:45:36,494 - DEBUG - [MainThread] cura.UltimakerCloud.UltimakerCloudScope.requestHook [30]: User is not logged in for Cloud API request to https://api.ultimaker.com/cura-packages/v1/cura/v8.4.0/packages/package-updates?installed_packages=GenericCPE:1.4.0&installed_packages=GenericGFFCPE:1.4.0&installed_packages=UltimakerCPEP:1.4.0&installed_packages=DagomaChromatikPLA:1.0.1&installed_packages=IMADE3DJellyBOXPETG:1.0.1&installed_packages=UltimakerPLA:1.4.0&installed_packages=GenericPLA:1.4.0&installed_packages=VertexDeltaPLA:1.4.0&installed_packages=GenericNylon:1.4.0&installed_packages=GenericBAM:1.4.0&installed_packages=GenericCPEPlus:1.4.0&installed_packages=FABtotumPLA:1.4.0&installed_packages=GenericPVA:1.4.0&installed_packages=FABtotumNylon:1.4.0&installed_packages=PolyMaxPLA:1.0.1&installed_packages=IMADE3DJellyBOXPLA:1.0.1&installed_packages=UltimakerABS:1.4.0&installed_packages=UltimakerTPU:1.4.0&installed_packages=FABtotumTPU:1.4.0&installed_packages=GenericCFFPA:1.4.0&installed_packages=PolyFlexPLA:1.0.1&installed_packages=VertexDeltaPET:1.4.0&installed_packages=GenericPP:1.4.0&installed_packages=GenericPETG:1.4.0&installed_packages=OctofiberPLA:1.0.1&installed_packages=VertexDeltaTPU:1.4.0&installed_packages=UltimakerTPLA:1.4.0&installed_packages=GenericTPU:1.4.0&installed_packages=VertexDeltaABS:1.4.0&installed_packages=GenericToughPLA:1.4.0&installed_packages=GenericABS:1.4.0&installed_packages=UltimakerPP:1.4.0&installed_packages=GenericCFFCPE:1.4.0&installed_packages=UltimakerNylon:1.4.0&installed_packages=UltimakerPC:1.4.0&installed_packages=FiberlogyHDPLA:1.0.1&installed_packages=GenericGFFPA:1.4.0&installed_packages=PolyWoodPLA:1.0.1&installed_packages=GenericHIPS:1.4.0&installed_packages=UltimakerBAM:1.4.0&installed_packages=UltimakerPVA:1.4.0&installed_packages=UltimakerCPE:1.4.0&installed_packages=GenericPC:1.4.0&installed_packages=FABtotumABS:1.4.0&installed_packages=PolyPlusPLA:1.0.1&installed_packages=Filo3DPLA:1.0.1&installed_packages=OBJWriter:1.0.1&installed_packages=LegacyProfileReader:1.0.1&installed_packages=VersionUpgrade34to35:1.0.1&installed_packages=VersionUpgrade49to410:1.0.0&installed_packages=OBJReader:1.0.1&installed_packages=UFPWriter:1.0.1&installed_packages=PerObjectSettingsTool:1.0.1&installed_packages=SliceInfoPlugin:1.0.1&installed_packages=VersionUpgrade411to412:1.0.0&installed_packages=CuraProfileReader:1.0.1&installed_packages=FirmwareUpdateChecker:1.0.1&installed_packages=AMFReader:1.0.0&installed_packages=ConsoleLogger:1.0.1&installed_packages=VersionUpgrade47to48:1.0.0&installed_packages=VersionUpgrade45to46:1.0.0&installed_packages=VersionUpgrade413to50:1.0.0&installed_packages=VersionUpgrade22to24:1.0.1&installed_packages=VersionUpgrade33to34:1.0.1&installed_packages=VersionUpgrade25to26:1.0.1&installed_packages=VersionUpgrade27to30:1.0.1&installed_packages=VersionUpgrade40to41:1.0.1&installed_packages=VersionUpgrade43to44:1.0.0&installed_packages=GCodeProfileReader:1.0.1&installed_packages=GCodeReader:1.0.1&installed_packages=SolidView:1.0.1&installed_packages=SelectionTool:1.0.1&installed_packages=LocalFileOutputDevice:1.0.1&installed_packages=GCodeGzReader:1.0.1&installed_packages=MachineSettingsAction:1.0.1&installed_packages=CuraDrive:1.2.0&installed_packages=TranslateTool:1.0.1&installed_packages=STLReader:1.0.1&installed_packages=CuraEngineBackend:1.0.1&installed_packages=UM3NetworkPrinting:1.0.1&installed_packages=VersionUpgrade42to43:1.0.0&installed_packages=VersionUpgrade30to31:1.0.1&installed_packages=ImageReader:1.0.1&installed_packages=UpdateChecker:1.0.1&installed_packages=DigitalLibrary:1.1.0&installed_packages=MirrorTool:1.0.1&installed_packages=CuraProfileWriter:1.0.1&installed_packages=VersionUpgrade462to47:1.0.0&installed_packages=PrepareStage:1.0.1&installed_packages=3MFReader:1.0.1&installed_packages=ScaleTool:1.0.1&installed_packages=VersionUpgrade26to27:1.0.1&installed_packages=PreviewStage:1.0.1&installed_packages=VersionUpgrade460to462:1.0.0&installed_packages=FirmwareUpdater:1.0.1&installed_packages=VersionUpgrade48to49:1.0.0&installed_packages=RotateTool:1.0.1&installed_packages=UFPReader:1.0.0&installed_packages=TrimeshReader:1.0.0&installed_packages=VersionUpgrade32to33:1.0.1&installed_packages=GCodeGzWriter:1.0.1&installed_packages=XMLMaterialProfile:1.0.1&installed_packages=3MFWriter:1.0.1&installed_packages=USBPrinting:1.0.2&installed_packages=ModelChecker:1.0.1&installed_packages=LocalContainerProvider:1.0.1&installed_packages=X3DReader:1.0.1&installed_packages=VersionUpgrade44to45:1.0.0&installed_packages=RemovableDriveOutputDevice:1.0.1&installed_packages=VersionUpgrade35to40:1.0.0&installed_packages=VersionUpgrade41to42:1.0.0&installed_packages=UltimakerMachineActions:1.0.1&installed_packages=VersionUpgrade21to22:1.0.1&installed_packages=Marketplace:1.0.0&installed_packages=FileLogger:1.0.1&installed_packages=SentryLogger:1.0.0&installed_packages=SupportEraser:1.0.1&installed_packages=PostProcessingPlugin:2.2.1&installed_packages=CameraTool:1.0.1&installed_packages=XRayView:1.0.1&installed_packages=SimpleView:1.0.1&installed_packages=GCodeWriter:1.0.1&installed_packages=STLWriter:1.0.1&installed_packages=VersionUpgrade52to53:1.0.0&installed_packages=MonitorStage:1.0.1&installed_packages=SimulationView:1.0.1
+2023-09-24 13:45:36,495 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin Marketplace 1.0.0
+2023-09-24 13:45:36,501 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PostProcessingPlugin 2.2.1
+2023-09-24 13:45:36,506 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraProfileReader 1.0.1
+2023-09-24 13:45:36,509 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeProfileReader 1.0.1
+2023-09-24 13:45:36,509 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [416]: Loading all plugins took 0.6526737213134766 seconds
+2023-09-24 13:45:36,511 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2023-09-24 13:45:36,516 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [177]: Checking and performing updates took 0.005605936050415039
+2023-09-24 13:45:36,517 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [256]: The preferences file cannot be opened or it is corrupted, so we will use default values
+2023-09-24 13:45:36,517 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [263]: The preferences file 'None' cannot be found, will use default values
+2023-09-24 13:45:36,518 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [266]: Completed loading preferences.
+2023-09-24 13:45:36,525 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [304]: Created system tray icon.
+2023-09-24 13:45:38,099 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [556]: Loading metadata into container registry took 1.4983665943145752 seconds
+2023-09-24 13:45:38,115 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Selected build plate: 0
+2023-09-24 13:45:38,117 - DEBUG - [MainThread] cura.CuraApplication.run [832]: Using Conan managed dependencies: cura/5.4.0, pyarcus/5.2.2, standardprojectsettings/0.1.0@ultimaker/stable, sipbuildtool/0.2.3@ultimaker/stable#5fe93e51cbb2a1cb25ee4358f844cbcd, protobuf/3.21.4, zlib/1.2.12, arcus/5.2.2, cpython/3.10.4, openssl/1.1.1l, expat/2.4.1, libffi/3.2.1, mpdecimal/2.5.0, libuuid/1.0.3, libxcrypt/4.4.25, bzip2/1.0.8, gdbm/1.19, sqlite3/3.36.0, tk/8.6.10, tcl/8.6.10, fontconfig/2.13.93, freetype/2.12.1, libpng/1.6.37, brotli/1.0.9, xorg/system, ncurses/6.2, xz_utils/5.2.5, curaengine/5.4.0, clipper/6.4.2, boost/1.79.0, rapidjson/1.1.0, stb/20200203, spdlog/1.10.0, fmt/9.0.0, range-v3/0.12.0, scripta/0.1.0@ultimaker/testing, pysavitar/5.2.2, savitar/5.2.2, pugixml/1.12.1, pynest2d/5.2.2, nest2d/5.2.2, nlopt/2.7.0, uranium/5.4.0, cura_binary_data/5.4.0, fdm_materials/5.4.0
+2023-09-24 13:45:38,117 - INFO - [MainThread] cura.CuraApplication.run [837]: Initializing machine error checker
+2023-09-24 13:45:38,118 - INFO - [MainThread] cura.CuraApplication.run [842]: Initializing machine manager
+2023-09-24 13:45:38,118 - INFO - [MainThread] cura.CuraApplication.run [847]: Initializing container manager
+2023-09-24 13:45:38,144 - WARNING - [MainThread] UM.Settings.SettingDefinition._deserialize_dict [653]: Unrecognised property comment in setting small_skin_width
+2023-09-24 13:45:38,255 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.loadAuthDataFromPreferences [258]: Attempting to load the auth data from preferences.
+2023-09-24 13:45:38,258 - WARNING - [MainThread] UM.OutputDevice.OutputDeviceManager.removeOutputDevice [235]: Could not find output device with id digital_factory to remove
+2023-09-24 13:45:38,266 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2023-09-24 13:45:38,289 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [188]: Loading theme file: /opt/ultimaker-cura/share/cura/resources/themes/cura-light/theme.json
+2023-09-24 13:45:38,320 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [323]: Loaded theme /opt/ultimaker-cura/share/cura/resources/themes/cura-light
+2023-09-24 13:45:38,321 - INFO - [MainThread] UM.Qt.Bindings.Theme.load [324]: System's em size is 13px.
+2023-09-24 13:45:39,101 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [350]: Creating post processing plugin view.
+2023-09-24 13:45:39,108 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: ChangeAtZ
+2023-09-24 13:45:39,109 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: ColorMix
+2023-09-24 13:45:39,110 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: CreateThumbnail
+2023-09-24 13:45:39,111 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2023-09-24 13:45:39,112 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: DisplayProgressOnLCD
+2023-09-24 13:45:39,113 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: FilamentChange
+2023-09-24 13:45:39,114 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: InsertAtLayerChange
+2023-09-24 13:45:39,116 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: PauseAtHeight
+2023-09-24 13:45:39,117 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: RetractContinue
+2023-09-24 13:45:39,118 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: SearchAndReplace
+2023-09-24 13:45:39,120 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: Stretch
+2023-09-24 13:45:39,122 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: TimeLapse
+2023-09-24 13:45:39,123 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: UsePreviousProbeMeasurements
+2023-09-24 13:45:39,228 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [360]: Post processing view created.
+2023-09-24 13:45:39,275 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 7. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:45:39,279 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Settings/SettingView.qml:40:9: QML TextField: Binding loop detected for property "implicitHeight"
+2023-09-24 13:45:39,279 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Settings/SettingView.qml:40:9: QML TextField: Binding loop detected for property "implicitHeight"
+2023-09-24 13:45:39,297 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 66. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:45:39,299 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 7. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:45:39,300 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 11. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:45:39,402 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 13:45:39,402 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 13:45:39,402 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingSlider.qml:36:9: Unable to assign [undefined] to QString
+2023-09-24 13:45:39,403 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingComboBox.qml:69:9: Unable to assign [undefined] to QString
+2023-09-24 13:45:39,403 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingTextField.qml:56:9: Unable to assign [undefined] to QString
+2023-09-24 13:45:39,403 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingTextField.qml:56:9: Unable to assign [undefined] to QString
+2023-09-24 13:45:39,403 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingComboBox.qml:69: TypeError: Cannot read property 'id' of null
+2023-09-24 13:45:39,403 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingComboBox.qml:69: TypeError: Cannot read property 'id' of null
+2023-09-24 13:45:39,403 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Cura.qml:631: TypeError: Cannot read property 'ExistingFile' of undefined
+2023-09-24 13:45:39,408 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2023-09-24 13:45:39,501 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:45:39,502 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/ConfigurationMenu/ConfigurationMenu.qml:278: TypeError: Cannot read property 'hasRemoteConnection' of null
+2023-09-24 13:45:39,522 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/ConfigurationMenu/CustomConfiguration.qml:188: TypeError: Cannot read property 'isEnabled' of null
+2023-09-24 13:45:39,573 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2023-09-24 13:45:39,598 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [118]: Creating model checker view.
+2023-09-24 13:45:39,606 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [127]: Model checker view created.
+2023-09-24 13:45:39,606 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2023-09-24 13:45:39,642 - DEBUG - [MainThread] cura.CuraApplication.run [888]: Booting Cura took 4.124575138092041 seconds
+2023-09-24 13:45:39,643 - DEBUG - [JobQueueWorker [0]] cura.Machines.ContainerTree.run [174]: Started background loading of MachineNodes
+2023-09-24 13:45:39,643 - DEBUG - [JobQueueWorker [0]] cura.Machines.ContainerTree.run [185]: All MachineNode loading completed
+2023-09-24 13:45:39,644 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:45:39,644 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 13:45:39,644 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:45:39,645 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 13:45:39,645 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:45:39,645 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 13:45:39,751 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:45:39,752 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [38]: No active GlobalStack, set CustomQualityProfilesDropDownMenuModel as empty.
+2023-09-24 13:45:39,911 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [211]: Support for Vertex Array Objects: True
+2023-09-24 13:45:39,915 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [121]: Initialized OpenGL subsystems.
+2023-09-24 13:45:39,915 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [122]: OpenGL Version:  4.1.0 NVIDIA 535.104.05
+2023-09-24 13:45:39,915 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [123]: OpenGL Vendor:   NVIDIA Corporation
+2023-09-24 13:45:39,915 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [124]: OpenGL Renderer: NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+2023-09-24 13:45:39,915 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [125]: GLSL Version:    4.0.0
+2023-09-24 13:45:39,916 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 13:45:39,923 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/selection.shader]...
+2023-09-24 13:45:39,929 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/select_face.shader]...
+2023-09-24 13:45:39,932 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 13:45:39,933 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/composite.shader]...
+2023-09-24 13:45:39,942 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/overhang.shader]...
+2023-09-24 13:45:39,952 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/striped.shader]...
+2023-09-24 13:45:39,962 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/transparent_object.shader]...
+2023-09-24 13:45:39,968 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/striped.shader]...
+2023-09-24 13:45:39,969 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray.shader]...
+2023-09-24 13:45:39,973 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray_composite.shader]...
+2023-09-24 13:45:39,984 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/platform.shader]...
+2023-09-24 13:45:39,994 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray.shader]...
+2023-09-24 13:45:46,224 - INFO - [MainThread] cura.CuraApplication.writeToLog [623]: User accepted the User-Agreement.
+2023-09-24 13:45:56,105 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.020748138427734375 seconds
+2023-09-24 13:46:13,103 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.01734304428100586 seconds
+2023-09-24 13:47:02,102 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.017153501510620117 seconds
+2023-09-24 13:47:32,093 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.009208202362060547 seconds
+2023-09-24 13:48:29,636 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/WelcomePages/AddLocalPrinterScrollView.qml:248:25: Unable to assign QString to QRegularExpression
+2023-09-24 13:48:51,449 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [426]: Trying to add a machine with the definition id [custom]
+2023-09-24 13:48:51,472 - WARNING - [MainThread] UM.Settings.SettingDefinition._deserialize_dict [653]: Unrecognised property comment in setting small_skin_width
+2023-09-24 13:48:51,671 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.0569913387298584 seconds.
+2023-09-24 13:48:51,733 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,774 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_1 #2] added to [Aquila x2] at position [0]
+2023-09-24 13:48:51,777 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,811 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_2 #2] added to [Aquila x2] at position [1]
+2023-09-24 13:48:51,813 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,846 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_3 #2] added to [Aquila x2] at position [2]
+2023-09-24 13:48:51,848 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,882 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_4 #2] added to [Aquila x2] at position [3]
+2023-09-24 13:48:51,885 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,920 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_5 #2] added to [Aquila x2] at position [4]
+2023-09-24 13:48:51,922 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,955 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_6 #2] added to [Aquila x2] at position [5]
+2023-09-24 13:48:51,958 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:51,990 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_7 #2] added to [Aquila x2] at position [6]
+2023-09-24 13:48:51,993 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [118]: Could not find preferred nozzle . Falling back to empty.
+2023-09-24 13:48:52,026 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_8 #2] added to [Aquila x2] at position [7]
+2023-09-24 13:48:52,026 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [custom]
+2023-09-24 13:48:52,030 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_1 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,030 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_2 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_3 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_4 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_5 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_6 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_7 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_8 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:48:52,031 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingTextField.qml:56:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,032 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingTextField.qml:56:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,032 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingComboBox.qml:69:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,032 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingSlider.qml:36:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,032 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,032 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 13:48:52,032 - INFO - [MainThread] cura.CuraApplication._setLoadingHint [824]: Initializing Active Machine...
+2023-09-24 13:48:52,036 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingTextField.qml:56:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,036 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingTextField.qml:56:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,036 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingComboBox.qml:69:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,037 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Widgets/SingleSettingSlider.qml:36:9: Unable to assign [undefined] to QString
+2023-09-24 13:48:52,037 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,095 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:48:52,140 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,141 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,198 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/ConfigurationMenu/CustomConfiguration.qml:188: TypeError: Cannot read property 'isEnabled' of null
+2023-09-24 13:48:52,199 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:48:52,200 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:48:52,200 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,206 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,206 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,320 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2023-09-24 13:48:52,347 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:48:52,360 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:48:52,412 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [168]: Need to check for errors again. Discard the current progress and reschedule a check.
+2023-09-24 13:48:52,420 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 13:48:52,423 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/grid.shader]...
+2023-09-24 13:48:52,451 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,451 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,455 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:48:52,590 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:48:52,811 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:48:53,152 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.34s
+2023-09-24 13:49:02,244 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.160064697265625 seconds
+2023-09-24 13:53:59,105 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.0186309814453125 seconds
+2023-09-24 13:54:13,636 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:13,637 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:13,650 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:13,650 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:13,759 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:13,852 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:13,854 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:16,123 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:16,124 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:16,137 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:16,137 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:16,242 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:16,311 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:16,312 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:23,695 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:23,696 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:23,707 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:23,707 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:23,792 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:23,792 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:23,801 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:23,801 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:23,928 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:23,928 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:23,983 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [168]: Need to check for errors again. Discard the current progress and reschedule a check.
+2023-09-24 13:54:24,105 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:24,160 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.06s
+2023-09-24 13:54:28,584 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:28,585 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:28,594 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:28,594 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:28,688 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:28,779 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:28,779 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:34,137 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:34,138 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:34,154 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:34,154 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:34,260 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:34,342 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:34,342 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:36,679 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:36,680 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:36,702 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:36,703 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:36,805 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:36,908 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:36,909 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:40,543 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:40,544 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:40,560 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:40,560 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:40,664 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:40,745 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:40,746 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:45,172 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:45,173 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:54:45,197 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:45,198 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:54:45,292 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:54:45,384 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:54:45,384 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:54:55,101 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.016746997833251953 seconds
+2023-09-24 13:55:07,884 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:55:07,885 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:55:07,898 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:55:07,898 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:55:07,915 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:55:08,124 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:55:08,155 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:55:08,156 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:55:08,159 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:55:08,165 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:55:08,165 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.00s
+2023-09-24 13:55:08,268 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:55:18,127 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.042923688888549805 seconds
+2023-09-24 13:56:09,119 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:56:09,120 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:56:09,121 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:56:09,886 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/SettingsMenu.qml:22:9: QML Menu: Binding loop detected for property "width"
+2023-09-24 13:56:22,155 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:56:22,156 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:56:22,157 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:56:23,032 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/SettingsMenu.qml:22:9: QML Menu: Binding loop detected for property "width"
+2023-09-24 13:56:26,100 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.015819311141967773 seconds
+2023-09-24 13:56:30,063 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:56:30,080 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:56:30,099 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:56:30,099 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:56:30,176 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:56:51,099 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.014566898345947266 seconds
+2023-09-24 13:56:57,339 - DEBUG - [MainThread] cura.Settings.CuraContainerRegistry.importProfile [203]: Attempting to import profile /home/eren/Downloads/cura/cura/Aquila .curaprofile
+2023-09-24 13:56:57,390 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Preferences/ProfilesPage.qml:432: ReferenceError: folder is not defined
+2023-09-24 13:56:57,390 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:56:57,395 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:56:57,397 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:56:57,397 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:57:00,970 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:57:01,068 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 13:57:03,138 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.053581953048706055 seconds
+2023-09-24 13:57:23,717 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:23,718 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:23,718 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:24,264 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:24,265 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:24,266 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:24,317 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/ViewMenu.qml:71:5: QML MenuItem: Binding loop detected for property "contentWidth"
+2023-09-24 13:57:24,583 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:24,584 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:24,584 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:57:25,261 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/SettingsMenu.qml:22:9: QML Menu: Binding loop detected for property "width"
+2023-09-24 13:57:25,787 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/SettingsMenu.qml:32:13: QML MaterialMenu: Binding loop detected for property "width"
+2023-09-24 13:57:30,505 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:57:30,514 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:57:30,519 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:57:30,520 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:57:31,565 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:57:31,677 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 13:57:38,108 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [57]: Default machine actions have been added for machine definition [custom], do nothing.
+2023-09-24 13:57:38,109 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_1 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,109 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_2 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,109 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_3 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,109 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_4 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,109 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_5 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,109 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_6 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,110 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_7 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,110 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [185]: Extruder [custom_extruder_8 #2] has already been added to this stack [Aquila x2]
+2023-09-24 13:57:38,111 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:57:38,111 - INFO - [MainThread] cura.CuraApplication._setLoadingHint [824]: Initializing Active Machine...
+2023-09-24 13:57:38,112 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:57:38,113 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:57:38,208 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:57:38,220 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:57:49,103 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.018194198608398438 seconds
+2023-09-24 13:57:59,825 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [56]: No more on-app-exit callbacks to process. Tell the app to exit.
+2023-09-24 13:57:59,826 - INFO - [MainThread] cura.CuraApplication.closeApplication [630]: Close application
+2023-09-24 13:57:59,826 - INFO - [MainThread] cura.CuraApplication._setLoadingHint [824]: Initializing Active Machine...
+2023-09-24 13:57:59,832 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:57:59,832 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 13:57:59,832 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:57:59,833 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 13:57:59,834 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 13:57:59,835 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 13:57:59,839 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:57:59,839 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:57:59,899 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/WelcomePages/AddLocalPrinterScrollView.qml:248:25: Unable to assign QString to QRegularExpression
+2023-09-24 13:57:59,900 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [508]: Shutting down cura
+2023-09-24 13:57:59,920 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [375]: Attempting to kill the engine process
+2023-09-24 13:57:59,920 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [381]: Killing engine process
+2023-09-24 13:57:59,921 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [384]: Engine process is killed. Received return code -15
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Application.initialize [163]: Initializing UltiMaker Cura
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Application.initialize [164]: App Version 5.4.0
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Application.initialize [165]: Api Version 8.4.0
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Application.initialize [166]: Build type None
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib/uranium must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib64/uranium must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib32/uranium must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/ultimaker-cura/plugins must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/Resources/uranium/plugins must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/Resources/cura/plugins must be a folder.
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [481]: Initializing storage paths
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [491]: Config storage path is /home/eren/.config/cura/5.4
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [499]: Data storage path is /home/eren/.local/share/cura/5.4
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [511]: Cache storage path is /home/eren/.cache/cura/5.4
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /opt/ultimaker-cura/share/cura/resources/bundled_packages/cura.json
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /opt/ultimaker-cura/share/uranium/resources/bundled_packages/uranium.json
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [124]: Trying OpenGL context 4.1...
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [132]: Yay, we got at least OpenGL 4.1 core: 4.1 Core profile
+2023-09-24 13:58:02,893 - DEBUG - [MainThread] UM.Qt.QtApplication.initialize [192]: Detected most suitable OpenGL context version: 4.1 Core profile
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.Qt.QtApplication.initialize [199]: Initializing job queue ...
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.Qt.QtApplication.initialize [203]: Initializing version upgrade manager ...
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /opt/ultimaker-cura/share/cura/resources/bundled_packages/cura.json
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /opt/ultimaker-cura/share/uranium/resources/bundled_packages/uranium.json
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PackageManager._loadManagementData [203]: User package management file /home/eren/.local/share/cura/5.4/packages.json doesn't exist, do nothing
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PackageManager._removeAllScheduledPackages [280]: Attempting to remove the following scheduled packages: - 
+2023-09-24 13:58:02,893 - INFO - [MainThread] UM.PluginRegistry.initializeBeforePluginsAreLoaded [121]: Loading plugin configuration file '/home/eren/.config/cura/5.4/plugins.json'
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib/cura must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib64/cura must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/libx32/cura must be a folder.
+2023-09-24 13:58:02,893 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib32/cura must be a folder.
+2023-09-24 13:58:02,894 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FileLogger 1.0.1
+2023-09-24 13:58:02,901 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraDrive 1.2.0
+2023-09-24 13:58:02,917 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin USBPrinting 1.0.2
+2023-09-24 13:58:02,921 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin MonitorStage 1.0.1
+2023-09-24 13:58:02,927 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UFPWriter 1.0.1
+2023-09-24 13:58:02,929 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PrepareStage 1.0.1
+2023-09-24 13:58:02,937 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin 3MFWriter 1.0.1
+2023-09-24 13:58:02,942 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin ImageReader 1.0.1
+2023-09-24 13:58:02,945 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin ModelChecker 1.0.1
+2023-09-24 13:58:02,949 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UltimakerMachineActions 1.0.1
+2023-09-24 13:58:02,953 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade47to48 1.0.0
+2023-09-24 13:58:02,956 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade30to31 1.0.1
+2023-09-24 13:58:02,960 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade22to24 1.0.1
+2023-09-24 13:58:02,963 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade460to462 1.0.0
+2023-09-24 13:58:02,971 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade21to22 1.0.1
+2023-09-24 13:58:02,973 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade462to47 1.0.0
+2023-09-24 13:58:02,978 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade413to50 1.0.0
+2023-09-24 13:58:02,981 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade49to410 1.0.0
+2023-09-24 13:58:02,985 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade34to35 1.0.1
+2023-09-24 13:58:02,990 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade41to42 1.0.0
+2023-09-24 13:58:02,993 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade45to46 1.0.0
+2023-09-24 13:58:02,996 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade33to34 1.0.1
+2023-09-24 13:58:03,001 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade43to44 1.0.0
+2023-09-24 13:58:03,003 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade411to412 1.0.0
+2023-09-24 13:58:03,007 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade44to45 1.0.0
+2023-09-24 13:58:03,009 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade48to49 1.0.0
+2023-09-24 13:58:03,012 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade52to53 1.0.0
+2023-09-24 13:58:03,015 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade32to33 1.0.1
+2023-09-24 13:58:03,018 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade35to40 1.0.0
+2023-09-24 13:58:03,021 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade42to43 1.0.0
+2023-09-24 13:58:03,023 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade53to54 1.0.0
+2023-09-24 13:58:03,027 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade27to30 1.0.1
+2023-09-24 13:58:03,029 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade40to41 1.0.1
+2023-09-24 13:58:03,032 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade26to27 1.0.1
+2023-09-24 13:58:03,035 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade25to26 1.0.1
+2023-09-24 13:58:03,044 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin X3DReader 1.0.1
+2023-09-24 13:58:03,059 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin 3MFReader 1.0.1
+2023-09-24 13:58:03,062 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PreviewStage 1.0.1
+2023-09-24 13:58:03,071 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin XmlMaterialProfile 1.0.1
+2023-09-24 13:58:03,074 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeGzWriter 1.0.1
+2023-09-24 13:58:03,078 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SolidView 1.0.1
+2023-09-24 13:58:03,081 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SupportEraser 1.0.1
+2023-09-24 13:58:03,084 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin XRayView 1.0.1
+2023-09-24 13:58:03,088 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SliceInfoPlugin 1.0.1
+2023-09-24 13:58:03,091 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin AMFReader 1.0.0
+2023-09-24 13:58:03,101 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeReader 1.0.1
+2023-09-24 13:58:03,118 - INFO - [MainThread] CuraEngineBackend.CuraEngineBackend.__init__ [96]: Found CuraEngine at: /opt/ultimaker-cura/CuraEngine
+2023-09-24 13:58:03,119 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraEngineBackend 1.0.1
+2023-09-24 13:58:03,121 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [192]: Socket state changed to Listening
+2023-09-24 13:58:03,122 - INFO - [MainThread] UM.Backend.Backend.startEngine [95]: Started engine process: /opt/ultimaker-cura/CuraEngine
+2023-09-24 13:58:03,123 - DEBUG - [MainThread] UM.Backend.Backend._backendLog [115]: [Backend] Calling engine with: ['/opt/ultimaker-cura/CuraEngine', 'connect', '127.0.0.1:49674', '']
+2023-09-24 13:58:03,126 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin LegacyProfileReader 1.0.1
+2023-09-24 13:58:03,128 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:58:03,128 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] Cura_SteamEngine version 5.4.0
+2023-09-24 13:58:03,128 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] Copyright (C) 2022 Ultimaker
+2023-09-24 13:58:03,128 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] This program is free software: you can redistribute it and/or modify
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] it under the terms of the GNU Affero General Public License as published by
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] the Free Software Foundation, either version 3 of the License, or
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] (at your option) any later version.
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] This program is distributed in the hope that it will be useful,
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2023-09-24 13:58:03,129 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] GNU Affero General Public License for more details.
+2023-09-24 13:58:03,130 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 13:58:03,130 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] You should have received a copy of the GNU Affero General Public License
+2023-09-24 13:58:03,130 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.
+2023-09-24 13:58:03,130 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] [2023-09-24 13:58:03.127] [info] Connecting to 127.0.0.1:49674
+2023-09-24 13:58:03,149 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin DigitalLibrary 1.1.0
+2023-09-24 13:58:03,149 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [196]: Socket state changed to Connected
+2023-09-24 13:58:03,150 - DEBUG - [MainThread] UM.Backend.Backend._onSocketStateChanged [185]: Backend connected on port 49674
+2023-09-24 13:58:03,164 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SimulationView 1.0.1
+2023-09-24 13:58:03,168 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin RemovableDriveOutputDevice 1.0.1
+2023-09-24 13:58:03,171 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeGzReader 1.0.1
+2023-09-24 13:58:03,176 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PerObjectSettingsTool 1.0.1
+2023-09-24 13:58:03,179 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin TrimeshReader 1.0.0
+2023-09-24 13:58:03,183 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin MachineSettingsAction 1.0.1
+2023-09-24 13:58:03,185 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UFPReader 1.0.0
+2023-09-24 13:58:03,188 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeWriter 1.0.1
+2023-09-24 13:58:03,192 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FirmwareUpdateChecker 1.0.1
+2023-09-24 13:58:03,195 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraProfileWriter 1.0.1
+2023-09-24 13:58:03,245 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UM3NetworkPrinting 2.0.0
+2023-09-24 13:58:03,248 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FirmwareUpdater 1.0.1
+2023-09-24 13:58:03,269 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [145]: No auth data to retrieve the access_token from
+2023-09-24 13:58:03,271 - DEBUG - [MainThread] cura.UltimakerCloud.UltimakerCloudScope.requestHook [30]: User is not logged in for Cloud API request to https://api.ultimaker.com/cura-packages/v1/cura/v8.4.0/packages/package-updates?installed_packages=IMADE3DJellyBOXPETG:1.0.1&installed_packages=GenericTPU:1.4.0&installed_packages=VertexDeltaPLA:1.4.0&installed_packages=GenericToughPLA:1.4.0&installed_packages=PolyMaxPLA:1.0.1&installed_packages=UltimakerCPE:1.4.0&installed_packages=FABtotumTPU:1.4.0&installed_packages=UltimakerPLA:1.4.0&installed_packages=FiberlogyHDPLA:1.0.1&installed_packages=UltimakerTPLA:1.4.0&installed_packages=UltimakerPVA:1.4.0&installed_packages=GenericCFFPA:1.4.0&installed_packages=GenericHIPS:1.4.0&installed_packages=GenericABS:1.4.0&installed_packages=UltimakerTPU:1.4.0&installed_packages=IMADE3DJellyBOXPLA:1.0.1&installed_packages=Filo3DPLA:1.0.1&installed_packages=UltimakerNylon:1.4.0&installed_packages=GenericPETG:1.4.0&installed_packages=UltimakerBAM:1.4.0&installed_packages=UltimakerCPEP:1.4.0&installed_packages=PolyPlusPLA:1.0.1&installed_packages=VertexDeltaPET:1.4.0&installed_packages=GenericPC:1.4.0&installed_packages=FABtotumPLA:1.4.0&installed_packages=GenericCFFCPE:1.4.0&installed_packages=GenericCPE:1.4.0&installed_packages=GenericGFFCPE:1.4.0&installed_packages=VertexDeltaABS:1.4.0&installed_packages=VertexDeltaTPU:1.4.0&installed_packages=OctofiberPLA:1.0.1&installed_packages=DagomaChromatikPLA:1.0.1&installed_packages=PolyFlexPLA:1.0.1&installed_packages=GenericGFFPA:1.4.0&installed_packages=UltimakerABS:1.4.0&installed_packages=FABtotumNylon:1.4.0&installed_packages=UltimakerPP:1.4.0&installed_packages=GenericPLA:1.4.0&installed_packages=GenericPVA:1.4.0&installed_packages=GenericPP:1.4.0&installed_packages=UltimakerPC:1.4.0&installed_packages=GenericBAM:1.4.0&installed_packages=PolyWoodPLA:1.0.1&installed_packages=FABtotumABS:1.4.0&installed_packages=GenericCPEPlus:1.4.0&installed_packages=GenericNylon:1.4.0&installed_packages=VersionUpgrade41to42:1.0.0&installed_packages=3MFReader:1.0.1&installed_packages=LocalFileOutputDevice:1.0.1&installed_packages=VersionUpgrade33to34:1.0.1&installed_packages=CameraTool:1.0.1&installed_packages=UM3NetworkPrinting:1.0.1&installed_packages=GCodeGzWriter:1.0.1&installed_packages=FirmwareUpdateChecker:1.0.1&installed_packages=SupportEraser:1.0.1&installed_packages=GCodeReader:1.0.1&installed_packages=X3DReader:1.0.1&installed_packages=PerObjectSettingsTool:1.0.1&installed_packages=MonitorStage:1.0.1&installed_packages=VersionUpgrade462to47:1.0.0&installed_packages=Marketplace:1.0.0&installed_packages=VersionUpgrade30to31:1.0.1&installed_packages=CuraDrive:1.2.0&installed_packages=GCodeProfileReader:1.0.1&installed_packages=FirmwareUpdater:1.0.1&installed_packages=VersionUpgrade40to41:1.0.1&installed_packages=XRayView:1.0.1&installed_packages=MirrorTool:1.0.1&installed_packages=UFPReader:1.0.0&installed_packages=ScaleTool:1.0.1&installed_packages=SentryLogger:1.0.0&installed_packages=VersionUpgrade35to40:1.0.0&installed_packages=VersionUpgrade45to46:1.0.0&installed_packages=VersionUpgrade43to44:1.0.0&installed_packages=OBJReader:1.0.1&installed_packages=TranslateTool:1.0.1&installed_packages=ImageReader:1.0.1&installed_packages=CuraProfileWriter:1.0.1&installed_packages=GCodeGzReader:1.0.1&installed_packages=VersionUpgrade44to45:1.0.0&installed_packages=VersionUpgrade22to24:1.0.1&installed_packages=PostProcessingPlugin:2.2.1&installed_packages=STLReader:1.0.1&installed_packages=UpdateChecker:1.0.1&installed_packages=LocalContainerProvider:1.0.1&installed_packages=UFPWriter:1.0.1&installed_packages=ModelChecker:1.0.1&installed_packages=SliceInfoPlugin:1.0.1&installed_packages=VersionUpgrade48to49:1.0.0&installed_packages=AMFReader:1.0.0&installed_packages=STLWriter:1.0.1&installed_packages=VersionUpgrade52to53:1.0.0&installed_packages=VersionUpgrade26to27:1.0.1&installed_packages=UltimakerMachineActions:1.0.1&installed_packages=VersionUpgrade49to410:1.0.0&installed_packages=VersionUpgrade413to50:1.0.0&installed_packages=VersionUpgrade27to30:1.0.1&installed_packages=USBPrinting:1.0.2&installed_packages=SelectionTool:1.0.1&installed_packages=TrimeshReader:1.0.0&installed_packages=CuraProfileReader:1.0.1&installed_packages=3MFWriter:1.0.1&installed_packages=CuraEngineBackend:1.0.1&installed_packages=PreviewStage:1.0.1&installed_packages=VersionUpgrade32to33:1.0.1&installed_packages=VersionUpgrade47to48:1.0.0&installed_packages=VersionUpgrade42to43:1.0.0&installed_packages=SimulationView:1.0.1&installed_packages=OBJWriter:1.0.1&installed_packages=RotateTool:1.0.1&installed_packages=FileLogger:1.0.1&installed_packages=DigitalLibrary:1.1.0&installed_packages=XMLMaterialProfile:1.0.1&installed_packages=VersionUpgrade34to35:1.0.1&installed_packages=PrepareStage:1.0.1&installed_packages=LegacyProfileReader:1.0.1&installed_packages=MachineSettingsAction:1.0.1&installed_packages=VersionUpgrade460to462:1.0.0&installed_packages=RemovableDriveOutputDevice:1.0.1&installed_packages=VersionUpgrade411to412:1.0.0&installed_packages=VersionUpgrade25to26:1.0.1&installed_packages=SolidView:1.0.1&installed_packages=GCodeWriter:1.0.1&installed_packages=SimpleView:1.0.1&installed_packages=VersionUpgrade21to22:1.0.1&installed_packages=ConsoleLogger:1.0.1
+2023-09-24 13:58:03,271 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin Marketplace 1.0.0
+2023-09-24 13:58:03,275 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PostProcessingPlugin 2.2.1
+2023-09-24 13:58:03,278 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraProfileReader 1.0.1
+2023-09-24 13:58:03,281 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeProfileReader 1.0.1
+2023-09-24 13:58:03,282 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [416]: Loading all plugins took 0.5225958824157715 seconds
+2023-09-24 13:58:03,283 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2023-09-24 13:58:03,304 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [177]: Checking and performing updates took 0.02121138572692871
+2023-09-24 13:58:03,311 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [266]: Completed loading preferences.
+2023-09-24 13:58:03,320 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [304]: Created system tray icon.
+2023-09-24 13:58:03,981 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [556]: Loading metadata into container registry took 0.6511914730072021 seconds
+2023-09-24 13:58:03,991 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Selected build plate: 0
+2023-09-24 13:58:03,992 - DEBUG - [MainThread] cura.CuraApplication.run [832]: Using Conan managed dependencies: cura/5.4.0, pyarcus/5.2.2, standardprojectsettings/0.1.0@ultimaker/stable, sipbuildtool/0.2.3@ultimaker/stable#5fe93e51cbb2a1cb25ee4358f844cbcd, protobuf/3.21.4, zlib/1.2.12, arcus/5.2.2, cpython/3.10.4, openssl/1.1.1l, expat/2.4.1, libffi/3.2.1, mpdecimal/2.5.0, libuuid/1.0.3, libxcrypt/4.4.25, bzip2/1.0.8, gdbm/1.19, sqlite3/3.36.0, tk/8.6.10, tcl/8.6.10, fontconfig/2.13.93, freetype/2.12.1, libpng/1.6.37, brotli/1.0.9, xorg/system, ncurses/6.2, xz_utils/5.2.5, curaengine/5.4.0, clipper/6.4.2, boost/1.79.0, rapidjson/1.1.0, stb/20200203, spdlog/1.10.0, fmt/9.0.0, range-v3/0.12.0, scripta/0.1.0@ultimaker/testing, pysavitar/5.2.2, savitar/5.2.2, pugixml/1.12.1, pynest2d/5.2.2, nest2d/5.2.2, nlopt/2.7.0, uranium/5.4.0, cura_binary_data/5.4.0, fdm_materials/5.4.0
+2023-09-24 13:58:03,992 - INFO - [MainThread] cura.CuraApplication.run [837]: Initializing machine error checker
+2023-09-24 13:58:04,103 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [custom]
+2023-09-24 13:58:04,174 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_6 #2] added to [Aquila x2] at position [5]
+2023-09-24 13:58:04,174 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_8 #2] added to [Aquila x2] at position [7]
+2023-09-24 13:58:04,174 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_7 #2] added to [Aquila x2] at position [6]
+2023-09-24 13:58:04,174 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_1 #2] added to [Aquila x2] at position [0]
+2023-09-24 13:58:04,175 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_2 #2] added to [Aquila x2] at position [1]
+2023-09-24 13:58:04,175 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_3 #2] added to [Aquila x2] at position [2]
+2023-09-24 13:58:04,175 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_4 #2] added to [Aquila x2] at position [3]
+2023-09-24 13:58:04,175 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_5 #2] added to [Aquila x2] at position [4]
+2023-09-24 13:58:04,183 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2023-09-24 13:58:04,343 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.04471015930175781 seconds.
+2023-09-24 13:58:04,349 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: ChangeAtZ
+2023-09-24 13:58:04,350 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: ColorMix
+2023-09-24 13:58:04,351 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: CreateThumbnail
+2023-09-24 13:58:04,352 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2023-09-24 13:58:04,353 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: DisplayProgressOnLCD
+2023-09-24 13:58:04,354 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: FilamentChange
+2023-09-24 13:58:04,355 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: InsertAtLayerChange
+2023-09-24 13:58:04,357 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: PauseAtHeight
+2023-09-24 13:58:04,358 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: RetractContinue
+2023-09-24 13:58:04,359 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: SearchAndReplace
+2023-09-24 13:58:04,362 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: Stretch
+2023-09-24 13:58:04,363 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: TimeLapse
+2023-09-24 13:58:04,363 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: UsePreviousProbeMeasurements
+2023-09-24 13:58:04,365 - INFO - [MainThread] cura.CuraApplication.run [842]: Initializing machine manager
+2023-09-24 13:58:04,366 - INFO - [MainThread] cura.CuraApplication.run [847]: Initializing container manager
+2023-09-24 13:58:04,374 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.loadAuthDataFromPreferences [258]: Attempting to load the auth data from preferences.
+2023-09-24 13:58:04,376 - WARNING - [MainThread] UM.OutputDevice.OutputDeviceManager.removeOutputDevice [235]: Could not find output device with id digital_factory to remove
+2023-09-24 13:58:04,385 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2023-09-24 13:58:04,411 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [188]: Loading theme file: /opt/ultimaker-cura/share/cura/resources/themes/cura-light/theme.json
+2023-09-24 13:58:04,444 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [323]: Loaded theme /opt/ultimaker-cura/share/cura/resources/themes/cura-light
+2023-09-24 13:58:04,444 - INFO - [MainThread] UM.Qt.Bindings.Theme.load [324]: System's em size is 13px.
+2023-09-24 13:58:04,666 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [350]: Creating post processing plugin view.
+2023-09-24 13:58:04,735 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [360]: Post processing view created.
+2023-09-24 13:58:04,823 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 7. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:58:04,830 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Settings/SettingView.qml:40:9: QML TextField: Binding loop detected for property "implicitHeight"
+2023-09-24 13:58:04,830 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Settings/SettingView.qml:40:9: QML TextField: Binding loop detected for property "implicitHeight"
+2023-09-24 13:58:04,850 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 66. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:58:04,852 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 7. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:58:04,854 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 11. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 13:58:04,935 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:58:05,122 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Cura.qml:631: TypeError: Cannot read property 'ExistingFile' of undefined
+2023-09-24 13:58:05,129 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2023-09-24 13:58:05,186 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 13:58:05,366 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2023-09-24 13:58:05,368 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [118]: Creating model checker view.
+2023-09-24 13:58:05,370 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [127]: Model checker view created.
+2023-09-24 13:58:05,371 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2023-09-24 13:58:05,397 - DEBUG - [JobQueueWorker [0]] cura.Machines.ContainerTree.run [174]: Started background loading of MachineNodes
+2023-09-24 13:58:05,397 - DEBUG - [MainThread] cura.CuraApplication.run [888]: Booting Cura took 2.9579591751098633 seconds
+2023-09-24 13:58:05,401 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:58:05,402 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:05,410 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:05,423 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:05,423 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:05,426 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:05,524 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:05,655 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [211]: Support for Vertex Array Objects: True
+2023-09-24 13:58:05,660 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [121]: Initialized OpenGL subsystems.
+2023-09-24 13:58:05,660 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [122]: OpenGL Version:  4.1.0 NVIDIA 535.104.05
+2023-09-24 13:58:05,660 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [123]: OpenGL Vendor:   NVIDIA Corporation
+2023-09-24 13:58:05,660 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [124]: OpenGL Renderer: NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+2023-09-24 13:58:05,660 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [125]: GLSL Version:    4.0.0
+2023-09-24 13:58:05,661 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 13:58:05,662 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/selection.shader]...
+2023-09-24 13:58:05,663 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/select_face.shader]...
+2023-09-24 13:58:05,663 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 13:58:05,664 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/composite.shader]...
+2023-09-24 13:58:05,665 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/overhang.shader]...
+2023-09-24 13:58:05,666 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/striped.shader]...
+2023-09-24 13:58:05,667 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/transparent_object.shader]...
+2023-09-24 13:58:05,668 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/striped.shader]...
+2023-09-24 13:58:05,669 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray.shader]...
+2023-09-24 13:58:05,670 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray_composite.shader]...
+2023-09-24 13:58:05,671 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 13:58:05,672 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/grid.shader]...
+2023-09-24 13:58:05,673 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/platform.shader]...
+2023-09-24 13:58:05,684 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray.shader]...
+2023-09-24 13:58:05,835 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.43s
+2023-09-24 13:58:05,898 - DEBUG - [JobQueueWorker [0]] cura.Machines.ContainerTree.run [185]: All MachineNode loading completed
+2023-09-24 13:58:13,006 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/WelcomePages/AddLocalPrinterScrollView.qml:248:25: Unable to assign QString to QRegularExpression
+2023-09-24 13:58:16,160 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.07361769676208496 seconds
+2023-09-24 13:58:24,245 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:24,262 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:24,270 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:58:24,271 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:58:24,359 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:58:25,834 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:25,933 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:25,937 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:58:25,939 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:25,976 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:25,976 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:58:25,984 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 13:58:26,097 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:26,100 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:26,110 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:26,213 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:26,605 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:30,532 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:30,957 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:32,102 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.018146991729736328 seconds
+2023-09-24 13:58:34,184 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:34,185 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:58:34,186 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:34,238 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:58:34,338 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:34,339 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:34,343 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:58:34,459 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:58:34,535 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.30s
+2023-09-24 13:58:46,919 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:58:46,920 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:58:47,106 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.02238941192626953 seconds
+2023-09-24 13:58:47,467 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/FileMenu.qml:17:5: QML MenuItem: Binding loop detected for property "contentWidth"
+2023-09-24 13:58:47,468 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/FileMenu.qml:23:5: QML MenuItem: Binding loop detected for property "contentWidth"
+2023-09-24 13:58:47,469 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/FileMenu.qml:41:5: QML MenuItem: Binding loop detected for property "contentWidth"
+2023-09-24 13:58:47,469 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Menus/FileMenu.qml:97:5: QML MenuItem: Binding loop detected for property "contentWidth"
+2023-09-24 13:58:54,991 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:58:54,992 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:58:59,796 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:59,803 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:58:59,808 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:58:59,808 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:59:00,525 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:00,603 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 13:59:07,149 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:07,895 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:08,098 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.01442575454711914 seconds
+2023-09-24 13:59:08,461 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:08,926 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:10,233 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:12,715 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:13,319 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:13,693 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:14,443 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:16,823 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:27,509 - DEBUG - [MainThread] cura.Settings.CuraContainerRegistry.importProfile [203]: Attempting to import profile /home/eren/Downloads/cura/cura/Aquila .curaprofile
+2023-09-24 13:59:27,599 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Preferences/ProfilesPage.qml:432: ReferenceError: folder is not defined
+2023-09-24 13:59:27,599 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:59:27,605 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:59:27,607 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:27,618 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:59:27,619 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:59:29,796 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:30,349 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:31,271 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:33,955 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:41,523 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1318]: Updating intent due to quality change
+2023-09-24 13:59:41,604 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:59:41,604 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:59:41,626 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 13:59:41,790 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:59:41,790 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:59:41,793 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 13:59:41,844 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.22s
+2023-09-24 13:59:41,890 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:59:46,120 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:59:46,121 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/MainWindow/ApplicationMenu.qml:54:9: QML SettingsMenu: Binding loop detected for property "width"
+2023-09-24 13:59:49,553 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:49,560 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:49,566 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:59:49,567 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 13:59:50,311 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:50,390 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 13:59:50,992 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:55,091 - INFO - [MainThread] cura.Machines.Models.QualityManagementModel.removeQualityChangesGroup [83]: Removing quality changes group Aquila #2
+2023-09-24 13:59:55,092 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:59:55,096 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:59:55,098 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:55,143 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [660]: Removed container custom_aquila_ #2
+2023-09-24 13:59:55,144 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 13:59:55,150 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 13:59:55,192 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [660]: Removed container custom_extruder_1_aquila_ #2
+2023-09-24 13:59:55,198 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Preferences/ProfilesPage.qml:401: ReferenceError: qualityListView is not defined
+2023-09-24 13:59:56,914 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 13:59:58,108 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.023848772048950195 seconds
+2023-09-24 14:00:00,975 - INFO - [MainThread] cura.Machines.Models.QualityManagementModel.removeQualityChangesGroup [83]: Removing quality changes group Aquila
+2023-09-24 14:00:00,977 - INFO - [MainThread] LocalContainerProvider.LocalContainerProvider.removeContainer [235]: Deleting file /home/eren/.local/share/cura/5.4/quality_changes/custom_aquila_.inst.cfg.
+2023-09-24 14:00:00,978 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:00:00,982 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:00:00,983 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:00:01,021 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [660]: Removed container custom_aquila_
+2023-09-24 14:00:01,021 - INFO - [MainThread] LocalContainerProvider.LocalContainerProvider.removeContainer [235]: Deleting file /home/eren/.local/share/cura/5.4/quality_changes/custom_extruder_1_aquila_.inst.cfg.
+2023-09-24 14:00:01,021 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:00:01,025 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:00:01,027 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [660]: Removed container custom_extruder_1_aquila_
+2023-09-24 14:00:01,030 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Preferences/ProfilesPage.qml:401: ReferenceError: qualityListView is not defined
+2023-09-24 14:00:14,126 - DEBUG - [MainThread] cura.Settings.CuraContainerRegistry.importProfile [203]: Attempting to import profile /home/eren/Downloads/cura/cura/Aquila .curaprofile
+2023-09-24 14:00:14,164 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Preferences/ProfilesPage.qml:432: ReferenceError: folder is not defined
+2023-09-24 14:00:14,165 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:00:14,170 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:00:14,172 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:00:14,172 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:00:17,113 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:00:27,436 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [56]: No more on-app-exit callbacks to process. Tell the app to exit.
+2023-09-24 14:00:27,437 - INFO - [MainThread] cura.CuraApplication.closeApplication [630]: Close application
+2023-09-24 14:00:27,438 - INFO - [MainThread] cura.CuraApplication._setLoadingHint [824]: Initializing Active Machine...
+2023-09-24 14:00:27,442 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:00:27,443 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 14:00:27,444 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:00:27,444 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 14:00:27,445 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 14:00:27,446 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 14:00:27,453 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 14:00:27,465 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 14:00:27,515 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/WelcomePages/AddLocalPrinterScrollView.qml:248:25: Unable to assign QString to QRegularExpression
+2023-09-24 14:00:27,516 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [508]: Shutting down cura
+2023-09-24 14:00:27,568 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [375]: Attempting to kill the engine process
+2023-09-24 14:00:27,568 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [381]: Killing engine process
+2023-09-24 14:00:27,569 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [384]: Engine process is killed. Received return code -15
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Application.initialize [163]: Initializing UltiMaker Cura
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Application.initialize [164]: App Version 5.4.0
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Application.initialize [165]: Api Version 8.4.0
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Application.initialize [166]: Build type None
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib/uranium must be a folder.
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib64/uranium must be a folder.
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib32/uranium must be a folder.
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/ultimaker-cura/plugins must be a folder.
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/Resources/uranium/plugins must be a folder.
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/Resources/cura/plugins must be a folder.
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [481]: Initializing storage paths
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [491]: Config storage path is /home/eren/.config/cura/5.4
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [499]: Data storage path is /home/eren/.local/share/cura/5.4
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Resources.__initializeStoragePaths [511]: Cache storage path is /home/eren/.cache/cura/5.4
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /opt/ultimaker-cura/share/uranium/resources/bundled_packages/uranium.json
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /opt/ultimaker-cura/share/cura/resources/bundled_packages/cura.json
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [124]: Trying OpenGL context 4.1...
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [132]: Yay, we got at least OpenGL 4.1 core: 4.1 Core profile
+2023-09-24 14:00:31,038 - DEBUG - [MainThread] UM.Qt.QtApplication.initialize [192]: Detected most suitable OpenGL context version: 4.1 Core profile
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.Qt.QtApplication.initialize [199]: Initializing job queue ...
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.Qt.QtApplication.initialize [203]: Initializing version upgrade manager ...
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /opt/ultimaker-cura/share/uranium/resources/bundled_packages/uranium.json
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /opt/ultimaker-cura/share/cura/resources/bundled_packages/cura.json
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PackageManager._loadManagementData [203]: User package management file /home/eren/.local/share/cura/5.4/packages.json doesn't exist, do nothing
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PackageManager._removeAllScheduledPackages [280]: Attempting to remove the following scheduled packages: - 
+2023-09-24 14:00:31,038 - INFO - [MainThread] UM.PluginRegistry.initializeBeforePluginsAreLoaded [121]: Loading plugin configuration file '/home/eren/.config/cura/5.4/plugins.json'
+2023-09-24 14:00:31,038 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib/cura must be a folder.
+2023-09-24 14:00:31,039 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/libx32/cura must be a folder.
+2023-09-24 14:00:31,039 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib32/cura must be a folder.
+2023-09-24 14:00:31,039 - WARNING - [MainThread] UM.PluginRegistry.addPluginLocation [202]: Plugin location /opt/lib64/cura must be a folder.
+2023-09-24 14:00:31,039 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FileLogger 1.0.1
+2023-09-24 14:00:31,047 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraDrive 1.2.0
+2023-09-24 14:00:31,061 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin USBPrinting 1.0.2
+2023-09-24 14:00:31,063 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin MonitorStage 1.0.1
+2023-09-24 14:00:31,068 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UFPWriter 1.0.1
+2023-09-24 14:00:31,071 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PrepareStage 1.0.1
+2023-09-24 14:00:31,079 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin 3MFWriter 1.0.1
+2023-09-24 14:00:31,084 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin ImageReader 1.0.1
+2023-09-24 14:00:31,089 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin ModelChecker 1.0.1
+2023-09-24 14:00:31,092 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UltimakerMachineActions 1.0.1
+2023-09-24 14:00:31,097 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade47to48 1.0.0
+2023-09-24 14:00:31,099 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade30to31 1.0.1
+2023-09-24 14:00:31,104 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade22to24 1.0.1
+2023-09-24 14:00:31,107 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade460to462 1.0.0
+2023-09-24 14:00:31,114 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade21to22 1.0.1
+2023-09-24 14:00:31,117 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade462to47 1.0.0
+2023-09-24 14:00:31,121 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade413to50 1.0.0
+2023-09-24 14:00:31,125 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade49to410 1.0.0
+2023-09-24 14:00:31,128 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade34to35 1.0.1
+2023-09-24 14:00:31,134 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade41to42 1.0.0
+2023-09-24 14:00:31,137 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade45to46 1.0.0
+2023-09-24 14:00:31,139 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade33to34 1.0.1
+2023-09-24 14:00:31,142 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade43to44 1.0.0
+2023-09-24 14:00:31,145 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade411to412 1.0.0
+2023-09-24 14:00:31,149 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade44to45 1.0.0
+2023-09-24 14:00:31,152 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade48to49 1.0.0
+2023-09-24 14:00:31,155 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade52to53 1.0.0
+2023-09-24 14:00:31,158 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade32to33 1.0.1
+2023-09-24 14:00:31,161 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade35to40 1.0.0
+2023-09-24 14:00:31,164 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade42to43 1.0.0
+2023-09-24 14:00:31,166 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade53to54 1.0.0
+2023-09-24 14:00:31,170 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade27to30 1.0.1
+2023-09-24 14:00:31,173 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade40to41 1.0.1
+2023-09-24 14:00:31,175 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade26to27 1.0.1
+2023-09-24 14:00:31,179 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin VersionUpgrade25to26 1.0.1
+2023-09-24 14:00:31,187 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin X3DReader 1.0.1
+2023-09-24 14:00:31,201 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin 3MFReader 1.0.1
+2023-09-24 14:00:31,205 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PreviewStage 1.0.1
+2023-09-24 14:00:31,215 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin XmlMaterialProfile 1.0.1
+2023-09-24 14:00:31,218 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeGzWriter 1.0.1
+2023-09-24 14:00:31,223 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SolidView 1.0.1
+2023-09-24 14:00:31,226 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SupportEraser 1.0.1
+2023-09-24 14:00:31,230 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin XRayView 1.0.1
+2023-09-24 14:00:31,234 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SliceInfoPlugin 1.0.1
+2023-09-24 14:00:31,237 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin AMFReader 1.0.0
+2023-09-24 14:00:31,245 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeReader 1.0.1
+2023-09-24 14:00:31,264 - INFO - [MainThread] CuraEngineBackend.CuraEngineBackend.__init__ [96]: Found CuraEngine at: /opt/ultimaker-cura/CuraEngine
+2023-09-24 14:00:31,265 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraEngineBackend 1.0.1
+2023-09-24 14:00:31,267 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [192]: Socket state changed to Listening
+2023-09-24 14:00:31,268 - INFO - [MainThread] UM.Backend.Backend.startEngine [95]: Started engine process: /opt/ultimaker-cura/CuraEngine
+2023-09-24 14:00:31,268 - DEBUG - [MainThread] UM.Backend.Backend._backendLog [115]: [Backend] Calling engine with: ['/opt/ultimaker-cura/CuraEngine', 'connect', '127.0.0.1:49674', '']
+2023-09-24 14:00:31,271 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin LegacyProfileReader 1.0.1
+2023-09-24 14:00:31,273 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 14:00:31,273 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] Cura_SteamEngine version 5.4.0
+2023-09-24 14:00:31,273 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] Copyright (C) 2022 Ultimaker
+2023-09-24 14:00:31,273 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 14:00:31,273 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] This program is free software: you can redistribute it and/or modify
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] it under the terms of the GNU Affero General Public License as published by
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] the Free Software Foundation, either version 3 of the License, or
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] (at your option) any later version.
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] This program is distributed in the hope that it will be useful,
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2023-09-24 14:00:31,274 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] GNU Affero General Public License for more details.
+2023-09-24 14:00:31,275 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] 
+2023-09-24 14:00:31,275 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] You should have received a copy of the GNU Affero General Public License
+2023-09-24 14:00:31,275 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.
+2023-09-24 14:00:31,275 - DEBUG - [EngineOutputThread] UM.Backend.Backend._backendLog [115]: [Backend] [2023-09-24 14:00:31.273] [info] Connecting to 127.0.0.1:49674
+2023-09-24 14:00:31,296 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin DigitalLibrary 1.1.0
+2023-09-24 14:00:31,296 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [196]: Socket state changed to Connected
+2023-09-24 14:00:31,296 - DEBUG - [MainThread] UM.Backend.Backend._onSocketStateChanged [185]: Backend connected on port 49674
+2023-09-24 14:00:31,308 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin SimulationView 1.0.1
+2023-09-24 14:00:31,312 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin RemovableDriveOutputDevice 1.0.1
+2023-09-24 14:00:31,315 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeGzReader 1.0.1
+2023-09-24 14:00:31,319 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PerObjectSettingsTool 1.0.1
+2023-09-24 14:00:31,321 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin TrimeshReader 1.0.0
+2023-09-24 14:00:31,324 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin MachineSettingsAction 1.0.1
+2023-09-24 14:00:31,326 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UFPReader 1.0.0
+2023-09-24 14:00:31,330 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeWriter 1.0.1
+2023-09-24 14:00:31,335 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FirmwareUpdateChecker 1.0.1
+2023-09-24 14:00:31,339 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraProfileWriter 1.0.1
+2023-09-24 14:00:31,396 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin UM3NetworkPrinting 2.0.0
+2023-09-24 14:00:31,400 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin FirmwareUpdater 1.0.1
+2023-09-24 14:00:31,421 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [145]: No auth data to retrieve the access_token from
+2023-09-24 14:00:31,421 - DEBUG - [MainThread] cura.UltimakerCloud.UltimakerCloudScope.requestHook [30]: User is not logged in for Cloud API request to https://api.ultimaker.com/cura-packages/v1/cura/v8.4.0/packages/package-updates?installed_packages=IMADE3DJellyBOXPETG:1.0.1&installed_packages=FABtotumNylon:1.4.0&installed_packages=GenericPLA:1.4.0&installed_packages=GenericTPU:1.4.0&installed_packages=OctofiberPLA:1.0.1&installed_packages=FABtotumPLA:1.4.0&installed_packages=VertexDeltaPET:1.4.0&installed_packages=GenericBAM:1.4.0&installed_packages=GenericPETG:1.4.0&installed_packages=PolyMaxPLA:1.0.1&installed_packages=FiberlogyHDPLA:1.0.1&installed_packages=GenericToughPLA:1.4.0&installed_packages=UltimakerPC:1.4.0&installed_packages=GenericGFFPA:1.4.0&installed_packages=GenericGFFCPE:1.4.0&installed_packages=GenericCFFPA:1.4.0&installed_packages=UltimakerABS:1.4.0&installed_packages=GenericNylon:1.4.0&installed_packages=GenericPP:1.4.0&installed_packages=FABtotumTPU:1.4.0&installed_packages=GenericPVA:1.4.0&installed_packages=VertexDeltaTPU:1.4.0&installed_packages=UltimakerCPEP:1.4.0&installed_packages=GenericCFFCPE:1.4.0&installed_packages=UltimakerPP:1.4.0&installed_packages=VertexDeltaPLA:1.4.0&installed_packages=UltimakerBAM:1.4.0&installed_packages=FABtotumABS:1.4.0&installed_packages=GenericCPE:1.4.0&installed_packages=UltimakerTPU:1.4.0&installed_packages=GenericABS:1.4.0&installed_packages=UltimakerPLA:1.4.0&installed_packages=VertexDeltaABS:1.4.0&installed_packages=PolyWoodPLA:1.0.1&installed_packages=UltimakerTPLA:1.4.0&installed_packages=IMADE3DJellyBOXPLA:1.0.1&installed_packages=UltimakerNylon:1.4.0&installed_packages=UltimakerCPE:1.4.0&installed_packages=UltimakerPVA:1.4.0&installed_packages=PolyPlusPLA:1.0.1&installed_packages=GenericHIPS:1.4.0&installed_packages=PolyFlexPLA:1.0.1&installed_packages=DagomaChromatikPLA:1.0.1&installed_packages=Filo3DPLA:1.0.1&installed_packages=GenericPC:1.4.0&installed_packages=GenericCPEPlus:1.4.0&installed_packages=OBJReader:1.0.1&installed_packages=UM3NetworkPrinting:1.0.1&installed_packages=OBJWriter:1.0.1&installed_packages=XRayView:1.0.1&installed_packages=UFPReader:1.0.0&installed_packages=VersionUpgrade30to31:1.0.1&installed_packages=SliceInfoPlugin:1.0.1&installed_packages=TranslateTool:1.0.1&installed_packages=UpdateChecker:1.0.1&installed_packages=VersionUpgrade32to33:1.0.1&installed_packages=LegacyProfileReader:1.0.1&installed_packages=PerObjectSettingsTool:1.0.1&installed_packages=DigitalLibrary:1.1.0&installed_packages=GCodeReader:1.0.1&installed_packages=SimpleView:1.0.1&installed_packages=AMFReader:1.0.0&installed_packages=VersionUpgrade411to412:1.0.0&installed_packages=VersionUpgrade33to34:1.0.1&installed_packages=CuraProfileWriter:1.0.1&installed_packages=GCodeProfileReader:1.0.1&installed_packages=FirmwareUpdater:1.0.1&installed_packages=VersionUpgrade49to410:1.0.0&installed_packages=VersionUpgrade35to40:1.0.0&installed_packages=FirmwareUpdateChecker:1.0.1&installed_packages=CameraTool:1.0.1&installed_packages=VersionUpgrade413to50:1.0.0&installed_packages=XMLMaterialProfile:1.0.1&installed_packages=PrepareStage:1.0.1&installed_packages=VersionUpgrade34to35:1.0.1&installed_packages=X3DReader:1.0.1&installed_packages=VersionUpgrade44to45:1.0.0&installed_packages=SelectionTool:1.0.1&installed_packages=SentryLogger:1.0.0&installed_packages=VersionUpgrade52to53:1.0.0&installed_packages=ScaleTool:1.0.1&installed_packages=GCodeGzWriter:1.0.1&installed_packages=STLReader:1.0.1&installed_packages=VersionUpgrade40to41:1.0.1&installed_packages=GCodeWriter:1.0.1&installed_packages=FileLogger:1.0.1&installed_packages=GCodeGzReader:1.0.1&installed_packages=VersionUpgrade27to30:1.0.1&installed_packages=VersionUpgrade43to44:1.0.0&installed_packages=STLWriter:1.0.1&installed_packages=MachineSettingsAction:1.0.1&installed_packages=VersionUpgrade47to48:1.0.0&installed_packages=SolidView:1.0.1&installed_packages=LocalContainerProvider:1.0.1&installed_packages=MirrorTool:1.0.1&installed_packages=CuraDrive:1.2.0&installed_packages=VersionUpgrade48to49:1.0.0&installed_packages=VersionUpgrade25to26:1.0.1&installed_packages=ModelChecker:1.0.1&installed_packages=VersionUpgrade26to27:1.0.1&installed_packages=ConsoleLogger:1.0.1&installed_packages=TrimeshReader:1.0.0&installed_packages=PreviewStage:1.0.1&installed_packages=USBPrinting:1.0.2&installed_packages=CuraEngineBackend:1.0.1&installed_packages=3MFReader:1.0.1&installed_packages=Marketplace:1.0.0&installed_packages=VersionUpgrade41to42:1.0.0&installed_packages=SupportEraser:1.0.1&installed_packages=LocalFileOutputDevice:1.0.1&installed_packages=UFPWriter:1.0.1&installed_packages=VersionUpgrade22to24:1.0.1&installed_packages=3MFWriter:1.0.1&installed_packages=VersionUpgrade45to46:1.0.0&installed_packages=VersionUpgrade462to47:1.0.0&installed_packages=RotateTool:1.0.1&installed_packages=VersionUpgrade42to43:1.0.0&installed_packages=CuraProfileReader:1.0.1&installed_packages=MonitorStage:1.0.1&installed_packages=VersionUpgrade21to22:1.0.1&installed_packages=VersionUpgrade460to462:1.0.0&installed_packages=SimulationView:1.0.1&installed_packages=ImageReader:1.0.1&installed_packages=RemovableDriveOutputDevice:1.0.1&installed_packages=PostProcessingPlugin:2.2.1&installed_packages=UltimakerMachineActions:1.0.1
+2023-09-24 14:00:31,422 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin Marketplace 1.0.0
+2023-09-24 14:00:31,428 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin PostProcessingPlugin 2.2.1
+2023-09-24 14:00:31,430 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin CuraProfileReader 1.0.1
+2023-09-24 14:00:31,433 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [493]: Loaded plugin GCodeProfileReader 1.0.1
+2023-09-24 14:00:31,434 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [416]: Loading all plugins took 0.528223991394043 seconds
+2023-09-24 14:00:31,436 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2023-09-24 14:00:31,457 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [177]: Checking and performing updates took 0.021413087844848633
+2023-09-24 14:00:31,464 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [266]: Completed loading preferences.
+2023-09-24 14:00:31,472 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [304]: Created system tray icon.
+2023-09-24 14:00:32,105 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [556]: Loading metadata into container registry took 0.6294584274291992 seconds
+2023-09-24 14:00:32,114 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Selected build plate: 0
+2023-09-24 14:00:32,115 - DEBUG - [MainThread] cura.CuraApplication.run [832]: Using Conan managed dependencies: cura/5.4.0, pyarcus/5.2.2, standardprojectsettings/0.1.0@ultimaker/stable, sipbuildtool/0.2.3@ultimaker/stable#5fe93e51cbb2a1cb25ee4358f844cbcd, protobuf/3.21.4, zlib/1.2.12, arcus/5.2.2, cpython/3.10.4, openssl/1.1.1l, expat/2.4.1, libffi/3.2.1, mpdecimal/2.5.0, libuuid/1.0.3, libxcrypt/4.4.25, bzip2/1.0.8, gdbm/1.19, sqlite3/3.36.0, tk/8.6.10, tcl/8.6.10, fontconfig/2.13.93, freetype/2.12.1, libpng/1.6.37, brotli/1.0.9, xorg/system, ncurses/6.2, xz_utils/5.2.5, curaengine/5.4.0, clipper/6.4.2, boost/1.79.0, rapidjson/1.1.0, stb/20200203, spdlog/1.10.0, fmt/9.0.0, range-v3/0.12.0, scripta/0.1.0@ultimaker/testing, pysavitar/5.2.2, savitar/5.2.2, pugixml/1.12.1, pynest2d/5.2.2, nest2d/5.2.2, nlopt/2.7.0, uranium/5.4.0, cura_binary_data/5.4.0, fdm_materials/5.4.0
+2023-09-24 14:00:32,115 - INFO - [MainThread] cura.CuraApplication.run [837]: Initializing machine error checker
+2023-09-24 14:00:32,232 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [custom]
+2023-09-24 14:00:32,416 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_2 #2] added to [Aquila x2] at position [1]
+2023-09-24 14:00:32,416 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_7 #2] added to [Aquila x2] at position [6]
+2023-09-24 14:00:32,416 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_6 #2] added to [Aquila x2] at position [5]
+2023-09-24 14:00:32,416 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_1 #2] added to [Aquila x2] at position [0]
+2023-09-24 14:00:32,416 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_3 #2] added to [Aquila x2] at position [2]
+2023-09-24 14:00:32,417 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_5 #2] added to [Aquila x2] at position [4]
+2023-09-24 14:00:32,417 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_8 #2] added to [Aquila x2] at position [7]
+2023-09-24 14:00:32,417 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [190]: Extruder[custom_extruder_4 #2] added to [Aquila x2] at position [3]
+2023-09-24 14:00:32,423 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2023-09-24 14:00:32,473 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.043884992599487305 seconds.
+2023-09-24 14:00:32,479 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: ChangeAtZ
+2023-09-24 14:00:32,480 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: ColorMix
+2023-09-24 14:00:32,481 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: CreateThumbnail
+2023-09-24 14:00:32,482 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2023-09-24 14:00:32,483 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: DisplayProgressOnLCD
+2023-09-24 14:00:32,484 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: FilamentChange
+2023-09-24 14:00:32,484 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: InsertAtLayerChange
+2023-09-24 14:00:32,486 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: PauseAtHeight
+2023-09-24 14:00:32,487 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: RetractContinue
+2023-09-24 14:00:32,488 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: SearchAndReplace
+2023-09-24 14:00:32,490 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: Stretch
+2023-09-24 14:00:32,491 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: TimeLapse
+2023-09-24 14:00:32,492 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [212]: Begin loading of script: UsePreviousProbeMeasurements
+2023-09-24 14:00:32,493 - INFO - [MainThread] cura.CuraApplication.run [842]: Initializing machine manager
+2023-09-24 14:00:32,494 - INFO - [MainThread] cura.CuraApplication.run [847]: Initializing container manager
+2023-09-24 14:00:32,501 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.loadAuthDataFromPreferences [258]: Attempting to load the auth data from preferences.
+2023-09-24 14:00:32,503 - WARNING - [MainThread] UM.OutputDevice.OutputDeviceManager.removeOutputDevice [235]: Could not find output device with id digital_factory to remove
+2023-09-24 14:00:32,511 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2023-09-24 14:00:32,530 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [188]: Loading theme file: /opt/ultimaker-cura/share/cura/resources/themes/cura-light/theme.json
+2023-09-24 14:00:32,557 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [323]: Loaded theme /opt/ultimaker-cura/share/cura/resources/themes/cura-light
+2023-09-24 14:00:32,558 - INFO - [MainThread] UM.Qt.Bindings.Theme.load [324]: System's em size is 13px.
+2023-09-24 14:00:33,136 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [350]: Creating post processing plugin view.
+2023-09-24 14:00:33,200 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [360]: Post processing view created.
+2023-09-24 14:00:33,289 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 7. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 14:00:33,297 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Settings/SettingView.qml:40:9: QML TextField: Binding loop detected for property "implicitHeight"
+2023-09-24 14:00:33,297 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Settings/SettingView.qml:40:9: QML TextField: Binding loop detected for property "implicitHeight"
+2023-09-24 14:00:33,318 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 66. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 14:00:33,321 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 7. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 14:00:33,322 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/MenuItem.qml:19:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 11. Use 'sequences: [ <key> ]' to bind to all of them.
+2023-09-24 14:00:33,399 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 14:00:33,589 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/Cura.qml:631: TypeError: Cannot read property 'ExistingFile' of undefined
+2023-09-24 14:00:33,596 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2023-09-24 14:00:33,686 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 14:00:33,876 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2023-09-24 14:00:33,878 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [118]: Creating model checker view.
+2023-09-24 14:00:33,880 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [127]: Model checker view created.
+2023-09-24 14:00:33,881 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2023-09-24 14:00:33,917 - DEBUG - [JobQueueWorker [0]] cura.Machines.ContainerTree.run [174]: Started background loading of MachineNodes
+2023-09-24 14:00:33,917 - DEBUG - [MainThread] cura.CuraApplication.run [888]: Booting Cura took 3.3497140407562256 seconds
+2023-09-24 14:00:33,924 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:00:33,925 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:00:33,933 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:00:33,947 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:00:33,948 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:00:33,951 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:00:34,062 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:00:34,185 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [211]: Support for Vertex Array Objects: True
+2023-09-24 14:00:34,189 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [121]: Initialized OpenGL subsystems.
+2023-09-24 14:00:34,189 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [122]: OpenGL Version:  4.1.0 NVIDIA 535.104.05
+2023-09-24 14:00:34,190 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [123]: OpenGL Vendor:   NVIDIA Corporation
+2023-09-24 14:00:34,190 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [124]: OpenGL Renderer: NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+2023-09-24 14:00:34,190 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [125]: GLSL Version:    4.0.0
+2023-09-24 14:00:34,190 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 14:00:34,192 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/selection.shader]...
+2023-09-24 14:00:34,192 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/select_face.shader]...
+2023-09-24 14:00:34,193 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 14:00:34,194 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/composite.shader]...
+2023-09-24 14:00:34,195 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/overhang.shader]...
+2023-09-24 14:00:34,196 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/striped.shader]...
+2023-09-24 14:00:34,197 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/transparent_object.shader]...
+2023-09-24 14:00:34,198 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/striped.shader]...
+2023-09-24 14:00:34,199 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray.shader]...
+2023-09-24 14:00:34,200 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray_composite.shader]...
+2023-09-24 14:00:34,201 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/default.shader]...
+2023-09-24 14:00:34,202 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/grid.shader]...
+2023-09-24 14:00:34,202 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/uranium/resources/shaders/platform.shader]...
+2023-09-24 14:00:34,214 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [61]: Loading [/opt/ultimaker-cura/share/cura/resources/shaders/xray.shader]...
+2023-09-24 14:00:34,380 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.46s
+2023-09-24 14:00:34,418 - DEBUG - [JobQueueWorker [0]] cura.Machines.ContainerTree.run [185]: All MachineNode loading completed
+2023-09-24 14:00:45,101 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.016359806060791016 seconds
+2023-09-24 14:01:44,663 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [62]: Could not get metadata of container Unknown because it was not found.
+2023-09-24 14:01:44,664 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [62]: Could not get metadata of container Unknown because it was not found.
+2023-09-24 14:01:44,664 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [62]: Could not get metadata of container Unknown because it was not found.
+2023-09-24 14:01:44,665 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [62]: Could not get metadata of container Unknown because it was not found.
+2023-09-24 14:01:44,666 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [62]: Could not get metadata of container Unknown because it was not found.
+2023-09-24 14:01:44,667 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [62]: Could not get metadata of container Unknown because it was not found.
+2023-09-24 14:01:44,853 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/Preferences/ManagementPage.qml:191:9: QML Connections: Detected function "onItemsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:01:44,872 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/PyQt6/Qt6/qml/UM/Preferences/ManagementPage.qml:193:13: Unable to assign [undefined] to QObject*
+2023-09-24 14:01:45,493 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:01:45,505 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:01:45,510 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:01:45,511 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:01:45,596 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:01:47,240 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:01:47,318 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:01:47,321 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:01:47,323 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:01:47,356 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:01:47,357 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:01:47,364 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 14:01:47,508 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:01:47,509 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:01:47,515 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:01:47,614 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:01:47,638 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:01:55,106 - DEBUG - [MainThread] cura.AutoSave._onTimeout [64]: Autosaving preferences, instances and profiles took 0.022113323211669922 seconds
+2023-09-24 14:02:28,447 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:28,448 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:28,481 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:28,614 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:28,614 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:28,617 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:28,714 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:28,737 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.26s
+2023-09-24 14:02:32,000 - INFO - [MainThread] cura.Settings.IntentManager.selectIntent [157]: Attempting to set intent_category to [default] and quality type to [verydraft]
+2023-09-24 14:02:32,008 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1318]: Updating intent due to quality change
+2023-09-24 14:02:32,100 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:32,101 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:32,111 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:32,274 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:32,275 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:32,278 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:32,391 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:32,414 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.30s
+2023-09-24 14:02:34,044 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:34,045 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:34,081 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:34,195 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:34,195 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:34,199 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:34,297 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:34,321 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.24s
+2023-09-24 14:02:36,768 - INFO - [MainThread] cura.Settings.IntentManager.selectIntent [157]: Attempting to set intent_category to [default] and quality type to [draft]
+2023-09-24 14:02:36,783 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1318]: Updating intent due to quality change
+2023-09-24 14:02:36,885 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:36,886 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:36,899 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:37,049 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:37,050 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:37,052 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:37,127 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.23s
+2023-09-24 14:02:37,162 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:40,324 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:40,325 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:40,333 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:40,502 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:40,503 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:40,506 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:40,560 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.23s
+2023-09-24 14:02:40,605 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:44,136 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:02:44,144 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:02:44,149 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:02:44,149 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:02:44,157 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:02:44,165 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:02:44,171 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:204:5: QML Connections: Detected function "onRowsChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:02:44,172 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:194:9: QML Connections: Detected function "onRowCountChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+2023-09-24 14:02:45,596 - DEBUG - [MainThread] cura.Machines.Models.QualitySettingsModel._update [77]: Updating QualitySettingsModel.
+2023-09-24 14:02:45,677 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/TableView.qml:119:5: QML QQuickTableView: the delegate's implicitWidth needs to be greater than zero
+2023-09-24 14:02:54,049 - INFO - [MainThread] cura.Settings.IntentManager.selectIntent [157]: Attempting to set intent_category to [default] and quality type to [verydraft]
+2023-09-24 14:02:54,062 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1318]: Updating intent due to quality change
+2023-09-24 14:02:54,162 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:54,162 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:54,180 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:54,330 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:54,330 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:54,334 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:54,400 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.22s
+2023-09-24 14:02:54,440 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:57,583 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:57,584 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:57,604 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:57,752 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:57,753 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:57,756 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:57,819 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.22s
+2023-09-24 14:02:57,863 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:59,527 - INFO - [MainThread] cura.Settings.IntentManager.selectIntent [157]: Attempting to set intent_category to [default] and quality type to [draft]
+2023-09-24 14:02:59,535 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1318]: Updating intent due to quality change
+2023-09-24 14:02:59,628 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:02:59,629 - DEBUG - [MainThread] cura.Machines.Models.QualityManagementModel._update [315]: Updating QualityManagementModel.
+2023-09-24 14:02:59,648 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [164]: New error check scheduled.
+2023-09-24 14:02:59,803 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:59,804 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:59,807 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:02:59,880 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 0.23s
+2023-09-24 14:02:59,904 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2023-09-24 14:03:01,427 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [56]: No more on-app-exit callbacks to process. Tell the app to exit.
+2023-09-24 14:03:01,428 - INFO - [MainThread] cura.CuraApplication.closeApplication [630]: Close application
+2023-09-24 14:03:01,428 - INFO - [MainThread] cura.CuraApplication._setLoadingHint [824]: Initializing Active Machine...
+2023-09-24 14:03:01,429 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:03:01,430 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 14:03:01,430 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [73]: Updating IntentSelectionModel.
+2023-09-24 14:03:01,430 - DEBUG - [MainThread] cura.Machines.Models.IntentSelectionModel._update [78]: No active GlobalStack, set quality profile model as empty.
+2023-09-24 14:03:01,430 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 14:03:01,431 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:77: TypeError: Cannot read property 'name' of null
+2023-09-24 14:03:01,432 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 14:03:01,447 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2023-09-24 14:03:01,545 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [444]: file:///opt/ultimaker-cura/share/cura/resources/qml/WelcomePages/AddLocalPrinterScrollView.qml:248:25: Unable to assign QString to QRegularExpression
+2023-09-24 14:03:01,545 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [508]: Shutting down cura
+2023-09-24 14:03:01,566 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [375]: Attempting to kill the engine process
+2023-09-24 14:03:01,567 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [381]: Killing engine process
+2023-09-24 14:03:01,567 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [384]: Engine process is killed. Received return code -15

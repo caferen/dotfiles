@@ -412,6 +412,23 @@ SlidePaths=/usr/share/wallpapers/
 [Containments][166][Wallpaper][org.kde.image][General]
 PreviewImage=/usr/share/wallpapers/Next/
 
+[Containments][167]
+activityId=309b39e6-9637-477a-b0de-78d1ee99af45
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][167][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][167][Wallpaper][org.kde.image][General]
+Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
+SlidePaths=/usr/share/wallpapers/
+
 [Containments][50]
 activityId=
 formfactor=2
@@ -535,7 +552,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][68][Applets][72][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 
 [Containments][68][Applets][73][Configuration]
 PreloadWeight=42
@@ -562,7 +579,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][68][Applets][78]
 immutability=1
