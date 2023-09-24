@@ -85,7 +85,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][118][Applets][130][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 
 [Containments][118][Applets][131]
 immutability=1
@@ -107,34 +107,6 @@ PreloadWeight=42
 [Containments][118][General]
 extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod
 knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod
-
-[Containments][128]
-ItemGeometries-2560x1440=
-ItemGeometriesHorizontal=
-activityId=ea79d688-7785-4ee2-b12f-6a7fa13b6ec7
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=a2n.blur
-
-[Containments][128][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
-[Containments][128][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=697
-
-[Containments][128][Wallpaper][a2n.blur][General]
-Image=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][128][Wallpaper][org.kde.image][General]
-Image=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
-PreviewImage=/home/eren/Pictures/Adobe/AdobeStock_321371570.jpeg
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][133]
 activityId=
@@ -177,7 +149,7 @@ DialogWidth=880
 [Containments][133][Applets][136][Configuration][General]
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:brave-browser.desktop,applications:librewolf.desktop,applications:Alacritty.desktop,applications:spotify-launcher.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:com.kassindornelles.LolForLinuxInstaller.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:spotify.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:steam.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
 
@@ -289,7 +261,7 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][133][Applets][165][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=70
+PreloadWeight=80
 
 [Containments][133][Applets][165][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -398,7 +370,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][139][Applets][151][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 
 [Containments][139][Applets][154]
 immutability=1
@@ -414,14 +386,31 @@ PreloadWeight=42
 extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod
 knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod
 
-[Containments][163]
-activityId=ea79d688-7785-4ee2-b12f-6a7fa13b6ec7
+[Containments][166]
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
+activityId=309b39e6-9637-477a-b0de-78d1ee99af45
 formfactor=0
 immutability=1
-lastScreen=1
+lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
+wallpaperplugin=a2n.blur
+
+[Containments][166][ConfigDialog]
+DialogHeight=660
+DialogWidth=770
+
+[Containments][166][General]
+positions={"2560x1440":[]}
+sortMode=-1
+
+[Containments][166][Wallpaper][a2n.blur][General]
+Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][166][Wallpaper][org.kde.image][General]
+PreviewImage=/usr/share/wallpapers/Next/
 
 [Containments][50]
 activityId=
@@ -500,7 +489,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][50][Applets][61][Configuration]
-PreloadWeight=52
+PreloadWeight=44
 
 [Containments][50][ConfigDialog]
 DialogHeight=660
@@ -690,7 +679,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][9][Applets][21][Configuration]
-PreloadWeight=52
+PreloadWeight=44
 
 [Containments][9][Applets][22]
 immutability=1
@@ -752,7 +741,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][93][Applets][106][Configuration]
-PreloadWeight=26
+PreloadWeight=18
 
 [Containments][93][Applets][109]
 immutability=1

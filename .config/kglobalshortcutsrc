@@ -3,6 +3,7 @@ update_info=bismuth_shortcuts_category.upd:bismuth-shortcuts-category,bismuth_sh
 
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-309b39e6-9637-477a-b0de-78d1ee99af45=none,none,Switch to activity "Default"
 switch-to-activity-88e160bc-b567-46c4-a655-6ccf22af56b7=none,none,Switch to activity "Default"
 switch-to-activity-c4203e0d-7db6-44b3-ae82-6037d5831681=none,none,Switch to activity "Default"
 switch-to-activity-ea79d688-7785-4ee2-b12f-6a7fa13b6ec7=none,none,Switch to activity "Default"

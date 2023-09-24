@@ -24,12 +24,10 @@ wobblywindowsEnabled=true
 
 [Script-bismuth]
 enableMonocleLayout=false
-enableQuarterLayout=true
 enableSpiralLayout=false
 enableSpreadLayout=false
 enableStairLayout=false
 enableThreeColumnLayout=false
-enableTileLayout=false
 ignoreClass=yakuake,spectacle,Conky,zoom,Friends List
 ignoreTitle=Friends List
 screenGapBottom=10
@@ -56,6 +54,9 @@ LayoutName=org.kde.breeze.desktop
 padding=4
 
 [Tiling][28ce6ba6-6743-5cb5-aa51-a4b736912130]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][2c95023d-574c-5bae-8921-442fbf2c7817]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][450e746b-70b6-59d9-b85b-02c5fb54aaef]

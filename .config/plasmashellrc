@@ -3,8 +3,8 @@
 2 screens: Width=1076
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:///usr/share/pixmaps/archlinux-logo.png,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:///usr/share/pixmaps/archlinux-logo.svg
-Recent URLs[$e]=file:$HOME/Pictures/,file:///usr/share/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/
+Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:///usr/share/pixmaps/archlinux-logo.svg
+Recent URLs[$e]=file:///usr/share/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/,file:$HOME/Pictures/
 detailViewIconSize=128
 
 [KPropertiesDialog]

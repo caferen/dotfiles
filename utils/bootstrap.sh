@@ -98,10 +98,15 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin ark networkmanager sddm plasma-nm \
-        plasma-pa kscreen bluedevil spectacle kwin-bismuth
+        plasma-pa kscreen bluedevil spectacle kwin-bismuth wireplumber
     sudo systemctl enable sddm.service
     sudo systemctl enable NetworkManager.service
     sudo systemctl enable bluetooth.service
+}
+
+pipewire() {
+    yay_install pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber
+    systemctl enable --user pipewire-pulse.service
 }
 
 sudo pacman -Syu
@@ -113,7 +118,7 @@ configure_shell
 yay_install neovim-git ripgrep
 helix
 
-yay_install cronie syncthing
+yay_install cronie syncthing gocryptfs
 sudo systemctl enable cronie.service
 sudo systemctl enable syncthing@"$USER".service
 
@@ -122,10 +127,11 @@ install_rust
 install_python
 
 if uname -r | grep -v microsoft; then
-    yay_install linux-headers nvidia coolercontrol lm-sensors libusb xclip
+    yay_install linux-zen-headers nvidia-open-dkms nvidia-settings coolercontrol lm-sensors libusb xclip
     plasma
+    pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
-    # yay_install cuda discord steam blender cura-bin mangohud gamemode
+    yay_install cuda discord steam blender cura-bin mangohud gamemode
 
     # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 

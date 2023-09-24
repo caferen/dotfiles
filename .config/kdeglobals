@@ -108,8 +108,8 @@ ForegroundPositive=36,173,89
 ForegroundVisited=115,115,158
 
 [DirSelect Dialog]
-DirSelectDialog Size=844,598
-History Items[$e]=file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
+DirSelectDialog Size=860,606
+History Items[$e]=file:$HOME/ssd/LoL,file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
 
 [General]
 AllowKDEAppsToRememberWindowPositions=false
