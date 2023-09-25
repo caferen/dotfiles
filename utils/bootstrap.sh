@@ -61,11 +61,6 @@ install_typescript() {
     fi
 }
 
-install_python() {
-    pacman_install python
-    python -m ensurepip --upgrade
-}
-
 helix() {
     [[ -d $HOME/helix ]] || git clone https://github.com/helix-editor/helix.git $HOME/helix
     (
@@ -109,6 +104,15 @@ pipewire() {
     systemctl enable --user pipewire-pulse.service
 }
 
+drives() {
+    [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0 0" | sudo tee -a /etc/fstab)
+    [[ -d $HOME/backup ]] || (mkdir $HOME/backup && sudo chown $USER:$USER $HOME/backup -R && echo "UUID=2ffc04b6-b54d-4e0c-9add-0550e3caf7c9       /home/eren/backup       ext4    defaults        0 0" | sudo tee -a /etc/fstab)
+    
+    sudo systemctl daemon-reload
+    sudo mount $HOME/ssd
+    sudo mount $HOME/backup
+}
+
 sudo pacman -Syu
 pacman_install git base-devel man curl make
 install_yay
@@ -124,10 +128,11 @@ sudo systemctl enable syncthing@"$USER".service
 
 install_typescript
 install_rust
-install_python
+pacman_install python python-pip
 
 if uname -r | grep -v microsoft; then
-    yay_install linux-zen-headers nvidia-open-dkms nvidia-settings coolercontrol lm-sensors libusb xclip
+    yay
+    yay_install linux-zen-headers nvidia-open-dkms coolercontrol lm-sensors libusb xclip
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
@@ -138,7 +143,7 @@ ms-python.python
 rust-lang.rust-analyzer
 vadimcn.vscode-lldb" | xargs -L1 codium --install-extension
 
-    yay_install cuda discord steam blender cura-bin mangohud gamemode
+    yay_install discord steam blender cura-bin mangohud gamemode
 
     # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
     # @hourly /bin/zsh -c -i "gitcom autosave $HOME"
@@ -148,13 +153,7 @@ vadimcn.vscode-lldb" | xargs -L1 codium --install-extension
     sudo systemctl enable coolercontrold.service
     sudo systemctl enable systemd-resolved.service
 
-    [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0 0" | sudo tee -a /etc/fstab)
-    [[ -d $HOME/backup ]] || (mkdir $HOME/backup && sudo chown $USER:$USER $HOME/backup -R && echo "UUID=2ffc04b6-b54d-4e0c-9add-0550e3caf7c9       /home/eren/backup       ext4    defaults        0 0" | sudo tee -a /etc/fstab)
-    
-    sudo systemctl daemon-reload
-    sudo mount $HOME/ssd
-    sudo mount $HOME/backup
-
+    drives
     keyboard
 else
     read -p "Windows username: " WINDOWS_USERNAME
