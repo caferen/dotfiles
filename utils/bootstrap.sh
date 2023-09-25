@@ -131,15 +131,29 @@ if uname -r | grep -v microsoft; then
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
+    echo "asvetliakov.vscode-neovim
+eamodio.gitlens
+GitHub.github-vscode-theme
+ms-python.python
+rust-lang.rust-analyzer
+vadimcn.vscode-lldb" | xargs -L1 codium --install-extension
+
     yay_install cuda discord steam blender cura-bin mangohud gamemode
 
     # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+    # @hourly /bin/zsh -c -i "gitcom autosave $HOME"
+    # * * * * *  rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable coolercontrold.service
     sudo systemctl enable systemd-resolved.service
 
-    [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0       0" | sudo tee -a /etc/fstab)
+    [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0 0" | sudo tee -a /etc/fstab)
+    [[ -d $HOME/backup ]] || (mkdir $HOME/backup && sudo chown $USER:$USER $HOME/backup -R && echo "UUID=2ffc04b6-b54d-4e0c-9add-0550e3caf7c9       /home/eren/backup       ext4    defaults        0 0" | sudo tee -a /etc/fstab)
+    
+    sudo systemctl daemon-reload
+    sudo mount $HOME/ssd
+    sudo mount $HOME/backup
 
     keyboard
 else
