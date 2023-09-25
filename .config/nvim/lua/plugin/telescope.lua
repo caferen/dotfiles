@@ -34,6 +34,22 @@ map('n', '<leader>b', tb.buffers, { desc = 'List open [b]uffers' })
 map('n', '<leader>w', tb.grep_string, { desc = 'search current [w]ord' })
 map('n', '<leader>/', tb.live_grep, { desc = '[<leader>/] Fuzzily search in current workspace' })
 
+-- LSP
+map("n", "<leader>s", tb.lsp_document_symbols, { desc = "List document [s]ymbols" })
+map("n", "<leader>S", tb.lsp_dynamic_workspace_symbols, { desc = "List workspace [S]ymbols" })
+
+-- Helix-like Goto Mode
+map({ "n", "v" }, "gy", tb.lsp_type_definitions, { desc = "[g]oto type definition [y]" })
+map({ "n", "v" }, "gr", tb.lsp_references, { desc = "[g]oto [r]eferences" })
+map({ "n", "v" }, "gi", tb.lsp_implementations, { desc = "[g]oto [i]mplementation" })
+map({ "n", "v" }, "gd", tb.lsp_definitions, { desc = "[g]oto [d]eclaration" })
+
+-- Diagnostic
+map("n", "<leader>d", function()
+    tb.diagnostics({ bufnr = 0 })
+end, { desc = "List current buffer [d]iagnostics" })
+map("n", "<leader>D", tb.diagnostics, { desc = "List workspace [d]iagnostics" })
+
 pcall(require('telescope').load_extension, 'fzf')
 
 local path = vim.fn.argv(0)
