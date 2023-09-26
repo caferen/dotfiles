@@ -93,7 +93,14 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa kscreen bluedevil spectacle kwin-bismuth wireplumber
+        plasma-pa kscreen bluedevil spectacle kwin-bismuth wireplumber \
+            plasma-wayland-session
+
+    if sudo cat /sys/module/nvidia_drm/parameters/modeset == 'N'; then
+        echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
+        sudo mkinitcpio -P
+    fi
+
     sudo systemctl enable sddm.service
     sudo systemctl enable NetworkManager.service
     sudo systemctl enable bluetooth.service
