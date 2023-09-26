@@ -198,7 +198,7 @@ PreloadWeight=100
 SystrayContainmentId=68
 
 [Containments][133][ConfigDialog]
-DialogHeight=93
+DialogHeight=84
 DialogWidth=2560
 
 [Containments][133][General]
@@ -318,7 +318,7 @@ DialogWidth=770
 
 [Containments][166][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=697
+ToolBoxButtonX=764
 positions={"2560x1440":[]\\,"1920x1080":[]}
 sortMode=-1
 

@@ -99,7 +99,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 Scale=1
 
 [org.kde.kdecoration2]
+BorderSize=None
+BorderSizeAuto=false
 ButtonsOnLeft=
 ButtonsOnRight=IAX
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Black
+library=org.kde.breeze
+theme=Breeze
