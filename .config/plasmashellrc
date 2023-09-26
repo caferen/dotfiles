@@ -1,6 +1,16 @@
+[ActionsWidget]
+ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAABVQAAAAEAAAAAAAAD6AAAAABk
+
+[ConfigDialog]
+2 screens: Height=550
+2 screens: Width=784
+
 [FileDialogSize]
 2 screens: Height=724
 2 screens: Width=1076
+
+[General]
+Number of Actions=0
 
 [KFileDialog Settings]
 Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:///usr/share/pixmaps/archlinux-logo.svg
