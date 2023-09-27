@@ -149,7 +149,7 @@ DialogWidth=880
 [Containments][133][Applets][136][Configuration][General]
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:spotify.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:codium.desktop,applications:lolforlinuxinstaller.desktop,applications:steam.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
 
@@ -496,7 +496,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][68][Applets][78]
 immutability=1
@@ -510,7 +510,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=100
+PreloadWeight=84
 
 [Containments][68][Applets][82]
 immutability=1
@@ -613,7 +613,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][9][Applets][21][Configuration]
-PreloadWeight=44
+PreloadWeight=28
 
 [Containments][9][Applets][22]
 immutability=1
@@ -675,7 +675,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][93][Applets][106][Configuration]
-PreloadWeight=18
+PreloadWeight=2
 
 [Containments][93][Applets][109]
 immutability=1

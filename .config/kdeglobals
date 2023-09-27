@@ -108,8 +108,8 @@ ForegroundPositive=36,173,89
 ForegroundVisited=115,115,158
 
 [DirSelect Dialog]
-DirSelectDialog Size=860,606
-History Items[$e]=file:$HOME/ssd/LoL,file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
+DirSelectDialog Size=1265,1337
+History Items[$e]=file:$HOME/ssd/SteamLibrary,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd/LoL,file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
 
 [General]
 AccentColor=233,61,88
