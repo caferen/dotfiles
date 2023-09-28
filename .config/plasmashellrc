@@ -13,15 +13,15 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:///usr/share/pixmaps/archlinux-logo.svg
-Recent URLs[$e]=file:///usr/share/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/,file:$HOME/Pictures/
+Recent Files[$e]=archlinux-logo.svg,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:///usr/share/pixmaps/archlinux-logo.svg
+Recent URLs[$e]=file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/,file:$HOME/Pictures/
 detailViewIconSize=128
 
 [KPropertiesDialog]
 2 screens: Height=569
 2 screens: Width=496
-2560x1440 screen: Height=569
-2560x1440 screen: Width=427
+2560x1440 screen: Height=529
+2560x1440 screen: Width=429
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
