@@ -96,7 +96,7 @@ plasma() {
         plasma-pa kscreen bluedevil spectacle kwin-bismuth wireplumber \
             plasma-wayland-session
 
-    if sudo cat /sys/module/nvidia_drm/parameters/modeset == 'N'; then
+    if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
         sudo mkinitcpio -P
     fi
@@ -139,7 +139,7 @@ pacman_install python python-pip
 
 if uname -r | grep -v microsoft; then
     yay
-    yay_install linux-zen-headers nvidia-open-dkms coolercontrol lm-sensors libusb xclip
+    yay_install linux-zen-headers nvidia-open-dkms coolercontrol lm-sensors libusb wl-clipboard
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
