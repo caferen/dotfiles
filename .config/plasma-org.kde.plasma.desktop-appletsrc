@@ -123,8 +123,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][133][Applets][134][Configuration]
 PreloadWeight=100
-popupHeight=574
-popupWidth=729
+popupHeight=514
+popupWidth=651
 
 [Containments][133][Applets][134][Configuration][ConfigDialog]
 DialogHeight=660
@@ -171,8 +171,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][133][Applets][155][Configuration]
 PreloadWeight=55
-popupHeight=550
-popupWidth=484
+popupHeight=450
+popupWidth=350
 
 [Containments][133][Applets][155][Configuration][Appearance]
 use24hFormat=2
@@ -444,8 +444,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
-popupHeight=528
-popupWidth=528
+popupHeight=0
+popupWidth=0
 wallpaperplugin=org.kde.image
 
 [Containments][68][Applets][69]
@@ -510,7 +510,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=97
+PreloadWeight=73
 
 [Containments][68][Applets][82]
 immutability=1
@@ -613,7 +613,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][9][Applets][21][Configuration]
-PreloadWeight=12
+PreloadWeight=0
 
 [Containments][9][Applets][22]
 immutability=1
