@@ -485,7 +485,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true
@@ -518,7 +518,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][68][Applets][75][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][68][Applets][76][Configuration]
 PreloadWeight=42
@@ -542,7 +542,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 
 [Containments][68][Applets][82]
 immutability=1
