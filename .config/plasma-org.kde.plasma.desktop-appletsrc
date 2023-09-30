@@ -117,27 +117,6 @@ location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
-[Containments][133][Applets][134]
-immutability=1
-plugin=org.kde.plasma.kickoff
-
-[Containments][133][Applets][134][Configuration]
-PreloadWeight=97
-popupHeight=514
-popupWidth=651
-
-[Containments][133][Applets][134][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
-[Containments][133][Applets][134][Configuration][General]
-favoritesPortedToKAstats=true
-icon=/usr/share/pixmaps/archlinux-logo.png
-systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
-
-[Containments][133][Applets][134][Configuration][Shortcuts]
-global=Alt+F1
-
 [Containments][133][Applets][137]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -205,6 +184,30 @@ showOnlyCurrentDesktop=false
 immutability=1
 plugin=org.kde.plasma.pager
 
+[Containments][133][Applets][172]
+immutability=1
+plugin=org.kde.plasma.kicker
+
+[Containments][133][Applets][172][Configuration]
+PreloadWeight=100
+popupHeight=514
+popupWidth=651
+
+[Containments][133][Applets][172][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][133][Applets][172][Configuration][General]
+favoritesPortedToKAstats=true
+icon=/usr/share/pixmaps/archlinux-logo.png
+limitDepth=true
+recentOrdering=1
+showIconsRootLevel=true
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
+
+[Containments][133][Applets][172][Configuration][Shortcuts]
+global=Alt+F1
+
 [Containments][133][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -221,7 +224,7 @@ DialogWidth=2560
 PreloadWeight=42
 
 [Containments][133][General]
-AppletOrder=157;134;171;170;156;67;137;155;148
+AppletOrder=157;172;171;170;156;67;137;155;148
 
 [Containments][139]
 activityId=
