@@ -113,7 +113,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -135,34 +135,11 @@ PreloadWeight=42
 DialogHeight=660
 DialogWidth=880
 
-[Containments][133][Applets][155]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][133][Applets][155][Configuration]
-PreloadWeight=47
-popupHeight=450
-popupWidth=350
-
-[Containments][133][Applets][155][Configuration][Appearance]
-use24hFormat=2
-
-[Containments][133][Applets][155][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
 [Containments][133][Applets][156]
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
 [Containments][133][Applets][156][Configuration]
-PreloadWeight=42
-
-[Containments][133][Applets][157]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][133][Applets][157][Configuration]
 PreloadWeight=42
 
 [Containments][133][Applets][170]
@@ -224,7 +201,7 @@ DialogWidth=2560
 PreloadWeight=42
 
 [Containments][133][General]
-AppletOrder=157;172;171;170;156;67;137;155;148
+AppletOrder=172;171;170;156;67;137;148
 
 [Containments][139]
 activityId=
@@ -344,6 +321,7 @@ PreloadWeight=42
 [Containments][166][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
+ToolBoxButtonY=34
 positions={"2560x1440":[]\\,"1920x1080":[]}
 sortMode=-1
 
@@ -474,7 +452,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
 popupWidth=432
