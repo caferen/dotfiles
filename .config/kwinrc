@@ -47,7 +47,7 @@ enabledDisplays=DP-4
 [TabBox]
 ActivitiesMode=0
 DesktopMode=0
-LayoutName=org.kde.breeze.desktop
+LayoutName=MediumRounded
 
 [Tiling]
 padding=4
