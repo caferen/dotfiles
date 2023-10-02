@@ -328,7 +328,7 @@ PreloadWeight=26
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
 ToolBoxButtonY=34
-positions={"2560x1440":[]\\,"1920x1080":[]}
+positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[""]}
 sortMode=-1
 
 [Containments][166][Wallpaper][a2n.blur][General]
@@ -469,7 +469,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=84
+PreloadWeight=89
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true
@@ -502,7 +502,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][68][Applets][75][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][68][Applets][76][Configuration]
 PreloadWeight=42
