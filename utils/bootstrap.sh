@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# @hourly /bin/zsh -c -i "gitcom autosave $HOME"
+# * * * * *  rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
+
 pacman_install() {
     sudo pacman -S --noconfirm --needed "$@"
 }
@@ -139,7 +142,7 @@ pacman_install python python-pip
 
 if uname -r | grep -v microsoft; then
     yay
-    yay_install linux-zen-headers nvidia-open-dkms coolercontrol lm-sensors libusb wl-clipboard
+    yay_install linux-zen-headers nvidia-open-dkms nvidia-settings coolercontrol lm-sensors libusb wl-clipboard
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
@@ -153,8 +156,6 @@ vadimcn.vscode-lldb" | xargs -L1 codium --install-extension
     yay_install discord steam blender cura-bin mangohud gamemode
 
     # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
-    # @hourly /bin/zsh -c -i "gitcom autosave $HOME"
-    # * * * * *  rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable coolercontrold.service
