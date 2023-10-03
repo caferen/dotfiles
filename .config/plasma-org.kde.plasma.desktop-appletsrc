@@ -142,16 +142,29 @@ plugin=org.kde.plasma.panelspacer
 [Containments][133][Applets][156][Configuration]
 PreloadWeight=26
 
-[Containments][133][Applets][176]
+[Containments][133][Applets][172]
 immutability=1
-plugin=org.kde.plasma.lock_logout
+plugin=org.kde.plasma.kicker
 
-[Containments][133][Applets][176][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+[Containments][133][Applets][172][Configuration]
+PreloadWeight=100
+popupHeight=514
+popupWidth=651
 
-[Containments][133][Applets][176][Configuration][General]
-show_requestReboot=true
+[Containments][133][Applets][172][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][133][Applets][172][Configuration][General]
+favoritesPortedToKAstats=true
+icon=/usr/share/pixmaps/archlinux-logo.png
+limitDepth=true
+recentOrdering=1
+showIconsRootLevel=true
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
+
+[Containments][133][Applets][172][Configuration][Shortcuts]
+global=Alt+F1
 
 [Containments][133][Applets][177]
 immutability=1
@@ -167,13 +180,13 @@ SystrayContainmentId=68
 
 [Containments][133][ConfigDialog]
 DialogHeight=84
-DialogWidth=2048
+DialogWidth=2560
 
 [Containments][133][Configuration]
 PreloadWeight=26
 
 [Containments][133][General]
-AppletOrder=176;177;156;67;137;148
+AppletOrder=172;177;156;67;137;148
 
 [Containments][139]
 activityId=
@@ -293,7 +306,7 @@ PreloadWeight=26
 
 [Containments][166][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=508
+ToolBoxButtonX=764
 ToolBoxButtonY=36
 positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]}
 sortMode=-1
@@ -324,64 +337,6 @@ PreloadWeight=26
 [Containments][167][Wallpaper][org.kde.image][General]
 Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
-
-[Containments][173]
-activityId=
-formfactor=2
-immutability=1
-lastScreen=0
-location=4
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][173][Applets][170]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][173][Applets][170][Configuration]
-PreloadWeight=34
-
-[Containments][173][Applets][170][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
-[Containments][173][Applets][170][Configuration][General]
-iconSpacing=0
-indicateAudioStreams=false
-launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop
-showOnlyCurrentActivity=false
-showOnlyCurrentDesktop=false
-
-[Containments][173][Applets][172]
-immutability=1
-plugin=org.kde.plasma.kicker
-
-[Containments][173][Applets][172][Configuration]
-PreloadWeight=100
-popupHeight=514
-popupWidth=651
-
-[Containments][173][Applets][172][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
-[Containments][173][Applets][172][Configuration][General]
-favoritesPortedToKAstats=true
-icon=/usr/share/pixmaps/archlinux-logo.png
-limitDepth=true
-recentOrdering=1
-showIconsRootLevel=true
-systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
-
-[Containments][173][Applets][172][Configuration][Shortcuts]
-global=Alt+F1
-
-[Containments][173][ConfigDialog]
-DialogHeight=84
-DialogWidth=2048
-
-[Containments][173][General]
-AppletOrder=172;170
 
 [Containments][50]
 activityId=
@@ -494,7 +449,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=94
+PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true

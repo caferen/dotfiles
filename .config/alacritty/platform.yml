@@ -1,6 +1,0 @@
-shell:
-  program: /usr/bin/tmux
-
-window:
-  opacity: 0.9
-
