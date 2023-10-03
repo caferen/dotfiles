@@ -166,13 +166,9 @@ systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 [Containments][133][Applets][172][Configuration][Shortcuts]
 global=Alt+F1
 
-[Containments][133][Applets][177]
+[Containments][133][Applets][179]
 immutability=1
-plugin=org.kde.plasma.appmenu
-
-[Containments][133][Applets][177][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+plugin=org.kde.plasma.windowlist
 
 [Containments][133][Applets][67]
 immutability=1
@@ -190,7 +186,7 @@ DialogWidth=2560
 PreloadWeight=26
 
 [Containments][133][General]
-AppletOrder=172;177;156;67;137;148
+AppletOrder=172;179;156;67;137;148
 
 [Containments][139]
 activityId=
@@ -479,7 +475,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][68][Applets][74][Configuration]
-PreloadWeight=84
+PreloadWeight=89
 
 [Containments][68][Applets][75]
 immutability=1
@@ -510,7 +506,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=69
+PreloadWeight=74
 
 [Containments][68][Applets][82]
 immutability=1
