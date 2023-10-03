@@ -29,7 +29,6 @@ enableStairLayout=false
 enableThreeColumnLayout=false
 ignoreClass=yakuake,spectacle,Conky,zoom,Friends List
 ignoreTitle=Friends List
-maximizeSoleTile=true
 screenGapBottom=10
 screenGapLeft=10
 screenGapRight=10
