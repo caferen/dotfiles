@@ -1,6 +1,5 @@
 !.config/helix
 !.config/nvim
-!.config/alacritty
 !.config/tmux
 !.config/VSCodium/User/keybindings.json
 !.config/starship.toml

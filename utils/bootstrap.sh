@@ -96,8 +96,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa kscreen bluedevil spectacle kwin-bismuth wireplumber \
-            plasma-wayland-session
+        plasma-pa kscreen bluedevil spectacle kwin-bismuth plasma-wayland-session
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
@@ -117,7 +116,7 @@ pipewire() {
 drives() {
     [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0 0" | sudo tee -a /etc/fstab)
     [[ -d $HOME/backup ]] || (mkdir $HOME/backup && sudo chown $USER:$USER $HOME/backup -R && echo "UUID=2ffc04b6-b54d-4e0c-9add-0550e3caf7c9       /home/eren/backup       ext4    defaults        0 0" | sudo tee -a /etc/fstab)
-    
+
     sudo systemctl daemon-reload
     sudo mount $HOME/ssd
     sudo mount $HOME/backup
@@ -134,7 +133,7 @@ helix
 
 yay_install cronie syncthing gocryptfs
 sudo systemctl enable cronie.service
-sudo systemctl enable syncthing@"$USER".service
+systemctl enable --user syncthing.service
 
 install_typescript
 install_rust
@@ -146,12 +145,14 @@ if uname -r | grep -v microsoft; then
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
+    # @formatter:off
     echo "asvetliakov.vscode-neovim
 eamodio.gitlens
 GitHub.github-vscode-theme
 ms-python.python
 rust-lang.rust-analyzer
 vadimcn.vscode-lldb" | xargs -L1 codium --install-extension
+    # @formatter:on
 
     yay_install discord steam blender cura-bin mangohud gamemode
 
