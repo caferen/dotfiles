@@ -170,6 +170,10 @@ global=Alt+F1
 immutability=1
 plugin=org.kde.plasma.windowlist
 
+[Containments][133][Applets][180]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
 [Containments][133][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -186,7 +190,7 @@ DialogWidth=2560
 PreloadWeight=26
 
 [Containments][133][General]
-AppletOrder=172;179;156;67;137;148
+AppletOrder=172;179;180;156;67;137;148
 
 [Containments][139]
 activityId=
@@ -506,7 +510,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=74
+PreloadWeight=84
 
 [Containments][68][Applets][82]
 immutability=1
