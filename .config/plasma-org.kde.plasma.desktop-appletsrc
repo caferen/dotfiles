@@ -170,6 +170,10 @@ global=Alt+F1
 immutability=1
 plugin=org.kde.plasma.windowlist
 
+[Containments][133][Applets][179][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][133][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -510,7 +514,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=84
+PreloadWeight=94
 
 [Containments][68][Applets][82]
 immutability=1
