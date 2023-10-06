@@ -304,6 +304,7 @@ extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.ne
 knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect
 
 [Containments][166]
+ItemGeometries-0x0=
 ItemGeometries-1920x1080=
 ItemGeometries-2048x1152=
 ItemGeometries-2560x1440=
@@ -327,7 +328,7 @@ PreloadWeight=26
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
 ToolBoxButtonY=36
-positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]}
+positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]}
 sortMode=-1
 
 [Containments][166][Wallpaper][a2n.blur][General]
@@ -511,7 +512,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=12
+PreloadWeight=0
 
 [Containments][68][Applets][78]
 immutability=1
