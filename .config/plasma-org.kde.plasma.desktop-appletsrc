@@ -174,6 +174,17 @@ plugin=org.kde.plasma.windowlist
 DialogHeight=540
 DialogWidth=720
 
+[Containments][133][Applets][181]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][133][Applets][181][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][133][Applets][181][Configuration][General]
+showWindowIcons=true
+
 [Containments][133][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -190,7 +201,7 @@ DialogWidth=2560
 PreloadWeight=26
 
 [Containments][133][General]
-AppletOrder=172;179;156;67;137;148
+AppletOrder=172;181;179;156;67;137;148
 
 [Containments][139]
 activityId=
@@ -514,7 +525,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=96
+PreloadWeight=100
 
 [Containments][68][Applets][82]
 immutability=1
