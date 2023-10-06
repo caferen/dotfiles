@@ -174,3 +174,6 @@ link('TSConditional', 'Conditional')
 -- link('Conditional', 'Operator')
 -- link('TSFuncMacro', 'Macro')
 -- link('TSType', 'Type')
+
+vim.api.nvim_set_hl(0, 'Normal', { guibd = nil })
+vim.api.nvim_set_hl(0, 'SignColumn', { guibd = nil })

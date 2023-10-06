@@ -30,6 +30,9 @@ require("lazy").setup({
 
     {
         "nvim-treesitter/nvim-treesitter",
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+        },
         config = function()
             pcall(require("nvim-treesitter.install").update({ with_sync = true }))
         end,
@@ -52,5 +55,5 @@ require("lazy").setup({
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
-    { "lewis6991/gitsigns.nvim",   opts = { current_line_blame = true } },
+    "tveskag/nvim-blame-line"
 }, {})
