@@ -1,5 +1,3 @@
--- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -51,11 +49,7 @@ require("lazy").setup({
             }, "nvim-telescope/telescope-ui-select.nvim",
         },
     },
-
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
-
-    "jiangmiao/auto-pairs",
-    "i3d/vim-jimbothemes",
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
     { "lewis6991/gitsigns.nvim",   opts = { current_line_blame = true } },

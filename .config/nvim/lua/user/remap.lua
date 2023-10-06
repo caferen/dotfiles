@@ -68,7 +68,6 @@ map("n", "<leader>r", vim.lsp.buf.rename, { desc = "[r]ename symbol" })
 map("n", "<leader>a", vim.lsp.buf.code_action, { desc = "Code [a]ctions" })
 map("n", "<leader>k", vim.lsp.buf.hover, { desc = "[k] Show documentation" })
 map("n", "<leader>h", vim.lsp.buf.signature_help, { desc = "Show signature [h]elp" })
-map("n", "<leader>c", vim.lsp.codelens.run, { desc = "Run [c]odelenses" })
 
 -- Helix-like Goto Mode
 map({ "n", "v" }, "gy", vim.lsp.buf.definition, { desc = "[g]oto type definition [y]" })

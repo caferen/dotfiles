@@ -7,6 +7,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
         local client = vim.lsp.get_client_by_id(client_id)
         local bufnr = args.buf
 
+        require("lsp-inlayhints").on_attach(client, bufnr, false)
+        vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "#696969", bg = nil })
+
         if not client.server_capabilities.documentFormattingProvider then
             return
         end
@@ -26,9 +29,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
                 })
             end,
         })
-
-        require("lsp-inlayhints").on_attach(client, bufnr, false)
-        vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "#696969" })
     end,
 })
 
