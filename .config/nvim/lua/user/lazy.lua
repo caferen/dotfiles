@@ -55,5 +55,6 @@ require("lazy").setup({
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
-    "tveskag/nvim-blame-line"
+    "tveskag/nvim-blame-line",
+    "RRethy/nvim-base16",
 }, {})

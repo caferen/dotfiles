@@ -19,6 +19,10 @@ if not vim.g.vscode then
     vim.o.softtabstop = 4
     vim.o.shiftwidth = 4
     vim.o.expandtab = true
+    vim.cmd('colorscheme base16-windows-95')
+
+    -- vim.api.nvim_set_hl(0, 'Normal', { guibd = nil })
+    -- vim.api.nvim_set_hl(0, 'SignColumn', { guibd = nil })
 end
 vim.o.undofile = true
 vim.o.guicursor = ""
