@@ -2,8 +2,8 @@
 !helix
 !helix/*\.toml
 !helix/**/\.toml
-!tmux
-!tmux/**
+!zellij
+!zellij/**
 !MangoHud
 !MangoHud/**
 !nvim

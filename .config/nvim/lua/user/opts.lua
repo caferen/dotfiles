@@ -11,7 +11,7 @@ if not vim.g.vscode then
     vim.o.smartcase = true
     vim.o.timeout = true
     vim.o.timeoutlen = 300
-    vim.o.completeopt = 'menuone,noselect'
+    vim.o.completeopt = 'menuone,noselect,preview'
     vim.o.termguicolors = true
     vim.o.incsearch = true
     vim.o.smartindent = true

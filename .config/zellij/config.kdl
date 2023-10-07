@@ -1,0 +1,14 @@
+pane_frames false
+
+simplified_ui true
+
+default_layout "empty"
+
+keybinds {
+    unbind "Ctrl o"
+    unbind "Ctrl q"
+
+    normal {
+        bind "Alt d" { Detach; }
+    }
+}

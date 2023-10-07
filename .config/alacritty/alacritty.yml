@@ -1,22 +1,13 @@
-env:
-  TERM: xterm-256color
-
 shell:
   program: tmux
 
 window:
-  opacity: 0.8
+  opacity: 1.0
 
 font:
   size: 14.0
   normal:
     family: MesloLGS NF
 
-colors:
-  primary:
-    background: '0x000000'
-
-  cursor:
-    cursor: '0xE9E0C9'
-    text: '0x000000'
-
+import:
+  - ~/.config/alacritty/base16-alacritty/colors/base16-windows-95.yml
