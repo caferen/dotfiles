@@ -42,8 +42,8 @@ screenrule=4
 types=1
 
 [General]
-count=1
-rules=1
+count=2
+rules=1,b547a291-63f1-4009-bbaa-c11f8e4a7e6a
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming
@@ -51,6 +51,13 @@ desktops=d387e5ce-0dde-467d-bc85-5881ab6c5580
 desktopsrule=2
 wmclass=discord|steam
 wmclassmatch=3
+
+[b547a291-63f1-4009-bbaa-c11f8e4a7e6a]
+Description=Copy of Games
+desktops=14021749-bd05-4adf-9558-3a8ca3f1c79e
+desktopsrule=2
+wmclass=leagueclientux.exe
+wmclassmatch=2
 
 [c9aab07d-cddc-4467-a302-c6155694c69c]
 Description=Spawn on main
