@@ -3,7 +3,7 @@ if not vim.g.vscode then
     vim.g.netrw_liststyle = 3
     vim.o.hlsearch = false
     vim.wo.number = true
-    vim.wo.signcolumn = 'yes'
+    vim.wo.signcolumn = 'auto'
     vim.o.mouse = 'a'
     vim.o.relativenumber = true
     vim.o.breakindent = true
@@ -19,10 +19,6 @@ if not vim.g.vscode then
     vim.o.softtabstop = 4
     vim.o.shiftwidth = 4
     vim.o.expandtab = true
-    vim.cmd('colorscheme base16-windows-95')
-
-    -- vim.api.nvim_set_hl(0, 'Normal', { guibd = nil })
-    -- vim.api.nvim_set_hl(0, 'SignColumn', { guibd = nil })
 end
 vim.o.undofile = true
 vim.o.guicursor = ""
@@ -30,6 +26,5 @@ vim.o.showmode = false
 vim.o.updatetime = 50
 vim.o.wrap = false
 vim.o.scrolloff = 8
-vim.o.sidescroll = 5
 vim.o.whichwrap = "bs<>[]hl"
 vim.o.clipboard = 'unnamedplus'
