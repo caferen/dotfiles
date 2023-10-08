@@ -304,7 +304,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=a2n.blur
+wallpaperplugin=org.kde.image
 
 [Containments][166][ConfigDialog]
 DialogHeight=955
@@ -321,13 +321,12 @@ positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\
 sortMode=-1
 
 [Containments][166][Wallpaper][a2n.blur][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/niilo-isotalo--BZc9Ee1qo0-unsplash.jpg
-SlideInterval=60
+Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
 SlidePaths=/home/eren/Pictures/wallpapers/
 Slideshow=true
 
 [Containments][166][Wallpaper][org.kde.image][General]
-PreviewImage=/usr/share/wallpapers/Next/
+Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
 
 [Containments][167]
 activityId=309b39e6-9637-477a-b0de-78d1ee99af45
@@ -346,7 +345,7 @@ DialogWidth=880
 PreloadWeight=26
 
 [Containments][167][Wallpaper][org.kde.image][General]
-Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
+Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][50]
@@ -517,7 +516,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=84
+PreloadWeight=91
 
 [Containments][68][Applets][82]
 immutability=1
