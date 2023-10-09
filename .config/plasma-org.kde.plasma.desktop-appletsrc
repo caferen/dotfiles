@@ -304,7 +304,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
+wallpaperplugin=a2n.blur
 
 [Containments][166][ConfigDialog]
 DialogHeight=955
@@ -323,10 +323,10 @@ sortMode=-1
 [Containments][166][Wallpaper][a2n.blur][General]
 Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
 SlidePaths=/home/eren/Pictures/wallpapers/
-Slideshow=true
 
 [Containments][166][Wallpaper][org.kde.image][General]
 Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
+PreviewImage=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
 
 [Containments][167]
 activityId=309b39e6-9637-477a-b0de-78d1ee99af45
@@ -502,7 +502,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][68][Applets][78]
 immutability=1
