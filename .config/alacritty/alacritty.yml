@@ -2,7 +2,7 @@ shell:
   program: tmux
 
 window:
-  opacity: 0.8
+  opacity: 1.0
 
 font:
   size: 14.0
