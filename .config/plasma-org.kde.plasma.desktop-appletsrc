@@ -153,20 +153,20 @@ PreloadWeight=42
 DialogHeight=540
 DialogWidth=720
 
-[Containments][133][Applets][181]
+[Containments][133][Applets][182]
 immutability=1
-plugin=org.kde.plasma.kickoff
+plugin=org.kde.plasma.kicker
 
-[Containments][133][Applets][181][Configuration]
+[Containments][133][Applets][182][Configuration]
 PreloadWeight=100
 popupHeight=514
 popupWidth=651
 
-[Containments][133][Applets][181][Configuration][ConfigDialog]
+[Containments][133][Applets][182][Configuration][ConfigDialog]
 DialogHeight=660
 DialogWidth=880
 
-[Containments][133][Applets][181][Configuration][General]
+[Containments][133][Applets][182][Configuration][General]
 favoritesPortedToKAstats=true
 icon=/usr/share/pixmaps/archlinux-logo.png
 limitDepth=true
@@ -174,7 +174,7 @@ recentOrdering=1
 showIconsRootLevel=true
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
-[Containments][133][Applets][181][Configuration][Shortcuts]
+[Containments][133][Applets][182][Configuration][Shortcuts]
 global=Alt+F1
 
 [Containments][133][Applets][67]
@@ -193,7 +193,7 @@ DialogWidth=2560
 PreloadWeight=18
 
 [Containments][133][General]
-AppletOrder=181;179;156;67;137;148
+AppletOrder=182;179;156;67;137;148
 
 [Containments][139]
 activityId=
@@ -523,7 +523,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][68][Applets][82]
 immutability=1
