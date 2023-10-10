@@ -57,4 +57,5 @@ require("lazy").setup({
     { "folke/which-key.nvim",      opts = {} },
     "tveskag/nvim-blame-line",
     "RRethy/nvim-base16",
+    "cohama/lexima.vim",
 }, {})
