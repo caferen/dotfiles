@@ -78,7 +78,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][118][Applets][129][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][118][Applets][130]
 immutability=1
@@ -268,7 +268,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][139][Applets][150][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][139][Applets][151]
 immutability=1
@@ -427,7 +427,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][50][Applets][60][Configuration]
-PreloadWeight=12
+PreloadWeight=4
 
 [Containments][50][Applets][61]
 immutability=1
@@ -491,7 +491,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][68][Applets][74][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][68][Applets][75]
 immutability=1
@@ -515,7 +515,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][68][Applets][78][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][68][Applets][79]
 immutability=1
@@ -529,7 +529,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42
@@ -618,7 +618,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][9][Applets][20][Configuration]
-PreloadWeight=37
+PreloadWeight=29
 
 [Containments][9][Applets][21]
 immutability=1
@@ -683,7 +683,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][93][Applets][105][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][93][Applets][106]
 immutability=1
