@@ -40,7 +40,7 @@ require("lazy").setup({
 
     {
         "nvim-telescope/telescope.nvim",
-        version = "*",
+        branch = "master",
         dependencies = {
             "nvim-lua/plenary.nvim",
             {
@@ -55,7 +55,7 @@ require("lazy").setup({
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
-    "tveskag/nvim-blame-line",
+    "lewis6991/gitsigns.nvim",
     "RRethy/nvim-base16",
     "cohama/lexima.vim",
 }, {})

@@ -3,7 +3,7 @@ if not vim.g.vscode then
     vim.g.netrw_liststyle = 3
     vim.o.hlsearch = false
     vim.wo.number = true
-    vim.wo.signcolumn = 'auto'
+    vim.wo.signcolumn = 'yes'
     vim.o.mouse = 'a'
     vim.o.relativenumber = true
     vim.o.breakindent = true

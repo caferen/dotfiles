@@ -16,7 +16,7 @@ require('telescope').setup {
                 width = 0.99,
                 height = 0.99,
                 preview_width = 0.6,
-                preview_cutoff = 20,
+                preview_cutoff = 0,
             },
         },
     },
@@ -52,6 +52,19 @@ map("n", "<leader>d", function()
     tb.diagnostics({ bufnr = 0 })
 end, { desc = "List current buffer [d]iagnostics" })
 map("n", "<leader>D", tb.diagnostics, { desc = "List workspace [d]iagnostics" })
+
+-- Git
+map("n", "<leader>c", function()
+        tb.git_bcommits_range(require('telescope.themes').get_cursor({
+            previewer = false,
+            git_command = { "git", "log", "--format=%B", "-n", "1", "-L" },
+            layout_config = {
+                width = 100,
+                height = 20,
+            },
+        }))
+    end,
+    { desc = "Show git [c]ommit message for the current line" })
 
 pcall(require('telescope').load_extension, 'fzf')
 pcall(require("telescope").load_extension, 'ui-select')
