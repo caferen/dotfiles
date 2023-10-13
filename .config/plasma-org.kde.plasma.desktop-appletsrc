@@ -178,6 +178,10 @@ systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 [Containments][133][Applets][182][Configuration][Shortcuts]
 global=Alt+F1
 
+[Containments][133][Applets][183]
+immutability=1
+plugin=org.kde.plasma.pager
+
 [Containments][133][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -194,7 +198,7 @@ DialogWidth=2560
 PreloadWeight=18
 
 [Containments][133][General]
-AppletOrder=182;179;156;67;137;148
+AppletOrder=182;183;179;156;67;137;148
 
 [Containments][139]
 activityId=
