@@ -39,13 +39,13 @@ move_window_to_next_pos=none,,Move Window to the Next Position
 move_window_to_prev_pos=none,,Move Window to the Previous Position
 move_window_to_right_pos=none,Meta+Shift+L,Move Window Right
 move_window_to_upper_pos=none,Meta+Shift+K,Move Window Up
-next_layout=none,Meta+\\\\,Switch to the Next Layout
+next_layout=Ctrl+Alt+Shift+W,Meta+\\\\,Switch to the Next Layout
 prev_layout=none,Meta+|,Switch to the Previous Layout
 push_window_to_master=none,Meta+Return,Push Active Window to Master Area
 rotate=none,Meta+R,Rotate
 rotate_part=none,Meta+Shift+R,Rotate Part
 rotate_reverse=none,,Rotate (Reverse)
-toggle_float_layout=Ctrl+Alt+Shift+W,Meta+Shift+F,Toggle Floating Layout
+toggle_float_layout=none,Meta+Shift+F,Toggle Floating Layout
 toggle_monocle_layout=none,Meta+M,Toggle Monocle Layout
 toggle_quarter_layout=none,,Toggle Quarter Layout
 toggle_spiral_layout=none,,Toggle Spiral Layout
@@ -86,12 +86,12 @@ mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mut
 mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
-Halt Without Confirmation=none,none,Halt Without Confirmation
+Halt Without Confirmation=none,,Halt Without Confirmation
 Lock Session=Meta+L\tScreensaver,Meta+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
-Log Out Without Confirmation=none,none,Log Out Without Confirmation
-Reboot Without Confirmation=none,none,Reboot Without Confirmation
-_k_friendly_name=KWin
+Log Out Without Confirmation=none,,Log Out Without Confirmation
+Reboot Without Confirmation=none,,Reboot Without Confirmation
+_k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention

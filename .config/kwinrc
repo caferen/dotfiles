@@ -28,7 +28,6 @@ enableMonocleLayout=false
 enableSpiralLayout=false
 enableSpreadLayout=false
 enableStairLayout=false
-enableThreeColumnLayout=false
 ignoreClass=yakuake,spectacle,Conky,zoom,Friends List
 ignoreTitle=Friends List
 screenGapBottom=10
