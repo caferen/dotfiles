@@ -1,15 +1,13 @@
 local map = vim.keymap.set
-local tb = require('telescope.builtin')
-local cursor = require('telescope.themes').get_cursor({})
+local tb = require("telescope.builtin")
+local cursor = require("telescope.themes").get_cursor({})
 
-require('telescope').setup {
+require("telescope").setup({
     defaults = {
         sorting_strategy = "ascending",
         mappings = {
             i = {
-                ['<esc>'] = function()
-                    print("HEHEHE")
-                end,
+                ["<esc>"] = require("telescope.actions").close
             },
         },
         layout_config = {
@@ -23,21 +21,21 @@ require('telescope').setup {
         },
     },
     extensions = {
-        ['ui-select'] = {
+        ["ui-select"] = {
             cursor
         }
     }
-}
+})
 
 -- File pickers
-map('n', '<leader>f', tb.find_files, { desc = 'List [f]iles', noremap = true })
-map('n', '<leader>g', tb.git_files, { desc = 'List [g]it files', noremap = true })
-map('n', '<leader>b', tb.buffers, { desc = 'List open [b]uffers' })
+map("n", "<leader>f", tb.find_files, { desc = "List [f]iles", noremap = true })
+map("n", "<leader>g", tb.git_files, { desc = "List [g]it files", noremap = true })
+map("n", "<leader>b", tb.buffers, { desc = "List open [b]uffers" })
 
 -- Search
-map('n', '<leader>w', function() tb.grep_string(cursor) end,
-    { desc = 'search current [w]ord' })
-map('n', '<leader>/', tb.live_grep, { desc = '[<leader>/] Fuzzily search in current workspace' })
+map("n", "<leader>w", function() tb.grep_string(cursor) end,
+    { desc = "search current [w]ord" })
+map("n", "<leader>/", tb.live_grep, { desc = "[<leader>/] Fuzzily search in current workspace" })
 
 -- LSP
 map("n", "<leader>s", tb.lsp_document_symbols, { desc = "List document [s]ymbols" })
@@ -56,21 +54,21 @@ end, { desc = "List current buffer [d]iagnostics" })
 map("n", "<leader>D", tb.diagnostics, { desc = "List workspace [d]iagnostics" })
 
 
-pcall(require('telescope').load_extension, 'fzf')
-pcall(require("telescope").load_extension, 'ui-select')
+pcall(require("telescope").load_extension, "fzf")
+pcall(require("telescope").load_extension, "ui-select")
 
 local path = vim.fn.argv(0)
-vim.api.nvim_create_autocmd('VimEnter', {
+vim.api.nvim_create_autocmd("VimEnter", {
     group = vim.api.nvim_create_augroup("DirFiles", { clear = true }),
     callback = function()
         if vim.fn.isdirectory(path) ~= 0 then
             vim.api.nvim_set_current_dir(path)
-            local is_git = vim.fn.finddir('.git', path)
-            -- I'd expect this to work in reverse
+            local is_git = vim.fn.finddir(".git", path)
+            -- I"d expect this to work in reverse
             if is_git ~= "" then
-                require('telescope.builtin').git_files()
+                require("telescope.builtin").git_files()
             else
-                require('telescope.builtin').find_files()
+                require("telescope.builtin").find_files()
             end
         end
     end
