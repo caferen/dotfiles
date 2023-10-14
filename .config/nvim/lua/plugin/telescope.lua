@@ -7,7 +7,9 @@ require('telescope').setup {
         sorting_strategy = "ascending",
         mappings = {
             i = {
-                ['<esc>'] = require('telescope.actions').close,
+                ['<esc>'] = function()
+                    print("HEHEHE")
+                end,
             },
         },
         layout_config = {
