@@ -1,13 +1,14 @@
 local map = vim.keymap.set
 local tb = require("telescope.builtin")
 local cursor = require("telescope.themes").get_cursor({})
+local actions = require("telescope.actions")
 
 require("telescope").setup({
     defaults = {
         sorting_strategy = "ascending",
         mappings = {
             i = {
-                ["<esc>"] = require("telescope.actions").close
+                ["<esc>"] = actions.close,
             },
         },
         layout_config = {
