@@ -23,7 +23,7 @@ detailViewIconSize=128
 2 screens: Height=569
 2 screens: Width=496
 2560x1440 screen: Height=529
-2560x1440 screen: Width=448
+2560x1440 screen: Width=1394
 
 [PlasmaTransientsConfig]
 PreloadWeight=92

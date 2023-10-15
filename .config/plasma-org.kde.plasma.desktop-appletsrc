@@ -534,7 +534,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42
