@@ -26,7 +26,11 @@ detailViewIconSize=128
 2560x1440 screen: Width=1394
 
 [PlasmaTransientsConfig]
-PreloadWeight=92
+PreloadWeight=68
+
+[PlasmaTransientsConfig][ConfigDialog]
+DialogHeight=1440
+DialogWidth=168
 
 [PlasmaViews][Panel 110]
 panelOpacity=1
@@ -72,6 +76,13 @@ thickness=44
 [PlasmaViews][Panel 173][Horizontal2048]
 maxLength=2048
 minLength=116
+
+[PlasmaViews][Panel 184]
+panelOpacity=1
+panelVisibility=2
+
+[PlasmaViews][Panel 184][Defaults]
+thickness=44
 
 [PlasmaViews][Panel 3]
 alignment=2
