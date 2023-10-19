@@ -7,6 +7,7 @@ export HELIX_RUNTIME="$HOME/helix/runtime"
 export CARGO_HOME="$HOME/.cargo"
 export PATH="$CARGO_HOME/bin:$HOME/.local/bin:/opt/cuda/bin:$PATH"
 
+alias vi="nvim -n"
 alias python="python3"
 alias pip="pip3"
 
