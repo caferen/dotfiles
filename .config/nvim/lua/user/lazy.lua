@@ -43,7 +43,7 @@ require("lazy").setup({
     { "folke/which-key.nvim",      opts = {} },
     "lewis6991/gitsigns.nvim",
     "RRethy/nvim-base16",
-    "cohama/lexima.vim",
+    'jiangmiao/auto-pairs',
     {
         "nvim-telescope/telescope.nvim",
         branch = "master",
