@@ -473,7 +473,6 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][68][Applets][70][Configuration]
@@ -514,7 +513,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][68][Applets][78]
 immutability=1
