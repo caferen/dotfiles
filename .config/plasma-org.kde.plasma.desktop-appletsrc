@@ -315,7 +315,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=a2n.blur
+wallpaperplugin=org.kde.image
 
 [Containments][166][ConfigDialog]
 DialogHeight=955
@@ -336,7 +336,7 @@ Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.j
 SlidePaths=/home/eren/Pictures/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.image][General]
-Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
+Image=/home/eren/Pictures/wallpapers/Black/40628437283_a17f4d3ccb_k.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][167]
