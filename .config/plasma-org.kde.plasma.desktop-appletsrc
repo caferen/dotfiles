@@ -92,7 +92,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][118][Applets][131][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][118][Applets][132]
 immutability=1
@@ -266,7 +266,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][139][Applets][149][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][139][Applets][150]
 immutability=1
@@ -616,7 +616,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][9][Applets][19][Configuration]
-PreloadWeight=12
+PreloadWeight=4
 
 [Containments][9][Applets][20]
 immutability=1
@@ -681,7 +681,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][93][Applets][104][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][93][Applets][105]
 immutability=1
