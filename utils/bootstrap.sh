@@ -2,6 +2,7 @@
 
 # @hourly /bin/zsh -c -i "gitcom autosave $HOME"
 # * * * * *  rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
+# # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 
 pacman_install() {
     sudo pacman -S --noconfirm --needed "$@"
@@ -152,12 +153,11 @@ eamodio.gitlens
 GitHub.github-vscode-theme
 ms-python.python
 rust-lang.rust-analyzer
-vadimcn.vscode-lldb" | xargs -L1 codium --install-extension
+vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
     # @formatter:on
 
     yay_install discord steam blender cura-bin mangohud gamemode
 
-    # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable coolercontrold.service
