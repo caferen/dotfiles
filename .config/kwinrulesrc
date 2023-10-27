@@ -16,6 +16,14 @@ desktopsrule=2
 wmclass=(steam_app|leagueclientux.exe)
 wmclassmatch=3
 
+[268cd07d-e81e-4fa6-a83a-4a8228dd2cae]
+Description=Discord
+desktops=14021749-bd05-4adf-9558-3a8ca3f1c79e
+desktopsrule=2
+screenrule=2
+wmclass=(discord)
+wmclassmatch=3
+
 [3831a4dc-52e9-4235-91a2-baac6a16a491]
 Description=Settings for waydroid.com.whatsapp
 desktops=2270ee32-8054-4275-a49d-464ab4e132ca
@@ -42,8 +50,8 @@ screenrule=4
 types=1
 
 [General]
-count=1
-rules=1
+count=2
+rules=1,268cd07d-e81e-4fa6-a83a-4a8228dd2cae
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming
