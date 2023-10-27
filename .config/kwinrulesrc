@@ -13,15 +13,8 @@ wmclassmatch=1
 Description=Games
 desktops=14021749-bd05-4adf-9558-3a8ca3f1c79e
 desktopsrule=2
-wmclass=steam_app
-wmclassmatch=2
-
-[2]
-Description=Copy of Games
-desktops=14021749-bd05-4adf-9558-3a8ca3f1c79e
-desktopsrule=2
-wmclass=leagueclientux.exe
-wmclassmatch=2
+wmclass=(steam_app|leagueclientux.exe)
+wmclassmatch=3
 
 [3831a4dc-52e9-4235-91a2-baac6a16a491]
 Description=Settings for waydroid.com.whatsapp
@@ -49,8 +42,8 @@ screenrule=4
 types=1
 
 [General]
-count=2
-rules=1,2
+count=1
+rules=1
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming

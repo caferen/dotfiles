@@ -340,11 +340,13 @@ Image=/home/eren/Pictures/wallpapers/Black/40628437283_a17f4d3ccb_k.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Black/hao-wang-pVq6YhmDPtk-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Black/elvis-bekmanis-g9qwoPiS0nY-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Black/
 
 [Containments][167]
+ItemGeometries-1920x1080=
+ItemGeometriesVertical=
 activityId=309b39e6-9637-477a-b0de-78d1ee99af45
 formfactor=0
 immutability=1
