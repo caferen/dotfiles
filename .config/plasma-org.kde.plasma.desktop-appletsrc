@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/k-b-Q0feEyWBIqQ-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/marita-kavelashvili-ugnrXk1129g-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -361,7 +361,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][184][Applets][67][Configuration]
-PreloadWeight=99
+PreloadWeight=100
 SystrayContainmentId=68
 
 [Containments][184][ConfigDialog]
@@ -485,7 +485,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=84
+PreloadWeight=89
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true
