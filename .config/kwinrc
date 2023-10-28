@@ -11,6 +11,7 @@ BlurStrength=5
 NoiseStrength=4
 
 [Plugins]
+bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=true
 forceblurEnabled=true
