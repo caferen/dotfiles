@@ -234,7 +234,7 @@ PreloadWeight=0
 
 [Containments][166][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=764
+ToolBoxButtonX=697
 positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]}
 sortMode=-1
 
@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/george-hiles-ZHF033ykCx8-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/k-b-Q0feEyWBIqQ-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -314,6 +314,7 @@ DialogWidth=720
 
 [Containments][184][Applets][185][Configuration][General]
 groupedTaskVisualization=1
+iconSpacing=0
 indicateAudioStreams=false
 launchers=preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:Alacritty.desktop,applications:codium.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop
 
@@ -368,7 +369,7 @@ autoFontAndSize=false
 dateDisplayFormat=BesideTime
 dateFormat=custom
 fontFamily=Noto Sans
-fontSize=11
+fontSize=12
 fontStyleName=Regular
 use24hFormat=2
 
@@ -385,7 +386,7 @@ PreloadWeight=100
 SystrayContainmentId=68
 
 [Containments][184][ConfigDialog]
-DialogHeight=84
+DialogHeight=93
 DialogWidth=2560
 
 [Containments][184][Configuration]
@@ -496,8 +497,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
-popupHeight=432
-popupWidth=432
+popupHeight=528
+popupWidth=528
 wallpaperplugin=org.kde.image
 
 [Containments][68][Applets][69]
@@ -505,7 +506,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true
@@ -562,7 +563,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=73
+PreloadWeight=78
 
 [Containments][68][Applets][82]
 immutability=1
