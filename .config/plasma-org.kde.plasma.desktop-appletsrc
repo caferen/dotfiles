@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/marita-kavelashvili-ugnrXk1129g-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/veeterzy-sMQiL_2v4vs-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -485,7 +485,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=89
+PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true
