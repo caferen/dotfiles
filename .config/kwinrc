@@ -3,8 +3,7 @@ update_info=bismuth_new_logger.upd:bismuth-new-logger,kwin.upd:replace-scalein-w
 
 [Desktops]
 Id_1=22a72181-ba3c-4c4d-b429-7dd1b370bc30
-Id_2=14021749-bd05-4adf-9558-3a8ca3f1c79e
-Number=2
+Number=1
 Rows=1
 
 [Effect-blur]
@@ -12,7 +11,6 @@ BlurStrength=5
 NoiseStrength=4
 
 [Plugins]
-bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=true
 forceblurEnabled=true
@@ -23,7 +21,6 @@ selective-virtual-desktopsEnabled=true
 wobblywindowsEnabled=true
 
 [Script-bismuth]
-enableFloatingLayout=true
 enableMonocleLayout=false
 enableSpiralLayout=false
 enableSpreadLayout=false
