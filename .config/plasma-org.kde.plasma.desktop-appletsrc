@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/k-b-Q0feEyWBIqQ-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/reuben-teo-fUZWpaUknyI-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -323,9 +323,9 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][184][Applets][186][Configuration]
-PreloadWeight=97
-popupHeight=514
-popupWidth=651
+PreloadWeight=100
+popupHeight=574
+popupWidth=729
 
 [Containments][184][Applets][186][Configuration][ConfigDialog]
 DialogHeight=660
@@ -369,7 +369,7 @@ autoFontAndSize=false
 dateDisplayFormat=BesideTime
 dateFormat=custom
 fontFamily=Noto Sans
-fontSize=12
+fontSize=11
 fontStyleName=Regular
 use24hFormat=2
 
@@ -509,6 +509,7 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][68][Applets][70][Configuration]
