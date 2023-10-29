@@ -97,9 +97,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle kwin-bismuth
+        plasma-pa bluedevil spectacle kwin-bismuth xclip
 
-    # yay_install plasma-wayland-session
+    # yay_install plasma-wayland-session wl-clipboard
 
     # if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
     #     echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
@@ -144,7 +144,7 @@ pacman_install python python-pip
 
 if uname -r | grep -v microsoft; then
     yay
-    yay_install linux-zen-headers nvidia-open-dkms nvidia-settings coolercontrol lm-sensors libusb wl-clipboard
+    yay_install linux-zen-headers nvidia-open-dkms nvidia-settings coolercontrol lm-sensors libusb
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
