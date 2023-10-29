@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/bjorn-snelders-Cd3Ek7rNXSk-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/matthew-smith-Rfflri94rs8-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -551,7 +551,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][68][Applets][78]
 immutability=1
