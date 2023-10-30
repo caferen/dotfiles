@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/eren/xdual.sh
+Icon=dialog-scripts
+Name=xdual.sh
+Type=Application
+X-KDE-AutostartScript=true
