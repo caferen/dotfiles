@@ -235,7 +235,7 @@ PreloadWeight=0
 [Containments][166][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=697
-positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]}
+positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[""]}
 sortMode=-1
 
 [Containments][166][Wallpaper][a2n.blur][General]
@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/luke-paris-AdTY2eti9m4-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/john-towner-3Kv48NS4WUU-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -362,7 +362,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][184][Applets][190][Configuration]
-PreloadWeight=47
+PreloadWeight=52
 popupHeight=550
 popupWidth=484
 
@@ -541,7 +541,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][68][Applets][75][Configuration]
-PreloadWeight=76
+PreloadWeight=81
 
 [Containments][68][Applets][76][Configuration]
 PreloadWeight=42
@@ -551,7 +551,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=7
+PreloadWeight=4
 
 [Containments][68][Applets][78]
 immutability=1
@@ -572,7 +572,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=86
+PreloadWeight=91
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42

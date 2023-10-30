@@ -23,6 +23,6 @@ org.kde.windowedwidgetsEnabled=false
 placesEnabled=false
 plasma-desktopEnabled=false
 recentdocumentsEnabled=false
-shellEnabled=false
+shellEnabled=true
 webshortcutsEnabled=false
 windowsEnabled=false
