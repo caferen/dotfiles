@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/niilo-isotalo--BZc9Ee1qo0-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/evgeni-tcherkasski-aGowYr9sH04-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -362,7 +362,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][184][Applets][190][Configuration]
-PreloadWeight=52
+PreloadWeight=57
 popupHeight=550
 popupWidth=484
 
@@ -551,7 +551,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][68][Applets][78]
 immutability=1
@@ -565,7 +565,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=78
+PreloadWeight=83
 
 [Containments][68][Applets][82]
 immutability=1
