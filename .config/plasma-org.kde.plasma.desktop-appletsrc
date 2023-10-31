@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/john-towner-3Kv48NS4WUU-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/clark-van-der-beken-4ic5jg-r22o-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -541,7 +541,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][68][Applets][75][Configuration]
-PreloadWeight=86
+PreloadWeight=91
 
 [Containments][68][Applets][76][Configuration]
 PreloadWeight=42
