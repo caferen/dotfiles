@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/b-k-HAl6CKxM3xU-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/connor-mollison-3rkosR_Dgfg-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -558,7 +558,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][68][Applets][78][Configuration]
-PreloadWeight=81
+PreloadWeight=86
 
 [Containments][68][Applets][79]
 immutability=1
