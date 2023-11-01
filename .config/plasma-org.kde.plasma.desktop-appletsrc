@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/donald-giannatti-7ne3hNnojvU-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/jeremy-bishop-d3fZSXlJ3Ok-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -524,7 +524,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][68][Applets][72][Configuration]
-PreloadWeight=91
+PreloadWeight=96
 
 [Containments][68][Applets][73][Configuration]
 PreloadWeight=42
@@ -541,7 +541,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][68][Applets][75][Configuration]
-PreloadWeight=96
+PreloadWeight=100
 
 [Containments][68][Applets][76][Configuration]
 PreloadWeight=42
