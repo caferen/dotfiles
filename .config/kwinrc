@@ -3,7 +3,8 @@ update_info=bismuth_new_logger.upd:bismuth-new-logger,kwin.upd:replace-scalein-w
 
 [Desktops]
 Id_1=22a72181-ba3c-4c4d-b429-7dd1b370bc30
-Number=1
+Id_2=1c6ef6d6-80db-44bf-b1ac-711c24dbe9eb
+Number=2
 Rows=1
 
 [Effect-blur]
