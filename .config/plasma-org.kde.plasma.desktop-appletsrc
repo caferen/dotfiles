@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/bjorn-snelders-zNNPSqKRR2c-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/v2osk-IHKBF23A_iw-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -363,7 +363,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][184][Applets][190][Configuration]
-PreloadWeight=62
+PreloadWeight=67
 popupHeight=550
 popupWidth=484
 
