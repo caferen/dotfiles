@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/veeterzy-sMQiL_2v4vs-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/niilo-isotalo--BZc9Ee1qo0-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -512,7 +512,6 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][68][Applets][69][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][68][Applets][70][Configuration]
@@ -553,7 +552,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][68][Applets][78]
 immutability=1

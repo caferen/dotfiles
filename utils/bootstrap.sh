@@ -2,7 +2,7 @@
 
 # @hourly /bin/zsh -c -i "gitcom autosave $HOME"
 # * * * * *  rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
-# # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+# echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 
 pacman_install() {
     sudo pacman -S --noconfirm --needed "$@"
