@@ -45,3 +45,5 @@
 !Trolltech.conf
 !spectaclerc
 !krunnerrc
+
+nvim/lazy-lock*.json
