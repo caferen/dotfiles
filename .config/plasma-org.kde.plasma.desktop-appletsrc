@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/niilo-isotalo--BZc9Ee1qo0-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/john-towner-3Kv48NS4WUU-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -271,7 +271,7 @@ DialogWidth=880
 PreloadWeight=0
 
 [Containments][167][Wallpaper][org.kde.image][General]
-Image=/home/eren/Pictures/wallpapers/White/mattias-olsson-nQz49efZEFs-unsplash.jpg
+Image=/home/eren/Pictures/1699031511654.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][184]
@@ -525,7 +525,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][68][Applets][72][Configuration]
-PreloadWeight=96
+PreloadWeight=100
 
 [Containments][68][Applets][73][Configuration]
 PreloadWeight=42
@@ -552,14 +552,14 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][68][Applets][77][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][68][Applets][78]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][68][Applets][78][Configuration]
-PreloadWeight=86
+PreloadWeight=96
 
 [Containments][68][Applets][79]
 immutability=1
@@ -573,7 +573,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=96
+PreloadWeight=100
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42

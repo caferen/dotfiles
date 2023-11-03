@@ -15,8 +15,8 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/wallpapers/Adobe/AdobeStock_321371570.jpeg,file:$HOME/Pictures/wallpapers/Black/40628437283_a17f4d3ccb_k.png,file:$HOME/Pictures/wallpapers/Green/jack-anstey-XVoyX7l9ocY-unsplash.jpg,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:///usr/share/pixmaps/archlinux-logo.svg
-Recent URLs[$e]=file:$HOME/Downloads/,file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/
+Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/1699031511654.jpeg,file:$HOME/Pictures/wallpapers/Adobe/AdobeStock_321371570.jpeg,file:$HOME/Pictures/wallpapers/Black/40628437283_a17f4d3ccb_k.png,file:$HOME/Pictures/wallpapers/Green/jack-anstey-XVoyX7l9ocY-unsplash.jpg,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:///usr/share/pixmaps/archlinux-logo.svg
+Recent URLs[$e]=file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/,file:$HOME/Documents/
 detailViewIconSize=128
 
 [KPropertiesDialog]
