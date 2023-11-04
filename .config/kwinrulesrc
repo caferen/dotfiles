@@ -24,6 +24,13 @@ desktopsrule=2
 wmclass=waydroid.com.whatsapp
 wmclassmatch=1
 
+[43a8cc1e-177c-46e7-b14a-b0068f979519]
+Description=Polybar
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=polybar
+wmclassmatch=1
+
 [564f5b37-d298-4740-9afe-b84ff66f9827]
 Description=3D
 desktops=20593a7f-f39b-4473-9972-6c5ff8c01c01
@@ -41,6 +48,10 @@ wmclassmatch=3
 Description=Spawn on main
 screenrule=4
 types=1
+
+[General]
+count=1
+rules=43a8cc1e-177c-46e7-b14a-b0068f979519
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming
