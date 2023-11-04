@@ -97,14 +97,12 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle kwin-bismuth xclip
+        plasma-pa bluedevil spectacle kwin-bismuth xclip plasma-wayland-session wl-clipboard
 
-    # yay_install plasma-wayland-session wl-clipboard
-
-    # if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
-    #     echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
-    #     sudo mkinitcpio -P
-    # fi
+    if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
+        echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
+        sudo mkinitcpio -P
+    fi
 
     sudo systemctl enable sddm.service
     sudo systemctl enable NetworkManager.service
@@ -117,8 +115,18 @@ pipewire() {
 }
 
 drive() {
-    [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R && echo "UUID=${1}       "$2"  ext4    defaults,nofail        0 0" \
+    [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R \
+            && echo "UUID=${1}       "$2"  ext4    defaults,nofail        0 0" \
         | sudo tee -a /etc/fstab)
+}
+
+drives() {
+    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
+    drive "2ffc04b6-b54d-4e0c-9add-0550e3caf7c9" $HOME/backup
+
+    sudo systemctl daemon-reload
+    sudo mount $HOME/ssd
+    sudo mount $HOME/backup
 }
 
 sudo pacman -Syu
@@ -138,12 +146,11 @@ install_typescript
 install_rust
 pacman_install python python-pip
 
-if uname -r | grep -v microsoft; then
-    yay
-    yay_install linux-zen-headers nvidia-open-dkms nvidia-settings coolercontrol lm-sensors libusb
-    plasma
-    pipewire
-    yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
+yay
+yay_install linux-zen-headers nvidia-dkms nvidia-settings coolercontrol lm-sensors libusb
+plasma
+pipewire
+yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
     # @formatter:off
     echo "asvetliakov.vscode-neovim
 eamodio.gitlens
@@ -153,21 +160,12 @@ rust-lang.rust-analyzer
 vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
     # @formatter:on
 
-    yay_install discord steam blender cura-bin mangohud gamemode
+yay_install discord steam blender cura-bin mangohud gamemode
 
 
-    [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
-    sudo systemctl enable coolercontrold.service
-    sudo systemctl enable systemd-resolved.service
+[[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
+sudo systemctl enable coolercontrold.service
+sudo systemctl enable systemd-resolved.service
 
-    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
-    drive "2ffc04b6-b54d-4e0c-9add-0550e3caf7c9" $HOME/backup
-
-    sudo systemctl daemon-reload
-    sudo mount $HOME/ssd
-    sudo mount $HOME/backup
-    keyboard
-else
-    read -p "Windows username: " WINDOWS_USERNAME
-    cp $HOME/utils/exes/win32yank.exe /mnt/c/Users/"$WINDOWS_USERNAME"/Arch/
-fi
+drives
+keyboard
