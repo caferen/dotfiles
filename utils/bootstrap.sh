@@ -116,13 +116,9 @@ pipewire() {
     systemctl enable --user pipewire-pulse.service
 }
 
-drives() {
-    [[ -d $HOME/ssd ]] || (mkdir $HOME/ssd && sudo chown $USER:$USER $HOME/ssd -R && echo "UUID=703f4ec4-5cd5-4a7e-b3bc-d7429180151a       /home/eren/ssd  ext4    defaults        0 0" | sudo tee -a /etc/fstab)
-    [[ -d $HOME/backup ]] || (mkdir $HOME/backup && sudo chown $USER:$USER $HOME/backup -R && echo "UUID=2ffc04b6-b54d-4e0c-9add-0550e3caf7c9       /home/eren/backup       ext4    defaults        0 0" | sudo tee -a /etc/fstab)
-
-    sudo systemctl daemon-reload
-    sudo mount $HOME/ssd
-    sudo mount $HOME/backup
+drive() {
+    [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R && echo "UUID=${1}       "$2"  ext4    defaults,nofail        0 0" \
+        | sudo tee -a /etc/fstab)
 }
 
 sudo pacman -Syu
@@ -164,7 +160,12 @@ vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
     sudo systemctl enable coolercontrold.service
     sudo systemctl enable systemd-resolved.service
 
-    drives
+    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
+    drive "2ffc04b6-b54d-4e0c-9add-0550e3caf7c9" $HOME/backup
+
+    sudo systemctl daemon-reload
+    sudo mount $HOME/ssd
+    sudo mount $HOME/backup
     keyboard
 else
     read -p "Windows username: " WINDOWS_USERNAME
