@@ -15,7 +15,6 @@
     "editor.fontFamily": "MesloLGS NF",
     "window.zoomLevel": 1,
     "editor.stickyScroll.enabled": true,
-    "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
     "window.titleBarStyle": "custom",
     "workbench.layoutControl.enabled": false,
@@ -38,5 +37,6 @@
     "explorer.confirmDragAndDrop": false,
     "editor.minimap.showSlider": "always",
     "workbench.sideBar.location": "right",
-    "glassit.alpha": 255
+    "glassit.alpha": 255,
+    "workbench.activityBar.location": "hidden"
 }

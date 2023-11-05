@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/connor-mollison-3rkosR_Dgfg-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/jeremy-bishop-d3fZSXlJ3Ok-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -587,7 +587,7 @@ DialogHeight=660
 DialogWidth=880
 
 [Containments][68][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen
+extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,146800651
 hiddenItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.clipboard,org.kde.plasma.notifications
 knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement
