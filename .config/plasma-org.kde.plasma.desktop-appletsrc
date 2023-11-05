@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/bjorn-snelders-zNNPSqKRR2c-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/john-cobb-IE_sifhay7o-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -324,7 +324,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][184][Applets][186][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 popupHeight=574
 popupWidth=729
 

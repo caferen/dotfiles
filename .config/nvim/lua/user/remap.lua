@@ -5,6 +5,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 map({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
+map("n", "<C-u>", "<C-u>zz")
+map("n", "<C-d>", "<C-d>zz")
+
 -- Colemak
 local is_colemak = false
 vim.api.nvim_create_user_command("TCol", function()
