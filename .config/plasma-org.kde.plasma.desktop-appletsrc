@@ -248,7 +248,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/marita-kavelashvili-ugnrXk1129g-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/donald-giannatti-7ne3hNnojvU-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -306,7 +306,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][184][Applets][185][Configuration]
-PreloadWeight=26
+PreloadWeight=18
 
 [Containments][184][Applets][185][Configuration][ConfigDialog]
 DialogHeight=540
@@ -324,7 +324,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][184][Applets][186][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 popupHeight=574
 popupWidth=729
 
@@ -349,21 +349,21 @@ immutability=1
 plugin=org.kde.plasma.panelspacer
 
 [Containments][184][Applets][187][Configuration]
-PreloadWeight=26
+PreloadWeight=18
 
 [Containments][184][Applets][189]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
 [Containments][184][Applets][189][Configuration]
-PreloadWeight=34
+PreloadWeight=26
 
 [Containments][184][Applets][190]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][184][Applets][190][Configuration]
-PreloadWeight=72
+PreloadWeight=64
 popupHeight=550
 popupWidth=484
 
@@ -393,7 +393,7 @@ DialogHeight=93
 DialogWidth=2560
 
 [Containments][184][Configuration]
-PreloadWeight=26
+PreloadWeight=18
 
 [Containments][184][General]
 AppletOrder=187;186;185;156;67;190;189;148
@@ -509,7 +509,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][68][Applets][69][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 
 [Containments][68][Applets][69][Configuration][General]
 migrated=true
@@ -525,7 +525,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][68][Applets][72][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][68][Applets][73][Configuration]
 PreloadWeight=42
@@ -535,14 +535,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][68][Applets][74][Configuration]
-PreloadWeight=81
+PreloadWeight=73
 
 [Containments][68][Applets][75]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][68][Applets][75][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][68][Applets][76][Configuration]
 PreloadWeight=42
@@ -559,14 +559,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][68][Applets][78][Configuration]
-PreloadWeight=96
+PreloadWeight=88
 
 [Containments][68][Applets][79]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 
 [Containments][68][Applets][82]
 immutability=1
@@ -604,7 +604,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][9][Applets][10][Configuration]
-PreloadWeight=36
+PreloadWeight=28
 
 [Containments][9][Applets][10][Configuration][General]
 migrated=true
@@ -628,7 +628,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][9][Applets][13][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][9][Applets][14]
 immutability=1
@@ -642,14 +642,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][9][Applets][15][Configuration]
-PreloadWeight=36
+PreloadWeight=28
 
 [Containments][9][Applets][16]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][9][Applets][16][Configuration]
-PreloadWeight=31
+PreloadWeight=23
 
 [Containments][9][Applets][19]
 immutability=1

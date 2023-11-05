@@ -16,6 +16,13 @@ skiptaskbarrule=2
 wmclass=polybar
 wmclassmatch=1
 
+[10d6c0fc-eb55-4690-809a-23f7d2588fe4]
+Description=OpenGL Renderer
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=OpenGL
+wmclassmatch=2
+
 [268cd07d-e81e-4fa6-a83a-4a8228dd2cae]
 Description=Discord
 desktops=14021749-bd05-4adf-9558-3a8ca3f1c79e
@@ -57,8 +64,8 @@ screenrule=4
 types=1
 
 [General]
-count=1
-rules=1
+count=2
+rules=1,10d6c0fc-eb55-4690-809a-23f7d2588fe4
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming
