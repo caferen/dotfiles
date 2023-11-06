@@ -106,10 +106,10 @@ Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
 Move Tablet to Next Output=none,none,Move the tablet to the next output
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
-MoveZoomDown=none,none,Move Zoomed Area Downwards
-MoveZoomLeft=none,none,Move Zoomed Area to Left
-MoveZoomRight=none,none,Move Zoomed Area to Right
-MoveZoomUp=none,none,Move Zoomed Area Upwards
+MoveZoomDown=none,Meta+Ctrl+Down,Move Down
+MoveZoomLeft=none,Meta+Ctrl+Left,Move Left
+MoveZoomRight=none,Meta+Ctrl+Right,Move Right
+MoveZoomUp=none,Meta+Ctrl+Up,Move Up
 Overview=none,Meta+W,Toggle Overview
 Setup Window Shortcut=none,,Setup Window Shortcut
 Show Desktop=Meta+D,Meta+D,Peek at Desktop
@@ -161,6 +161,7 @@ Switch to Screen to the Left=none,,Switch to Screen to the Left
 Switch to Screen to the Right=none,,Switch to Screen to the Right
 Toggle Night Color=none,none,Toggle Night Color
 Toggle Window Raise/Lower=none,,Toggle Window Raise/Lower
+ToggleCurrentThumbnail=Meta+Ctrl+T,Meta+Ctrl+T,Toggle Thumbnail for Current Window
 Walk Through Desktop List=none,,Walk Through Desktop List
 Walk Through Desktop List (Reverse)=none,,Walk Through Desktop List (Reverse)
 Walk Through Desktops=none,,Walk Through Desktops
@@ -269,7 +270,7 @@ _launch=Meta+E,Meta+E,Dolphin
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=Meta+Space,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -299,7 +300,7 @@ Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=Plasma
+_k_friendly_name=Activity switching
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=Meta+0,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
@@ -313,7 +314,6 @@ activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 165=none,none,Activate Memory Usage Widget
 activate widget 170=none,none,Activate Icons-only Task Manager Widget
 activate widget 186=none,none,Activate Application Launcher Widget
-activate widget 206=Meta+Space,none,Activate Search Widget
 activate widget 31=none,none,Activate Total GPU Use Widget
 activate widget 80=none,none,Activate Panel Transparency Button Widget
 activate widget 88=Alt+F1,none,Activate Application Launcher Widget

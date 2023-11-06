@@ -1,3 +1,9 @@
+[General]
+ActivityAware=false
+FreeFloating=true
+HistoryEnabled=false
+RetainPriorSearch=false
+
 [PlasmaRunnerManager]
 migrated=true
 
