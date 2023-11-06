@@ -269,7 +269,7 @@ _launch=Meta+E,Meta+E,Dolphin
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Meta+Space,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -313,6 +313,7 @@ activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 165=none,none,Activate Memory Usage Widget
 activate widget 170=none,none,Activate Icons-only Task Manager Widget
 activate widget 186=none,none,Activate Application Launcher Widget
+activate widget 206=Meta+Space,none,Activate Search Widget
 activate widget 31=none,none,Activate Total GPU Use Widget
 activate widget 80=none,none,Activate Panel Transparency Button Widget
 activate widget 88=Alt+F1,none,Activate Application Launcher Widget

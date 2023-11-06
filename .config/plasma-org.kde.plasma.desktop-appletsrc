@@ -225,6 +225,9 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.slideshow
 
+[Containments][166][Applets][192][Configuration][Appearance]
+title=CPU Temp
+
 [Containments][166][ConfigDialog]
 DialogHeight=955
 DialogWidth=1103
@@ -248,7 +251,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/niilo-isotalo--BZc9Ee1qo0-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/johannes-plenio-hvrpOmuMrAI-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -380,6 +383,20 @@ use24hFormat=2
 DialogHeight=540
 DialogWidth=720
 
+[Containments][184][Applets][206]
+immutability=1
+plugin=org.kde.milou
+
+[Containments][184][Applets][206][Configuration]
+PreloadWeight=65
+
+[Containments][184][Applets][206][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][184][Applets][206][Shortcuts]
+global=Meta+Space
+
 [Containments][184][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -396,7 +413,7 @@ DialogWidth=2560
 PreloadWeight=18
 
 [Containments][184][General]
-AppletOrder=187;186;185;156;67;190;189;148
+AppletOrder=187;186;206;185;156;67;190;189;148
 
 [Containments][50]
 activityId=
