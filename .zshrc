@@ -14,7 +14,7 @@ alias pip="pip3"
 gitcom() { git -C "$2" add -A && git -C "$2" commit -m "$1" --no-verify && git -C "$2" push }
 xdual() {
     xrandr --output DP-4 --mode 2560x1440 --rotate normal --rate 165 --primary \
-        --output HDMI-0 --mode 1920x1080 --right-of DP-4 --rate 75 --rotate right
+        --output HDMI-0 --mode 1920x1080 --left-of DP-4 --rate 75 --rotate right
 }
 xsingle() {
     xrandr --output DP-4 --mode 2560x1440 --rotate normal --rate 165 --primary \
