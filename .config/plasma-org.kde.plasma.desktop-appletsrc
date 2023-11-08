@@ -251,7 +251,7 @@ Image=/home/eren/Pictures/AdobeStock_587071383.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/bjorn-snelders-zNNPSqKRR2c-unsplash.jpg
+Image=file:///home/eren/Pictures/wallpapers/Green/bjorn-snelders-Cd3Ek7rNXSk-unsplash.jpg
 SlideInterval=300
 SlidePaths=/home/eren/Pictures/wallpapers/Green/
 
@@ -576,7 +576,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][68][Applets][79][Configuration]
-PreloadWeight=94
+PreloadWeight=99
 
 [Containments][68][Applets][82]
 immutability=1
