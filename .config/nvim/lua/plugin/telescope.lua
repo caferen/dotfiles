@@ -4,7 +4,7 @@ local cursor = require("telescope.themes").get_cursor({})
 
 require("telescope").setup({
     defaults = {
-        sorting_strategy = "ascending",
+        -- sorting_strategy = "ascending",
         mappings = {
             i = {
                 ["<esc>"] = close,
@@ -12,7 +12,7 @@ require("telescope").setup({
         },
         layout_config = {
             horizontal = {
-                prompt_position = "top",
+                -- prompt_position = "top",
                 width = 0.99,
                 height = 0.99,
                 preview_width = 0.6,
@@ -61,15 +61,27 @@ local path = vim.fn.argv(0)
 vim.api.nvim_create_autocmd("VimEnter", {
     group = vim.api.nvim_create_augroup("DirFiles", { clear = true }),
     callback = function()
-        if vim.fn.isdirectory(path) ~= 0 then
-            vim.api.nvim_set_current_dir(path)
-            local is_git = vim.fn.finddir(".git", path)
-            -- I"d expect this to work in reverse
-            if is_git ~= "" then
-                require("telescope.builtin").git_files()
-            else
-                require("telescope.builtin").find_files()
-            end
+        if string.len(path) == 0 then
+            return
+        end
+
+        local is_directory = vim.fn.isdirectory(path) == 1
+
+        if not is_directory then
+            local full_path = vim.fn.expand("%:p")
+            path = full_path:match("(.*" .. '/' .. ")")
+        end
+
+        local git_dir = vim.system({ "git", "rev-parse", "--show-toplevel" }, { cwd = path }):wait().stdout
+        git_dir = string.gsub(git_dir, '%s+', '')
+
+        if string.len(git_dir) ~= 0 and not is_directory then
+            path = git_dir
+        end
+
+        vim.api.nvim_set_current_dir(path)
+        if is_directory then
+            require("telescope.builtin").find_files()
         end
     end
 })

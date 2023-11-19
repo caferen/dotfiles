@@ -41,7 +41,6 @@ require("lazy").setup({
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
-    "lewis6991/gitsigns.nvim",
     "RRethy/nvim-base16",
     'jiangmiao/auto-pairs',
     {

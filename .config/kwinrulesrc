@@ -9,12 +9,29 @@ wmclass=crx_hnpfjngllnobngcgfapefoaidbinmjnm brave-browser
 wmclasscomplete=true
 wmclassmatch=1
 
+[1]
+Description=polybar
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=polybar
+wmclassmatch=1
+
 [10d6c0fc-eb55-4690-809a-23f7d2588fe4]
 Description=OpenGL Renderer
 skiptaskbar=true
 skiptaskbarrule=2
 wmclass=OpenGL
 wmclassmatch=2
+
+[2]
+Description=pip
+above=true
+aboverule=2
+minsize=1,1
+skiptaskbar=true
+skiptaskbarrule=2
+title=Picture in picture
+titlematch=1
 
 [268cd07d-e81e-4fa6-a83a-4a8228dd2cae]
 Description=Discord
@@ -23,6 +40,12 @@ desktopsrule=2
 screenrule=2
 wmclass=(discord)
 wmclassmatch=3
+
+[3]
+Description=minimum size
+minsize=1,1
+minsizerule=2
+types=1
 
 [3831a4dc-52e9-4235-91a2-baac6a16a491]
 Description=Settings for waydroid.com.whatsapp
@@ -45,6 +68,11 @@ desktopsrule=2
 wmclass=cura|blender
 wmclassmatch=3
 
+[58c672e6-1939-4b93-9aae-2a3510c8b84d]
+Description=New window settings
+minsizerule=2
+types=1
+
 [6a054f9c-a13b-40fc-9f94-e248dd11e477]
 Description=Spawn on main
 screenrule=3
@@ -55,6 +83,10 @@ wmclassmatch=3
 Description=Spawn on main
 screenrule=4
 types=1
+
+[General]
+count=3
+rules=1,2,3
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming
@@ -88,6 +120,20 @@ desktops=2270ee32-8054-4275-a49d-464ab4e132ca
 desktopsrule=2
 wmclass=crx_hnpfjngllnobngcgfapefoaidbinmjnm brave-browser
 wmclasscomplete=true
+wmclassmatch=1
+
+[e6847577-953a-42c8-bd0a-6d7c670cdbc8]
+Description=pip
+skiptaskbar=true
+skiptaskbarrule=2
+title=Picture in picture
+titlematch=1
+
+[f21e68e6-08f9-4348-a802-69e9f117fda1]
+Description=polybar
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=polybar
 wmclassmatch=1
 
 [fdad2fbc-3dd9-4daf-aadb-a1941512abc0]

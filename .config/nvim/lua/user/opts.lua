@@ -19,6 +19,7 @@ if not vim.g.vscode then
     vim.o.softtabstop = 4
     vim.o.shiftwidth = 4
     vim.o.expandtab = true
+    vim.opt.fillchars = { eob = " " }
 end
 vim.o.undofile = true
 vim.o.guicursor = ""

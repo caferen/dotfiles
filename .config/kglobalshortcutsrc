@@ -45,7 +45,7 @@ push_window_to_master=none,Meta+Return,Push Active Window to Master Area
 rotate=Ctrl+Alt+Shift+R,Meta+R,Rotate
 rotate_part=none,Meta+Shift+R,Rotate Part
 rotate_reverse=none,,Rotate (Reverse)
-toggle_float_layout=Ctrl+Alt+Shift+W,Meta+Shift+F,Toggle Floating Layout
+toggle_float_layout=none,Meta+Shift+F,Toggle Floating Layout
 toggle_monocle_layout=none,Meta+M,Toggle Monocle Layout
 toggle_quarter_layout=none,,Toggle Quarter Layout
 toggle_spiral_layout=none,,Toggle Spiral Layout
@@ -62,7 +62,7 @@ new-private-window=none,none,New Incognito Window
 new-window=none,none,New Window
 
 [kaccess]
-Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
+Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
 
 [kcm_touchpad]
@@ -254,11 +254,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
@@ -343,3 +343,7 @@ kcm-lookandfeel=none,none,Global Theme
 kcm-users=none,none,Users
 powerdevilprofilesconfig=none,none,Energy Saving
 screenlocker=none,none,Screen Locking
+
+[toggle_bismuth.sh.desktop]
+_k_friendly_name=toggle_bismuth.sh
+_launch=Ctrl+Alt+Shift+W,none,/home/eren/utils/toggle_bismuth.sh

@@ -4,6 +4,5 @@ if not vim.g.vscode then
     require('plugin.lsp')
     require('plugin.lualine')
     require('plugin.treesitter')
-    require('plugin.git')
     require('plugin.telescope')
 end

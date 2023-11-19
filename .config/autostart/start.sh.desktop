@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=/home/eren/utils/xdual.sh
+Exec=/home/eren/.config/polybar/start.sh
 Icon=dialog-scripts
-Name=xdual.sh
+Name=start.sh
 Type=Application
 X-KDE-AutostartScript=true

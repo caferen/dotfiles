@@ -65,15 +65,6 @@ install_typescript() {
     fi
 }
 
-helix() {
-    [[ -d $HOME/helix ]] || git clone https://github.com/helix-editor/helix.git $HOME/helix
-    (
-        cd $HOME/helix
-        git checkout master && git pull
-        cargo install --path helix-term --locked
-    )
-}
-
 configure_shell() {
     pacman_install zsh tmux starship
     [[ -d $HOME/.oh-my-zsh ]] || ZSH= sh -c "$(curl -fsSL https://raw.githubusercontent.com/caferen/dotfiles/master/utils/ohmyzsh.sh)"
@@ -97,9 +88,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle kwin-bismuth xclip
-
-    # yay_install plasma-wayland-session wl-clipboard
+        plasma-pa bluedevil spectacle kwin-bismuth xclip polybar \
+        #     plasma-wayland-session wl-clipboard
     #
     # if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
     #     echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
@@ -137,8 +127,7 @@ install_yay
 configure_git_and_github
 get_dotfiles
 configure_shell
-yay_install neovim-git ripgrep unzip
-helix
+yay_install neovim-git ripgrep unzip helix
 
 yay_install cronie syncthing gocryptfs
 sudo systemctl enable cronie.service
@@ -152,7 +141,7 @@ yay
 yay_install linux-zen-headers nvidia-dkms nvidia-settings coolercontrol lm-sensors libusb
 plasma
 pipewire
-yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin
+yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin fzf
     # @formatter:off
     echo "asvetliakov.vscode-neovim
 eamodio.gitlens

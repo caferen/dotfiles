@@ -1,6 +1,6 @@
 require('lualine').setup {
     options = {
-        theme = 'base16',
+        theme = 'auto',
         globalstatus = true,
         component_separators = '|',
         section_separators = '',

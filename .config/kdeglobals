@@ -24,13 +24,13 @@ IntensityAmount=-0.2
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=78,78,39
+BackgroundAlternate=170,149,67
 BackgroundNormal=0,0,0
-DecorationFocus=112,112,56
-DecorationHover=112,112,56
-ForegroundActive=112,112,56
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=112,112,56
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=241,241,241
@@ -40,11 +40,11 @@ ForegroundVisited=115,115,158
 [Colors:Complementary]
 BackgroundAlternate=59,64,69
 BackgroundNormal=49,54,59
-DecorationFocus=112,112,56
-DecorationHover=112,112,56
-ForegroundActive=112,112,56
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=175,176,179
-ForegroundLink=112,112,56
+ForegroundLink=243,213,97
 ForegroundNegative=237,21,21
 ForegroundNeutral=201,206,59
 ForegroundNormal=239,240,241
@@ -52,13 +52,13 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [Colors:Selection]
-BackgroundAlternate=79,79,40
-BackgroundNormal=79,79,40
-DecorationFocus=112,112,56
-DecorationHover=112,112,56
-ForegroundActive=112,112,56
+BackgroundAlternate=171,150,69
+BackgroundNormal=171,150,69
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=255,255,255
-ForegroundLink=112,112,56
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=255,255,255
@@ -68,11 +68,11 @@ ForegroundVisited=115,115,158
 [Colors:Tooltip]
 BackgroundAlternate=77,77,77
 BackgroundNormal=0,0,0
-DecorationFocus=112,112,56
-DecorationHover=112,112,56
-ForegroundActive=112,112,56
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=112,112,56
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=239,240,241
@@ -82,11 +82,11 @@ ForegroundVisited=115,115,158
 [Colors:View]
 BackgroundAlternate=34,34,34
 BackgroundNormal=5,5,5
-DecorationFocus=112,112,56
-DecorationHover=112,112,56
-ForegroundActive=112,112,56
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=112,112,56
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=241,241,241
@@ -96,11 +96,11 @@ ForegroundVisited=115,115,158
 [Colors:Window]
 BackgroundAlternate=34,34,34
 BackgroundNormal=1,1,1
-DecorationFocus=112,112,56
-DecorationHover=112,112,56
-ForegroundActive=112,112,56
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=112,112,56
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=239,240,241
@@ -112,7 +112,7 @@ DirSelectDialog Size=1076,724
 History Items[$e]=file:$HOME/Pictures/wallpapers/Green,file:$HOME/Pictures/wallpapers/Black,file:$HOME/Pictures/wallpapers,file:$HOME/Pictures/wallpapers,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd/LoL,file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
 
 [General]
-AccentColor=112,112,56
+AccentColor=243,213,97
 AllowKDEAppsToRememberWindowPositions=false
 BrowserApplication=brave-browser.desktop
 ColorScheme=Black
@@ -120,16 +120,13 @@ ColorSchemeHash=da6550f3b3208e01405562291c2e960517702087
 LastUsedCustomAccentColor=233,61,88
 TerminalApplication=alacritty
 TerminalService=Alacritty.desktop
+XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
 accentColorFromWallpaper=true
-font=Sans Serif,10,-1,5,50,0,0,0,0,0
-menuFont=Sans Serif,10,-1,5,50,0,0,0,0,0
-smallestReadableFont=Sans Serif,8,-1,5,50,0,0,0,0,0
-toolBarFont=Sans Serif,10,-1,5,50,0,0,0,0,0
 
 [Icons]
-Theme=breeze-dark
+Theme=candy-icons
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
@@ -165,7 +162,6 @@ SubstringCompletion=
 [WM]
 activeBackground=0,0,0
 activeBlend=255,255,255
-activeFont=Sans Serif,10,-1,5,50,0,0,0,0,0
 activeForeground=239,240,241
 inactiveBackground=10,10,10
 inactiveBlend=3,3,3

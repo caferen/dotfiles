@@ -7,7 +7,7 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 
 [FileDialogSize]
 2 screens: Height=724
-2 screens: Width=1076
+2 screens: Width=1080
 2560x1440 screen: Height=1134
 2560x1440 screen: Width=1870
 
@@ -15,18 +15,15 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/1699031511654.jpeg,file:$HOME/Pictures/wallpapers/Adobe/AdobeStock_321371570.jpeg,file:$HOME/Pictures/wallpapers/Black/40628437283_a17f4d3ccb_k.png,file:$HOME/Pictures/wallpapers/Green/jack-anstey-XVoyX7l9ocY-unsplash.jpg,file:$HOME/utils/icons/whatsapp.svg,file:$HOME/utils/icons/terminal.png,file:$HOME/Pictures/AdobeStock_587071383.jpeg,file:///usr/share/pixmaps/archlinux-logo.png,file:///usr/share/pixmaps/archlinux-logo.svg
-Recent URLs[$e]=file:///usr/,file:///,file:$HOME/Music/,file:$HOME/utils/icons/,file:$HOME/utils/,file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/,file:$HOME/Documents/
-detailViewIconSize=128
+Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/wallpapers/Black/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/marko-blazevic-S7mAngnWV1A-unsplash.jpg,file:$HOME/utils/icons/league.png,file:$HOME/Pictures/wallpapers/F4KiAtZWUAAZ5rW.jpeg,file:$HOME/Pictures/wallpapers/F4KiHIZWMAAW1qa.jpeg,file:$HOME/Pictures/wallpapers/F4KjQuyW0AAz5br.jpeg,file:$HOME/Pictures/wallpapers/F4KX7lqW4AERlo_.jpeg,file:$HOME/Pictures/wallpapers/F4KXGreWMAAeAn8.jpeg,file:$HOME/Pictures/wallpapers/F4KXidvXcAAEfAh.jpeg,file:$HOME/Pictures/wallpapers/garrett-parker-DlkF4-dbCOU-unsplash.jpg,file:$HOME/Pictures/wallpapers/james-donovan-kFHz9Xh3PPU-unsplash.jpg,file:$HOME/Pictures/wallpapers/jonatan-pie-3l3RwQdHRHg-unsplash.jpg,file:$HOME/Pictures/wallpapers/jussi-hellsten-qtXmmnVgSJk-unsplash.jpg,file:$HOME/Pictures/wallpapers/kolya-korzh-wqzEN25BRzw-unsplash.jpg
+Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/,file:$HOME/Documents/,file:$HOME/Pictures/wallpapers/Ghostrunner/,file:$HOME/Pictures/wallpapers/,file:$HOME/,file:$HOME/utils/icons/
+detailViewIconSize=256
 
 [KPropertiesDialog]
-2 screens: Height=569
-2 screens: Width=496
+2 screens: Height=529
+2 screens: Width=429
 2560x1440 screen: Height=529
 2560x1440 screen: Width=1394
-
-[PlasmaTransientsConfig]
-PreloadWeight=0
 
 [PlasmaViews][Panel 110]
 panelOpacity=1
@@ -74,18 +71,18 @@ maxLength=2048
 minLength=116
 
 [PlasmaViews][Panel 184]
-floating=0
+floating=1
 panelOpacity=1
 panelVisibility=0
 
 [PlasmaViews][Panel 184][Defaults]
-maxLength=2560
-minLength=2560
-thickness=54
+maxLength=740
+minLength=565
+thickness=84
 
 [PlasmaViews][Panel 184][Horizontal2560]
-maxLength=2560
-minLength=2560
+maxLength=740
+minLength=565
 
 [PlasmaViews][Panel 184][Vertical1440]
 maxLength=1440
@@ -96,6 +93,39 @@ panelOpacity=1
 
 [PlasmaViews][Panel 187][Defaults]
 thickness=36
+
+[PlasmaViews][Panel 193][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 203]
+alignment=2
+floating=0
+panelOpacity=1
+panelVisibility=0
+
+[PlasmaViews][Panel 203][Defaults]
+maxLength=2560
+minLength=2560
+thickness=54
+
+[PlasmaViews][Panel 203][Horizontal2560]
+maxLength=2560
+minLength=2560
+
+[PlasmaViews][Panel 223]
+alignment=132
+floating=0
+panelOpacity=1
+panelVisibility=1
+
+[PlasmaViews][Panel 223][Defaults]
+maxLength=1290
+minLength=124
+thickness=54
+
+[PlasmaViews][Panel 223][Horizontal2560]
+maxLength=1290
+minLength=124
 
 [PlasmaViews][Panel 3]
 alignment=2

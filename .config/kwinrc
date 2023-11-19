@@ -9,32 +9,26 @@ Rows=1
 
 [Effect-blur]
 BlurStrength=5
-NoiseStrength=4
-
-[Effect-kwin4_effect_glitch]
-Speed=1
-Strength=3
+NoiseStrength=10
 
 [Effect-overview]
-BorderActivate=0,1,7
+BorderActivate=0
 
 [Effect-windowview]
 BorderActivateAll=9
-
-[Effect-wobblywindows]
-Drag=90
-Stiffness=6
-WobblynessLevel=2
 
 [Plugins]
 bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=true
 forceblurEnabled=true
+kwin4_effect_fadingpopupsEnabled=false
 kwin4_effect_glitchEnabled=true
 kwin4_effect_loginEnabled=false
 kwin4_effect_logoutEnabled=false
+kwin4_effect_morphingpopupsEnabled=false
 kwin4_effect_scaleEnabled=false
+screenedgeEnabled=false
 selective-virtual-desktopsEnabled=true
 wobblywindowsEnabled=true
 zoomEnabled=false
@@ -45,7 +39,8 @@ enableSpiralLayout=false
 enableSpreadLayout=false
 enableStairLayout=false
 enableThreeColumnLayout=false
-ignoreClass=yakuake,spectacle,Conky,zoom,Friends List
+ignoreClass=spectacle,Friends List
+ignoreRole=
 ignoreTitle=Friends List
 screenGapBottom=10
 screenGapLeft=10
@@ -55,9 +50,7 @@ tileLayoutGap=10
 untileByDragging=false
 
 [Script-forceblur]
-blurExceptMatching=true
-blurMatching=false
-patterns=Alacritty
+patterns=alacritty
 
 [Script-selective-virtual-desktops]
 enabledDisplays=DP-4
@@ -124,12 +117,14 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][fa82ae85-cf76-5be5-b88f-275b957c8869]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Windows]
+ElectricBorderCooldown=100
+ElectricBorderDelay=50
+
 [Xwayland]
 Scale=1
 
 [org.kde.kdecoration2]
-BorderSize=None
-BorderSizeAuto=false
 ButtonsOnLeft=
 ButtonsOnRight=IAX
 library=org.kde.breeze
