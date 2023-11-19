@@ -14,6 +14,7 @@ export PATH="$HOME/bin:$PATH"
 alias vi="nvim -n"
 alias python="python3"
 alias pip="pip3"
+alias ripgrep="rg --no-ignore-parent --hidden"
 
 if which helix > /dev/null; then
     alias hx="helix"
@@ -22,12 +23,13 @@ fi
 if [[ "$(echo $XDG_SESSION_TYPE)" == 'x11' ]]; then
     alias code="codium"
 else
-    alias code="codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --unity-launch %F"
+    alias code="codium --enable-features=UseOzonePlatform,WaylandWindowDecorations \
+        --ozone-platform=wayland --unity-launch %F"
 fi
 
 f() {
     IFS=$'\n' files=($(fzf  --query="$1" --multi --select-1 --exit-0))
-    [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+    [[ -n "$files" ]] && ${EDITOR} -n "${files[@]}"
 }
 gitcom() { git -C "$2" add -A && git -C "$2" commit -m "$1" --no-verify && git -C "$2" push }
 
