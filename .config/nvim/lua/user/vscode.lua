@@ -4,7 +4,7 @@ local code = require('vscode-neovim')
 map('n', '<leader>f', function() code.call('workbench.action.quickOpen') end, { noremap = true })
 map('n', '<leader>b', function() code.call('workbench.action.showAllEditors') end, { noremap = true })
 map('n', '<leader>v', function() code.call('workbench.action.openView') end, { noremap = true })
-map('n', '/', function() code.call('actions.find') end, { noremap = true })
+-- map('n', '/', function() code.call('actions.find') end, { noremap = true })
 map('n', '<leader>/', function() code.call('workbench.action.findInFiles') end, { noremap = true })
 
 -- LSP

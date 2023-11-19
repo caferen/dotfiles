@@ -18,7 +18,7 @@ BorderActivate=0
 BorderActivateAll=9
 
 [Plugins]
-bismuthEnabled=true
+bismuthEnabled=false
 blurEnabled=true
 contrastEnabled=true
 forceblurEnabled=true

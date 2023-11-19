@@ -24,7 +24,7 @@ if [[ "$(echo $XDG_SESSION_TYPE)" == 'x11' ]]; then
     alias code="codium"
 else
     alias code="codium --enable-features=UseOzonePlatform,WaylandWindowDecorations \
-        --ozone-platform=wayland --unity-launch %F"
+        --ozone-platform=wayland"
 fi
 
 f() {
