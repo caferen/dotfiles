@@ -20,11 +20,13 @@ if which helix > /dev/null; then
     alias hx="helix"
 fi
 
-if [[ "$(echo $XDG_SESSION_TYPE)" == 'x11' ]]; then
-    alias code="codium"
-else
-    alias code="codium --enable-features=UseOzonePlatform,WaylandWindowDecorations \
-        --ozone-platform=wayland"
+if which codium > /dev/null; then
+    if [[ "$(echo $XDG_SESSION_TYPE)" == 'x11' ]]; then
+        alias code="codium"
+    else
+        alias code="codium --enable-features=UseOzonePlatform,WaylandWindowDecorations \
+            --ozone-platform=wayland"
+    fi
 fi
 
 f() {
