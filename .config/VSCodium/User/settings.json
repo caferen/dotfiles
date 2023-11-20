@@ -71,4 +71,5 @@
     "editor.overviewRulerBorder": false,
     "workbench.colorTheme": "GitHub Dark",
     "workbench.sideBar.location": "right",
+    "diffEditor.renderSideBySide": false,
 }
