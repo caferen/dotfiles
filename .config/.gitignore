@@ -28,8 +28,6 @@
 !gtk-3.0/**
 !gtk-4.0
 !gtk-4.0/**
-!autostart
-!autostart/**
 !plasma-workspace
 !plasma-workspace/**
 !plasma-org.kde.plasma.desktop-appletsrc
