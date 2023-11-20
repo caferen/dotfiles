@@ -70,6 +70,5 @@
     "window.titleBarStyle": "custom",
     "editor.overviewRulerBorder": false,
     "workbench.colorTheme": "GitHub Dark",
-    "window.zoomLevel": 1.0,
     "workbench.sideBar.location": "right",
 }

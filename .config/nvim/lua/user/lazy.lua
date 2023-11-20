@@ -42,7 +42,8 @@ require("lazy").setup({
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
     "RRethy/nvim-base16",
-    'jiangmiao/auto-pairs',
+    "jiangmiao/auto-pairs",
+    "ThePrimeagen/harpoon",
     {
         "nvim-telescope/telescope.nvim",
         branch = "master",
