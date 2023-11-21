@@ -59,7 +59,6 @@
     "editor.fontFamily": "MesloLGS NF",
     "window.restoreWindows": "none",
     "editor.minimap.enabled": false,
-    "workbench.editor.showTabs": "single",
     "terminal.integrated.enableImages": true,
     "terminal.integrated.hideOnStartup": "whenEmpty",
     "workbench.layoutControl.enabled": false,
@@ -71,5 +70,6 @@
     "editor.overviewRulerBorder": false,
     "workbench.colorTheme": "GitHub Dark",
     "workbench.sideBar.location": "right",
-    "diffEditor.renderSideBySide": false,
+    "window.zoomLevel": 1.0,
+    "workbench.editor.showTabs": "single",
 }
