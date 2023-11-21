@@ -15,7 +15,7 @@ _launch=Ctrl+Alt+Shift+T,none,Alacritty
 
 [Ghostrunner DX12.desktop]
 _k_friendly_name=Ghostrunner DX12
-_launch=,none,Launch Ghostrunner DX12
+_launch=none,none,Launch Ghostrunner DX12
 
 [KDE Keyboard Layout Switcher]
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
@@ -172,12 +172,12 @@ Walk Through Desktops=none,,Walk Through Desktops
 Walk Through Desktops (Reverse)=none,,Walk Through Desktops (Reverse)
 Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows
 Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Backtab,Walk Through Windows (Reverse)
-Walk Through Windows Alternative=,,Walk Through Windows Alternative
-Walk Through Windows Alternative (Reverse)=,,Walk Through Windows Alternative (Reverse)
+Walk Through Windows Alternative=none,,Walk Through Windows Alternative
+Walk Through Windows Alternative (Reverse)=none,,Walk Through Windows Alternative (Reverse)
 Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of Current Application
 Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
-Walk Through Windows of Current Application Alternative=,,Walk Through Windows of Current Application Alternative
-Walk Through Windows of Current Application Alternative (Reverse)=,,Walk Through Windows of Current Application Alternative (Reverse)
+Walk Through Windows of Current Application Alternative=none,,Walk Through Windows of Current Application Alternative
+Walk Through Windows of Current Application Alternative (Reverse)=none,,Walk Through Windows of Current Application Alternative (Reverse)
 Window Above Other Windows=none,,Keep Window Above Others
 Window Below Other Windows=none,,Keep Window Below Others
 Window Close=Alt+F4,Alt+F4,Close Window
@@ -354,8 +354,8 @@ _launch=Ctrl+Alt+Shift+W,none,/home/eren/utils/toggle_bismuth.sh
 
 [wine-Programs-Ghostrunner \x5bGOG.com\x5d-Ghostrunner.desktop]
 _k_friendly_name=Ghostrunner
-_launch=,none,Launch Ghostrunner
+_launch=none,none,Launch Ghostrunner
 
 [wine-Programs-Ghostrunner \x5bGOG.com\x5d-Uninstall Ghostrunner.desktop]
 _k_friendly_name=Uninstall Ghostrunner
-_launch=,none,Launch Uninstall Ghostrunner
+_launch=none,none,Launch Uninstall Ghostrunner
