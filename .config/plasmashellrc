@@ -23,7 +23,7 @@ detailViewIconSize=256
 2 screens: Height=529
 2 screens: Width=511
 2560x1440 screen: Height=529
-2560x1440 screen: Width=1394
+2560x1440 screen: Width=425
 
 [PlasmaViews][Panel 110]
 panelOpacity=1
