@@ -240,7 +240,7 @@ PreloadWeight=0
 [Containments][166][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
-positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]}
+positions={"2560x1440":["1"\\,"23"\\,"desktop:/Flat4\\,3KewTerrace_12Oct2022_a1867258-715c-471c-a5eb-b2a260bcac21.pdf"\\,"0"\\,"1"\\,"desktop:/1806.01218.pdf"\\,"0"\\,"0"\\,"desktop:/d2d138e9053e153f601a27a6c6cc3b4d_MIT16_30F10_lec01.pdf"\\,"0"\\,"3"\\,"desktop:/unix_prog_design.pdf"\\,"0"\\,"2"]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]}
 sortMode=-1
 
 [Containments][166][Wallpaper][a2n.blur][General]
@@ -404,33 +404,6 @@ plugin=org.kde.paneltransparencybutton
 [Containments][203][Applets][229][Configuration]
 PreloadWeight=18
 
-[Containments][203][Applets][230]
-immutability=1
-plugin=org.kde.plasma.systemmonitor
-
-[Containments][203][Applets][230][Configuration]
-CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=52
-
-[Containments][203][Applets][230][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
-title=Network speed
-
-[Containments][203][Applets][230][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][203][Applets][230][Configuration][SensorColors]
-network/all/download=0,0,0
-network/all/upload=69,90,171
-
-[Containments][203][Applets][230][Configuration][Sensors]
-highPrioritySensorIds=["network/all/download"]
-totalSensors=["network/all/download"]
-
-[Containments][203][Applets][230][Configuration][org.kde.ksysguard.textonly][General]
-groupByTotal=true
-
 [Containments][203][ConfigDialog]
 DialogHeight=84
 DialogWidth=2560
@@ -439,7 +412,7 @@ DialogWidth=2560
 PreloadWeight=2
 
 [Containments][203][General]
-AppletOrder=230;225;186;185;224;229;208;217;226;218
+AppletOrder=225;186;185;224;229;208;217;226;218
 
 [Containments][209]
 activityId=
@@ -474,14 +447,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=15
+PreloadWeight=25
 
 [Containments][209][Applets][214]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][209][Applets][214][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][209][Applets][214][Configuration][General]
 migrated=true
@@ -514,14 +487,14 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][209][Applets][225][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][209][Applets][227]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][209][Applets][227][Configuration]
-PreloadWeight=35
+PreloadWeight=40
 
 [Containments][209][ConfigDialog]
 DialogHeight=660
@@ -952,4 +925,4 @@ transparencyEnabled=true
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/unix_prog_design.pdf,0,309b39e6-9637-477a-b0de-78d1ee99af45,desktop:/d2d138e9053e153f601a27a6c6cc3b4d_MIT16_30F10_lec01.pdf,0,309b39e6-9637-477a-b0de-78d1ee99af45,desktop:/1806.01218.pdf,0,309b39e6-9637-477a-b0de-78d1ee99af45,desktop:/Flat4\\,3KewTerrace_12Oct2022_a1867258-715c-471c-a5eb-b2a260bcac21.pdf,0,309b39e6-9637-477a-b0de-78d1ee99af45

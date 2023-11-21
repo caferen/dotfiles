@@ -24,13 +24,13 @@ IntensityAmount=-0.2
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=34,34,34
+BackgroundAlternate=170,149,67
 BackgroundNormal=0,0,0
-DecorationFocus=52,120,218
-DecorationHover=0,161,236
-ForegroundActive=61,174,233
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=0,100,255
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=241,241,241
@@ -40,11 +40,11 @@ ForegroundVisited=115,115,158
 [Colors:Complementary]
 BackgroundAlternate=59,64,69
 BackgroundNormal=49,54,59
-DecorationFocus=30,146,255
-DecorationHover=61,174,230
-ForegroundActive=246,116,0
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=175,176,179
-ForegroundLink=61,174,230
+ForegroundLink=243,213,97
 ForegroundNegative=237,21,21
 ForegroundNeutral=201,206,59
 ForegroundNormal=239,240,241
@@ -52,27 +52,27 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [Colors:Selection]
-BackgroundAlternate=29,153,243
-BackgroundNormal=27,145,213
-DecorationFocus=52,120,218
-DecorationHover=0,161,236
-ForegroundActive=252,252,252
-ForegroundInactive=241,241,241
-ForegroundLink=0,100,255
+BackgroundAlternate=171,150,69
+BackgroundNormal=171,150,69
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
+ForegroundInactive=255,255,255
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=241,241,241
+ForegroundNormal=255,255,255
 ForegroundPositive=36,173,89
 ForegroundVisited=115,115,158
 
 [Colors:Tooltip]
 BackgroundAlternate=77,77,77
 BackgroundNormal=0,0,0
-DecorationFocus=52,120,218
-DecorationHover=0,161,236
-ForegroundActive=61,174,233
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=0,100,255
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=239,240,241
@@ -82,11 +82,11 @@ ForegroundVisited=115,115,158
 [Colors:View]
 BackgroundAlternate=34,34,34
 BackgroundNormal=5,5,5
-DecorationFocus=52,120,218
-DecorationHover=0,161,236
-ForegroundActive=61,174,233
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=0,100,255
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=241,241,241
@@ -96,11 +96,11 @@ ForegroundVisited=115,115,158
 [Colors:Window]
 BackgroundAlternate=34,34,34
 BackgroundNormal=1,1,1
-DecorationFocus=52,120,218
-DecorationHover=0,161,236
-ForegroundActive=61,174,233
+DecorationFocus=243,213,97
+DecorationHover=243,213,97
+ForegroundActive=243,213,97
 ForegroundInactive=199,199,199
-ForegroundLink=0,100,255
+ForegroundLink=243,213,97
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=239,240,241
@@ -112,6 +112,7 @@ DirSelectDialog Size=1076,724
 History Items[$e]=file:$HOME/Pictures/wallpapers/Green,file:$HOME/Pictures/wallpapers/Black,file:$HOME/Pictures/wallpapers,file:$HOME/Pictures/wallpapers,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd/LoL,file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
 
 [General]
+AccentColor=243,213,97
 AllowKDEAppsToRememberWindowPositions=false
 BrowserApplication=brave-browser.desktop
 ColorScheme=Black

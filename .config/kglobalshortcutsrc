@@ -13,6 +13,10 @@ New=none,none,New Terminal
 _k_friendly_name=Alacritty
 _launch=Ctrl+Alt+Shift+T,none,Alacritty
 
+[Ghostrunner DX12.desktop]
+_k_friendly_name=Ghostrunner DX12
+_launch=,none,Launch Ghostrunner DX12
+
 [KDE Keyboard Layout Switcher]
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
@@ -300,7 +304,7 @@ Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=Activity switching
+_k_friendly_name=Plasma
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=Meta+0,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
@@ -347,3 +351,11 @@ screenlocker=none,none,Screen Locking
 [toggle_bismuth.sh.desktop]
 _k_friendly_name=toggle_bismuth.sh
 _launch=Ctrl+Alt+Shift+W,none,/home/eren/utils/toggle_bismuth.sh
+
+[wine-Programs-Ghostrunner \x5bGOG.com\x5d-Ghostrunner.desktop]
+_k_friendly_name=Ghostrunner
+_launch=,none,Launch Ghostrunner
+
+[wine-Programs-Ghostrunner \x5bGOG.com\x5d-Uninstall Ghostrunner.desktop]
+_k_friendly_name=Uninstall Ghostrunner
+_launch=,none,Launch Uninstall Ghostrunner
