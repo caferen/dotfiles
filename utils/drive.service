@@ -1,0 +1,12 @@
+[Unit]
+Description=Mount Gallery Service
+After=home-eren-password.mount
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=eren
+ExecStart= /usr/bin/gocryptfs /home/eren/ssd/media-cipher /home/eren/Pictures -passfile=/home/eren/password/password
+
+[Install]
+WantedBy=multi-user.target

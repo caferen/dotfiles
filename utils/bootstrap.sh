@@ -1,7 +1,4 @@
-#!/bin/bash
-
-# @hourly /bin/zsh -c -i "gitcom autosave $HOME"
-# * * * * *  rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
+drive-cipher $HOME/backup
 # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 
 pacman_install() {
@@ -113,13 +110,24 @@ drive() {
         | sudo tee -a /etc/fstab)
 }
 
+service() {
+    if [[ ! -f /etc/systemd/system/"$1".service ]]; then
+        sudo cp $HOME/utils/"$1".service /etc/systemd/system
+        sudo systemctl enable "$1"
+    fi
+}
+
 drives() {
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
     drive "41bd16a6-d7ef-4cda-aed6-0a52f3c0db0a" $HOME/backup
+    drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
 
     sudo systemctl daemon-reload
-    sudo mount $HOME/ssd
-    sudo mount $HOME/backup
+    sudo mount
+
+    service gallery
+    service password
+    service drive
 }
 
 sudo pacman -Syu
