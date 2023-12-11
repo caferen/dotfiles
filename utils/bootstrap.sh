@@ -115,7 +115,7 @@ drive() {
 
 drives() {
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
-    drive "2ffc04b6-b54d-4e0c-9add-0550e3caf7c9" $HOME/backup
+    drive "41bd16a6-d7ef-4cda-aed6-0a52f3c0db0a" $HOME/backup
 
     sudo systemctl daemon-reload
     sudo mount $HOME/ssd
