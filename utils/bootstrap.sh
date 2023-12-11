@@ -13,16 +13,18 @@ yay_install() {
 }
 
 install_yay() {
-    pacman_install git base-devel
-    git clone https://aur.archlinux.org/yay-bin.git $HOME/yay-bin
-    (
-        cd $HOME/yay-bin
-        makepkg -si --noconfirm --needed
-    )
-    rm -rf $HOME/yay-bin
-    yay -Y --devel --combinedupgrade --batchinstall --answerclean None \
-        --answerdiff None --answerupgrade None --answeredit None --removemake \
-        --noconfirm --save
+    if ! which yay; then
+        pacman_install git base-devel
+        git clone https://aur.archlinux.org/yay-bin.git $HOME/yay-bin
+        (
+            cd $HOME/yay-bin
+            makepkg -si --noconfirm --needed
+        )
+        rm -rf $HOME/yay-bin
+        yay -Y --devel --combinedupgrade --batchinstall --answerclean None \
+            --answerdiff None --answerupgrade None --answeredit None --removemake \
+            --noconfirm --save
+    fi
 }
 
 get_dotfiles() {
