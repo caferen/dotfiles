@@ -317,7 +317,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 popupHeight=574
 popupWidth=733
 
