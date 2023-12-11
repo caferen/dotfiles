@@ -308,7 +308,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:torbrowser.desktop,applications:spotify.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:io.element.Element.desktop,applications:signal-desktop.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:io.element.Element.desktop,applications:signal-desktop.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:blender.desktop,applications:cura.desktop,applications:mullvad-vpn.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
