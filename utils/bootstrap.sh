@@ -104,9 +104,15 @@ pipewire() {
 }
 
 drive() {
-    [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R \
-            && echo "UUID=${1}       "$2"  ext4    defaults,nofail        0 0" \
-        | sudo tee -a /etc/fstab)
+    if [[ ! -d "$2" ]]; then
+        mkdir "$2"
+        sudo chown $USER:$USER "$2" -R
+        echo "UUID=${1}       "$2"  ext4    defaults,nofail        0 0" \
+            | sudo tee -a /etc/fstab
+
+        sudo systemctl daemon-reload
+        sudo mount "$2"
+    fi
 }
 
 service() {
@@ -120,9 +126,6 @@ drives() {
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
     drive "41bd16a6-d7ef-4cda-aed6-0a52f3c0db0a" $HOME/backup
     drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
-
-    sudo systemctl daemon-reload
-    sudo mount
 
     service gallery
     service password
