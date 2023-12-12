@@ -146,7 +146,7 @@ install_rust
 pacman_install python python-pip
 
 yay
-yay_install linux-zen-headers nvidia-dkms nvidia-settings coolercontrol lm-sensors libusb
+yay_install linux-zen-headers nvidia-dkms coolercontrol lm-sensors libusb
 plasma
 pipewire
 yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin fzf
