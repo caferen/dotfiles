@@ -4,7 +4,7 @@ Description=Backup files
 [Service]
 User=eren
 Restart=always
-RestartSec=3600s
+RestartSec=15m
 ExecStart= /usr/bin/rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
 
 [Install]
