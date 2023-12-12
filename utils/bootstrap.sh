@@ -1,4 +1,3 @@
-drive-cipher $HOME/backup
 # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
 
 pacman_install() {
