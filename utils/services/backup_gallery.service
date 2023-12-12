@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup files
+
+[Service]
+User=eren
+Restart=always
+RestartSec=3600s
+ExecStart= /usr/bin/rsync -a --delete $HOME/ssd/media-cipher $HOME/backup
+
+[Install]
+WantedBy=multi-user.target

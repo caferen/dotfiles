@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup dotfiles
+
+[Service]
+User=eren
+Restart=always
+RestartSec=3600s
+ExecStart= /bin/zsh -i -c "gitcom autosave $HOME"
+
+[Install]
+WantedBy=multi-user.target
