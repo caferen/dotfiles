@@ -2,6 +2,28 @@
 RightButton;NoModifier=org.kde.contextmenu
 wheel:Vertical;NoModifier=org.kde.switchdesktop
 
+[ActionPlugins][0][LeftButton;NoModifier]
+showAppsByName=false
+
+[ActionPlugins][0][RightButton;NoModifier]
+_add panel=true
+_context=true
+_display_settings=true
+_lock_screen=false
+_logout=false
+_open_terminal=false
+_run_command=false
+_sep1=true
+_sep2=true
+_sep3=true
+_wallpaper=true
+add widgets=true
+configure=true
+configure shortcuts=false
+edit mode=true
+manage activities=true
+remove=true
+
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
@@ -240,8 +262,10 @@ PreloadWeight=0
 [Containments][166][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
-positions={"2560x1440":["1"\\,"23"\\,"desktop:/tutanota-desktop-linux.AppImage"\\,"0"\\,"0"]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]}
+iconSize=6
+positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]}
 sortMode=-1
+url=file:///home/eren/password
 
 [Containments][166][Wallpaper][a2n.blur][General]
 Image=/home/eren/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg
@@ -274,6 +298,10 @@ DialogWidth=880
 
 [Containments][167][Configuration]
 PreloadWeight=0
+
+[Containments][167][General]
+positions={"1080x1920":[]}
+url=file:///home/eren/password
 
 [Containments][167][Wallpaper][a2n.blur][General]
 Image=/home/eren/Pictures/wallpapers/Black/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg
@@ -308,7 +336,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:freetube.desktop,applications:mullvad-vpn.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:io.element.Element.desktop,applications:signal-desktop.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:blender.desktop,applications:cura.desktop,file:///tmp/.mount_tutanotcoFT1/tutanota-desktop
+launchers=preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:tutanota-desktop.desktop,applications:mullvad-vpn.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:io.element.Element.desktop,applications:signal-desktop.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -317,7 +345,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 popupHeight=574
 popupWidth=733
 
@@ -342,7 +370,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -481,7 +509,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=2
+PreloadWeight=7
 
 [Containments][209][Applets][225]
 immutability=1
@@ -925,5 +953,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=
-screenMapping=desktop:/tutanota-desktop-linux.AppImage,0,309b39e6-9637-477a-b0de-78d1ee99af45
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/utils,file:///home/eren/Downloads,file:///home/eren/Pictures,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Public,file:///home/eren/ssd,file:///home/eren/Desktop,file:///home/eren/bin,file:///home/eren/Templates,file:///home/eren/Music,file:///home/eren/Videos,file:///home/eren/Projects,file:///home/eren/Documents,file:///home/eren/Drive,file:///home/eren/backup
+screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
