@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount Gallery Service
+After=home-eren-password.mount
+
+[Service]
+Type=oneshot
+User=eren
+Restart=always
+RestartSec=3600s
+ExecStart= /usr/bin/rsync /rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup
+ExecStart= /usr/bin/rsync /rsync -a --delete $HOME/ssd/media-cipher $HOME/backup
+
+[Install]
+WantedBy=multi-user.target

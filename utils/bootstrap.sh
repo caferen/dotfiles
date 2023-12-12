@@ -117,7 +117,7 @@ drive() {
 
 service() {
     if [[ ! -f /etc/systemd/system/"$1".service ]]; then
-        sudo cp $HOME/utils/"$1".service /etc/systemd/system
+        sudo ln $HOME/utils/services/"$1".service /etc/systemd/system
         sudo systemctl enable "$1"
     fi
 }
