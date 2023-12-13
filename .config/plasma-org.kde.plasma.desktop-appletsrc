@@ -336,7 +336,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:tutanota-desktop.desktop,applications:mullvad-vpn.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:io.element.Element.desktop,applications:signal-desktop.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:spotify.desktop,applications:tutanota-desktop.desktop,applications:mullvad-vpn.desktop,applications:codium-wayland.desktop,applications:io.element.Element.desktop,applications:signal-desktop.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -532,7 +532,7 @@ DialogWidth=880
 PreloadWeight=0
 
 [Containments][209][General]
-extraItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.kscreen,chrome_status_icon_1
+extraItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.kscreen
 hiddenItems=org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier
 knownItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.kscreen
 shownItems=org.kde.plasma.networkmanagement,chrome_status_icon_1
@@ -952,5 +952,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/backup,file:///home/eren/Public,file:///home/eren/Pictures,file:///home/eren/Desktop,file:///home/eren/Projects,file:///home/eren/Documents,file:///home/eren/Music,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/ssd,file:///home/eren/Downloads,file:///home/eren/Drive,file:///home/eren/Videos,file:///home/eren/utils,file:///home/eren/bin,file:///home/eren/Templates
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Pictures,file:///home/eren/Templates,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/ssd,file:///home/eren/Desktop,file:///home/eren/utils,file:///home/eren/Downloads,file:///home/eren/Videos,file:///home/eren/Public,file:///home/eren/Documents,file:///home/eren/Projects,file:///home/eren/Drive,file:///home/eren/backup,file:///home/eren/Music,file:///home/eren/bin
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
