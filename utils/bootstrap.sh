@@ -153,5 +153,5 @@ drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
 keyboard
 
 for service in $HOME/utils/services/*.service; do
-    sudo systemctl enable "$service"
+    sudo systemctl enable --now "$service"
 done
