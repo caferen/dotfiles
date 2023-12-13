@@ -2,10 +2,10 @@
 Description=Backup files
 
 [Service]
-User=eren
+User=root
 Restart=always
 RestartSec=15m
-ExecStart= /bin/bash -c "/usr/bin/rsync -a --delete $HOME/ssd/drive-cipher $HOME/backup"
+ExecStart= /home/eren/utils/backup.sh
 
 [Install]
 WantedBy=multi-user.target

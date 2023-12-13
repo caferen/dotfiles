@@ -119,7 +119,7 @@ services() {
     for service in $HOME/utils/services/*.service; do
         local name=$(basename "$service")
         if [[ ! -f /etc/systemd/system/"$name" ]]; then
-            sudo ln "$service" /etc/systemd/system
+            sudo ln -s "$service" /etc/systemd/system
             sudo systemctl enable "$name"
         fi
     done
