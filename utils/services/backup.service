@@ -2,9 +2,9 @@
 Description=Backup files
 
 [Service]
-User=root
+User=eren
 Restart=always
-RestartSec=1h
+RestartSec=30m
 ExecStart= /home/eren/utils/backup.sh
 
 [Install]
