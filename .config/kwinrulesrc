@@ -10,11 +10,12 @@ wmclasscomplete=true
 wmclassmatch=1
 
 [1]
-Description=polybar
+Description=Skip taskbar
 skiptaskbar=true
 skiptaskbarrule=2
+title=(polybar|Picture in picture)
+titlematch=3
 wmclass=polybar
-wmclassmatch=1
 
 [10d6c0fc-eb55-4690-809a-23f7d2588fe4]
 Description=OpenGL Renderer

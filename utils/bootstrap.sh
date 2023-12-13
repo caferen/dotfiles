@@ -65,7 +65,8 @@ install_typescript() {
 
 configure_shell() {
     pacman_install zsh tmux starship
-    [[ -d $HOME/.oh-my-zsh ]] || ZSH= sh -c "$(curl -fsSL https://raw.githubusercontent.com/caferen/dotfiles/master/utils/ohmyzsh.sh)"
+    [[ -d $HOME/.oh-my-zsh ]] || ZSH= sh -c \
+        "$(curl -fsSL https://raw.githubusercontent.com/caferen/dotfiles/master/utils/ohmyzsh.sh)"
 }
 
 keyboard() {
@@ -104,31 +105,9 @@ pipewire() {
 }
 
 drive() {
-    if [[ ! -d "$2" ]]; then
-        mkdir "$2"
-        sudo chown $USER:$USER "$2" -R
-        echo "UUID=${1}       "$2"  ext4    defaults,nofail        0 0" \
-            | sudo tee -a /etc/fstab
-
-        sudo systemctl daemon-reload
-        sudo mount "$2"
-    fi
-}
-
-services() {
-    for service in $HOME/utils/services/*.service; do
-        local name=$(basename "$service")
-        if [[ ! -f /etc/systemd/system/"$name" ]]; then
-            sudo ln -s "$service" /etc/systemd/system
-            sudo systemctl enable "$name"
-        fi
-    done
-}
-
-drives() {
-    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
-    drive "41bd16a6-d7ef-4cda-aed6-0a52f3c0db0a" $HOME/backup
-    drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
+    [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R \
+            &&  echo "UUID=${1}     "$2"  ext4    defaults,nofail 0 0" \
+        | sudo tee -a /etc/fstab)
 }
 
 sudo pacman -Syu
@@ -167,6 +146,12 @@ yay_install discord steam blender cura-bin mangohud gamemode
 sudo systemctl enable coolercontrold.service
 sudo systemctl enable systemd-resolved.service
 
-drives
+drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
+drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup
+drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
+
 keyboard
-services
+
+for service in $HOME/utils/services/*.service; do
+    sudo systemctl enable "$service"
+done
