@@ -5,7 +5,7 @@ Description=Backup files
 User=eren
 Restart=always
 RestartSec=15m
-ExecStart= /usr/bin/rsync -a --delete $HOME/ssd/media-cipher $HOME/backup
+ExecStart= /bin/bash -c "/usr/bin/rsync -a --delete $HOME/ssd/media-cipher $HOME/backup"
 
 [Install]
 WantedBy=multi-user.target
