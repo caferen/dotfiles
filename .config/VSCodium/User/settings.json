@@ -72,5 +72,4 @@
     "workbench.sideBar.location": "right",
     "workbench.editor.showTabs": "single",
     "diffEditor.renderSideBySide": false,
-    "window.zoomLevel": 1,
 }
