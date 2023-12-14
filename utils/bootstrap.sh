@@ -9,58 +9,40 @@ yay_install() {
 }
 
 install_yay() {
-    if ! which yay; then
-        pacman_install git base-devel
-        git clone https://aur.archlinux.org/yay-bin.git $HOME/yay-bin
-        (
-            cd $HOME/yay-bin
-            makepkg -si --noconfirm --needed
-        )
-        rm -rf $HOME/yay-bin
-        yay -Y --devel --combinedupgrade --batchinstall --answerclean None \
-            --answerdiff None --answerupgrade None --answeredit None --removemake \
-            --noconfirm --save
-    fi
+    pacman_install git base-devel
+    git clone https://aur.archlinux.org/yay-bin.git $HOME/yay-bin
+    (
+        cd $HOME/yay-bin
+        makepkg -si --noconfirm --needed
+    )
+    rm -rf $HOME/yay-bin
+    yay -Y --devel --combinedupgrade --batchinstall --answerclean None \
+        --answerdiff None --answerupgrade None --answeredit None --removemake \
+        --noconfirm --save
 }
 
 get_dotfiles() {
     pacman_install rsync
-    if [[ ! -d $HOME/utils ]]; then
-        rm -rf $HOME/dotfiles
-        gh repo clone dotfiles $HOME/dotfiles
-        rsync -r $HOME/dotfiles/ $HOME
-        rm -rf $HOME/dotfiles
-    fi
+    rm -rf $HOME/dotfiles
+    git clone https://github.com/caferen/dotfiles.git $HOME/dotfiles
+    rsync -r $HOME/dotfiles/ $HOME
+    rm -rf $HOME/dotfiles
 }
 
 configure_git_and_github() {
-    if ! which gh; then
-        git config --global user.email "eren.simsek@tuta.io"
-        git config --global user.name "Eren"
-        git config --global push.autoSetupRemote true
-        pacman_install github-cli
-        gh auth login
-        gh auth setup-git
-    fi
-}
-
-install_rust() {
-    if ! which rustup; then
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    else
-        rustup update
-    fi
+    git config --global user.email "eren.simsek@tuta.io"
+    git config --global user.name "Eren"
+    git config --global push.autoSetupRemote true
+    pacman_install github-cli
+    gh auth login
+    gh auth setup-git
 }
 
 install_typescript() {
     yay_install nvm
     source /usr/share/nvm/init-nvm.sh
-    if ! which npm; then
-        nvm install node
-        npm install -g typescript
-    else
-        nvm install node --reinstall-packages-from=$(nvm current)
-    fi
+    nvm install node
+    npm install -g typescript
 }
 
 configure_shell() {
@@ -110,48 +92,63 @@ drive() {
         | sudo tee -a /etc/fstab)
 }
 
-sudo pacman -Syu
-pacman_install git base-devel man curl make
-install_yay
-configure_git_and_github
-get_dotfiles
-configure_shell
-yay_install neovim-git ripgrep unzip helix
+init() {
+    sudo pacman -Syu
+    pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms
+    install_yay
+    plasma
+    pipewire
+    yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin
+    exit 0
+}
 
-yay_install syncthing gocryptfs
-systemctl enable --user syncthing.service
+# Initialize a fresh install
+if [ "$1" == "--init" ]; then
+    init
+fi
 
-install_typescript
-install_rust
-pacman_install python python-pip
+# Bootstrap rest of the system following a reboot after --init
+if [ "$1" == "--bootstrap" ]; then
+    configure_git_and_github
+    get_dotfiles
+    configure_shell
 
+    yay_install syncthing gocryptfs
+    systemctl enable --user syncthing.service
+
+    install_typescript
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    pacman_install python python-pip
+
+    yay_install discord steam blender cura-bin mangohud gamemode element-desktop freetube-bin \
+        heroic-games-launcher-bin mullvad-vpn thunderbird vlc signal-desktop spotify \
+        coolercontrol lm-sensors libusb vscodium-bin fzf neovim-git ripgrep unzip
+
+        # @formatter:off
+        echo "asvetliakov.vscode-neovim
+    eamodio.gitlens
+    GitHub.github-vscode-theme
+    ms-python.python
+    rust-lang.rust-analyzer
+    vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
+        # @formatter:on
+
+    [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
+    sudo systemctl enable coolercontrold.service
+    sudo systemctl enable systemd-resolved.service
+
+    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
+    drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup
+    drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
+
+    keyboard
+    exit 0
+fi
+
+# Update
 yay
-yay_install linux-zen-headers nvidia-dkms coolercontrol lm-sensors libusb
-plasma
-pipewire
-yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin vscodium-bin fzf
-    # @formatter:off
-    echo "asvetliakov.vscode-neovim
-eamodio.gitlens
-GitHub.github-vscode-theme
-ms-python.python
-rust-lang.rust-analyzer
-vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
-    # @formatter:on
-
-yay_install discord steam blender cura-bin mangohud gamemode element-desktop freetube-bin \
-    heroic-games-launcher-bin mullvad-vpn thunderbird vlc signal-desktop spotify
-
-
-[[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
-sudo systemctl enable coolercontrold.service
-sudo systemctl enable systemd-resolved.service
-
-drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
-drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup
-drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
-
-keyboard
+rustup self update && rustup update
+source /usr/share/nvm/init-nvm.sh && nvm install node --reinstall-packages-from=$(nvm current)
 
 for service in $HOME/utils/services/*.service; do
     sudo systemctl enable "$service"
