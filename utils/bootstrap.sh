@@ -139,7 +139,8 @@ rust-lang.rust-analyzer
 vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
     # @formatter:on
 
-yay_install discord steam blender cura-bin mangohud gamemode
+yay_install discord steam blender cura-bin mangohud gamemode element-desktop freetube-bin \
+    heroic-games-launcher-bin mullvad-vpn thunderbird vlc signal-desktop spotify
 
 
 [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
