@@ -15,7 +15,7 @@ skiptaskbar=true
 skiptaskbarrule=2
 title=(polybar|Picture in picture)
 titlematch=3
-wmclass=polybar
+wmclass=ClRendererMain
 
 [10d6c0fc-eb55-4690-809a-23f7d2588fe4]
 Description=OpenGL Renderer
