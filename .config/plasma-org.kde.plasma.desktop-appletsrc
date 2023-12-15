@@ -86,7 +86,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][118][Applets][125][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][118][Applets][126]
 immutability=1
@@ -224,7 +224,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][139][Applets][180][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][139][Configuration]
 PreloadWeight=0
@@ -343,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 popupHeight=574
 popupWidth=733
 
@@ -368,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -376,7 +376,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][203][Applets][217][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 popupHeight=550
 popupWidth=484
 
@@ -459,7 +459,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][209][Applets][211][Configuration]
-PreloadWeight=27
+PreloadWeight=19
 
 [Containments][209][Applets][212]
 immutability=1
@@ -473,14 +473,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=92
+PreloadWeight=89
 
 [Containments][209][Applets][214]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][209][Applets][214][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][209][Applets][214][Configuration][General]
 currentTab=streams
@@ -500,14 +500,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][209][Applets][220][Configuration]
-PreloadWeight=77
+PreloadWeight=69
 
 [Containments][209][Applets][221]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][209][Applets][225]
 immutability=1
@@ -521,14 +521,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][209][Applets][227][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 
 [Containments][209][Applets][230]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][209][Applets][230][Configuration]
-PreloadWeight=72
+PreloadWeight=64
 
 [Containments][209][ConfigDialog]
 DialogHeight=660
@@ -602,7 +602,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][50][Applets][58][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][50][Applets][59]
 immutability=1
@@ -725,7 +725,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42
@@ -839,7 +839,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][9][Applets][83][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][9][Configuration]
 PreloadWeight=0
@@ -862,7 +862,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][93][Applets][100][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][93][Applets][101]
 immutability=1
@@ -958,5 +958,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/bin,file:///home/eren/ssd,file:///home/eren/utils,file:///home/eren/Documents,file:///home/eren/Videos,file:///home/eren/Templates,file:///home/eren/Pictures,file:///home/eren/Downloads,file:///home/eren/backup,file:///home/eren/Public,file:///home/eren/Projects,file:///home/eren/Desktop,file:///home/eren/Drive,file:///home/eren/Music
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Public,file:///home/eren/Documents,file:///home/eren/Videos,file:///home/eren/Pictures,file:///home/eren/bin,file:///home/eren/Drive,file:///home/eren/Projects,file:///home/eren/Desktop,file:///home/eren/utils,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Templates,file:///home/eren/Downloads,file:///home/eren/backup,file:///home/eren/Music,file:///home/eren/ssd
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
