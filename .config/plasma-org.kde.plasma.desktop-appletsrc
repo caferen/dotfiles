@@ -334,7 +334,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:spotify.desktop,applications:org.mozilla.Thunderbird.desktop,applications:tutanota-desktop.desktop,applications:discord.desktop,applications:mullvad-vpn.desktop,applications:codium-wayland.desktop,applications:steam.desktop,applications:heroic.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:org.mozilla.Thunderbird.desktop,applications:tutanota-desktop.desktop,applications:signal-desktop.desktop,applications:discord.desktop,applications:io.element.Element.desktop,applications:mullvad-vpn.desktop,applications:steam.desktop,applications:heroic.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -343,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 popupHeight=574
 popupWidth=733
 
