@@ -4,7 +4,7 @@ local cursor = require("telescope.themes").get_cursor({})
 
 require("telescope").setup({
     defaults = {
-        -- sorting_strategy = "ascending",
+        sorting_strategy = "ascending",
         mappings = {
             i = {
                 ["<esc>"] = close,
@@ -12,7 +12,7 @@ require("telescope").setup({
         },
         layout_config = {
             horizontal = {
-                -- prompt_position = "top",
+                prompt_position = "top",
                 width = 0.99,
                 height = 0.99,
                 preview_width = 0.6,

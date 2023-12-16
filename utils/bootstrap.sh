@@ -92,7 +92,8 @@ drive() {
         | sudo tee -a /etc/fstab)
 }
 
-init() {
+# Initialize a fresh install
+if [ "$1" == "--init" ]; then
     sudo pacman -Syu
     pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms
     install_yay
@@ -100,11 +101,6 @@ init() {
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin
     exit 0
-}
-
-# Initialize a fresh install
-if [ "$1" == "--init" ]; then
-    init
 fi
 
 # Bootstrap rest of the system following a reboot after --init

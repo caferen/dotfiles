@@ -42,13 +42,7 @@ spell.filetypes = { "text" }
 null_ls.setup({
     sources = {
         spell,
-        -- diagnostics.actionlint,
         diagnostics.ruff,
-        -- diagnostics.eslint_d,
-        -- formatting.stylua,
-        -- formatting.black,
-        -- formatting.dart_format,
-        formatting.rustfmt,
         formatting.beautysh,
     },
 })
