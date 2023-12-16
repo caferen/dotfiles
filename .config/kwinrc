@@ -18,7 +18,7 @@ BorderActivate=0
 BorderActivateAll=9
 
 [Plugins]
-bismuthEnabled=false
+bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=true
 forceblurEnabled=true
@@ -41,7 +41,7 @@ enableStairLayout=false
 enableThreeColumnLayout=false
 ignoreClass=spectacle,Friends List, leagueclientux.exe
 ignoreRole=
-ignoreTitle=Friends List, Mullvad VPN
+ignoreTitle=Friends List,Mullvad VPN,Bitwarden
 screenGapBottom=10
 screenGapLeft=10
 screenGapRight=10
