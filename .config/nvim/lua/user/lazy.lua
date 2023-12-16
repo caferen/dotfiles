@@ -44,6 +44,7 @@ require("lazy").setup({
     "RRethy/nvim-base16",
     "jiangmiao/auto-pairs",
     "ThePrimeagen/harpoon",
+    "lewis6991/gitsigns.nvim",
     {
         "nvim-telescope/telescope.nvim",
         branch = "master",
