@@ -343,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=91
+PreloadWeight=92
 popupHeight=574
 popupWidth=733
 
@@ -368,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -376,7 +376,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][203][Applets][217][Configuration]
-PreloadWeight=18
+PreloadWeight=10
 popupHeight=550
 popupWidth=484
 
@@ -459,7 +459,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][209][Applets][211][Configuration]
-PreloadWeight=3
+PreloadWeight=0
 
 [Containments][209][Applets][212]
 immutability=1
@@ -473,14 +473,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=93
+PreloadWeight=85
 
 [Containments][209][Applets][214]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][209][Applets][214][Configuration]
-PreloadWeight=91
+PreloadWeight=83
 
 [Containments][209][Applets][214][Configuration][General]
 migrated=true
@@ -499,14 +499,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][209][Applets][220][Configuration]
-PreloadWeight=53
+PreloadWeight=50
 
 [Containments][209][Applets][221]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][209][Applets][225]
 immutability=1
@@ -520,14 +520,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][209][Applets][227][Configuration]
-PreloadWeight=68
+PreloadWeight=60
 
 [Containments][209][Applets][230]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][209][Applets][230][Configuration]
-PreloadWeight=83
+PreloadWeight=80
 
 [Containments][209][ConfigDialog]
 DialogHeight=660
@@ -724,7 +724,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=60
+PreloadWeight=52
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42
@@ -957,5 +957,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/bin,file:///home/eren/ssd,file:///home/eren/utils,file:///home/eren/Music,file:///home/eren/Pictures,file:///home/eren/Projects,file:///home/eren/Downloads,file:///home/eren/backup,file:///home/eren/Public,file:///home/eren/Videos,file:///home/eren/Templates,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Desktop,file:///home/eren/Drive,file:///home/eren/Documents
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Desktop,file:///home/eren/Public,file:///home/eren/Downloads,file:///home/eren/ssd,file:///home/eren/Pictures,file:///home/eren/Music,file:///home/eren/utils,file:///home/eren/Videos,file:///home/eren/Templates,file:///home/eren/bin,file:///home/eren/backup,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Drive,file:///home/eren/Projects,file:///home/eren/Documents
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
