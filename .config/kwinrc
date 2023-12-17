@@ -12,7 +12,7 @@ BlurStrength=5
 NoiseStrength=10
 
 [Effect-windowview]
-BorderActivateAll=9
+BorderActivateAll=0
 
 [Plugins]
 bismuthEnabled=true
@@ -115,8 +115,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
-ElectricBorderCooldown=100
-ElectricBorderDelay=50
+ElectricBorderCooldown=250
 
 [Xwayland]
 Scale=1
