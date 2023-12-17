@@ -11,9 +11,6 @@ Rows=1
 BlurStrength=5
 NoiseStrength=10
 
-[Effect-overview]
-BorderActivate=0
-
 [Effect-windowview]
 BorderActivateAll=9
 
