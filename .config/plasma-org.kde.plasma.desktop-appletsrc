@@ -368,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -473,7 +473,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][209][Applets][214]
 immutability=1
@@ -506,7 +506,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=18
+PreloadWeight=23
 
 [Containments][209][Applets][225]
 immutability=1
