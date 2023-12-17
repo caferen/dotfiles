@@ -1,5 +1,5 @@
 [Unit]
-Description=Backup dotfiles and drive
+Description=Backup configurations and files
 
 [Service]
 User=eren
