@@ -343,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 popupHeight=574
 popupWidth=733
 
@@ -958,5 +958,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Videos,file:///home/eren/Music,file:///home/eren/bin,file:///home/eren/backup,file:///home/eren/Desktop,file:///home/eren/Public,file:///home/eren/Pictures,file:///home/eren/Documents,file:///home/eren/Templates,file:///home/eren/Downloads,file:///home/eren/ssd,file:///home/eren/utils,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Drive,file:///home/eren/Projects
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/bin,file:///home/eren/Templates,file:///home/eren/Downloads,file:///home/eren/Videos,file:///home/eren/Documents,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Pictures,file:///home/eren/ssd,file:///home/eren/Projects,file:///home/eren/utils,file:///home/eren/Desktop,file:///home/eren/Music,file:///home/eren/backup,file:///home/eren/Public,file:///home/eren/Drive
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
