@@ -68,7 +68,7 @@
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "editor.overviewRulerBorder": false,
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "Hack The Box",
     "workbench.sideBar.location": "right",
     "workbench.editor.showTabs": "single",
     "diffEditor.renderSideBySide": false,
