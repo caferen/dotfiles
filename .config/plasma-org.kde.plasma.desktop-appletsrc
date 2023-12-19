@@ -527,7 +527,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][209][Applets][230][Configuration]
-PreloadWeight=84
+PreloadWeight=100
 
 [Containments][209][ConfigDialog]
 DialogHeight=660
