@@ -69,7 +69,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle kwin-bismuth plasma-wayland-session wl-clipboard
+        plasma-pa bluedevil spectacle kwin-bismuth plasma-wayland-session wl-clipboard \
+        plasma-firewall
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
@@ -92,17 +93,25 @@ drive() {
         | sudo tee -a /etc/fstab)
 }
 
-# Initialize a fresh install
-if [ "$1" == "--init" ]; then
-    sudo pacman -Syu
-    pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms ufw
+sekuurity() {
+    # set kernel parameters: lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1
+    pacman_install ufw apparmor
+    sudo systemctl enable --now ufw.service apparmor.service auditd.service
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
     sudo ufw enable
+}
+
+# Initialize a fresh install
+if [ "$1" == "--init" ]; then
+    sudo pacman -Syu
+    pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms
+    sekuurity
     install_yay
     plasma
     pipewire
     yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin
+    sudo systemctl enable systemd-resolved.service
     exit 0
 fi
 
@@ -134,7 +143,6 @@ if [ "$1" == "--bootstrap" ]; then
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable coolercontrold.service
-    sudo systemctl enable systemd-resolved.service
 
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
     drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup
