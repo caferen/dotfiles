@@ -334,7 +334,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:mullvad-vpn.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:tutanota-desktop.desktop,applications:signal-desktop.desktop,applications:discord.desktop,applications:io.element.Element.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:mullvad-vpn.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:signal-desktop.desktop,applications:io.element.Element.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -368,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -473,7 +473,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=81
+PreloadWeight=86
 
 [Containments][209][Applets][214]
 immutability=1
@@ -506,7 +506,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=49
+PreloadWeight=54
 
 [Containments][209][Applets][225]
 immutability=1
