@@ -68,9 +68,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 }
 
 plasma() {
-    yay_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle kwin-bismuth plasma-wayland-session wl-clipboard \
-        plasma-firewall
+    pacman_install plasma-desktop dolphin networkmanager sddm plasma-nm \
+        plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard plasma-firewall
+    yay_install kwin-bismuth
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
@@ -83,8 +83,8 @@ plasma() {
 }
 
 pipewire() {
-    yay_install pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber
-    systemctl enable --user pipewire-pulse.service
+    pacman_install pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber
+    systemctl enable --user pipewire pipewire-pulse.service
 }
 
 drive() {
@@ -105,12 +105,12 @@ sekuurity() {
 # Initialize a fresh install
 if [ "$1" == "--init" ]; then
     sudo pacman -Syu
-    pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms
+    pacman_install git base-devel man curl make helix alacritty linux-zen-headers nvidia-dkms
     sekuurity
     install_yay
     plasma
     pipewire
-    yay_install ttf-meslo-nerd-font-powerlevel10k alacritty brave-bin
+    yay_install ttf-meslo-nerd-font-powerlevel10k brave-bin
     sudo systemctl enable systemd-resolved.service
     exit 0
 fi
@@ -121,7 +121,7 @@ if [ "$1" == "--bootstrap" ]; then
     get_dotfiles
     configure_shell
 
-    yay_install syncthing gocryptfs
+    pacman_install syncthing gocryptfs
     systemctl enable --user syncthing.service
 
     install_typescript
