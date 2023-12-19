@@ -38,7 +38,8 @@
         "quickInput.background": "#000",
         "input.background": "#000",
         "input.border": "#000",
-        "menu.background": "#000"
+        "menu.background": "#000",
+        "editorGutter.background": "#000",
     },
     "editor.lineNumbers": "relative",
     "editor.mouseWheelScrollSensitivity": 0.5,
@@ -68,8 +69,9 @@
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "editor.overviewRulerBorder": false,
-    "workbench.colorTheme": "Hack The Box",
     "workbench.sideBar.location": "right",
     "workbench.editor.showTabs": "single",
     "diffEditor.renderSideBySide": false,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "GitHub Dark",
 }

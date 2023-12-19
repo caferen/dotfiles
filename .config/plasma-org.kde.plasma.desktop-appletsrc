@@ -343,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][186][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 popupHeight=574
 popupWidth=733
 
@@ -368,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -459,7 +459,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][209][Applets][211][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][209][Applets][212]
 immutability=1
@@ -473,14 +473,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 
 [Containments][209][Applets][214]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][209][Applets][214][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][209][Applets][214][Configuration][General]
 currentTab=streams
@@ -500,14 +500,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][209][Applets][220][Configuration]
-PreloadWeight=28
+PreloadWeight=20
 
 [Containments][209][Applets][221]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=47
+PreloadWeight=39
 
 [Containments][209][Applets][225]
 immutability=1
@@ -521,14 +521,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][209][Applets][227][Configuration]
-PreloadWeight=83
+PreloadWeight=75
 
 [Containments][209][Applets][230]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][209][Applets][230][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][209][ConfigDialog]
 DialogHeight=660
@@ -725,7 +725,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][68][Applets][82][Configuration]
-PreloadWeight=4
+PreloadWeight=0
 
 [Containments][68][Applets][86][Configuration]
 PreloadWeight=42
@@ -958,5 +958,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Videos,file:///home/eren/Templates,file:///home/eren/utils,file:///home/eren/Drive,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Desktop,file:///home/eren/Downloads,file:///home/eren/bin,file:///home/eren/ssd,file:///home/eren/Pictures,file:///home/eren/Public,file:///home/eren/backup,file:///home/eren/Documents,file:///home/eren/Music,file:///home/eren/Projects
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Videos,file:///home/eren/Music,file:///home/eren/bin,file:///home/eren/backup,file:///home/eren/Desktop,file:///home/eren/Public,file:///home/eren/Pictures,file:///home/eren/Documents,file:///home/eren/Templates,file:///home/eren/Downloads,file:///home/eren/ssd,file:///home/eren/utils,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Drive,file:///home/eren/Projects
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
