@@ -38,13 +38,6 @@ configure_git_and_github() {
     gh auth setup-git
 }
 
-install_typescript() {
-    yay_install nvm
-    source /usr/share/nvm/init-nvm.sh
-    nvm install node
-    npm install -g typescript
-}
-
 configure_shell() {
     pacman_install zsh tmux starship
     [[ -d $HOME/.oh-my-zsh ]] || ZSH= sh -c \
@@ -64,13 +57,12 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
     sudo groupadd plugdev
     sudo usermod -aG plugdev $USER
-    yay_install wally-cli
 }
 
 plasma() {
     pacman_install plasma-desktop dolphin networkmanager sddm plasma-nm \
         plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard plasma-firewall
-    yay_install kwin-bismuth
+    yay_install kwin-bismuth-bin
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
@@ -124,13 +116,14 @@ if [ "$1" == "--bootstrap" ]; then
     pacman_install syncthing gocryptfs
     systemctl enable --user syncthing.service
 
-    install_typescript
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     pacman_install python python-pip
 
-    yay_install steam blender cura-bin mangohud gamemode freetube-bin \
-        heroic-games-launcher-bin mullvad-vpn thunderbird vlc signal-desktop spotify \
-        coolercontrol lm-sensors libusb vscodium-bin fzf neovim-git ripgrep unzip
+    pacman_install steam blender mangohud gamemode thunderbird vlc signal-desktop \
+        libusb fzf ripgrep unzip lm_sensors
+
+    yay_install cura-bin freetube-bin heroic-games-launcher-bin mullvad-vpn-bin spotify \
+        coolercontrol vscodium-bin neovim-git
 
         # @formatter:off
         echo "asvetliakov.vscode-neovim
@@ -155,7 +148,6 @@ fi
 # Update
 yay
 rustup self update && rustup update
-source /usr/share/nvm/init-nvm.sh && nvm install node --reinstall-packages-from=$(nvm current)
 
 for service in $HOME/utils/services/*.service; do
     sudo systemctl enable "$service"
