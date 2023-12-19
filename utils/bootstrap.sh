@@ -95,7 +95,10 @@ drive() {
 # Initialize a fresh install
 if [ "$1" == "--init" ]; then
     sudo pacman -Syu
-    pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms
+    pacman_install git base-devel man curl make helix linux-zen-headers nvidia-dkms ufw
+    sudo ufw default deny incoming
+    sudo ufw default allow outgoing
+    sudo ufw enable
     install_yay
     plasma
     pipewire
@@ -116,7 +119,7 @@ if [ "$1" == "--bootstrap" ]; then
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     pacman_install python python-pip
 
-    yay_install discord steam blender cura-bin mangohud gamemode element-desktop freetube-bin \
+    yay_install steam blender cura-bin mangohud gamemode freetube-bin \
         heroic-games-launcher-bin mullvad-vpn thunderbird vlc signal-desktop spotify \
         coolercontrol lm-sensors libusb vscodium-bin fzf neovim-git ripgrep unzip
 
