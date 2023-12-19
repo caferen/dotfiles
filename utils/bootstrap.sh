@@ -97,7 +97,7 @@ sekuurity() {
 # Initialize a fresh install
 if [ "$1" == "--init" ]; then
     sudo pacman -Syu
-    pacman_install git base-devel man curl make helix alacritty linux-zen-headers nvidia-dkms
+    pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
     sekuurity
     install_yay
     plasma
