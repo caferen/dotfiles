@@ -15,15 +15,15 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:$HOME/Pictures/wallpapers/Black/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/marko-blazevic-S7mAngnWV1A-unsplash.jpg,file:$HOME/utils/icons/league.png,file:$HOME/Pictures/wallpapers/F4KiAtZWUAAZ5rW.jpeg,file:$HOME/Pictures/wallpapers/F4KiHIZWMAAW1qa.jpeg,file:$HOME/Pictures/wallpapers/F4KjQuyW0AAz5br.jpeg,file:$HOME/Pictures/wallpapers/F4KX7lqW4AERlo_.jpeg,file:$HOME/Pictures/wallpapers/F4KXGreWMAAeAn8.jpeg,file:$HOME/Pictures/wallpapers/F4KXidvXcAAEfAh.jpeg,file:$HOME/Pictures/wallpapers/garrett-parker-DlkF4-dbCOU-unsplash.jpg,file:$HOME/Pictures/wallpapers/james-donovan-kFHz9Xh3PPU-unsplash.jpg,file:$HOME/Pictures/wallpapers/jonatan-pie-3l3RwQdHRHg-unsplash.jpg,file:$HOME/Pictures/wallpapers/jussi-hellsten-qtXmmnVgSJk-unsplash.jpg,file:$HOME/Pictures/wallpapers/kolya-korzh-wqzEN25BRzw-unsplash.jpg
-Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/,file:$HOME/Documents/,file:$HOME/Pictures/wallpapers/Ghostrunner/,file:$HOME/Pictures/wallpapers/,file:$HOME/,file:$HOME/utils/icons/
-detailViewIconSize=256
+Recent Files[$e]=archlinux-logo.svg,file:$HOME/.local/bin/lol,file:$HOME/Pictures/wallpapers/Black/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/marko-blazevic-S7mAngnWV1A-unsplash.jpg,file:$HOME/Pictures/wallpapers/F4KiAtZWUAAZ5rW.jpeg,file:$HOME/Pictures/wallpapers/F4KiHIZWMAAW1qa.jpeg,file:$HOME/Pictures/wallpapers/F4KjQuyW0AAz5br.jpeg,file:$HOME/Pictures/wallpapers/F4KX7lqW4AERlo_.jpeg,file:$HOME/Pictures/wallpapers/F4KXGreWMAAeAn8.jpeg,file:$HOME/Pictures/wallpapers/F4KXidvXcAAEfAh.jpeg,file:$HOME/Pictures/wallpapers/garrett-parker-DlkF4-dbCOU-unsplash.jpg,file:$HOME/Pictures/wallpapers/james-donovan-kFHz9Xh3PPU-unsplash.jpg,file:$HOME/Pictures/wallpapers/jonatan-pie-3l3RwQdHRHg-unsplash.jpg,file:$HOME/Pictures/wallpapers/jussi-hellsten-qtXmmnVgSJk-unsplash.jpg
+Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/,file:$HOME/Documents/,file:$HOME/Pictures/wallpapers/Ghostrunner/,file:$HOME/Pictures/wallpapers/,file:$HOME/,file:$HOME/.local/bin/
+detailViewIconSize=48
 
 [KPropertiesDialog]
 2 screens: Height=529
-2 screens: Width=431
+2 screens: Width=424
 2560x1440 screen: Height=529
-2560x1440 screen: Width=425
+2560x1440 screen: Width=445
 
 [PlasmaViews][Panel 110]
 panelOpacity=1
