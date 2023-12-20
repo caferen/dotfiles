@@ -27,6 +27,10 @@ get_dotfiles() {
     git clone https://github.com/caferen/dotfiles.git $HOME/dotfiles
     rsync -r $HOME/dotfiles/ $HOME
     rm -rf $HOME/dotfiles
+    ln -s $HOME/utils/xsingle.sh $HOME/.local/bin/xsingle
+    ln -s $HOME/utils/xdual.sh $HOME/.local/bin/xdual
+    ln -s $HOME/utils/bootstrap.sh $HOME/.local/bin/bootstrap
+    ln -s $HOME/utils/toggle_bismuth.sh $HOME/.local/bin/toggle_bismuth
 }
 
 configure_git_and_github() {

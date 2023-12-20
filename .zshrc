@@ -3,6 +3,7 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 export CARGO_HOME="$HOME/.cargo"
 export FZF_DEFAULT_COMMAND="rg --files --no-ignore-parent --hidden"
+export PATH="$HOME/.local/bin:$PATH"
 
 alias vi="nvim -n"
 alias rgrep="rg --no-ignore-parent --hidden"
