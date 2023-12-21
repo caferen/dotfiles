@@ -27,10 +27,6 @@ get_dotfiles() {
     git clone https://github.com/caferen/dotfiles.git $HOME/dotfiles
     rsync -r $HOME/dotfiles/ $HOME
     rm -rf $HOME/dotfiles
-    ln -s $HOME/utils/xsingle.sh $HOME/.local/bin/xsingle
-    ln -s $HOME/utils/xdual.sh $HOME/.local/bin/xdual
-    ln -s $HOME/utils/bootstrap.sh $HOME/.local/bin/bootstrap
-    ln -s $HOME/utils/toggle_bismuth.sh $HOME/.local/bin/toggle_bismuth
     sudo ln -s $HOME/utils/fonts/* /usr/share/fonts/TTF/
 }
 
@@ -87,6 +83,8 @@ sekuurity() {
     sudo systemctl enable --now ufw.service apparmor.service auditd.service
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
+    sudo ufw allow from 192.168.1.0/24 to any port 1714:1764 proto udp
+    sudo ufw allow from 192.168.1.0/24 to any port 1714:1764 proto tcp
     sudo ufw enable
 }
 
@@ -98,7 +96,6 @@ if [ "$1" == "--init" ]; then
     install_yay
     plasma
     pipewire
-    yay_install ttf-meslo-nerd-font-powerlevel10k brave-bin
     sudo systemctl enable systemd-resolved.service
     exit 0
 fi
