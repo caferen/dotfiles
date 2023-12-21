@@ -31,6 +31,7 @@ get_dotfiles() {
     ln -s $HOME/utils/xdual.sh $HOME/.local/bin/xdual
     ln -s $HOME/utils/bootstrap.sh $HOME/.local/bin/bootstrap
     ln -s $HOME/utils/toggle_bismuth.sh $HOME/.local/bin/toggle_bismuth
+    sudo ln -s $HOME/utils/fonts/* /usr/share/fonts/TTF/
 }
 
 configure_shell() {
