@@ -14,4 +14,5 @@
 !.stignore
 !.zshrc
 !.gtkrc-2.0
+!.gitconfig
 

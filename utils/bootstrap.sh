@@ -65,7 +65,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     pacman_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard plasma-firewall
+        plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard
     yay_install kwin-bismuth-bin
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
