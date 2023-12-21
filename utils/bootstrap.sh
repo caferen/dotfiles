@@ -1,4 +1,4 @@
-# echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+#
 
 pacman_install() {
     sudo pacman -S --noconfirm --needed "$@"
@@ -31,15 +31,6 @@ get_dotfiles() {
     ln -s $HOME/utils/xdual.sh $HOME/.local/bin/xdual
     ln -s $HOME/utils/bootstrap.sh $HOME/.local/bin/bootstrap
     ln -s $HOME/utils/toggle_bismuth.sh $HOME/.local/bin/toggle_bismuth
-}
-
-configure_git_and_github() {
-    git config --global user.email "eren.simsek@tuta.io"
-    git config --global user.name "Eren"
-    git config --global push.autoSetupRemote true
-    pacman_install github-cli
-    gh auth login
-    gh auth setup-git
 }
 
 configure_shell() {
@@ -113,7 +104,6 @@ fi
 
 # Bootstrap rest of the system following a reboot after --init
 if [ "$1" == "--bootstrap" ]; then
-    configure_git_and_github
     get_dotfiles
     configure_shell
 
@@ -146,13 +136,12 @@ if [ "$1" == "--bootstrap" ]; then
     drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
 
     keyboard
+
+    for service in $HOME/utils/services/*.service; do
+        sudo systemctl enable "$service"
+    done
+
+    echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+
     exit 0
 fi
-
-# Update
-yay
-rustup self update && rustup update
-
-for service in $HOME/utils/services/*.service; do
-    sudo systemctl enable "$service"
-done
