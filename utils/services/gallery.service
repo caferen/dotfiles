@@ -6,7 +6,7 @@ After=home-eren-password.mount
 Type=oneshot
 RemainAfterExit=yes
 User=eren
-ExecStart= /usr/bin/gocryptfs /home/eren/ssd/media-cipher /home/eren/Pictures -passfile=/home/eren/password/password
+ExecStart= /usr/bin/gocryptfs /home/eren/ssd/media-cipher /home/eren/Pictures/Gallery -passfile=/home/eren/password/password
 
 [Install]
 WantedBy=multi-user.target
