@@ -85,6 +85,7 @@ sekuurity() {
     sudo ufw default allow outgoing
     sudo ufw allow from 192.168.1.0/24 to any port 1714:1764 proto udp
     sudo ufw allow from 192.168.1.0/24 to any port 1714:1764 proto tcp
+    sudo ufw allow syncthing
     sudo ufw enable
 }
 
