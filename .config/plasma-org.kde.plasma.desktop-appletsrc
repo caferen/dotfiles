@@ -334,7 +334,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:mullvad-vpn.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:signal-desktop.desktop,applications:steam.desktop,applications:lolforlinuxinstaller.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
+launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:mullvad-vpn.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:signal-desktop.desktop,applications:steam.desktop,applications:freetube.desktop,applications:blender.desktop,applications:cura.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -473,7 +473,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=98
+PreloadWeight=100
 
 [Containments][209][Applets][214]
 immutability=1
@@ -483,7 +483,6 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][209][Applets][214][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][209][Applets][215][Configuration]
@@ -958,5 +957,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/bin,file:///home/eren/Projects,file:///home/eren/Drive,file:///home/eren/Pictures,file:///home/eren/Templates,file:///home/eren/Music,file:///home/eren/backup,file:///home/eren/ssd,file:///home/eren/Videos,file:///home/eren/Documents,file:///home/eren/Desktop,file:///home/eren/Public,file:///home/eren/utils,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Downloads
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Drive,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Music,file:///home/eren/bin,file:///home/eren/Videos,file:///home/eren/Public,file:///home/eren/Templates,file:///home/eren/utils,file:///home/eren/Pictures,file:///home/eren/Documents,file:///home/eren/Desktop,file:///home/eren/Downloads,file:///home/eren/backup,file:///home/eren/Projects,file:///home/eren/ssd
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
