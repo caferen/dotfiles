@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 SPLIT_TUNNEL="mullvad-exclude"
 GAMEMODE="gamemoderun"
 HUD="mangohud"
@@ -9,11 +8,15 @@ STEAM_TEMPLATE="${SPLIT_TUNNEL} ${GAMEMODE} ${HUD} steam steam://rungameid"
 GAMES=(
     "Apex Legends"
     "League of Legends"
+    "Ghostrunner"
+    "Counter-Strike 2"
 )
 
 COMMANDS=(
     "${STEAM_TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited"
     "${SPLIT_TUNNEL} lolforlinuxinstaller"
+    "/opt/Heroic/heroic --no-gui --no-sandbox "heroic://launch/gog/1957528513""
+    "-${STEAM_TEMPLATE}/730 -sdlaudiodriver pipewire"
 )
 
 for manifest in $HOME/ssd/SteamLibrary/steamapps/appmanifest_*.acf; do
@@ -36,16 +39,19 @@ done
 
 GAME=$(printf "%s\n" "${GAMES[@]}" | fzf  --query="$1" --multi --select-1 --exit-0)
 
-echo ${GAMES_TO_COMMANDS["$GAME"]}
+[[ -n "$GAME" ]] || exit 0
 
+COMMAND=${GAMES_TO_COMMANDS["$GAME"]}
 
-# $HOME/.local/bin/single
-#
-# # let the process spawn so we don't exit the script immediately
-# sleep 30
-#
-# while pgrep -x "r5apex_dx12.exe"; do
-#     sleep 5
-# done
-#
-# $HOME/.local/bin/dual
+$HOME/.local/bin/single
+
+eval "$COMMAND"
+
+# let the process spawn so we don't exit the script immediately
+sleep 30
+
+while pgrep ".*.exe"; do
+    sleep 5
+done
+
+$HOME/.local/bin/dual
