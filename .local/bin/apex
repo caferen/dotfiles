@@ -4,16 +4,28 @@
 SPLIT_TUNNEL="mullvad-exclude"
 GAMEMODE="gamemoderun"
 HUD="mangohud"
-STEAM_TEMPLATE="mullvad-exclude gamemoderun mangohud steam steam://rungameid"
+STEAM_TEMPLATE="${SPLIT_TUNNEL} ${GAMEMODE} ${HUD} steam steam://rungameid"
 
-declare -A games_to_commands=(
-    ["apex"]="${STEAM_TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited"
-    ["lol"]="mullvad-exclude lolforlinuxinstaller"
+GAMES=(
+    "Apex Legends"
+    "League of Legends"
+)
+COMMANDS=(
+    "${STEAM_TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited"
+    "${SPLIT_TUNNEL} lolforlinuxinstaller"
 )
 
-IFS=' ' read -a game <<< "${!games_to_commands[@]}" #| fzf  --query="$1" --multi --select-1 --exit-0
+declare -A GAMES_TO_COMMANDS
 
-echo "$game"
+for ((i=0; $i<${#GAMES[@]}; i++))
+do
+    GAMES_TO_COMMANDS+=(["${GAMES[i]}"]="${COMMANDS[i]}")
+done
+
+GAME=$(printf "%s\n" "${GAMES[@]}" | fzf  --query="$1" --multi --select-1 --exit-0)
+
+echo ${GAMES_TO_COMMANDS["$GAME"]}
+
 
 # $HOME/.local/bin/single
 #
