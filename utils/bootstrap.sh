@@ -83,9 +83,15 @@ sekuurity() {
     sudo systemctl enable --now ufw.service apparmor.service auditd.service
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
+
+    # kdeconnect
     sudo ufw allow from 192.168.1.0/24 to any port 1714:1764 proto udp
     sudo ufw allow from 192.168.1.0/24 to any port 1714:1764 proto tcp
-    sudo ufw allow syncthing
+
+    # syncthing
+    sudo ufw allow from 192.168.1.0/24 to any port 21027 proto udp
+    sudo ufw allow from 192.168.1.0/24 to any port 22000 proto tcp
+
     sudo ufw enable
 }
 
