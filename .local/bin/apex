@@ -2,11 +2,17 @@
 
 $HOME/.local/bin/single
 
-mullvad-exclude gamemoderun steam steam://rungameid/1172470 \
-    -eac_launcher_settings SettingsDX12.json +fps_max unlimited
+TEMPLATE="mullvad-exclude gamemoderun mangohud steam steam://rungameid"
 
-while pgrep -x "apex"; do
-    sleep 3
+declare -A games= ( \
+        ["apex"]="${TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited" \
+    )
+
+# let the process spawn so we don't exit the script immediately
+sleep 30
+
+while pgrep -x "r5apex_dx12.exe"; do
+    sleep 5
 done
 
 $HOME/.local/bin/dual
