@@ -1,18 +1,27 @@
 #!/bin/bash
 
-$HOME/.local/bin/single
 
-TEMPLATE="mullvad-exclude gamemoderun mangohud steam steam://rungameid"
+SPLIT_TUNNEL="mullvad-exclude"
+GAMEMODE="gamemoderun"
+HUD="mangohud"
+STEAM_TEMPLATE="mullvad-exclude gamemoderun mangohud steam steam://rungameid"
 
-declare -A games= ( \
-        ["apex"]="${TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited" \
-    )
+declare -A games_to_commands=(
+    ["apex"]="${STEAM_TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited"
+    ["lol"]="mullvad-exclude lolforlinuxinstaller"
+)
 
-# let the process spawn so we don't exit the script immediately
-sleep 30
+IFS=' ' read -a game <<< "${!games_to_commands[@]}" #| fzf  --query="$1" --multi --select-1 --exit-0
 
-while pgrep -x "r5apex_dx12.exe"; do
-    sleep 5
-done
+echo "$game"
 
-$HOME/.local/bin/dual
+# $HOME/.local/bin/single
+#
+# # let the process spawn so we don't exit the script immediately
+# sleep 30
+#
+# while pgrep -x "r5apex_dx12.exe"; do
+#     sleep 5
+# done
+#
+# $HOME/.local/bin/dual
