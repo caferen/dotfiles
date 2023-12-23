@@ -20,13 +20,15 @@ COMMANDS=(
 )
 
 for manifest in $HOME/ssd/SteamLibrary/steamapps/appmanifest_*.acf; do
-    app_id=$(grep -Po '\"appid\"[ \t]+\"\K.*(?=")' "$manifest")
     name=$(grep -Po '\"name\"[ \t]+\"\K.*(?=")' "$manifest")
-    inarray=$(echo ${GAMES[@]} | grep -o "$name" | wc -w)
-    if [ $inarray -eq 0 ]; then
-        command="${STEAM_TEMPLATE}/${app_id}"
-        COMMANDS+=( "$command" )
-        GAMES+=( "$name" )
+    if ! echo "$name" | grep "Proton"; then
+        app_id=$(grep -Po '\"appid\"[ \t]+\"\K.*(?=")' "$manifest")
+        inarray=$(echo ${GAMES[@]} | grep -o "$name" | wc -w)
+        if [ $inarray -eq 0 ]; then
+            command="${STEAM_TEMPLATE}/${app_id}"
+            COMMANDS+=( "$command" )
+            GAMES+=( "$name" )
+        fi
     fi
 done
 

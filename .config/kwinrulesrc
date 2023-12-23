@@ -81,9 +81,27 @@ Description=Spawn on main
 screenrule=4
 types=1
 
+[83540fbc-899c-4b3e-b38a-fd03419853bf]
+Description=Dropdown
+above=true
+aboverule=2
+ignoregeometry=true
+ignoregeometryrule=2
+position=1722,255
+positionrule=2
+size=1370,790
+sizerule=2
+skipswitcher=true
+skipswitcherrule=2
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=alacritty Dropdown
+wmclasscomplete=true
+wmclassmatch=1
+
 [General]
-count=2
-rules=1,2
+count=3
+rules=1,2,83540fbc-899c-4b3e-b38a-fd03419853bf
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming

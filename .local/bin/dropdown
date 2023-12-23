@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if ! pgrep -f Dropdown; then
+    alacritty --class Dropdown --title ""
+fi
