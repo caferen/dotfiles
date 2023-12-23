@@ -108,7 +108,7 @@ ForegroundPositive=36,173,89
 ForegroundVisited=115,115,158
 
 [DirSelect Dialog]
-DirSelectDialog Size=1080,724
+DirSelectDialog Size=969,645
 History Items[$e]=file:$HOME/password,file:$HOME/password,file:$HOME/ssd/LoL,file:$HOME/Pictures/wallpapers/Green,file:$HOME/Pictures/wallpapers/Black,file:$HOME/Pictures/wallpapers,file:$HOME/Pictures/wallpapers,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd/SteamLibrary,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd,file:$HOME/ssd/LoL,file:$HOME/Pictures/Adobe,file:$HOME/ssd/LoL,file:$HOME/lol
 
 [General]
