@@ -1,0 +1,12 @@
+#!/bin/bash
+
+$HOME/.local/bin/single > /dev/null
+
+mullvad-exclude gamemoderun mangohud steam steam://rungameid/1172470 \
+    -eac_launcher_settings SettingsDX12.json +fps_max unlimited
+
+while pgrep -x "apex"; do
+    sleep 3
+done
+
+$HOME/.local/bin/dual

@@ -1,4 +1,6 @@
 *
 !share
 !share/**
+!bin
+!bin/**
 !.gitignore
