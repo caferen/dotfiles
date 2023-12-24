@@ -54,6 +54,5 @@ run() {
 run $HOME/.local/bin/single
 run "${COMMAND}"
 
-sleep 30 && while pgrep ".*.exe" > /dev/null; do sleep 5; done
-
-sleep 10 && $HOME/.local/bin/dual && tmux kill-session -t "$GAME"
+run "sleep 30 && while pgrep ".*.exe" > /dev/null; do sleep 5; done"
+run "sleep 10 && $HOME/.local/bin/dual && tmux kill-session -t "$GAME""
