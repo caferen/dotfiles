@@ -13,7 +13,7 @@ GAMES=(
 )
 
 COMMANDS=(
-    "${STEAM_TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited"
+    "${STEAM_TEMPLATE}/1172470/-eac_launcher_settings SettingsDX12.json/+fps_max unlimited"
     "${SPLIT_TUNNEL} lolforlinuxinstaller"
     "/opt/Heroic/heroic --no-gui --no-sandbox "heroic://launch/gog/1957528513""
     "${STEAM_TEMPLATE}/730 -sdlaudiodriver pipewire"
@@ -45,10 +45,7 @@ GAME=$(printf "%s\n" "${GAMES[@]}" | fzf  --query="$1" --select-1 --exit-0)
 
 COMMAND=${GAMES_TO_COMMANDS["$GAME"]}
 
-tmux kill-session -t "$GAME"
-tmux new -s "$GAME" -d
-
-echo wtf
+tmux new -s "$GAME" -d || exit 1
 
 run() {
     tmux send-keys -t "$GAME:1" "$1" C-m
@@ -56,6 +53,6 @@ run() {
 
 
 run $HOME/.local/bin/single
-run "eval ${COMMAND}"
+run ${COMMAND}
 run "sleep 30"
 run "while pgrep ".*.exe"; do sleep 5; done && $HOME/.local/bin/dual && tmux kill-session"
