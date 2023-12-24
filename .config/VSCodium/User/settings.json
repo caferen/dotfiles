@@ -73,4 +73,5 @@
     "workbench.editor.showTabs": "single",
     "diffEditor.renderSideBySide": false,
     "workbench.colorTheme": "GitHub Dark",
+    "window.zoomLevel": 1,
 }
