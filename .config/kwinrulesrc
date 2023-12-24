@@ -25,10 +25,24 @@ wmclass=OpenGL
 wmclassmatch=2
 
 [2]
-Description=minimum size
-minsize=0,0
-minsizerule=2
+Description=Dropdown Terminal
+above=true
+aboverule=2
+ignoregeometry=true
+ignoregeometryrule=2
+position=1750,300
+positionrule=2
+size=1280,720
+sizerule=2
+skipswitcher=true
+skipswitcherrule=2
+skiptaskbar=true
+skiptaskbarrule=2
+title=AlacrittyDropdown
+titlematch=1
 types=1
+wmclass=alacritty Dropdown
+wmclasscomplete=true
 
 [268cd07d-e81e-4fa6-a83a-4a8228dd2cae]
 Description=Discord
@@ -70,6 +84,25 @@ Description=New window settings
 minsizerule=2
 types=1
 
+[6608be3a-99ea-4966-8615-4de84439889b]
+Description=Dropdown Terminal
+above=true
+aboverule=3
+ignoregeometry=true
+ignoregeometryrule=3
+position=1860,473
+positionrule=3
+size=1000,440
+sizerule=3
+skipswitcher=true
+skipswitcherrule=3
+skiptaskbar=true
+skiptaskbarrule=3
+types=1
+wmclass=alacritty Dropdown
+wmclasscomplete=true
+wmclassmatch=1
+
 [6a054f9c-a13b-40fc-9f94-e248dd11e477]
 Description=Spawn on main
 screenrule=3
@@ -81,27 +114,9 @@ Description=Spawn on main
 screenrule=4
 types=1
 
-[83540fbc-899c-4b3e-b38a-fd03419853bf]
-Description=Dropdown
-above=true
-aboverule=2
-ignoregeometry=true
-ignoregeometryrule=2
-position=1722,255
-positionrule=2
-size=1370,790
-sizerule=2
-skipswitcher=true
-skipswitcherrule=2
-skiptaskbar=true
-skiptaskbarrule=2
-wmclass=alacritty Dropdown
-wmclasscomplete=true
-wmclassmatch=1
-
 [General]
-count=3
-rules=1,2,83540fbc-899c-4b3e-b38a-fd03419853bf
+count=2
+rules=1,2
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming

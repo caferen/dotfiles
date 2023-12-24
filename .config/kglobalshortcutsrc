@@ -65,6 +65,10 @@ _launch=Ctrl+Alt+Shift+B,none,Brave
 new-private-window=none,none,New Incognito Window
 new-window=none,none,New Window
 
+[dropdown.desktop]
+_k_friendly_name=dropdown
+_launch=Ctrl+Alt+Shift+D,none,/home/eren/.local/bin/dropdown
+
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -258,11 +262,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
@@ -348,10 +352,6 @@ kcm-users=none,none,Users
 powerdevilprofilesconfig=none,none,Energy Saving
 screenlocker=none,none,Screen Locking
 
-[toggle_bismuth.sh.desktop]
-_k_friendly_name=toggle_bismuth.sh
-_launch=Ctrl+Alt+Shift+W,none,/home/eren/utils/toggle_bismuth.sh
-
 [wine-Programs-Ghostrunner \x5bGOG.com\x5d-Ghostrunner.desktop]
 _k_friendly_name=Ghostrunner
 _launch=none,none,Launch Ghostrunner
@@ -362,4 +362,4 @@ _launch=none,none,Launch Uninstall Ghostrunner
 
 [yakuake]
 _k_friendly_name=Yakuake
-toggle-window-state=,F12,Open/Retract Yakuake
+toggle-window-state=none,F12,Open/Retract Yakuake

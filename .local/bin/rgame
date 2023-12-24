@@ -16,12 +16,12 @@ COMMANDS=(
     "${STEAM_TEMPLATE}/1172470 -eac_launcher_settings SettingsDX12.json +fps_max unlimited"
     "${SPLIT_TUNNEL} lolforlinuxinstaller"
     "/opt/Heroic/heroic --no-gui --no-sandbox "heroic://launch/gog/1957528513""
-    "-${STEAM_TEMPLATE}/730 -sdlaudiodriver pipewire"
+    "${STEAM_TEMPLATE}/730 -sdlaudiodriver pipewire"
 )
 
 for manifest in $HOME/ssd/SteamLibrary/steamapps/appmanifest_*.acf; do
     name=$(grep -Po '\"name\"[ \t]+\"\K.*(?=")' "$manifest")
-    if ! echo "$name" | grep "Proton"; then
+    if ! echo "$name" | grep "Proton" > /dev/null; then
         app_id=$(grep -Po '\"appid\"[ \t]+\"\K.*(?=")' "$manifest")
         inarray=$(echo ${GAMES[@]} | grep -o "$name" | wc -w)
         if [ $inarray -eq 0 ]; then
@@ -39,7 +39,7 @@ do
     GAMES_TO_COMMANDS+=(["${GAMES[i]}"]="${COMMANDS[i]}")
 done
 
-GAME=$(printf "%s\n" "${GAMES[@]}" | fzf  --query="$1" --multi --select-1 --exit-0)
+GAME=$(printf "%s\n" "${GAMES[@]}" | fzf  --query="$1" --select-1 --exit-0)
 
 [[ -n "$GAME" ]] || exit 0
 

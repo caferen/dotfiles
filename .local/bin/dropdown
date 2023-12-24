@@ -1,5 +1,9 @@
 #!/bin/bash
 
-if ! pgrep -f Dropdown; then
-    alacritty --class Dropdown --title ""
+isopen=$(pgrep -f Dropdown | wc -w)
+
+if [ $isopen -eq 0 ]; then
+    alacritty --class Dropdown --title "AlacrittyDropdown" --config-file $HOME/.config/alacritty/dropdown.yml
+else
+    pkill -f Dropdown
 fi
