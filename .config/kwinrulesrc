@@ -13,7 +13,7 @@ wmclassmatch=1
 Description=Skip taskbar
 skiptaskbar=true
 skiptaskbarrule=2
-title=(polybar|Picture in picture)
+title=(polybar|Picture in picture|OpenGL)
 titlematch=3
 wmclass=ClRendererMain
 
@@ -39,7 +39,6 @@ skiptaskbarrule=2
 title=AlacrittyDropdown
 titlematch=1
 types=1
-wmclass=alacritty Dropdown
 wmclasscomplete=true
 
 [268cd07d-e81e-4fa6-a83a-4a8228dd2cae]

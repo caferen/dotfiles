@@ -45,15 +45,17 @@ GAME=$(printf "%s\n" "${GAMES[@]}" | fzf  --query="$1" --select-1 --exit-0)
 
 COMMAND=${GAMES_TO_COMMANDS["$GAME"]}
 
-$HOME/.local/bin/single
+tmux kill-session -t "$GAME"
+tmux new -s "$GAME" -d
 
-eval "$COMMAND"
+echo wtf
 
-# let the process spawn so we don't exit the script immediately
-sleep 30
+run() {
+    tmux send-keys -t "$GAME:1" "$1" C-m
+}
 
-while pgrep ".*.exe"; do
-    sleep 5
-done
 
-$HOME/.local/bin/dual
+run $HOME/.local/bin/single
+run "eval ${COMMAND}"
+run "sleep 30"
+run "while pgrep ".*.exe"; do sleep 5; done && $HOME/.local/bin/dual && tmux kill-session"
