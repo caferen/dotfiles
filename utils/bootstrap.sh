@@ -116,11 +116,11 @@ if [ "$1" == "--bootstrap" ]; then
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     pacman_install python python-pip
 
-    pacman_install steam blender mangohud gamemode thunderbird vlc signal-desktop \
+    pacman_install steam blender mangohud thunderbird vlc signal-desktop \
         libusb fzf ripgrep unzip lm_sensors
 
-    yay_install cura-bin freetube-bin heroic-games-launcher-bin mullvad-vpn-bin spotify \
-        coolercontrol vscodium-bin neovim-git
+    yay_install cura-bin freetube-bin heroic-games-launcher-bin spotify \
+        coolercontrol vscodium-bin neovim-git mullvad-vpn-bin
 
         # @formatter:off
         echo "asvetliakov.vscode-neovim
