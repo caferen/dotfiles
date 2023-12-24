@@ -136,7 +136,7 @@ if [ "$1" == "--bootstrap" ]; then
 
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
     drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup
-    drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
+    # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
 
     keyboard
 
