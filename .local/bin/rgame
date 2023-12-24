@@ -3,20 +3,20 @@
 SPLIT_TUNNEL="mullvad-exclude"
 GAMEMODE="gamemoderun"
 HUD="mangohud"
-STEAM_TEMPLATE="${SPLIT_TUNNEL} ${GAMEMODE} ${HUD} steam steam://rungameid"
+STEAM_TEMPLATE="${SPLIT_TUNNEL} ${HUD} steam steam://rungameid"
 
 GAMES=(
-    "Apex Legends"
+    # "Apex Legends"
     "League of Legends"
     "Ghostrunner"
     "Counter-Strike 2"
 )
 
 COMMANDS=(
-    "${STEAM_TEMPLATE}/1172470/-eac_launcher_settings SettingsDX12.json/+fps_max unlimited"
+    # "${STEAM_TEMPLATE}/1172470// +fps_max unlimited"
     "${SPLIT_TUNNEL} lolforlinuxinstaller"
-    "/opt/Heroic/heroic --no-gui --no-sandbox "heroic://launch/gog/1957528513""
-    "${STEAM_TEMPLATE}/730 -sdlaudiodriver pipewire"
+    "/opt/Heroic/heroic heroic://launch/gog/1957528513"
+    "${STEAM_TEMPLATE}/730// -sdlaudiodriver pipewire"
 )
 
 for manifest in $HOME/ssd/SteamLibrary/steamapps/appmanifest_*.acf; do
@@ -53,6 +53,6 @@ run() {
 
 
 run $HOME/.local/bin/single
-run ${COMMAND}
-run "sleep 30"
-run "while pgrep ".*.exe"; do sleep 5; done && $HOME/.local/bin/dual && tmux kill-session"
+run "${COMMAND}"
+run "sleep 0"
+# run "while pgrep ".*.exe"; do sleep 0; done && $HOME/.local/bin/dual && tmux kill-session"
