@@ -368,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][203][Applets][208][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 SystrayContainmentId=209
 
 [Containments][203][Applets][217]
@@ -473,14 +473,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][209][Applets][213][Configuration]
-PreloadWeight=91
+PreloadWeight=96
 
 [Containments][209][Applets][214]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][209][Applets][214][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][209][Applets][214][Configuration][General]
 migrated=true
@@ -957,5 +957,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Downloads,file:///home/eren/Projects,file:///home/eren/Desktop,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Public,file:///home/eren/ssd,file:///home/eren/Music,file:///home/eren/bin,file:///home/eren/Videos,file:///home/eren/backup,file:///home/eren/Pictures,file:///home/eren/Drive,file:///home/eren/utils,file:///home/eren/Templates,file:///home/eren/Documents
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Documents,file:///home/eren/Downloads,file:///home/eren/Desktop,file:///home/eren/utils,file:///home/eren/Public,file:///home/eren/backup,file:///home/eren/Videos,file:///home/eren/ssd,file:///home/eren/Music,file:///home/eren/Pictures,file:///home/eren/Projects,file:///home/eren/Templates,file:///home/eren/bin,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Drive
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
