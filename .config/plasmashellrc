@@ -21,9 +21,9 @@ detailViewIconSize=48
 
 [KPropertiesDialog]
 2 screens: Height=529
-2 screens: Width=1394
+2 screens: Width=481
 2560x1440 screen: Height=529
-2560x1440 screen: Width=445
+2560x1440 screen: Width=481
 
 [PlasmaViews][Panel 110]
 panelOpacity=1

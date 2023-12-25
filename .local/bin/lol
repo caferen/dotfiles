@@ -1,5 +1,0 @@
-#!/bin/bash
-
-$HOME/.local/bin/single
-mullvad-exclude lolforlinuxinstaller
-$HOME/.local/bin/dual

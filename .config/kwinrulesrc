@@ -49,6 +49,23 @@ screenrule=2
 wmclass=(discord)
 wmclassmatch=3
 
+[2f812e18-29ac-4022-9763-b959dda579e5]
+Description=Launcher
+above=true
+aboverule=2
+ignoregeometry=true
+ignoregeometryrule=2
+size=600,400
+sizerule=2
+skipswitcher=true
+skipswitcherrule=2
+skiptaskbar=true
+skiptaskbarrule=2
+title=AlacrittyLauncher
+titlematch=1
+types=1
+wmclasscomplete=true
+
 [3]
 Description=minimum size
 minsize=0,0
@@ -112,8 +129,8 @@ screenrule=4
 types=1
 
 [General]
-count=2
-rules=1,2
+count=3
+rules=1,2,2f812e18-29ac-4022-9763-b959dda579e5
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming

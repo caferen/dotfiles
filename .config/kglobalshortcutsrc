@@ -278,7 +278,7 @@ _launch=Meta+E,Meta+E,Dolphin
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Meta+Space,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=none,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -342,6 +342,10 @@ stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[run_launcher.desktop]
+_k_friendly_name=run_launcher
+_launch=Meta+Space,none,/home/eren/.local/bin/run_launcher
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings

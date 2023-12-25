@@ -1,0 +1,10 @@
+#!/bin/bash
+
+isopen=$(pgrep -f LauncherTerminal | wc -w)
+
+if [ $isopen -eq 0 ]; then
+    alacritty --class LauncherTerminal --title "AlacrittyLauncher" \
+        --config-file $HOME/.config/alacritty/dropdown.yml --command "$HOME/.local/bin/launcher"
+else
+    pkill -f LauncherTerminal
+fi
