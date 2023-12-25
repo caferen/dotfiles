@@ -27,13 +27,17 @@ done
 
 applications() {
     for application in $1/*.desktop; do
-        if ! echo "$application" | grep kcm > /dev/null; then
-            local name=$(grep -Po '^Name=\K.*' "$application")
-            APPS_TO_COMMANDS+=( ["$name"]="kioclient exec ${application} && tmux kill-session" )
-        fi
+        local names=$(awk '/Desktop/{f=1} f && /^Name=.*/ {print; next}' "$application" | grep -Po '^Name=\K.*' -)
+        local execs=$(awk '/Desktop/{f=1} f && /^Exec=.*/ {print; next}' "$application" | grep -Po '^(?Try)Exec=\K.*' -)
+        for ((i=0; $i<${#names[@]}; i++))
+        do
+            echo "${names[i]} ${execs[i]}"
+            #     APPS_TO_COMMANDS+=(["${names[i]}"]="${execs[i]}") > /dev/null 2>&1
+        done
     done
 }
 
+applications /usr/share/applications
 applications $HOME/.local/share/applications
 
 APPS=(
@@ -53,16 +57,12 @@ do
     APPS_TO_COMMANDS+=(["${APPS[i]}"]="${COMMANDS[i]}")
 done
 
-printf "%s\n\n" "${!APPS_TO_COMMANDS[@]}"
-printf "%s\n\n" "${APPS_TO_COMMANDS[@]}"
+APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf  --query="$1" --select-1 --exit-0 )
 
+[[ -n "$APP" ]] || exit 0
 
-# APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf  --query="$1" --select-1 --exit-0 )
-#
-# [[ -n "$APP" ]] || exit 0
-#
-# COMMAND=${APPS_TO_COMMANDS[$APP]}
-#
+COMMAND=${APPS_TO_COMMANDS[$APP]}
+
 # TMUX_SESSION=$(echo "$APP" | tr .: _)
 # tmux new -s "$TMUX_SESSION" -d || exit 1
 #
@@ -70,5 +70,5 @@ printf "%s\n\n" "${APPS_TO_COMMANDS[@]}"
 #     tmux send-keys -t "$TMUX_SESSION:1" "$1" C-m
 # }
 #
-# echo "${COMMAND}"
 # run "${COMMAND}"
+echo "${COMMAND}"

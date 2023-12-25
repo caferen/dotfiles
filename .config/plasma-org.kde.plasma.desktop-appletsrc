@@ -959,5 +959,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Music,file:///home/eren/Public,file:///home/eren/Videos,file:///home/eren/Documents,file:///home/eren/bin,file:///home/eren/Drive,file:///home/eren/utils,file:///home/eren/Pictures,file:///home/eren/backup,file:///home/eren/Downloads,file:///home/eren/ssd,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Desktop,file:///home/eren/Templates,file:///home/eren/Projects
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Desktop,file:///home/eren/Music,file:///home/eren/utils,file:///home/eren/Templates,file:///home/eren/ssd,file:///home/eren/Projects,file:///home/eren/Pictures,file:///home/eren/Public,file:///home/eren/bin,file:///home/eren/backup,file:///home/eren/Videos,file:///home/eren/Downloads,file:///home/eren/Documents,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Drive
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
