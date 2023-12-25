@@ -2,37 +2,34 @@
 
 SPLIT_TUNNEL="mullvad-exclude"
 HUD="mangohud"
-
-WATCH_EXE="sleep 30 && while pgrep ".*.exe" > /dev/null; do sleep 5; done && $HOME/.local/bin/dual && tmux kill-session"
+SINGLE_MONITOR="$HOME/.local/bin/single"
+DUAL_MONITOR="$HOME/.local/bin/dual"
+TMUX_KILL="tmux kill-session"
+WATCH_EXE="sleep 30 && while pgrep ".*.exe" > /dev/null; do sleep 5; done && ${DUAL_MONITOR} && ${TMUX_KILL}"
 
 
 STEAM_TEMPLATE() {
-    echo "$HOME/.local/bin/single && ${SPLIT_TUNNEL} ${HUD} steam steam://rungameid/${1}// ${2} && ${WATCH_EXE}"
+    echo "${SINGLE_MONITOR} && ${SPLIT_TUNNEL} ${HUD} ${1} && ${WATCH_EXE}"
 }
 
 declare -A APPS_TO_COMMANDS
 
-# if which lolforlinuxinstaller &> /dev/null; then
-#     APPS_TO_COMMANDS+=( ["League of Legends"]="${SPLIT_TUNNEL} lolforlinuxinstaller" )
-# fi
-#
-# for manifest in $HOME/ssd/SteamLibrary/steamapps/appmanifest_*.acf; do
-#     name=$(grep -Po '\"name\"[ \t]+\"\K.*(?=")' "$manifest")
-#     if ! echo "$name" | grep "Proton" > /dev/null; then
-#         app_id=$(grep -Po '\"appid\"[ \t]+\"\K.*(?=")' "$manifest")
-#         command="$(STEAM_TEMPLATE ${app_id})"
-#         APPS_TO_COMMANDS+=( ["$name"]="$command" )
-#     fi
-# done
+if which lolforlinuxinstaller &> /dev/null; then
+    APPS_TO_COMMANDS+=( ["League of Legends"]="${SPLIT_TUNNEL} lolforlinuxinstaller" )
+fi
+
+exec_to_command() {
+    if echo "$1" | grep steam; then
+        command=$(STEAM_TEMPLATE "$1")
+    fi
+
+}
 
 applications() {
     for application in $1/*.desktop; do
-        app_name=$(awk '/Desktop Entry/{f=1} f && /^Name=.*/ {print; exit}' "$application" \
-            | grep -Po '^Name=\K.*' -)
-        app_exec=$(awk '/Desktop Entry/{f=1} f && /^Exec=.*/ {print; exit}' "$application" \
-            | grep -Po '^Exec=\K.*' -)
+        app_name=$(awk '/Desktop Entry/{f=1} f && /^Name=.*/ {print; exit}' "$application" | grep -Po '^Name=\K.*' -)
+        app_exec=$(awk '/Desktop Entry/{f=1} f && /^Exec=.*/ {print; exit}' "$application" | grep -Po '^Exec=\K.*' -)
         APPS_TO_COMMANDS+=(["${app_name}"]="${app_exec} && tmux kill-session")
-        echo "$application:::${app_name[i]}:::${app_exec[i]}"
 
         IFS=$'\n' app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' "$application" \
             | grep -Po '^Name=\K.*' -))
@@ -42,8 +39,7 @@ applications() {
         if [ ${#app_action_names[@]} -ne 0 ]; then
             for ((i=0; $i<${#app_action_names[@]}; i++))
             do
-                APPS_TO_COMMANDS+=(["${app_name}: ${app_action_names[i]}"]="${app_action_execs[i]} && tmux kill-session")
-                # echo "${app_action_names[i]}:::${app_action_execs[i]}"
+                APPS_TO_COMMANDS+=(["${app_name}: ${app_action_names[i]}"]="${app_action_execs[i]} && ${TMUX_KILL}")
             done
         fi
     done
@@ -52,35 +48,17 @@ applications() {
 # applications /usr/share/applications
 applications $HOME/.local/share/applications
 
-APPS=(
-    "Apex Legends"
-    "Ghostrunner"
-    "Counter-Strike 2"
-)
+APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf  --query="$1" --select-1 --exit-0 )
 
-COMMANDS=(
-    "$(STEAM_TEMPLATE 1172470 "+fps_max unlimited")"
-    "/opt/Heroic/heroic heroic://launch/gog/1957528513"
-    "$(STEAM_TEMPLATE 730 "-sdlaudiodriver pipewire")"
-)
+[[ -n "$APP" ]] || exit 0
 
-for ((i=0; $i<${#APPS[@]}; i++))
-do
-    APPS_TO_COMMANDS+=(["${APPS[i]}"]="${COMMANDS[i]}")
-done
+COMMAND=${APPS_TO_COMMANDS[$APP]}
 
-# APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf  --query="$1" --select-1 --exit-0 )
-#
-# [[ -n "$APP" ]] || exit 0
-#
-# COMMAND=${APPS_TO_COMMANDS[$APP]}
+TMUX_SESSION=$(echo "$APP" | tr .: _)
+tmux new -s "$TMUX_SESSION" -d || exit 1
 
-# TMUX_SESSION=$(echo "$APP" | tr .: _)
-# tmux new -s "$TMUX_SESSION" -d || exit 1
-#
-# run() {
-#     tmux send-keys -t "$TMUX_SESSION:1" "$1" C-m
-# }
-#
-# run "${COMMAND}"
-echo "${COMMAND}"
+run() {
+    tmux send-keys -t "$TMUX_SESSION:1" "$1" C-m
+}
+
+run "${COMMAND}"
