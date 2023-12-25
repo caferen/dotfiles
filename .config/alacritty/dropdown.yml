@@ -10,6 +10,7 @@ font:
     family: MesloLGS NF
 
 window:
+  opacity: 0.8
   decorations: None
   dynamic_padding: false
   padding:
