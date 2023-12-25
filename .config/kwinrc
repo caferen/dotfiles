@@ -52,7 +52,7 @@ tileLayoutGap=10
 untileByDragging=false
 
 [Script-forceblur]
-patterns=alacritty
+patterns=Alacritty
 
 [Script-selective-virtual-desktops]
 enabledDisplays=DP-4

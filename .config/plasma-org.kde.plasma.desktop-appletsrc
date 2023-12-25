@@ -352,6 +352,8 @@ DialogHeight=660
 DialogWidth=880
 
 [Containments][203][Applets][186][Configuration][General]
+alphaSort=true
+favoritesDisplay=1
 favoritesPortedToKAstats=true
 hiddenApplications=assistant.desktop,designer.desktop,linguist.desktop,qdbusviewer.desktop,org.kde.kuserfeedback-console.desktop,codium.desktop,Steam Linux Runtime 3.0 (sniper).desktop,Titanfall 2.desktop,bssh.desktop,bvnc.desktop,org.kde.kdeconnect.sms.desktop,qv4l2.desktop,qvidcap.desktop,qt5ct.desktop,avahi-discover.desktop,lstopo.desktop,org.kde.kmenuedit.desktop,nvim.desktop,org.kde.plasma.emojier.desktop
 icon=/usr/share/pixmaps/archlinux-logo.png

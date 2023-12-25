@@ -34,7 +34,7 @@ applications() {
     done
 }
 
-applications /usr/share/applications
+# applications /usr/share/applications
 applications $HOME/.local/share/applications
 
 APPS=(
