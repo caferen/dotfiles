@@ -26,18 +26,28 @@ for manifest in $HOME/ssd/SteamLibrary/steamapps/appmanifest_*.acf; do
 done
 
 applications() {
-    for application in $1/*.desktop; do
-        local names=$(awk '/Desktop/{f=1} f && /^Name=.*/ {print; next}' "$application" | grep -Po '^Name=\K.*' -)
-        local execs=$(awk '/Desktop/{f=1} f && /^Exec=.*/ {print; next}' "$application" | grep -Po '^(?Try)Exec=\K.*' -)
-        for ((i=0; $i<${#names[@]}; i++))
-        do
-            echo "${names[i]} ${execs[i]}"
-            #     APPS_TO_COMMANDS+=(["${names[i]}"]="${execs[i]}") > /dev/null 2>&1
-        done
+    for application in $1/steam.desktop; do
+        local app_name=$(awk '/Desktop Entry/{f=1} f && /^Name=.*/ {print; next}' "$application" \
+            | grep -Po '^Name=\K.*' -)
+        local app_exec="kioclient exec ${application} && tmux kill-session"
+        APPS_TO_COMMANDS+=(["${app_name}"]="${app_exec}")
+
+        ISF='\n' local app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' "$application" \
+            | grep -Po '^Name=\K.*' -))
+        ISF='\n' local app_action_execs=($(awk '/Desktop Action/{f=1} f && /^Exec=.*/ {print; next}' "$application" \
+            | grep -Po '^Exec=\K.*' -))
+
+        printf "%s\n" "${app_action_names[@]}"
+        # if [ ${#app_action_names[@]} -ne 0 ]; then
+        #     for ((i=0; $i<${#app_action_names[@]}; i++))
+        #     do
+        #         APPS_TO_COMMANDS+=(["${app_name}: ${app_action_names[i]}"]="${app_action_execs[i]} && tmux kill-session")
+        #     done
+        # fi
     done
 }
 
-applications /usr/share/applications
+# applications /usr/share/applications
 applications $HOME/.local/share/applications
 
 APPS=(
