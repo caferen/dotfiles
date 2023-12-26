@@ -47,7 +47,7 @@ APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf  --query="$1" --select-1 --e
 COMMAND=${APPS_TO_COMMANDS[$APP]}
 
 TMUX_SESSION=$(echo "$APP" | tr .: _)
-tmux new -s "$TMUX_SESSION" -d 2> /dev/null
+tmux new -s "$TMUX_SESSION" -d || exit 1
 
 run() {
     tmux send-keys -t "$TMUX_SESSION:1" "$1" C-m
