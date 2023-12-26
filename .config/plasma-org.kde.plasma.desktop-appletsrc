@@ -461,7 +461,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][209][Applets][211][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][209][Applets][212]
 immutability=1
@@ -529,7 +529,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][209][Applets][230][Configuration]
-PreloadWeight=96
+PreloadWeight=100
 
 [Containments][209][ConfigDialog]
 DialogHeight=660
