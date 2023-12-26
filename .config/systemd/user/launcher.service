@@ -2,7 +2,6 @@
 Description=Rebuild launcher app cache
 
 [Service]
-User=eren
 Restart=always
 RestartSec=10m
 ExecStart= /home/eren/.local/bin/launcher --cache

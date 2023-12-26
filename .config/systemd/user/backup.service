@@ -2,7 +2,6 @@
 Description=Backup configurations and files
 
 [Service]
-User=eren
 Restart=always
 RestartSec=30m
 ExecStart= /home/eren/utils/backup.sh

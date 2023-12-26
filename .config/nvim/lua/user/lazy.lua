@@ -60,4 +60,5 @@ require("lazy").setup({
     "ThePrimeagen/harpoon",
     "lewis6991/gitsigns.nvim",
     "scottmckendry/cyberdream.nvim",
+    "projekt0n/github-nvim-theme",
 }, {})

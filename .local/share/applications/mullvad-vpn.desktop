@@ -2,7 +2,7 @@
 Categories=Network;
 Comment[en_US]=Mullvad VPN client
 Comment=Mullvad VPN client
-Exec='/opt/Mullvad VPN/mullvad-vpn' --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations %U
+Exec='/opt/Mullvad VPN/mullvad-vpn'
 GenericName[en_US]=
 GenericName=
 Icon=mullvad-vpn
