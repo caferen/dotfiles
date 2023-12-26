@@ -5,7 +5,7 @@ HUD="mangohud"
 SINGLE_MONITOR="$HOME/.local/bin/single"
 DUAL_MONITOR="$HOME/.local/bin/dual"
 TMUX_KILL="tmux kill-session"
-WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done && ${DUAL_MONITOR}"
+WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done && ${DUAL_MONITOR} && ${TMUX_KILL}"
 
 
 GAME_TEMPLATE() {
@@ -23,7 +23,7 @@ applications() {
             app_exec=$(GAME_TEMPLATE "$app_exec")
         fi
 
-        APPS_TO_COMMANDS+=(["${app_name}"]="${app_exec}")
+        APPS_TO_COMMANDS+=(["${app_name}"]="${app_exec}  && ${TMUX_KILL}")
 
         IFS=$'\n' app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' "$application" \
             | grep -Po '^Name=\K.*' -))
@@ -32,7 +32,7 @@ applications() {
 
         for ((i=0; $i<${#app_action_names[@]}; i++))
         do
-            APPS_TO_COMMANDS+=(["${app_name}: ${app_action_names[i]}"]="${app_action_execs[i]}")
+            APPS_TO_COMMANDS+=(["${app_name}: ${app_action_names[i]}"]="${app_action_execs[i]} && ${TMUX_KILL}")
         done
     done
 }
