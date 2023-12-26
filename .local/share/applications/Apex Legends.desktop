@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Apex Legends
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1172470// +fps_max unlimited -eac_launcher_settings SettingsDX12.json
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Game;

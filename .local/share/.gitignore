@@ -13,4 +13,6 @@
 !wallpapers/**
 !.kde
 !.kde/**
+!applications
+!applications/**
 !.gitignore

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Network;
+Comment[en_US]=Mullvad VPN client
+Comment=Mullvad VPN client
+Exec='/opt/Mullvad VPN/mullvad-vpn' --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations %U
+GenericName[en_US]=
+GenericName=
+Icon=mullvad-vpn
+MimeType=
+Name[en_US]=Mullvad VPN
+Name=Mullvad VPN
+Path=
+StartupNotify=true
+StartupWMClass=Mullvad VPN
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ghostrunner 2 Demo
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2478370
+Icon=steam_icon_2478370
+Terminal=false
+Type=Application
+Categories=Game;
