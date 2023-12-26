@@ -1,16 +1,8 @@
 *
-!aurorae
-!aurorae/**
 !color-schemes
 !color-schemes/**
 !plasma
 !plasma/**
-!plasma_icons
-!plasma_icons/**
-!wallpapers
-!wallpapers/**
-!.kde
-!.kde/**
 !applications
 !applications/**
 !.gitignore
