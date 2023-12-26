@@ -6,11 +6,12 @@
 -- vim.api.nvim_set_hl(0, 'SignColumn', { guibd = nil })
 -- vim.api.nvim_set_hl(0, 'LineNr', { guibd = nil })
 
--- require("cyberdream").setup({ transparent = true })
--- vim.cmd("colorscheme cyberdream")
+require("cyberdream").setup({ transparent = true })
+vim.cmd("colorscheme cyberdream")
 
-require('github-theme').setup({ options = { transparent = true } })
-vim.cmd('colorscheme github_dark_default')
-vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = "#000000", fg = "#000000" })
 vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = "#000000", fg = "#000000" })
-vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = "#000000", fg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { bg = "#000000", fg = "#000000" })
+vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { bg = "#000000", fg = "#000000" })
+vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = "#000000", fg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = "#000000", fg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, 'TelescopeResultsNormal', { bg = "#000000", fg = "#FFFFFF" })
