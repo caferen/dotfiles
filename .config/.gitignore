@@ -22,8 +22,6 @@
 !systemd/user
 !systemd/user/*.service
 !systemd/user/*.old
-!cura
-!cura/**
 !alacritty
 !alacritty/**
 !starship.toml
