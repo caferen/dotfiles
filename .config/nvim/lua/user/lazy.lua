@@ -37,14 +37,6 @@ require("lazy").setup({
             pcall(require("nvim-treesitter.install").update({ with_sync = true }))
         end,
     },
-
-    { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
-    { "numToStr/Comment.nvim",     opts = {} },
-    { "folke/which-key.nvim",      opts = {} },
-    "RRethy/nvim-base16",
-    "jiangmiao/auto-pairs",
-    "ThePrimeagen/harpoon",
-    "lewis6991/gitsigns.nvim",
     {
         "nvim-telescope/telescope.nvim",
         branch = "master",
@@ -59,4 +51,13 @@ require("lazy").setup({
             }, "nvim-telescope/telescope-ui-select.nvim",
         },
     },
+
+    { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
+    { "numToStr/Comment.nvim",     opts = {} },
+    { "folke/which-key.nvim",      opts = {} },
+    "RRethy/nvim-base16",
+    "jiangmiao/auto-pairs",
+    "ThePrimeagen/harpoon",
+    "lewis6991/gitsigns.nvim",
+    "scottmckendry/cyberdream.nvim",
 }, {})
