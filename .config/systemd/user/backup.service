@@ -5,7 +5,7 @@ Description=Backup configurations and files
 User=eren
 Restart=always
 RestartSec=30m
-ExecStart= /home/eren/utils/services/backup.sh
+ExecStart= /home/eren/utils/backup.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

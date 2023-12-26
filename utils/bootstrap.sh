@@ -140,8 +140,8 @@ if [ "$1" == "--bootstrap" ]; then
 
     keyboard
 
-    for service in $HOME/utils/services/*.service; do
-        sudo systemctl enable "$service"
+    for service in $HOME/systemd/user/*.service; do
+        systemctl --user enable "$service"
     done
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg

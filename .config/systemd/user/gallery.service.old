@@ -9,4 +9,4 @@ User=eren
 ExecStart= /usr/bin/gocryptfs /home/eren/ssd/media-cipher /home/eren/Pictures/Gallery -passfile=/home/eren/password/password
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

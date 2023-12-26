@@ -18,6 +18,10 @@
 !VSCodium/User/keybindings.json
 !wireplumber
 !wireplumber/**
+!systemd
+!systemd/user
+!systemd/user/*.service
+!systemd/user/*.old
 !cura
 !cura/**
 !alacritty

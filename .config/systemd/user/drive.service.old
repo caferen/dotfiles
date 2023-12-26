@@ -9,4 +9,4 @@ User=eren
 ExecStart= /usr/bin/gocryptfs /home/eren/ssd/drive-cipher /home/eren/Drive -passfile=/home/eren/password/password_drive
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
