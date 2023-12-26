@@ -11,5 +11,6 @@
 
 require('github-theme').setup({ options = { transparent = true } })
 vim.cmd('colorscheme github_dark_default')
-vim.api.nvim_set_hl(0, 'TelescopeBorder', { gui = nil, guisp = nil })
-vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { gui = nil, guisp = nil })
+vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = "#000000", fg = "#000000" })
+vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = "#000000", fg = "#000000" })
+vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = "#000000", fg = "#FFFFFF" })
