@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;
+Comment[en_US]=Launch lol-for-linux-installer
+Comment=Launch lol-for-linux-installer
+Exec=mullvad-exclude lolforlinuxinstaller
+GenericName[en_US]=
+GenericName=
+Icon=/usr/share/lol-for-linux-installer/lolforlinuxinstaller.svg
+MimeType=
+Name[en_US]=League of Legends (lol-for-linux-installer)
+Name=League of Legends (lol-for-linux-installer)
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
