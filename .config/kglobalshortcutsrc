@@ -317,10 +317,8 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 165=none,none,Activate Memory Usage Widget
 activate widget 170=none,none,Activate Icons-only Task Manager Widget
-activate widget 186=none,none,Activate Application Launcher Widget
 activate widget 31=none,none,Activate Total GPU Use Widget
 activate widget 80=none,none,Activate Panel Transparency Button Widget
-activate widget 88=Alt+F1,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -336,7 +334,7 @@ show-barcode=none,,Show Barcode…
 show-on-mouse-pos=Meta+V,Meta+V,Show Items at Mouse Position
 stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
-switch to previous activity=none,,Switch to Previous Activity
+switch to previous activity=ៀ?,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
 [run_launcher.desktop]

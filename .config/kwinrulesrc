@@ -67,10 +67,22 @@ types=1
 wmclasscomplete=true
 
 [3]
-Description=minimum size
+Description=Launcher
+above=true
+aboverule=2
+ignoregeometry=true
+ignoregeometryrule=2
 minsize=0,0
-minsizerule=2
+size=600,400
+sizerule=2
+skipswitcher=true
+skipswitcherrule=2
+skiptaskbar=true
+skiptaskbarrule=2
+title=AlacrittyLauncher
+titlematch=1
 types=1
+wmclasscomplete=true
 
 [3831a4dc-52e9-4235-91a2-baac6a16a491]
 Description=Settings for waydroid.com.whatsapp
@@ -130,7 +142,7 @@ types=1
 
 [General]
 count=3
-rules=1,2,2f812e18-29ac-4022-9763-b959dda579e5
+rules=1,2,3
 
 [a5e7974e-bb3b-4a50-b4df-fc2062a66203]
 Description=Gaming
