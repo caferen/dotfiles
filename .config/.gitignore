@@ -28,12 +28,6 @@
 !.gitignore
 
 
-!gtk-3.0
-!gtk-3.0/**
-!gtk-4.0
-!gtk-4.0/**
-!plasma-workspace
-!plasma-workspace/**
 !plasma-org.kde.plasma.desktop-appletsrc
 !kded5rc
 !kdeglobals
@@ -46,6 +40,5 @@
 !plasmashellrc
 !Trolltech.conf
 !spectaclerc
-!krunnerrc
 
 nvim/lazy-lock*.json

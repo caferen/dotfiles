@@ -1,18 +1,12 @@
 *
-!README.md
 !utils
 !utils/**
 !.config
 !.config/**
 !.local
 !.local/**
-!.kde4
-!.kde4/**
-!bin
-!bin/**
 !.gitignore
 !.stignore
 !.zshrc
-!.gtkrc-2.0
 !.gitconfig
 
