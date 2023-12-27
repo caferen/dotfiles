@@ -102,6 +102,7 @@ if [ "$1" == "--init" ]; then
     plasma
     pipewire
     sudo systemctl enable systemd-resolved.service
+    sudo pacman -Rdd geoclue krunner && pacman -Qtdq | sudo pacman -Rns -
     exit 0
 fi
 
@@ -116,7 +117,7 @@ if [ "$1" == "--bootstrap" ]; then
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     pacman_install python python-pip
 
-    pacman_install steam blender mangohud thunderbird vlc signal-desktop \
+    pacman_install steam blender mangohud vlc signal-desktop \
         libusb fzf ripgrep unzip lm_sensors
 
     yay_install cura-bin heroic-games-launcher-bin spotify \
