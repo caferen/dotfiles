@@ -13,7 +13,6 @@ GAME_TEMPLATE() {
     echo "${SINGLE_MONITOR} && ${SPLIT_TUNNEL} ${HUD} ${1}"
 }
 
-
 applications() {
     for application in $1/*.desktop; do
         app_name=$(awk '/Desktop Entry/{f=1} f && /^Name=.*/ {print; exit}' "$application" | grep -Po '^Name=\K.*' -)
@@ -53,7 +52,8 @@ while read line ; do
     APPS_TO_COMMANDS+=(["${app[0]}"]="${app[1]}")
 done <$CACHE
 
-APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf  --query="$1" --select-1 --exit-0 )
+APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf --query="$1" --select-1 --exit-0 \
+    --prompt=" " --pointer=" " --no-scrollbar --info=hidden --layout=reverse)
 
 [[ -n "$APP" ]] || exit 0
 

@@ -1,16 +1,10 @@
-shell:
-  program: /bin/zsh
-  args:
-    - -c
-    - "tmux attach -t Dropdown || tmux new -s Dropdown"
-
 font:
   size: 13.0
   normal:
     family: MesloLGS NF
 
 window:
-  opacity: 0.8
+  opacity: 1.0
   decorations: None
   dynamic_padding: false
   padding:
