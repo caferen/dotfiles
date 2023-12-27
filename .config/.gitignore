@@ -20,8 +20,7 @@
 !wireplumber/**
 !systemd
 !systemd/user
-!systemd/user/*.service
-!systemd/user/*.old
+!systemd/user/*
 !alacritty
 !alacritty/**
 !starship.toml

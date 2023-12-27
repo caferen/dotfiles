@@ -140,7 +140,7 @@ if [ "$1" == "--bootstrap" ]; then
 
     keyboard
 
-    for service in $HOME/systemd/user/*.service; do
+    for service in $HOME/.config/systemd/user/*(timer|path|service); do
         systemctl --user enable "$service"
     done
 

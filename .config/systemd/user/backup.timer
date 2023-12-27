@@ -1,10 +1,10 @@
 [Unit]
 Description=Backup configurations and files
 
-[Service]
-Restart=on-failure
-RestartSec=1s
-ExecStart= /home/eren/utils/backup.sh
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=30min
+Unit=backup.service
 
 [Install]
 WantedBy=default.target
