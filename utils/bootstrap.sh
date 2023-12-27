@@ -119,7 +119,7 @@ if [ "$1" == "--bootstrap" ]; then
     pacman_install steam blender mangohud thunderbird vlc signal-desktop \
         libusb fzf ripgrep unzip lm_sensors
 
-    yay_install cura-bin freetube-bin heroic-games-launcher-bin spotify \
+    yay_install cura-bin heroic-games-launcher-bin spotify \
         coolercontrol vscodium-bin neovim-git mullvad-vpn-bin
 
         # @formatter:off
