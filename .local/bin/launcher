@@ -5,7 +5,8 @@ HUD="mangohud"
 SINGLE_MONITOR="$HOME/.local/bin/single"
 DUAL_MONITOR="$HOME/.local/bin/dual"
 TMUX_KILL="tmux kill-session"
-WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done && ${DUAL_MONITOR} && ${TMUX_KILL}"
+WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done && \
+    ${DUAL_MONITOR} && pkill -f steam && ${TMUX_KILL}"
 CACHE="$HOME/.cache/.apps"
 
 
@@ -61,12 +62,14 @@ COMMAND=${APPS_TO_COMMANDS[$APP]}
 
 TMUX_SESSION=$(echo "$APP" | tr .: _)
 tmux new -s "$TMUX_SESSION" -d || exit 1
+tmux new-window -n watch-exe -t "$TMUX_SESSION"
 
 run() {
-    tmux send-keys -t "$TMUX_SESSION:1" "$1" C-m
+    tmux send-keys -t "$TMUX_SESSION:${2}" "$1" C-m
 }
 
-run "${COMMAND}"
+run "${COMMAND}" 1
+
 if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
-    run "${WATCH_EXE}"
+    run "${WATCH_EXE}" "watch-exe"
 fi
