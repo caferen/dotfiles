@@ -4,7 +4,7 @@ SPLIT_TUNNEL="mullvad-exclude"
 HUD="mangohud"
 SINGLE_MONITOR="$HOME/.local/bin/single"
 DUAL_MONITOR="$HOME/.local/bin/dual"
-TMUX_KILL="tmux kill-session"
+KILL_TMUX="tmux kill-session"
 WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done"
 CACHE="$HOME/.cache/.apps"
 
@@ -22,7 +22,7 @@ applications() {
         if echo "$app_exec" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
             app_exec=$(GAME_TEMPLATE "$app_exec")
         else
-            app_exec="${app_exec} && ${TMUX_KILL}"
+            app_exec="${app_exec} && ${KILL_TMUX}"
         fi
 
         echo "${app_name};${app_exec}" | tee -a $CACHE > /dev/null
@@ -35,7 +35,7 @@ applications() {
 
         for ((i=0; $i<${#app_action_names[@]}; i++))
         do
-            echo "${app_name}: ${app_action_names[i]};${app_action_execs[i]} && ${TMUX_KILL}" | tee -a $CACHE > /dev/null
+            echo "${app_name}: ${app_action_names[i]};${app_action_execs[i]} && ${KILL_TMUX}" | tee -a $CACHE > /dev/null
         done
     done
 }
@@ -73,5 +73,5 @@ if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
     run "${WATCH_EXE}" "watch-exe"
     run "${DUAL_MONITOR}" "watch-exe"
     run "pkill -f steam" "watch-exe"
-    run "${TMUX_KILL}" "watch-exe"
+    run "${KILL_TMUX}" "watch-exe"
 fi
