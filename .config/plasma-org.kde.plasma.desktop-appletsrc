@@ -432,6 +432,28 @@ plugin=org.kde.paneltransparencybutton
 [Containments][203][Applets][229][Configuration]
 PreloadWeight=0
 
+[Containments][203][Applets][231]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.net
+
+[Containments][203][Applets][231][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+
+[Containments][203][Applets][231][Configuration][Appearance]
+chartFace=org.kde.ksysguard.linechart
+title=Network speed
+
+[Containments][203][Applets][231][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][203][Applets][231][Configuration][SensorColors]
+network/all/download=35,62,121
+network/all/upload=121,94,35
+
+[Containments][203][Applets][231][Configuration][Sensors]
+highPrioritySensorIds=["network/all/download","network/all/upload"]
+
 [Containments][203][ConfigDialog]
 DialogHeight=84
 DialogWidth=2560
@@ -440,7 +462,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][203][General]
-AppletOrder=225;186;185;224;229;208;217;226;218
+AppletOrder=231;225;186;185;224;229;208;217;226;218
 
 [Containments][209]
 activityId=
@@ -501,7 +523,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][209][Applets][220][Configuration]
-PreloadWeight=30
+PreloadWeight=35
 
 [Containments][209][Applets][221]
 immutability=1

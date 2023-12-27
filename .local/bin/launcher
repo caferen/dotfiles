@@ -5,8 +5,7 @@ HUD="mangohud"
 SINGLE_MONITOR="$HOME/.local/bin/single"
 DUAL_MONITOR="$HOME/.local/bin/dual"
 TMUX_KILL="tmux kill-session"
-WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done && \
-    ${DUAL_MONITOR} && pkill -f steam && ${TMUX_KILL}"
+WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done"
 CACHE="$HOME/.cache/.apps"
 
 
@@ -72,4 +71,7 @@ run "${COMMAND}" 1
 
 if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
     run "${WATCH_EXE}" "watch-exe"
+    run "${DUAL_MONITOR}" "watch-exe"
+    run "pkill -f steam" "watch-exe"
+    run "${TMUX_KILL}" "watch-exe"
 fi
