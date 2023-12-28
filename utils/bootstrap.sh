@@ -146,6 +146,7 @@ if [ "$1" == "--bootstrap" ]; then
     done
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+    gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 
     exit 0
 fi
