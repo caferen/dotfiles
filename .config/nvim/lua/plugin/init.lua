@@ -6,4 +6,5 @@ if not vim.g.vscode then
     require('plugin.lualine')
     require('plugin.treesitter')
     require('plugin.telescope')
+    require('plugin.debugger')
 end

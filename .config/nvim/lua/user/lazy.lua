@@ -59,4 +59,5 @@ require("lazy").setup({
     "jiangmiao/auto-pairs",
     "ThePrimeagen/harpoon",
     "lewis6991/gitsigns.nvim",
+    "mfussenegger/nvim-dap",
 }, {})

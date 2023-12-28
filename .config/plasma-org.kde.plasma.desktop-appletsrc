@@ -334,7 +334,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:Alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
+launchers=preferred://filemanager,preferred://browser,applications:alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
