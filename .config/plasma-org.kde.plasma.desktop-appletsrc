@@ -366,17 +366,6 @@ use24hFormat=2
 DialogHeight=660
 DialogWidth=880
 
-[Containments][203][Applets][218]
-immutability=1
-plugin=org.kde.plasma.showdesktop
-
-[Containments][203][Applets][218][Configuration]
-PreloadWeight=0
-
-[Containments][203][Applets][218][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][203][Applets][224]
 immutability=1
 plugin=org.kde.plasma.panelspacer
@@ -389,20 +378,6 @@ immutability=1
 plugin=org.kde.plasma.panelspacer
 
 [Containments][203][Applets][225][Configuration]
-PreloadWeight=0
-
-[Containments][203][Applets][226]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
-[Containments][203][Applets][226][Configuration]
-PreloadWeight=0
-
-[Containments][203][Applets][229]
-immutability=1
-plugin=org.kde.paneltransparencybutton
-
-[Containments][203][Applets][229][Configuration]
 PreloadWeight=0
 
 [Containments][203][Applets][232]
@@ -450,7 +425,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][203][General]
-AppletOrder=233;225;232;185;224;229;208;217;226;218
+AppletOrder=233;225;232;185;224;208;217
 
 [Containments][209]
 activityId=
