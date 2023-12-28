@@ -427,6 +427,24 @@ network/all/upload=121,94,35
 [Containments][203][Applets][231][Configuration][Sensors]
 highPrioritySensorIds=["network/all/download","network/all/upload"]
 
+[Containments][203][Applets][232]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][203][Applets][232][Configuration]
+PreloadWeight=100
+popupHeight=514
+popupWidth=651
+
+[Containments][203][Applets][232][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][203][Applets][232][Configuration][General]
+favoritesPortedToKAstats=true
+icon=distributor-logo-archlinux
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
+
 [Containments][203][ConfigDialog]
 DialogHeight=84
 DialogWidth=2560
@@ -435,7 +453,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][203][General]
-AppletOrder=231;225;185;224;229;208;217;226;218
+AppletOrder=231;225;232;185;224;229;208;217;226;218
 
 [Containments][209]
 activityId=
@@ -503,7 +521,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][209][Applets][225]
 immutability=1
