@@ -26,7 +26,7 @@ detailViewIconSize=48
 2560x1440 screen: Width=481
 
 [PlasmaTransientsConfig]
-PreloadWeight=34
+PreloadWeight=26
 
 [PlasmaViews][Panel 110]
 panelOpacity=1
