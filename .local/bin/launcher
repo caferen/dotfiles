@@ -23,9 +23,10 @@ applications() {
         fi
 
         app_root=$(echo "$app_exec" | grep -o '^\S*')
+        app_root_with_space=$(echo "$app_exec" | grep -o '^".*"')
 
-        if ! which $app_root > /dev/null 2>&1; then
-            echo "$app_exec $app_name"
+        if ! which $app_root || which $app_root_with_space; then
+            echo $app_root_with_space
             continue
         fi
 
