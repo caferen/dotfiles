@@ -14,7 +14,7 @@ GAME_TEMPLATE() {
 }
 
 applications() {
-    for application in $1/mullvad-vpn.desktop; do
+    for application in $1/*.desktop; do
         app_name=$(awk '/Desktop Entry/{f=1} f && /^Name=.*/ {print; exit}' "$application" | grep -Po '^Name=\K.*' -)
         app_exec=$(awk '/Desktop Entry/{f=1} f && /^Exec=.*/ {print; exit}' "$application" | grep -Po '^Exec=\K.*' -)
 
@@ -25,22 +25,21 @@ applications() {
         app_root=$(echo "$app_exec" | grep -o '^\S*')
         app_root_with_space=$(echo "$app_exec" | grep -Po '^"\K.*(?=")')
 
-        if [[ -x "$(command -v $app_root)" || -x "$(command -v $app_root_with_space)" ]]; then
-            echo "${app_name};${app_exec}" | tee -a $CACHE > /dev/null
-
-            IFS=$'\n' app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' "$application" \
-                | grep -Po '^Name=\K.*' -))
-            IFS=$'\n' app_action_execs=($(awk '/Desktop Action/{f=1} f && /^Exec=.*/ {print; next}' "$application" \
-                | grep -Po '^Exec=\K.*' -))
-
-            for ((i=0; $i<${#app_action_names[@]}; i++))
-            do
-                echo "${app_name}: ${app_action_names[i]};${app_action_execs[i]}" | tee -a $CACHE > /dev/null
-            done
-        else
-            echo $app_root_with_space
-            echo $(command -v "$app_root_with_space")
+        if ! [[ -x "$(command -v $app_root)" || -x "$(command -v $app_root_with_space)" ]]; then
+            continue
         fi
+
+        echo "${app_name};${app_exec}" | tee -a $CACHE > /dev/null
+
+        IFS=$'\n' app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' "$application" \
+            | grep -Po '^Name=\K.*' -))
+        IFS=$'\n' app_action_execs=($(awk '/Desktop Action/{f=1} f && /^Exec=.*/ {print; next}' "$application" \
+            | grep -Po '^Exec=\K.*' -))
+
+        for ((i=0; $i<${#app_action_names[@]}; i++))
+        do
+            echo "${app_name}: ${app_action_names[i]};${app_action_execs[i]}" | tee -a $CACHE > /dev/null
+        done
     done
 }
 
