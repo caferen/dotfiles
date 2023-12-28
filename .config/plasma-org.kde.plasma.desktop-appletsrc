@@ -334,7 +334,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
+launchers=preferred://filemanager,preferred://browser,applications:alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:freetube.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -410,7 +410,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][203][Applets][232][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 popupHeight=514
 popupWidth=651
 
@@ -441,15 +441,6 @@ network/all/upload=121,94,35
 
 [Containments][203][Applets][233][Configuration][Sensors]
 highPrioritySensorIds=["network/all/download","network/all/upload"]
-
-[Containments][203][Applets][234]
-immutability=1
-plugin=org.kde.plasma.icon
-transient=true
-
-[Containments][203][Applets][234][Configuration]
-localPath=/home/eren/.local/share/plasma_icons/freetube.desktop
-url=file:///usr/share/applications/freetube.desktop
 
 [Containments][203][ConfigDialog]
 DialogHeight=84
