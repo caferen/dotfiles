@@ -10,7 +10,7 @@ CACHE="$HOME/.cache/.apps"
 
 
 GAME_TEMPLATE() {
-    echo "${SINGLE_MONITOR} && ${SPLIT_TUNNEL} ${HUD} ${1}"
+    echo "${SINGLE_MONITOR} & ${SPLIT_TUNNEL} ${HUD} ${1}"
 }
 
 applications() {
@@ -44,7 +44,7 @@ applications() {
 }
 
 if [ "$1" == "--cache" ]; then
-    rm $CACHE && touch $CACHE
+    rm $CACHE & touch $CACHE
     applications /usr/share/applications
     applications $HOME/.local/share/applications
     exit 0
@@ -77,6 +77,7 @@ if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
     run "${WATCH_EXE}" "watch-exe"
     run "${DUAL_MONITOR}" "watch-exe"
     run "pkill -f steam" "watch-exe"
+    run "${KILL_TMUX}" "watch-exe"
+else
+    run "${KILL_TMUX}"
 fi
-
-# run "${KILL_TMUX}"
