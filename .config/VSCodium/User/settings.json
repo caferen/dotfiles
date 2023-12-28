@@ -43,5 +43,9 @@
     "workbench.editor.showTabs": "single",
     "diffEditor.renderSideBySide": false,
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Seti Black",
+    "base16.generator.activatedThemes": [
+        "base16-default-dark",
+        "base16-windows-95-dark"
+    ],
+    "workbench.colorTheme": "Base16 Windows 95 Dark",
 }
