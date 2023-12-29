@@ -3,7 +3,7 @@
 isopen=$(pgrep -f DropdownTerminal | wc -w)
 
 if [ $isopen -eq 0 ]; then
-    alacritty --class DropdownTerminal --title "AlacrittyDropdown" --config-file $HOME/.config/alacritty/dropdown.yml
+    alacritty --class DropdownTerminal --title "AlacrittyDropdown" --config-file $HOME/.config/alacritty/dropdown.toml
 else
     pkill -f DropdownTerminal
 fi
