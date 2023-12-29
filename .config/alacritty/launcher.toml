@@ -1,0 +1,16 @@
+import = ["/home/eren/.config/alacritty/base16-windows-95.toml"]
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "MesloLGS NF"
+
+[window]
+decorations = "None"
+dynamic_padding = false
+opacity = 1.0
+
+[window.padding]
+x = 5
+y = 5

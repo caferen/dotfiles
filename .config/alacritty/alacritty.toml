@@ -1,0 +1,13 @@
+import = ["/home/eren/.config/alacritty/base16-windows-95.toml"]
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "MesloLGS NF"
+
+[shell]
+program = "tmux"
+
+[window]
+opacity = 0.7
