@@ -107,7 +107,10 @@ sekuurity() {
     echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
 
     sudo pacman -S firejail
+    sudo firecfg
     echo "force-nonewprivs yes" | sudo tee -a /etc/firejail/firejail.config
+    curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/hooks/firejail.hook \
+        | sudo tee /etc/pacman.d/hooks/firejail.hook
 }
 
 # Initialize a fresh install
