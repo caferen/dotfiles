@@ -93,6 +93,8 @@ sekuurity() {
     sudo ufw enable
 
     yay -S apparmor.d-git
+    echo 'write-cache' | sudo tee -a /etc/apparmor/parser.conf
+    echo 'Optimize=compress-fast' | sudo tee -a /etc/apparmor/parser.conf
 }
 
 # Initialize a fresh install
