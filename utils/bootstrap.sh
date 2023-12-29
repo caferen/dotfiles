@@ -111,6 +111,17 @@ sekuurity() {
     echo "force-nonewprivs yes" | sudo tee -a /etc/firejail/firejail.config
     curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/hooks/firejail.hook \
         | sudo tee /etc/pacman.d/hooks/firejail.hook
+
+    sudo pacman -S clamav
+    sudo systemctl enable --now clamav-freshclam.service clamav-daemon.service
+
+    # https://wiki.archlinux.org/title/ClamAV#Troubleshooting
+    curl https://secure.eicar.org/eicar.com.txt | clamscan - | grep "stdin: Win.Test.EICAR_HDB-1 FOUND" \
+        || echo "ERROR ClamAV is not setup properly"
+
+    yay -S python-fangfrisch
+    sudo -u clamav /usr/bin/fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
+    sudo systemctl enable --now fangfrisch.timer
 }
 
 # Initialize a fresh install
@@ -123,6 +134,7 @@ if [ "$1" == "--init" ]; then
     pipewire
     sudo systemctl enable systemd-resolved.service
     sudo pacman -Rdd geoclue krunner && pacman -Qtdq | sudo pacman -Rns -
+    sudo passwd --lock root
     exit 0
 fi
 
