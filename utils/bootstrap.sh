@@ -91,14 +91,16 @@ sekuurity() {
     sudo ufw allow from 192.168.1.0/24 to any port 22000 proto tcp
 
     sudo ufw enable
+
+    yay -S apparmor.d-git
 }
 
 # Initialize a fresh install
 if [ "$1" == "--init" ]; then
     sudo pacman -Syu
     pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
-    sekuurity
     install_yay
+    sekuurity
     plasma
     pipewire
     sudo systemctl enable systemd-resolved.service
