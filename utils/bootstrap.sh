@@ -95,6 +95,12 @@ sekuurity() {
     yay -S apparmor.d-git
     echo 'write-cache' | sudo tee -a /etc/apparmor/parser.conf
     echo 'Optimize=compress-fast' | sudo tee -a /etc/apparmor/parser.conf
+
+    sudo aa-enforce /etc/apparmor.d/*
+
+    for line in $(curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/complain); do
+        sudo aa-complain /etc/apparmor.d/"$line"
+    done
 }
 
 # Initialize a fresh install
