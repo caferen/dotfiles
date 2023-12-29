@@ -122,6 +122,13 @@ sekuurity() {
     yay -S python-fangfrisch
     sudo -u clamav /usr/bin/fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
     sudo systemctl enable --now fangfrisch.timer
+
+    echo "kernel.kexec_load_disabled = 1" | sudo tee /etc/sysctl.d/51-kexec-restrict.conf
+
+    yay -S lkrg-dkms
+    sudo sysctl kernel.unprivileged_userns_clone=1
+
+    echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/20-deny_root.conf
 }
 
 # Initialize a fresh install
