@@ -101,6 +101,13 @@ sekuurity() {
     for line in $(curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/complain); do
         sudo aa-complain /etc/apparmor.d/"$line"
     done
+
+    yay -S hardened-malloc-git
+    echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
+    echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
+
+    sudo pacman -S firejail
+    echo "force-nonewprivs yes" | sudo tee -a /etc/firejail/firejail.config
 }
 
 # Initialize a fresh install

@@ -1,0 +1,11 @@
+# converted by firecfg
+[Desktop Entry]
+Name=FreeTube
+Exec=freetube --enable-features=UseOzonePlatform --ozone-platform=wayland
+Terminal=false
+Type=Application
+Icon=freetube
+StartupWMClass=FreeTube
+Comment=A private YouTube client
+MimeType=x-scheme-handler/freetube;
+Categories=Network;
