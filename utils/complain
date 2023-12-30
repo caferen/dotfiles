@@ -7,8 +7,6 @@ kstart
 kwin_wayland
 kwin_wayland_wrapper
 kwin_x11
-mullvad-daemon
-mullvad-gui
 plasmashell
 polkit-kde-authentication-agent
 sddm
@@ -25,3 +23,4 @@ utempter
 xdg-settings
 xembedsniproxy
 xorg
+systemsettings
