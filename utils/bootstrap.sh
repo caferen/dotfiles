@@ -97,7 +97,6 @@ apparmor() {
         sudo aa-complain /etc/apparmor.d/"$line"
     done <$HOME/utils/complain
 
-
     groupadd -r audit
     gpasswd -a $USER audit
 }
@@ -136,9 +135,10 @@ sekuurity() {
     firewall
     apparmor
 
-    yay -S hardened-malloc-git
-    echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
-    echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
+    # hardened malloc breaks steam and spotify for some reason
+    # yay -S hardened-malloc-git
+    # echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
+    # echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
 
     # https://wiki.archlinux.org/title/Security#Disable_kexec
     echo "kernel.kexec_load_disabled = 1" | sudo tee /etc/sysctl.d/51-kexec-restrict.conf

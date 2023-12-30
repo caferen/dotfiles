@@ -11,5 +11,10 @@ args = ["-c", "tmux attach -t Dropdown || tmux new -s Dropdown"]
 program = "/bin/zsh"
 
 [window]
+decorations = "None"
 dynamic_padding = false
 opacity = 1.0
+
+[window.padding]
+x = 5
+y = 5
