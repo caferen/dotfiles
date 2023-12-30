@@ -71,7 +71,7 @@ pipewire() {
 
 drive() {
     [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R \
-            &&  echo "UUID=${1}     "$2"  ext4    defaults,nofail 0 0" \
+            &&  echo "UUID=${1}     "$2"  ext4    defaults,nofail"$3" 0 0" \
         | sudo tee -a /etc/fstab)
 }
 
@@ -79,9 +79,7 @@ firejail() {
     sudo pacman -S firejail
     sudo firecfg
     echo "force-nonewprivs yes" | sudo tee -a /etc/firejail/firejail.config
-    curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/hooks/firejail.hook \
-        | sudo tee /etc/pacman.d/hooks/firejail.hook
-
+    sudo cp $HOME/utils/hooks/firejail.hook /etc/pacman.d/hooks/firejail.hook
 }
 
 apparmor() {
@@ -94,10 +92,7 @@ apparmor() {
     echo 'Optimize=compress-fast' | sudo tee -a /etc/apparmor/parser.conf
 
     sudo aa-enforce /etc/apparmor.d/*
-
-    for line in $(curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/complain); do
-        sudo aa-complain /etc/apparmor.d/"$line"
-    done
+    sudo aa-complain $HOME/utils/complain/*
 
     groupadd -r audit
     gpasswd -a $USER audit
@@ -163,6 +158,11 @@ Storage=none" | sudo tee /etc/systemd/coredump.conf.d/disable.conf
 ipv6.ip6-privacy=2" | sudo tee /etc/NetworkManager/conf.d/ip6-privacy.conf
     # @formatter:on
 
+    echo "b08dfa6083e7567a1921a715000001fb" | sudo tee /var/lib/dbus/machine-id
+    echo "b08dfa6083e7567a1921a715000001fb" | sudo tee /etc/machine-id
+
+    pacman_install macchanger
+    sudo systemctl enable --now $HOME/utils/services/randomize_mac.service
 }
 
 # Initialize a fresh install
@@ -170,6 +170,7 @@ if [ "$1" == "--init" ]; then
     sudo pacman -Syu
     pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
     install_yay
+    get_dotfiles
     sekuurity
     plasma
     pipewire
@@ -181,7 +182,6 @@ fi
 
 # Bootstrap rest of the system following a reboot after --init
 if [ "$1" == "--bootstrap" ]; then
-    get_dotfiles
     configure_shell
 
     pacman_install syncthing gocryptfs
@@ -208,9 +208,9 @@ if [ "$1" == "--bootstrap" ]; then
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable coolercontrold.service
 
-    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd
-    drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup
-    # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password
+    drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd ",nosuid,nodev"
+    drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup ",noexec,nosuid,nodev"
+    # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password ",noexec,nosuid,nodev"
 
     keyboard
 
