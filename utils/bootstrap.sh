@@ -92,7 +92,11 @@ apparmor() {
     echo 'Optimize=compress-fast' | sudo tee -a /etc/apparmor/parser.conf
 
     sudo aa-enforce /etc/apparmor.d/*
-    sudo aa-complain $HOME/utils/complain/*
+
+    while read line ; do
+        sudo aa-complain /etc/apparmor.d/"$line"
+    done <$HOME/utils/complain
+
 
     groupadd -r audit
     gpasswd -a $USER audit
