@@ -79,5 +79,6 @@ if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null && ! echo $
     run "pkill -f steam" "watch-exe"
     run "${KILL_TMUX}" "watch-exe"
 else
+    run "${DUAL_MONITOR}"
     run "${KILL_TMUX}"
 fi
