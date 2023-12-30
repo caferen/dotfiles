@@ -75,10 +75,48 @@ drive() {
         | sudo tee -a /etc/fstab)
 }
 
-sekuurity() {
+firejail() {
+    sudo pacman -S firejail
+    sudo firecfg
+    echo "force-nonewprivs yes" | sudo tee -a /etc/firejail/firejail.config
+    curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/hooks/firejail.hook \
+        | sudo tee /etc/pacman.d/hooks/firejail.hook
+
+}
+
+apparmor() {
     # set kernel parameters: lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1
+    sudo systemctl enable --now apparmor.service auditd.service
     pacman_install ufw apparmor
-    sudo systemctl enable --now ufw.service apparmor.service auditd.service
+    yay_install apparmor.d-git
+
+    echo 'write-cache' | sudo tee -a /etc/apparmor/parser.conf
+    echo 'Optimize=compress-fast' | sudo tee -a /etc/apparmor/parser.conf
+
+    sudo aa-enforce /etc/apparmor.d/*
+
+    for line in $(curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/complain); do
+        sudo aa-complain /etc/apparmor.d/"$line"
+    done
+}
+
+clamav() {
+    pacman_install clamav
+    sudo systemctl enable --now clamav-freshclam.service clamav-daemon.service
+
+    # https://wiki.archlinux.org/title/ClamAV#Troubleshooting
+    curl https://secure.eicar.org/eicar.com.txt | clamscan - | grep "stdin: Win.Test.EICAR_HDB-1 FOUND" \
+        || echo "ERROR ClamAV is not setup properly"
+
+    yay -S python-fangfrisch
+    sudo -u clamav /usr/bin/fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
+    sudo systemctl enable --now fangfrisch.timer
+
+}
+
+firewall() {
+    pacman_install ufw
+    sudo systemctl enable --now ufw.service
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
 
@@ -91,41 +129,24 @@ sekuurity() {
     sudo ufw allow from 192.168.1.0/24 to any port 22000 proto tcp
 
     sudo ufw enable
+}
 
-    yay -S apparmor.d-git
-    echo 'write-cache' | sudo tee -a /etc/apparmor/parser.conf
-    echo 'Optimize=compress-fast' | sudo tee -a /etc/apparmor/parser.conf
-
-    sudo aa-enforce /etc/apparmor.d/*
-
-    for line in $(curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/complain); do
-        sudo aa-complain /etc/apparmor.d/"$line"
-    done
+sekuurity() {
+    firewall
+    apparmor
+    clamav
 
     yay -S hardened-malloc-git
     echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
     echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
 
-    sudo pacman -S firejail
-    sudo firecfg
-    echo "force-nonewprivs yes" | sudo tee -a /etc/firejail/firejail.config
-    curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/hooks/firejail.hook \
-        | sudo tee /etc/pacman.d/hooks/firejail.hook
-
-    sudo pacman -S clamav
-    sudo systemctl enable --now clamav-freshclam.service clamav-daemon.service
-
-    # https://wiki.archlinux.org/title/ClamAV#Troubleshooting
-    curl https://secure.eicar.org/eicar.com.txt | clamscan - | grep "stdin: Win.Test.EICAR_HDB-1 FOUND" \
-        || echo "ERROR ClamAV is not setup properly"
-
-    yay -S python-fangfrisch
-    sudo -u clamav /usr/bin/fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
-    sudo systemctl enable --now fangfrisch.timer
-
+    # https://wiki.archlinux.org/title/Security#Disable_kexec
     echo "kernel.kexec_load_disabled = 1" | sudo tee /etc/sysctl.d/51-kexec-restrict.conf
 
+    # https://wiki.archlinux.org/title/Security#Linux_Kernel_Runtime_Guard_(LKRG)
     yay -S lkrg-dkms
+
+    # https://wiki.archlinux.org/title/Security#Sandboxing_applications
     sudo sysctl kernel.unprivileged_userns_clone=1
 
     echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/20-deny_root.conf
