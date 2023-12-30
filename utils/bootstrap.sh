@@ -147,7 +147,7 @@ sekuurity() {
     yay -S lkrg-dkms
 
     # https://wiki.archlinux.org/title/Security#Sandboxing_applications
-    sudo sysctl kernel.unprivileged_userns_clone=1
+    echo "kernel.unprivileged_userns_clone = 1" | sudo tee /etc/sysctl.d/unp_user.conf
 
     echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/20-deny_root.conf
 }
