@@ -6,7 +6,7 @@ BindsTo=sys-subsystem-net-devices-wlp0s20f3.device
 After=sys-subsystem-net-devices-wlp0s20f3.device
 
 [Service]
-ExecStart=/usr/bin/macchanger -e wlp0s20f3
+ExecStart=/home/eren/utils/services/randomize.sh
 Type=oneshot
 
 [Install]

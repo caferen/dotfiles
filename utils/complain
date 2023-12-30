@@ -9,8 +9,6 @@ kwin_wayland_wrapper
 kwin_x11
 mullvad-daemon
 mullvad-gui
-NetworkManager
-nvidia-settings
 plasmashell
 polkit-kde-authentication-agent
 sddm
@@ -24,8 +22,6 @@ systemd-logind
 systemd-resolved
 systemd-udevd
 utempter
-wireplumber
 xdg-settings
 xembedsniproxy
 xorg
-xwayland

@@ -158,11 +158,8 @@ Storage=none" | sudo tee /etc/systemd/coredump.conf.d/disable.conf
 ipv6.ip6-privacy=2" | sudo tee /etc/NetworkManager/conf.d/ip6-privacy.conf
     # @formatter:on
 
-    echo "b08dfa6083e7567a1921a715000001fb" | sudo tee /var/lib/dbus/machine-id
-    echo "b08dfa6083e7567a1921a715000001fb" | sudo tee /etc/machine-id
-
     pacman_install macchanger
-    sudo systemctl enable --now $HOME/utils/services/randomize_mac.service
+    sudo systemctl enable --now $HOME/utils/services/randomize.service
 }
 
 # Initialize a fresh install
