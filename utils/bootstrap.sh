@@ -144,8 +144,8 @@ sekuurity() {
     # https://wiki.archlinux.org/title/Security#Disable_kexec
     echo "kernel.kexec_load_disabled = 1" | sudo tee /etc/sysctl.d/51-kexec-restrict.conf
 
-    # https://wiki.archlinux.org/title/Security#Linux_Kernel_Runtime_Guard_(LKRG)
-    yay -S lkrg-dkms
+    # # https://wiki.archlinux.org/title/Security#Linux_Kernel_Runtime_Guard_(LKRG)
+    # yay -S lkrg-dkms
 
     # https://wiki.archlinux.org/title/Security#Sandboxing_applications
     echo "kernel.unprivileged_userns_clone = 1" | sudo tee /etc/sysctl.d/unp_user.conf
