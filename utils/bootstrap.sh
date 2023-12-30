@@ -85,7 +85,7 @@ firejail() {
 apparmor() {
     # set kernel parameters: lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1
     sudo systemctl enable --now apparmor.service auditd.service
-    pacman_install ufw apparmor
+    pacman_install apparmor
     yay_install apparmor.d-git
 
     echo 'write-cache' | sudo tee -a /etc/apparmor/parser.conf
@@ -131,14 +131,15 @@ firewall() {
     sudo ufw enable
 }
 
+# hardened malloc breaks steam and spotify for some reason
+hardened_malloc() {
+    yay -S hardened-malloc-git
+    echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
+    echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
+}
+
 sekuurity() {
     firewall
-    apparmor
-
-    # hardened malloc breaks steam and spotify for some reason
-    # yay -S hardened-malloc-git
-    # echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
-    # echo "vm.max_map_count = 1048576" | sudo tee -a /etc/sysctl.d/hardened_malloc.conf
 
     # https://wiki.archlinux.org/title/Security#Disable_kexec
     echo "kernel.kexec_load_disabled = 1" | sudo tee /etc/sysctl.d/51-kexec-restrict.conf

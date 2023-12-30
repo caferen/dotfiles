@@ -22,7 +22,7 @@ if not vim.g.vscode then
     vim.opt.fillchars = { eob = " " }
 end
 vim.o.undofile = true
-vim.o.guicursor = ""
+-- vim.o.guicursor = ""
 vim.o.showmode = false
 vim.o.updatetime = 50
 vim.o.wrap = false
