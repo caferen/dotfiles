@@ -109,7 +109,6 @@ clamav() {
     yay -S python-fangfrisch
     sudo -u clamav /usr/bin/fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
     sudo systemctl enable --now fangfrisch.timer
-
 }
 
 firewall() {
@@ -132,7 +131,6 @@ firewall() {
 sekuurity() {
     firewall
     apparmor
-    clamav
 
     yay -S hardened-malloc-git
     echo /usr/lib/libhardened_malloc.so | sudo tee -a /etc/ld.so.preload
