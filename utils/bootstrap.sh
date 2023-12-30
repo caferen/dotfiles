@@ -98,6 +98,9 @@ apparmor() {
     for line in $(curl https://raw.githubusercontent.com/caferen/dotfiles/master/utils/complain); do
         sudo aa-complain /etc/apparmor.d/"$line"
     done
+
+    groupadd -r audit
+    gpasswd -a $USER audit
 }
 
 clamav() {
@@ -150,6 +153,16 @@ sekuurity() {
     echo "kernel.unprivileged_userns_clone = 1" | sudo tee /etc/sysctl.d/unp_user.conf
 
     echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/20-deny_root.conf
+
+    sudo mkdir /etc/systemd/coredump.conf.d
+    # @formatter:off
+    echo "[Coredump]
+Storage=none" | sudo tee /etc/systemd/coredump.conf.d/disable.conf
+
+    echo "[connection]
+ipv6.ip6-privacy=2" | sudo tee /etc/NetworkManager/conf.d/ip6-privacy.conf
+    # @formatter:on
+
 }
 
 # Initialize a fresh install
