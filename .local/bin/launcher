@@ -5,7 +5,7 @@ HUD="mangohud"
 SINGLE_MONITOR="$HOME/.local/bin/single"
 DUAL_MONITOR="$HOME/.local/bin/dual"
 KILL_TMUX="tmux kill-session"
-WATCH_EXE="sleep 300 && while pgrep '.*.exe' > /dev/null; do sleep 5; done"
+WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done"
 CACHE="$HOME/.cache/.apps"
 
 
