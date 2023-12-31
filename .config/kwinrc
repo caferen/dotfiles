@@ -17,6 +17,9 @@ BorderActivate=0
 [Effect-windowview]
 BorderActivateAll=9
 
+[ModifierOnlyShortcuts]
+Meta=
+
 [Plugins]
 bismuthEnabled=true
 blurEnabled=true
