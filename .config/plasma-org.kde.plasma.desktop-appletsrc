@@ -423,7 +423,7 @@ plugin=org.kde.plasma.systemmonitor.cpucore
 
 [Containments][203][Applets][237][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][203][Applets][237][Configuration][Appearance]
 chartFace=org.kde.ksysguard.barchart
@@ -975,5 +975,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/backup,file:///home/eren/Documents,file:///home/eren/bin,file:///home/eren/Public,file:///home/eren/Drive,file:///home/eren/Templates,file:///home/eren/Downloads,file:///home/eren/ssd,file:///home/eren/Projects,file:///home/eren/Music,file:///home/eren/Desktop,file:///home/eren/utils,file:///home/eren/Pictures,file:///home/eren/Videos
+itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Desktop,file:///home/eren/Music,file:///home/eren/backup,file:///home/eren/ssd,file:///home/eren/Drive,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Downloads,file:///home/eren/bin,file:///home/eren/Public,file:///home/eren/Pictures,file:///home/eren/Videos,file:///home/eren/Documents,file:///home/eren/utils,file:///home/eren/Projects,file:///home/eren/Templates
 screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
