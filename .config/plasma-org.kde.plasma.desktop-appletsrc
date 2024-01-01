@@ -263,7 +263,7 @@ PreloadWeight=0
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
 iconSize=6
-positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]}
+positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]\\,"1280x720":[""]\\,"1707x960":[""]}
 sortMode=-1
 url=file:///home/eren/password
 
@@ -299,7 +299,7 @@ DialogWidth=880
 PreloadWeight=0
 
 [Containments][167][General]
-positions={"1080x1920":[]}
+positions={"1080x1920":[]\\,"540x960":[""]}
 url=file:///home/eren/password
 
 [Containments][167][Wallpaper][a2n.blur][General]
@@ -351,7 +351,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][203][Applets][217][Configuration]
-PreloadWeight=10
+PreloadWeight=20
 popupHeight=550
 popupWidth=484
 
@@ -404,7 +404,7 @@ plugin=org.kde.plasma.systemmonitor.net
 
 [Containments][203][Applets][233][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=77
+PreloadWeight=87
 
 [Containments][203][Applets][233][Configuration][Appearance]
 chartFace=org.kde.ksysguard.linechart
@@ -423,7 +423,7 @@ plugin=org.kde.plasma.systemmonitor.cpucore
 
 [Containments][203][Applets][237][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][203][Applets][237][Configuration][Appearance]
 chartFace=org.kde.ksysguard.barchart
@@ -470,7 +470,7 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][203][Applets][246][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=70
+PreloadWeight=80
 
 [Containments][203][Applets][246][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -564,7 +564,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=20
+PreloadWeight=30
 
 [Containments][209][Applets][225]
 immutability=1
@@ -1013,7 +1013,3 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 
 [Containments64Appletsts][80][Configuration][Appearance]
 transparencyEnabled=true
-
-[ScreenMapping]
-itemsOnDisabledScreens=0,309b39e6-9637-477a-b0de-78d1ee99af45,15,file:///home/eren/Documents,file:///home/eren/Downloads,file:///home/eren/backup,file:///home/eren/bin,file:///home/eren/Projects,file:///home/eren/Videos,file:///home/eren/Desktop,file:///home/eren/Music,file:///home/eren/Pictures,file:///home/eren/Public,file:///home/eren/utils,file:///home/eren/Drive,desktop:/tutanota-desktop-linux.AppImage,file:///home/eren/Templates,file:///home/eren/ssd
-screenMapping=file:///home/eren/password,0,309b39e6-9637-477a-b0de-78d1ee99af45
