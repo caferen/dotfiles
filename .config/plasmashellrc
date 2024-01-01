@@ -15,8 +15,8 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:$HOME/.local/bin/lol,file:$HOME/Pictures/wallpapers/Black/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg,file:$HOME/Pictures/wallpapers/Black/marko-blazevic-S7mAngnWV1A-unsplash.jpg,file:$HOME/Pictures/wallpapers/F4KiAtZWUAAZ5rW.jpeg,file:$HOME/Pictures/wallpapers/F4KiHIZWMAAW1qa.jpeg,file:$HOME/Pictures/wallpapers/F4KjQuyW0AAz5br.jpeg,file:$HOME/Pictures/wallpapers/F4KX7lqW4AERlo_.jpeg,file:$HOME/Pictures/wallpapers/F4KXGreWMAAeAn8.jpeg,file:$HOME/Pictures/wallpapers/F4KXidvXcAAEfAh.jpeg,file:$HOME/Pictures/wallpapers/garrett-parker-DlkF4-dbCOU-unsplash.jpg,file:$HOME/Pictures/wallpapers/james-donovan-kFHz9Xh3PPU-unsplash.jpg,file:$HOME/Pictures/wallpapers/jonatan-pie-3l3RwQdHRHg-unsplash.jpg,file:$HOME/Pictures/wallpapers/jussi-hellsten-qtXmmnVgSJk-unsplash.jpg
-Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Pictures/wallpapers/Green/,file:$HOME/Pictures/wallpapers/Black/,file:$HOME/Pictures/wallpapers/Adobe/,file:$HOME/Documents/,file:$HOME/Pictures/wallpapers/Ghostrunner/,file:$HOME/Pictures/wallpapers/,file:$HOME/,file:$HOME/.local/bin/
+Recent Files[$e]=archlinux-logo.svg,file:///usr/share/pixmaps/archlinux-logo.svg
+Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Documents/,file:$HOME/,file:$HOME/.local/bin/,file:///usr/share/
 detailViewIconSize=48
 
 [KPropertiesDialog]
@@ -109,7 +109,7 @@ panelVisibility=0
 [PlasmaViews][Panel 203][Defaults]
 maxLength=2560
 minLength=2560
-thickness=54
+thickness=44
 
 [PlasmaViews][Panel 203][Horizontal2560]
 maxLength=2560

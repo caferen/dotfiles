@@ -127,8 +127,8 @@ PreloadWeight=0
 PreloadWeight=0
 
 [Containments][118][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.kdeconnect
-knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.kscreen
+knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.kscreen
 
 [Containments][139]
 activityId=
@@ -230,85 +230,8 @@ PreloadWeight=0
 PreloadWeight=0
 
 [Containments][139][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.kdeconnect
-knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.kdeconnect
-
-[Containments][166]
-ItemGeometries-0x0=
-ItemGeometries-1080x1920=
-ItemGeometries-1920x1080=
-ItemGeometries-2048x1152=
-ItemGeometries-2560x1440=
-ItemGeometriesHorizontal=
-ItemGeometriesVertical=
-activityId=309b39e6-9637-477a-b0de-78d1ee99af45
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=a2n.blur
-
-[Containments][166][Applets][192][Configuration][Appearance]
-title=CPU Temp
-
-[Containments][166][ConfigDialog]
-DialogHeight=955
-DialogWidth=1103
-
-[Containments][166][Configuration]
-PreloadWeight=0
-
-[Containments][166][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=764
-iconSize=6
-positions={"2560x1440":[]\\,"1920x1080":[]\\,"2048x1152":[]\\,"3072x1728":[""]\\,"0x0":[""]\\,"1080x1920":[]\\,"640x480":[""]\\,"1280x720":[""]\\,"1707x960":[""]}
-sortMode=-1
-url=file:///home/eren/password
-
-[Containments][166][Wallpaper][a2n.blur][General]
-Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
-SlidePaths=/home/eren/Pictures/wallpapers/
-
-[Containments][166][Wallpaper][org.kde.image][General]
-Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][166][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/eren/Pictures/wallpapers/Green/matthew-smith-Rfflri94rs8-unsplash.jpg
-SlideInterval=300
-SlidePaths=/home/eren/Pictures/wallpapers/Green/
-
-[Containments][167]
-ItemGeometries-1920x1080=
-ItemGeometriesVertical=
-activityId=309b39e6-9637-477a-b0de-78d1ee99af45
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=a2n.blur
-
-[Containments][167][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
-[Containments][167][Configuration]
-PreloadWeight=0
-
-[Containments][167][General]
-positions={"1080x1920":[]\\,"540x960":[""]}
-url=file:///home/eren/password
-
-[Containments][167][Wallpaper][a2n.blur][General]
-Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][167][Wallpaper][org.kde.image][General]
-Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
-SlidePaths=/usr/share/wallpapers/
+extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.kscreen
+knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.kscreen
 
 [Containments][203]
 activityId=
@@ -332,9 +255,8 @@ DialogWidth=720
 
 [Containments][203][Applets][185][Configuration][General]
 groupedTaskVisualization=1
-iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,preferred://browser,applications:alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:alacritty.desktop,applications:codium-wayland.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -395,7 +317,7 @@ DialogWidth=720
 
 [Containments][203][Applets][232][Configuration][General]
 favoritesPortedToKAstats=true
-icon=distributor-logo-archlinux
+icon=/usr/share/pixmaps/archlinux-logo.svg
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][203][Applets][233]
@@ -595,10 +517,65 @@ DialogWidth=880
 PreloadWeight=0
 
 [Containments][209][General]
-extraItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.kscreen
 hiddenItems=org.kde.kscreen,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier
-knownItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.kdeconnect
+knownItems=org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.kscreen
 shownItems=org.kde.plasma.networkmanagement,chrome_status_icon_1,org.kde.plasma.bluetooth
+
+[Containments][21]
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
+activityId=5603a0e9-b935-4305-84b2-6938680b45fd
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=a2n.blur
+
+[Containments][21][ConfigDialog]
+DialogHeight=976
+DialogWidth=1082
+
+[Containments][21][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=764
+
+[Containments][21][Wallpaper][a2n.blur][General]
+Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][21][Wallpaper][org.kde.image][General]
+PreviewImage=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
+
+[Containments][22]
+activityId=5603a0e9-b935-4305-84b2-6938680b45fd
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=a2n.blur
+
+[Containments][22][ConfigDialog]
+DialogHeight=1001
+DialogWidth=720
+
+[Containments][22][Wallpaper][a2n.blur][General]
+Image=/home/eren/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][22][Wallpaper][org.kde.image][General]
+PreviewImage=/home/eren/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg
+
+[Containments][247]
+activityId=5603a0e9-b935-4305-84b2-6938680b45fd
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
 
 [Containments][50]
 activityId=
@@ -690,8 +667,8 @@ DialogWidth=880
 PreloadWeight=0
 
 [Containments][50][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.kdeconnect
-knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.kscreen
+knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.kscreen
 shownItems=org.kde.plasma.bluetooth,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.notifications
 
 [Containments][68]
@@ -795,9 +772,9 @@ DialogWidth=880
 PreloadWeight=0
 
 [Containments][68][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.kscreen
 hiddenItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.clipboard,org.kde.plasma.notifications
-knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.kdeconnect
+knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.kscreen
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement
 
 [Containments][9]
@@ -902,8 +879,8 @@ PreloadWeight=0
 PreloadWeight=0
 
 [Containments][9][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.kdeconnect
-knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.kscreen
+knownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.kscreen
 
 [Containments][93]
 activityId=
@@ -1005,11 +982,15 @@ PreloadWeight=0
 PreloadWeight=0
 
 [Containments][93][General]
-extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.kdeconnect
-knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.kscreen
+knownItems=org.kde.plasma.volume,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.kscreen
 
 [Containments223Appletsts][185][Configuration][General]
 launchers=preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:Alacritty.desktop,applications:codium-wayland.desktop,applications:blender.desktop,applications:cura.desktop,file:///usr/share/applications/discord.desktop,applications:steam.desktop
 
 [Containments64Appletsts][80][Configuration][Appearance]
 transparencyEnabled=true
+
+[ScreenMapping]
+itemsOnDisabledScreens=
+screenMapping=desktop:/steam.desktop,0,5603a0e9-b935-4305-84b2-6938680b45fd

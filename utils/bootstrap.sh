@@ -170,8 +170,6 @@ if [ "$1" == "--init" ]; then
     sudo pacman -Syu
     pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
     install_yay
-    get_dotfiles
-    sekuurity
     plasma
     pipewire
     sudo systemctl enable systemd-resolved.service
@@ -182,6 +180,8 @@ fi
 
 # Bootstrap rest of the system following a reboot after --init
 if [ "$1" == "--bootstrap" ]; then
+    get_dotfiles
+    sekuurity
     configure_shell
 
     pacman_install syncthing gocryptfs

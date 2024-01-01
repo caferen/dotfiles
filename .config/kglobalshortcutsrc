@@ -4,6 +4,7 @@ update_info=bismuth_shortcuts_category.upd:bismuth-shortcuts-category,bismuth_sh
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-309b39e6-9637-477a-b0de-78d1ee99af45=none,none,Switch to activity "Default"
+switch-to-activity-5603a0e9-b935-4305-84b2-6938680b45fd=none,none,Switch to activity "Default"
 switch-to-activity-88e160bc-b567-46c4-a655-6ccf22af56b7=none,none,Switch to activity "Default"
 switch-to-activity-c4203e0d-7db6-44b3-ae82-6037d5831681=none,none,Switch to activity "Default"
 switch-to-activity-ea79d688-7785-4ee2-b12f-6a7fa13b6ec7=none,none,Switch to activity "Default"
@@ -258,11 +259,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
