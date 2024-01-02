@@ -4,6 +4,7 @@ export EDITOR="$VISUAL"
 export CARGO_HOME="$HOME/.cargo"
 export FZF_DEFAULT_COMMAND="rg --files --no-ignore-parent --hidden"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$CARGO_HOME/bin:$PATH"
 
 alias vi="nvim -n"
 alias rgrep="rg --no-ignore-parent --hidden"
@@ -18,7 +19,7 @@ if which codium > /dev/null; then
 fi
 
 ff() {
-    IFS=$'\n' files=($(fzf  --query="$1" --multi --select-1 --exit-0))
+    IFS=$'\n' files=($(fzf  --query="$1" --multi --select-1 --exit-0 --preview 'bat --color=always -p {}'))
     [[ -n "$files" ]] && ${EDITOR} -n "${files[@]}"
 }
 gitcom() { git -C "$2" add -A && git -C "$2" commit -m "$1" --no-verify && git -C "$2" push }
