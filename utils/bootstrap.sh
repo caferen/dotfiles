@@ -214,9 +214,8 @@ if [ "$1" == "--bootstrap" ]; then
 
     keyboard
 
-    for service in $HOME/.config/systemd/user/*(timer|path|service); do
-        systemctl --user enable "$service"
-    done
+    find $HOME/.config/systemd/user/ -maxdepth 1 -regextype egrep -regex \
+        '.*(timer|path|service)' -exec systemctl enable --user --now '{}' \;
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
     gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'

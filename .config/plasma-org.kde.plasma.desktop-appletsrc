@@ -256,7 +256,7 @@ DialogWidth=720
 [Containments][203][Applets][185][Configuration][General]
 groupedTaskVisualization=1
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:brave-browser.desktop,applications:alacritty.desktop,applications:codium-wayland.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:alacritty.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:freetube.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
