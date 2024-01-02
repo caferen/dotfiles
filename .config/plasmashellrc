@@ -109,7 +109,7 @@ panelVisibility=0
 [PlasmaViews][Panel 203][Defaults]
 maxLength=2560
 minLength=2560
-thickness=44
+thickness=54
 
 [PlasmaViews][Panel 203][Horizontal2560]
 maxLength=2560
