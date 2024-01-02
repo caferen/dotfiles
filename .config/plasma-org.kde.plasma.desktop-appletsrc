@@ -393,7 +393,7 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][203][Applets][246][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=85
+PreloadWeight=90
 
 [Containments][203][Applets][246][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -487,7 +487,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=22
+PreloadWeight=27
 
 [Containments][209][Applets][225]
 immutability=1
