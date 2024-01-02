@@ -257,7 +257,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop,applications:freetube.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 

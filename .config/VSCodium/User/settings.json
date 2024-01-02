@@ -81,4 +81,5 @@
         "base16-windows-95-dark"
     ],
     "workbench.colorTheme": "Base16 Windows 95 Dark",
+    "git.openRepositoryInParentFolders": "never",
 }
