@@ -48,7 +48,6 @@ null_ls.setup({
 })
 
 local servers = {
-    ruff_lsp = {},
     lua_ls = {
         Lua = {
             workspace = { checkThirdParty = false },
