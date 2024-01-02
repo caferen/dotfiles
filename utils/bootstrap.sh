@@ -171,8 +171,6 @@ if [ "$1" == "--init" ]; then
     plasma
     pipewire
     sudo systemctl enable systemd-resolved.service
-    sudo pacman -Rdd geoclue krunner && pacman -Qtdq | sudo pacman -Rns -
-    sudo passwd --lock root
     exit 0
 fi
 
@@ -217,6 +215,11 @@ if [ "$1" == "--bootstrap" ]; then
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
     gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+
+    sudo passwd --lock root
+    sudo pacman -Rdd geoclue
+    sudo pacman -Rdd krunner
+    pacman -Qtdq | sudo pacman -Rns -
 
     exit 0
 fi

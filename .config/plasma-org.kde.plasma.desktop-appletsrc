@@ -257,7 +257,7 @@ DialogWidth=720
 groupedTaskVisualization=1
 iconSpacing=0
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:brave-browser.desktop,applications:alacritty.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
+launchers=preferred://filemanager,applications:brave-browser.desktop,applications:Alacritty.desktop,applications:signal-desktop.desktop,applications:codium-wayland.desktop,applications:spotify.desktop
 showOnlyCurrentDesktop=false
 unhideOnAttention=false
 
@@ -327,7 +327,7 @@ plugin=org.kde.plasma.systemmonitor.net
 
 [Containments][203][Applets][233][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=87
+PreloadWeight=100
 
 [Containments][203][Applets][233][Configuration][Appearance]
 chartFace=org.kde.ksysguard.linechart

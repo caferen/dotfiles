@@ -12,8 +12,7 @@ program = "/bin/zsh"
 
 [window]
 decorations = "None"
-dynamic_padding = false
-opacity = 1.0
+opacity = 0.8
 
 [window.padding]
 x = 5
