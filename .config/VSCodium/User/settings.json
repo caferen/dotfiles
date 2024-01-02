@@ -82,4 +82,7 @@
     ],
     "workbench.colorTheme": "Base16 Windows 95 Dark",
     "git.openRepositoryInParentFolders": "never",
+    "workbench.editorAssociations": {
+        "*.xml": "default"
+    },
 }
