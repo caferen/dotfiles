@@ -37,6 +37,7 @@ require("lazy").setup({
             pcall(require("nvim-treesitter.install").update({ with_sync = true }))
         end,
     },
+
     {
         "nvim-telescope/telescope.nvim",
         branch = "master",
@@ -52,12 +53,15 @@ require("lazy").setup({
         },
     },
 
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
+
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
     { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
     "RRethy/nvim-base16",
-    "jiangmiao/auto-pairs",
-    "ThePrimeagen/harpoon",
     "lewis6991/gitsigns.nvim",
-    "mfussenegger/nvim-dap",
 }, {})

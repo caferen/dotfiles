@@ -33,7 +33,6 @@ map("n", "<leader>g", tb.git_files, { desc = "List [g]it files", noremap = true 
 map("n", "<leader>b", tb.buffers, { desc = "List open [b]uffers" })
 
 -- Search
-map("n", "<leader>w", tb.grep_string, { desc = "search current [w]ord" })
 map("n", "<leader>/", tb.live_grep, { desc = "[<leader>/] Fuzzily search in current workspace" })
 
 -- LSP

@@ -4,12 +4,9 @@ if not vim.g.vscode then
     vim.o.hlsearch = false
     vim.wo.number = true
     vim.wo.signcolumn = 'yes'
-    vim.o.mouse = 'a'
     vim.o.relativenumber = true
-    vim.o.breakindent = true
     vim.o.ignorecase = true
     vim.o.smartcase = true
-    vim.o.timeout = true
     vim.o.timeoutlen = 300
     vim.o.completeopt = 'menuone,noselect,preview'
     vim.o.termguicolors = true
