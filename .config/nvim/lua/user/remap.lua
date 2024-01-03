@@ -9,58 +9,58 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "<C-d>", "<C-d>zz")
 
 -- Colemak
--- local is_colemak = false
--- vim.api.nvim_create_user_command("TCol", function()
---     local layout_map = function(a, b)
---         map({ "n", "v" }, a, b, { noremap = true })
---     end
---     local layout_del = function(a)
---         vim.keymap.del({ "n", "v" }, a)
---     end
---
---     if is_colemak then
---         print("QWERTY active")
---         layout_del("n")
---         layout_del("e")
---         layout_del("i")
---         layout_del("o")
---
---         layout_del("h")
---         layout_del("H")
---
---         layout_del("j")
---         layout_del("J")
---
---         layout_del("k")
---         layout_del("K")
---
---         layout_del("l")
---         layout_del("L")
---     else
---         print("Colemak active")
---         layout_map("n", "h")
---         layout_map("e", "j")
---         layout_map("i", "k")
---         layout_map("o", "l")
---
---         layout_map("h", "i")
---         layout_map("H", "I")
---
---         layout_map("j", "n")
---         layout_map("J", "N")
---
---         layout_map("k", "e")
---         layout_map("K", "E")
---
---         layout_map("l", "o")
---         layout_map("L", "O")
---     end
---     is_colemak = not is_colemak
--- end, {})
--- vim.api.nvim_create_autocmd(
---     "VimEnter",
---     { group = vim.api.nvim_create_augroup("ToggleColemak", { clear = true }), command = "TCol" }
--- )
+local is_colemak = false
+vim.api.nvim_create_user_command("TCol", function()
+    local layout_map = function(a, b)
+        map({ "n", "v" }, a, b, { noremap = false })
+    end
+    local layout_del = function(a)
+        vim.keymap.del({ "n", "v" }, a)
+    end
+
+    if is_colemak then
+        print("QWERTY active")
+        layout_del("n")
+        layout_del("e")
+        layout_del("i")
+        layout_del("o")
+
+        layout_del("h")
+        layout_del("H")
+
+        layout_del("j")
+        layout_del("J")
+
+        layout_del("k")
+        layout_del("K")
+
+        layout_del("l")
+        layout_del("L")
+    else
+        print("Colemak active")
+        layout_map("n", "h")
+        layout_map("e", "j")
+        layout_map("i", "k")
+        layout_map("o", "l")
+
+        layout_map("h", "i")
+        layout_map("H", "I")
+
+        layout_map("j", "n")
+        layout_map("J", "N")
+
+        layout_map("k", "e")
+        layout_map("K", "E")
+
+        layout_map("l", "o")
+        layout_map("L", "O")
+    end
+    is_colemak = not is_colemak
+end, {})
+vim.api.nvim_create_autocmd(
+    "VimEnter",
+    { group = vim.api.nvim_create_augroup("ToggleColemak", { clear = true }), command = "TCol" }
+)
 
 map("n", "<leader>x", vim.cmd.Ex, { desc = "File e[x]plorer", noremap = true })
 map({ "n", "v" }, "w", "e")

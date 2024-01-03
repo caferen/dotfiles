@@ -64,4 +64,5 @@ require("lazy").setup({
     { "folke/which-key.nvim",      opts = {} },
     "RRethy/nvim-base16",
     "lewis6991/gitsigns.nvim",
+    "tanvirtin/monokai.nvim",
 }, {})
