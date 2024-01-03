@@ -63,7 +63,6 @@ vim.api.nvim_create_autocmd(
 )
 
 map("n", "<leader>x", vim.cmd.Ex, { desc = "File e[x]plorer", noremap = true })
-map({ "n", "v" }, "w", "e")
 
 -- LSP
 map("n", "<leader>s", vim.lsp.buf.document_symbol, { desc = "List document [s]ymbols" })

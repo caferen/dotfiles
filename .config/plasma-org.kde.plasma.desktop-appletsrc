@@ -581,6 +581,7 @@ ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
 
 [Containments][21][Wallpaper][a2n.blur][General]
+BlurRadius=60
 Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
 SlidePaths=/usr/share/wallpapers/
 
