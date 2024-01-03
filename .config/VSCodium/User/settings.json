@@ -80,7 +80,7 @@
         "base16-default-dark",
         "base16-windows-95-dark"
     ],
-    "workbench.colorTheme": "Base16 Windows 95 Dark",
+    "workbench.colorTheme": "Monokai",
     "git.openRepositoryInParentFolders": "never",
     "workbench.editorAssociations": {
         "*.xml": "default"

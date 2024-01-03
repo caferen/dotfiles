@@ -7,7 +7,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$CARGO_HOME/bin:$PATH"
 
 alias vi="nvim -n"
-alias grep="rg --no-ignore-parent --hidden"
 alias cat="bat -p"
 
 if which codium > /dev/null; then
