@@ -68,6 +68,9 @@ LayoutName=MediumRoundedDark
 [Tiling]
 padding=4
 
+[Tiling][02f0a780-ce53-59af-bafc-e3389568440a]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][28ce6ba6-6743-5cb5-aa51-a4b736912130]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -117,6 +120,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][e8fe8131-d66e-5419-b6ad-b13efa0988e0]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][f0f429cf-a841-5e49-8975-4e979ef2da53]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][fa82ae85-cf76-5be5-b88f-275b957c8869]
