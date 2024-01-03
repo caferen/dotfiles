@@ -1,6 +1,6 @@
 vim.cmd('colorscheme base16-windows-95')
--- vim.api.nvim_set_hl(0, "@variable", { fg = "#FFFFFF" })
--- vim.api.nvim_set_hl(0, "@lsp.type.variable", { fg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, "@variable", { fg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, "@lsp.type.variable", { fg = "#FFFFFF" })
 
 local M = {}
 M.classic = {
