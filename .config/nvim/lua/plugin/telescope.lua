@@ -72,6 +72,20 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
         local git_dir = vim.system({ "git", "rev-parse", "--show-toplevel" }, { cwd = path }):wait().stdout
         git_dir = string.gsub(git_dir, '%s+', '')
+        if is_git_dir then
+            local map = vim.keymap.set
+
+            require('gitsigns').setup({
+                current_line_blame = true,
+                current_line_blame_opts = {
+                    delay = 100,
+                },
+                map("n", "<leader>c", function() package.loaded.gitsigns.blame_line { full = true } end,
+                    { desc = "Show git [c]ommit message for the current line" })
+            })
+        end
+
+        local ff = print
 
         if string.len(git_dir) ~= 0 and not is_directory then
             path = git_dir
