@@ -327,7 +327,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][203][Applets][232][Configuration]
 PreloadWeight=100
 popupHeight=514
-popupWidth=651
+popupWidth=665
 
 [Containments][203][Applets][232][Configuration][ConfigDialog]
 DialogHeight=540
@@ -388,10 +388,6 @@ cpu/cpu9/usage=35,121,51
 highPrioritySensorIds=["cpu/cpu.*/usage"]
 totalSensors=["cpu/all/usage"]
 
-[Containments][203][Applets][240]
-immutability=1
-plugin=org.kde.plasma.showdesktop
-
 [Containments][203][Applets][241]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -445,7 +441,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][203][General]
-AppletOrder=233;246;237;225;232;185;224;245;208;217;242;240;241
+AppletOrder=233;246;237;225;232;185;224;245;208;217;242;241
 
 [Containments][209]
 activityId=
@@ -513,21 +509,21 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=69
+PreloadWeight=60
 
 [Containments][209][Applets][225]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][209][Applets][225][Configuration]
-PreloadWeight=7
+PreloadWeight=0
 
 [Containments][209][Applets][227]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][209][Applets][227][Configuration]
-PreloadWeight=67
+PreloadWeight=72
 
 [Containments][209][Applets][230]
 immutability=1

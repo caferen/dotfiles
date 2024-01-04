@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup configurations
+
+[Service]
+ExecStart= /bin/zsh -i -c "gitcom autosave /home/eren"
+
+[Install]
+WantedBy=default.target

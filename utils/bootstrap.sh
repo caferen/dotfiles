@@ -51,7 +51,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 
 plasma() {
     pacman_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard
+        plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard kdeconnect
     yay_install kwin-bismuth
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
@@ -193,7 +193,7 @@ if [ "$1" == "--bootstrap" ]; then
     # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password ",noexec,nosuid,nodev"
 
     find $HOME/.config/systemd/user/ -maxdepth 1 -regextype egrep -regex \
-        '.*(timer|path|service)' -exec systemctl enable --user --now '{}' \;
+        '.*(timer|path)' -exec systemctl enable --user --now '{}' \;
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
     gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
@@ -202,7 +202,7 @@ if [ "$1" == "--bootstrap" ]; then
 fi
 
 if [ "$1" == "--finish" ]; then
-    pacman_install blender vlc signal-desktop libusb lm_sensors
+    pacman_install blender vlc signal-desktop libusb lm_sensors github-cli
     yay_install cura-bin heroic-games-launcher-bin coolercontrol vscodium-bin neovim-git
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
@@ -211,13 +211,14 @@ if [ "$1" == "--finish" ]; then
     # @formatter:off
     echo "asvetliakov.vscode-neovim
 eamodio.gitlens
-GitHub.github-vscode-theme
+golf1052.base16-generator
 ms-python.python
 rust-lang.rust-analyzer
 vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
     # @formatter:on
 
     keyboard
+    gh auth login
 
     sudo passwd --lock root
     sudo pacman -Rdd geoclue
