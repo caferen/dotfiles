@@ -193,7 +193,7 @@ if [ "$1" == "--bootstrap" ]; then
     # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password ",noexec,nosuid,nodev"
 
     find $HOME/.config/systemd/user/ -maxdepth 1 -regextype egrep -regex \
-        '.*(timer|path)' -exec systemctl enable --user --now '{}' \;
+        '.*(timer|path|service)' -exec systemctl enable --user --now '{}' \;
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
     gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
@@ -222,7 +222,6 @@ vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
 
     sudo passwd --lock root
     sudo pacman -Rdd geoclue
-    sudo pacman -Rdd krunner
     pacman -Qtdq | sudo pacman -Rns -
 
     exit 0
