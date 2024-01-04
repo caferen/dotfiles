@@ -50,6 +50,7 @@
     "editor.tabCompletion": "on",
     "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
     "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.inlayHints.maxLength": 15,
     "git.confirmSync": false,
     "githubPullRequests.pullBranch": "never",
     "githubPullRequests.fileListLayout": "flat",
@@ -80,6 +81,6 @@
         "base16-default-dark",
         "base16-windows-95-dark"
     ],
-    "workbench.colorTheme": "Base16 Windows 95 Dark",
+    "workbench.colorTheme": "Monokai",
     "git.openRepositoryInParentFolders": "never",
 }

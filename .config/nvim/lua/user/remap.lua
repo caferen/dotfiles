@@ -18,24 +18,27 @@ vim.api.nvim_create_user_command("TCol", function()
         vim.keymap.del({ "n", "v" }, a)
     end
 
+    local colemak_to_qwerty = {}
+    colemak_to_qwerty.n = "h"
+    colemak_to_qwerty("e", "j")
+    colemak_to_qwerty("i", "k")
+    colemak_to_qwerty("o", "l")
+
+    colemak_to_qwerty("h", "i")
+    colemak_to_qwerty("H", "I")
+
+    colemak_to_qwerty("j", "n")
+    colemak_to_qwerty("J", "N")
+
+    colemak_to_qwerty("k", "e")
+    colemak_to_qwerty("K", "E")
+
+    colemak_to_qwerty("l", "o")
+    colemak_to_qwerty("L", "O")
+
     if is_colemak then
         print("QWERTY active")
-        layout_del("n")
-        layout_del("e")
-        layout_del("i")
-        layout_del("o")
-
-        layout_del("h")
-        layout_del("H")
-
-        layout_del("j")
-        layout_del("J")
-
-        layout_del("k")
-        layout_del("K")
-
-        layout_del("l")
-        layout_del("L")
+        layout_del(colemak_keys)
     else
         print("Colemak active")
         layout_map("n", "h")
