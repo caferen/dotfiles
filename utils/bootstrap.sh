@@ -150,11 +150,14 @@ sekuurity() {
 
     echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/20-deny_root.conf
 
+    # https://wiki.archlinux.org/title/Core_dump#Using_systemd
     sudo mkdir /etc/systemd/coredump.conf.d
     # @formatter:off
     echo "[Coredump]
-Storage=none" | sudo tee /etc/systemd/coredump.conf.d/disable.conf
+Storage=none
+ProcessSizeMax=0" | sudo tee /etc/systemd/coredump.conf.d/disable.conf
 
+    # https://wiki.archlinux.org/title/IPv6#NetworkManager
     echo "[connection]
 ipv6.ip6-privacy=2" | sudo tee /etc/NetworkManager/conf.d/ip6-privacy.conf
     # @formatter:on
@@ -163,58 +166,58 @@ ipv6.ip6-privacy=2" | sudo tee /etc/NetworkManager/conf.d/ip6-privacy.conf
     sudo systemctl enable --now $HOME/utils/services/randomize.service
 }
 
-# Initialize a fresh install
 if [ "$1" == "--init" ]; then
     sudo pacman -Syu
     pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
     install_yay
     plasma
     pipewire
-    sudo systemctl enable systemd-resolved.service
+    sudo systemctl enable --now systemd-resolved.service
     exit 0
 fi
 
-# Bootstrap rest of the system following a reboot after --init
 if [ "$1" == "--bootstrap" ]; then
     get_dotfiles
     sekuurity
     configure_shell
 
-    pacman_install syncthing gocryptfs
-    systemctl enable --user syncthing.service
-
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    pacman_install python python-pip
+    pacman_install python fzf ripgrep unzip steam syncthing mangohud gocryptfs
 
-    pacman_install steam blender mangohud vlc signal-desktop \
-        libusb fzf ripgrep unzip lm_sensors
+    systemctl enable --user --now syncthing.service
 
-    yay_install cura-bin heroic-games-launcher-bin spotify \
-        coolercontrol vscodium-bin neovim-git mullvad-vpn-bin
-
-        # @formatter:off
-        echo "asvetliakov.vscode-neovim
-    eamodio.gitlens
-    GitHub.github-vscode-theme
-    ms-python.python
-    rust-lang.rust-analyzer
-    vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
-        # @formatter:on
-
-    [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
-    sudo systemctl enable coolercontrold.service
+    yay_install spotify mullvad-vpn-bin
 
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd ",nosuid,nodev"
     drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup ",noexec,nosuid,nodev"
     # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password ",noexec,nosuid,nodev"
-
-    keyboard
 
     find $HOME/.config/systemd/user/ -maxdepth 1 -regextype egrep -regex \
         '.*(timer|path|service)' -exec systemctl enable --user --now '{}' \;
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
     gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+
+    exit 0
+fi
+
+if [ "$1" == "--finish" ]; then
+    pacman_install blender vlc signal-desktop libusb lm_sensors
+    yay_install cura-bin heroic-games-launcher-bin coolercontrol vscodium-bin neovim-git
+
+    [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
+    sudo systemctl enable --now coolercontrold.service
+
+    # @formatter:off
+    echo "asvetliakov.vscode-neovim
+eamodio.gitlens
+GitHub.github-vscode-theme
+ms-python.python
+rust-lang.rust-analyzer
+vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
+    # @formatter:on
+
+    keyboard
 
     sudo passwd --lock root
     sudo pacman -Rdd geoclue
