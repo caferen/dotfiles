@@ -10,59 +10,24 @@ map("n", "<C-d>", "<C-d>zz")
 
 -- Colemak
 local is_colemak = false
-vim.api.nvim_create_user_command("TCol", function()
-    local layout_map = function(a, b)
-        map({ "n", "v" }, a, b, { noremap = false })
-    end
-    local layout_del = function(a)
-        vim.keymap.del({ "n", "v" }, a)
-    end
-
-    local colemak_to_qwerty = {}
-    colemak_to_qwerty.n = "h"
-    colemak_to_qwerty("e", "j")
-    colemak_to_qwerty("i", "k")
-    colemak_to_qwerty("o", "l")
-
-    colemak_to_qwerty("h", "i")
-    colemak_to_qwerty("H", "I")
-
-    colemak_to_qwerty("j", "n")
-    colemak_to_qwerty("J", "N")
-
-    colemak_to_qwerty("k", "e")
-    colemak_to_qwerty("K", "E")
-
-    colemak_to_qwerty("l", "o")
-    colemak_to_qwerty("L", "O")
+vim.api.nvim_create_user_command("TC", function()
+    local c = { "n", "e", "i", "o", "h", "H", "j", "J", "k", "K", "l", "L" }
+    local q = { "h", "j", "k", "l", "i", "I", "n", "N", "e", "E", "o", "O" }
 
     if is_colemak then
         print("QWERTY active")
-        layout_del(colemak_keys)
+        for i, _ in pairs(c) do vim.keymap.del({ "n", "v" }, c[i]) end
     else
         print("Colemak active")
-        layout_map("n", "h")
-        layout_map("e", "j")
-        layout_map("i", "k")
-        layout_map("o", "l")
-
-        layout_map("h", "i")
-        layout_map("H", "I")
-
-        layout_map("j", "n")
-        layout_map("J", "N")
-
-        layout_map("k", "e")
-        layout_map("K", "E")
-
-        layout_map("l", "o")
-        layout_map("L", "O")
+        for i, _ in pairs(c) do map({ "n", "v" }, c[i], q[i], { noremap = false }) end
     end
+
     is_colemak = not is_colemak
 end, {})
+
 vim.api.nvim_create_autocmd(
     "VimEnter",
-    { group = vim.api.nvim_create_augroup("ToggleColemak", { clear = true }), command = "TCol" }
+    { group = vim.api.nvim_create_augroup("ToggleColemak", { clear = true }), command = "TC" }
 )
 
 map("n", "<leader>x", vim.cmd.Ex, { desc = "File e[x]plorer", noremap = true })
