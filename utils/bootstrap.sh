@@ -68,9 +68,10 @@ pipewire() {
 }
 
 drive() {
-    [[ -d "$2" ]] || (mkdir "$2" && sudo chown $USER:$USER "$2" -R \
-            &&  echo "UUID=${1}     "$2"  ext4    defaults,nofail"$3" 0 0" \
+    [[ -d "$2" ]] || (mkdir "$2" && \
+            echo "UUID=${1}     "$2"  ext4    defaults,nofail"$3" 0 0" \
         | sudo tee -a /etc/fstab)
+    sudo chown $USER:$USER "$2" -R
 }
 
 firejail() {
@@ -190,7 +191,7 @@ if [ "$1" == "--bootstrap" ]; then
 
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd ",nosuid,nodev"
     drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup ",noexec,nosuid,nodev"
-    # drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password ",noexec,nosuid,nodev"
+    drive "3289a1d1-61cd-45bf-9f2d-c9932913bb6f" $HOME/password ",noexec,nosuid,nodev"
 
     find $HOME/.config/systemd/user/ -maxdepth 1 -regextype egrep -regex \
         '.*(timer|path|service)' -exec systemctl enable --user --now '{}' \;

@@ -6,6 +6,7 @@ PathChanged=/home/eren/ssd/drive-cipher
 PathChanged=/home/eren/ssd/media-cipher
 PathChanged=/home/eren/ssd/mail-cipher
 PathChanged=/home/eren/ssd/wallpapers
+TriggerLimitIntervalSec=30s
 Unit=backup.service
 
 [Install]
