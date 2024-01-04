@@ -21,6 +21,8 @@
 !systemd
 !systemd/user
 !systemd/user/*
+!systemd/root
+!systemd/root/*
 !alacritty
 !alacritty/**
 !starship.toml

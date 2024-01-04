@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup files
+
+[Timer]
+OnCalendar=minutely
+Unit=backup.service
+
+[Install]
+WantedBy=default.target

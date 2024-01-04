@@ -574,10 +574,13 @@ DialogWidth=1082
 [Containments][21][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
+filterMimeTypes=\\0
+positions={"2560x1440":[]}
+url=/home/eren/password
 
 [Containments][21][Wallpaper][a2n.blur][General]
 BlurRadius=60
-Image=/home/eren/Pictures/wallpapers/Adobe/AdobeStock_321371819.jpeg
+Image=/home/eren/ssd/wallpapers/Adobe/AdobeStock_321371819.jpeg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][21][Wallpaper][org.kde.image][General]
@@ -597,7 +600,7 @@ DialogHeight=1001
 DialogWidth=720
 
 [Containments][22][Wallpaper][a2n.blur][General]
-Image=/home/eren/Pictures/wallpapers/Black/ralph-darabos-1k22UwRg95g-unsplash.jpg
+Image=/home/eren/ssd/wallpapers/Mobile/a561.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][22][Wallpaper][org.kde.image][General]
@@ -1059,5 +1062,5 @@ launchers=preferred://filemanager,preferred://browser,applications:spotify.deskt
 transparencyEnabled=true
 
 [ScreenMapping]
-itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,5603a0e9-b935-4305-84b2-6938680b45fd
+itemsOnDisabledScreens=0,5603a0e9-b935-4305-84b2-6938680b45fd,1,desktop:/steam.desktop
+screenMapping=

@@ -15,8 +15,8 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-logo.svg,file:///usr/share/pixmaps/archlinux-logo.svg
-Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Documents/,file:$HOME/,file:$HOME/.local/bin/,file:///usr/share/
+Recent Files[$e]=archlinux-logo.svg,file:$HOME/ssd/wallpapers/Mobile/a561.jpg,file:$HOME/ssd/wallpapers/Adobe/AdobeStock_321371819.jpeg,file:///usr/share/pixmaps/archlinux-logo.svg
+Recent URLs[$e]=file:///usr/share/pixmaps/,file:$HOME/Pictures/,file:$HOME/Documents/,file:$HOME/,file:$HOME/.local/bin/,file:///usr/share/,file:$HOME/ssd/wallpapers/Adobe/,file:$HOME/ssd/wallpapers/Mobile/
 detailViewIconSize=48
 
 [KPropertiesDialog]
