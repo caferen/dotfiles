@@ -33,6 +33,12 @@ map('n', '<leader>D', function() code.call('workbench.action.showErrorsWarnings'
 map('n', ']d', function() code.call('editor.action.marker.next') end)
 map('n', '[d', function() code.call('editor.action.marker.prev') end)
 
+-- Harpoon
+map('n', '<leader>n', function() code.call('vscode-harpoon.addGlobalEditor') end)
+map('n', '<leader>w', function() code.call('vscode-harpoon.editorGlobalQuickPick') end)
+map('n', 'A-Left', function() code.call('vscode-harpoon.gotoPreviousGlobalHarpoonEditor') end)
+-- map('n', 'A-Right', function() code.call('vscode-harpoon.editorGlobalQuickPick') end)
+
 vim.api.nvim_create_autocmd("InsertEnter", {
     group = vim.api.nvim_create_augroup('ClosePanel', { clear = true }),
     callback = function()
