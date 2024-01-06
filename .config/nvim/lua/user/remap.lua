@@ -25,11 +25,6 @@ vim.api.nvim_create_user_command("TC", function()
     is_colemak = not is_colemak
 end, {})
 
-vim.api.nvim_create_autocmd(
-    "VimEnter",
-    { group = vim.api.nvim_create_augroup("ToggleColemak", { clear = true }), command = "TC" }
-)
-
 map("n", "<leader>x", vim.cmd.Ex, { desc = "File e[x]plorer", noremap = true })
 
 -- LSP
@@ -52,7 +47,7 @@ map({ "n", "v" }, "gl", "$", { desc = "[g]oto [l]ine end" })
 map("n", "<leader>d", function()
     vim.diagnostic.get(0)
 end, { desc = "List current buffer [d]iagnostics" })
-map("n", "<leader>D", vim.diagnostic.get, { desc = "List workspace [d]iagnostics" })
+map("n", "<leader>D", vim.diagnostic.get, { desc = "List workspace [D]iagnostics" })
 map("n", "[d", vim.diagnostic.goto_prev, { desc = "[[d] Go to previous diagnostic" })
 map("n", "]d", vim.diagnostic.goto_next, { desc = "[]d] Go to next diagnostic" })
 map("n", "<leader>pd", vim.diagnostic.open_float, { desc = "Open [p]opup [d]iagnostic window" })
