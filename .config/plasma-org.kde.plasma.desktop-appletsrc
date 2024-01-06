@@ -509,7 +509,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][209][Applets][221][Configuration]
-PreloadWeight=67
+PreloadWeight=72
 
 [Containments][209][Applets][225]
 immutability=1
@@ -1063,4 +1063,4 @@ transparencyEnabled=true
 
 [ScreenMapping]
 itemsOnDisabledScreens=0,5603a0e9-b935-4305-84b2-6938680b45fd,1,desktop:/steam.desktop
-screenMapping=file:///home/eren/password/password,0,5603a0e9-b935-4305-84b2-6938680b45fd,file:///home/eren/password/lost+found,0,5603a0e9-b935-4305-84b2-6938680b45fd,file:///home/eren/password/password_drive,0,5603a0e9-b935-4305-84b2-6938680b45fd
+screenMapping=file:///home/eren/password/password_drive,0,5603a0e9-b935-4305-84b2-6938680b45fd,file:///home/eren/password/lost+found,0,5603a0e9-b935-4305-84b2-6938680b45fd,file:///home/eren/password/password,0,5603a0e9-b935-4305-84b2-6938680b45fd

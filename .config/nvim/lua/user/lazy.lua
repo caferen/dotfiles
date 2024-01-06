@@ -60,7 +60,6 @@ require("lazy").setup({
     },
 
     { "nvim-lualine/lualine.nvim", dependencies = { "arkav/lualine-lsp-progress" } },
-    { "numToStr/Comment.nvim",     opts = {} },
     { "folke/which-key.nvim",      opts = {} },
     "RRethy/nvim-base16",
     "lewis6991/gitsigns.nvim",

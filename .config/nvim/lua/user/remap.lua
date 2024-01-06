@@ -10,20 +10,26 @@ map("n", "<C-d>", "<C-d>zz")
 
 -- Colemak
 local is_colemak = false
+local c = { "n", "e", "i", "o", "h", "H", "j", "J", "k", "K", "l", "L" }
+local q = { "h", "j", "k", "l", "i", "I", "n", "N", "e", "E", "o", "O" }
+local enable_colemak = function()
+    print("Colemak active")
+    for i, _ in pairs(c) do map({ "n", "v" }, c[i], q[i], { noremap = false }) end
+    is_colemak = true
+end
 vim.api.nvim_create_user_command("TC", function()
-    local c = { "n", "e", "i", "o", "h", "H", "j", "J", "k", "K", "l", "L" }
-    local q = { "h", "j", "k", "l", "i", "I", "n", "N", "e", "E", "o", "O" }
-
     if is_colemak then
         print("QWERTY active")
         for i, _ in pairs(c) do vim.keymap.del({ "n", "v" }, c[i]) end
     else
-        print("Colemak active")
-        for i, _ in pairs(c) do map({ "n", "v" }, c[i], q[i], { noremap = false }) end
+        enable_colemak()
     end
-
     is_colemak = not is_colemak
 end, {})
+
+vim.system({ "lsusb" }, { text = true }, function(obj)
+    if string.find(obj.stdout, "Moonlander") then vim.schedule(enable_colemak) end
+end)
 
 map("n", "<leader>x", vim.cmd.Ex, { desc = "File e[x]plorer", noremap = true })
 
