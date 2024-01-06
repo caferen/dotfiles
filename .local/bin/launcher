@@ -22,12 +22,13 @@ applications() {
             app_exec=$(GAME_TEMPLATE "$app_exec")
         fi
 
-        app_root=$(echo "$app_exec" | grep -o '^\S*')
-        app_root_with_space=$(echo "$app_exec" | grep -Po '^"\K.*(?=")')
+        # it's hard to know which executable is the application
+        #app_root=$(echo "$app_exec" | grep -o '^\S*')
+        #app_root_with_space=$(echo "$app_exec" | grep -Po '^"\K.*(?=")')
 
-        if ! [[ -x "$(command -v $app_root)" || -x "$(command -v $app_root_with_space)" ]]; then
-            continue
-        fi
+        #if ! [[ -x "$(command -v $app_root)" || -x "$(command -v $app_root_with_space)" ]]; then
+        #    continue
+        #fi
 
         echo "${app_name};${app_exec}" | tee -a $CACHE > /dev/null
 
