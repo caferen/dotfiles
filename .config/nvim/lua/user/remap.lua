@@ -7,6 +7,7 @@ map({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 map("n", "<C-u>", "<C-u>zz")
 map("n", "<C-d>", "<C-d>zz")
+map("t", "<esc>", "<C-\\><C-n>")
 
 -- Colemak
 local is_colemak = false
