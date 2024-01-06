@@ -73,13 +73,14 @@ run() {
 
 run "${COMMAND}"
 
-if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null && ! echo $APP | grep "Counter-Strike"; then
-    tmux new-window -n watch-exe -t "$TMUX_SESSION"
-    run "${WATCH_EXE}" "watch-exe"
-    run "${DUAL_MONITOR}" "watch-exe"
-    run "pkill -f steam" "watch-exe"
-    run "${KILL_TMUX}" "watch-exe"
+if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
+    if ! [[ $APP = "Counter-Strike 2" ]]; then
+        tmux new-window -n watch-exe -t "$TMUX_SESSION"
+        run "${WATCH_EXE}" "watch-exe"
+        run "${DUAL_MONITOR}" "watch-exe"
+        run "pkill -f steam" "watch-exe"
+        run "${KILL_TMUX}" "watch-exe"
+    fi
 else
-    run "${DUAL_MONITOR}"
     run "${KILL_TMUX}"
 fi
