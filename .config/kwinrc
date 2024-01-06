@@ -11,7 +11,7 @@ Rows=1
 BlurStrength=5
 NoiseStrength=10
 
-[Effect-overview]
+[Effect-desktopgrid]
 BorderActivate=0
 
 [Effect-windowview]
