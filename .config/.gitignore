@@ -1,17 +1,10 @@
 *
-!helix
-!helix/*\.toml
-!helix/**/\.toml
-!autostart
-!autostart/**
 !tmux
 !tmux/**
 !MangoHud
 !MangoHud/**
 !nvim
 !nvim/**
-!polybar
-!polybar/**
 !VSCodium
 !VSCodium/User
 !VSCodium/User/settings.json
@@ -31,18 +24,5 @@
 !waybar/**
 !starship.toml
 !.gitignore
-
-
-!plasma-org.kde.plasma.desktop-appletsrc
-!kded5rc
-!kdeglobals
-!kglobalshortcutsrc
-!kscreenlockerrc
-!kwinrc
-!kwinrulesrc
-!plasmarc
-!plasmashellrc
-!Trolltech.conf
-!spectaclerc
 
 nvim/lazy-lock*.json

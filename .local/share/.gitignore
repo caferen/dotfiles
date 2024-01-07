@@ -1,8 +1,4 @@
 *
-!color-schemes
-!color-schemes/**
-!plasma
-!plasma/**
 !applications
 !applications/**
 !.gitignore
