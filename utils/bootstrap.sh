@@ -64,7 +64,6 @@ hyprland() {
 
 desktop() {
     pacman_install networkmanager kdeconnect wl-clipboard bluez
-    yay_install wlr-randr
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
         sudo sed -i 's/^MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf

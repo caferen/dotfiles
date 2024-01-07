@@ -1,5 +1,0 @@
-#!/bin/bash
-
-
-wlr-randr  --output DP-3 --custom-mode 2560x1440@165Hz --transform normal \
-    --output HDMI-A-1 --off > /dev/null 2>&1

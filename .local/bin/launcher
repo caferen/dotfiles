@@ -2,8 +2,6 @@
 
 SPLIT_TUNNEL="mullvad-exclude"
 HUD="mangohud"
-SINGLE_MONITOR="$HOME/.local/bin/single"
-DUAL_MONITOR="$HOME/.local/bin/dual"
 KILL_TMUX="tmux kill-session"
 WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done"
 CACHE="$HOME/.cache/.apps"
@@ -11,7 +9,7 @@ HYPR_GAMEMODE="$HOME/.config/hypr/gamemode"
 
 
 GAME_TEMPLATE() {
-    echo "${HYPR_GAMEMODE} & ${SINGLE_MONITOR} & ${SPLIT_TUNNEL} ${HUD} ${1}"
+    echo "${HYPR_GAMEMODE} & ${SPLIT_TUNNEL} ${HUD} ${1}"
 }
 
 applications() {
@@ -79,7 +77,6 @@ if echo "${COMMAND}" | grep -P '(rungameid|lolforlinux)' > /dev/null; then
         tmux new-window -n watch-exe -t "$TMUX_SESSION"
         run "${WATCH_EXE}" "watch-exe"
         run "${HYPR_GAMEMODE}" "watch-exe"
-        run "${DUAL_MONITOR}" "watch-exe"
         run "pkill -f steam" "watch-exe"
         run "${KILL_TMUX}" "watch-exe"
     fi

@@ -9,7 +9,10 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword general:gaps_in 0;\
         keyword general:gaps_out 0;\
         keyword general:border_size 1;\
-        keyword decoration:rounding 0"
+        keyword decoration:rounding 0;\
+        keyword monitor HDMI-A-1,disable;\
+        keyword unbind ,mouse:276;\
+        keyword unbind ,mouse:275"
     exit
 fi
 hyprctl reload

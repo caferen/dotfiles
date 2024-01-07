@@ -34,7 +34,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 local null_ls = require("null-ls")
 local formatting = null_ls.builtins.formatting
-local diagnostics = null_ls.builtins.diagnostics
 local completion = null_ls.builtins.completion
 
 local spell = completion.spell
@@ -42,7 +41,6 @@ spell.filetypes = { "text" }
 null_ls.setup({
     sources = {
         spell,
-        diagnostics.ruff,
         formatting.beautysh,
     },
 })
