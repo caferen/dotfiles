@@ -50,16 +50,34 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 }
 
 plasma() {
-    pacman_install plasma-desktop dolphin networkmanager sddm plasma-nm \
-        plasma-pa bluedevil spectacle plasma-wayland-session wl-clipboard kdeconnect
+    pacman_install plasma-desktop dolphin sddm plasma-nm  \
+        plasma-pa bluedevil spectacle plasma-wayland-session
     yay_install kwin-bismuth
 
+    sudo systemctl enable sddm.service
+}
+
+hyprland() {
+    pacman_install hyprland qt5-wayland qt5ct libva xdg-desktop-portal-hyprland \
+        qt6-wayland polkit-kde-agent hyprpaper waybar dunst grim slurp swaylock
+}
+
+desktop() {
+    pacman_install networkmanager kdeconnect wl-clipboard bluez
+    yay_install wlr-randr
+
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
+        sudo sed -i 's/^MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
         sudo mkinitcpio -P
     fi
 
-    sudo systemctl enable sddm.service NetworkManager.service bluetooth.service
+    sudo systemctl enable NetworkManager.service bluetooth.service
+
+    pipewire
+
+    # plasma
+    hyprland
 }
 
 pipewire() {
@@ -171,8 +189,7 @@ if [ "$1" == "--init" ]; then
     sudo pacman -Syu
     pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
     install_yay
-    plasma
-    pipewire
+    desktop
     sudo systemctl enable --now systemd-resolved.service
     exit 0
 fi
@@ -200,7 +217,7 @@ if [ "$1" == "--bootstrap" ]; then
         '.*(timer|path|service)' -exec sudo systemctl enable --now '{}' \;
 
     echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
-    gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+    gsettings set org.gnome.desktop.wm.preferences button-layout ':maximize,close'
 
     exit 0
 fi

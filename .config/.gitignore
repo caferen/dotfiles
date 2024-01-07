@@ -25,6 +25,10 @@
 !systemd/root/*
 !alacritty
 !alacritty/**
+!hypr
+!hypr/**
+!waybar
+!waybar/**
 !starship.toml
 !.gitignore
 
