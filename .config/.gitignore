@@ -22,6 +22,8 @@
 !hypr/**
 !waybar
 !waybar/**
+!dunst
+!dunst/**
 !starship.toml
 !.gitignore
 

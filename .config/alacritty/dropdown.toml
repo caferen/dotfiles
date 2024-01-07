@@ -14,10 +14,6 @@ program = "/bin/zsh"
 decorations = "None"
 opacity = 0.8
 
-[window.padding]
-x = 5
-y = 5
-
 [window.dimensions]
 columns = 100
 lines = 25

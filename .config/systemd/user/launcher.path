@@ -4,6 +4,7 @@ Description=Monitor application directories
 [Path]
 PathChanged=/usr/share/applications
 PathChanged=/home/eren/.local/share/applications
+PathChanged=/home/eren/.local/bin/launcher
 Unit=launcher.service
 
 [Install]

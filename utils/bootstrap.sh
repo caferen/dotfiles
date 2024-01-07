@@ -153,7 +153,7 @@ if [ "$1" == "--bootstrap" ]; then
     configure_shell
 
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    pacman_install python fzf ripgrep unzip steam syncthing mangohud gocryptfs
+    pacman_install python fzf ripgrep unzip steam syncthing mangohud gocryptfs gamemode
 
     systemctl enable --user --now syncthing.service
 

@@ -6,10 +6,11 @@ KILL_TMUX="tmux kill-session"
 WATCH_EXE="sleep 30 && while pgrep '.*.exe' > /dev/null; do sleep 5; done"
 CACHE="$HOME/.cache/.apps"
 HYPR_GAMEMODE="$HOME/.config/hypr/gamemode"
+GAMEMODE="gamemoderun"
 
 
 GAME_TEMPLATE() {
-    echo "${HYPR_GAMEMODE} & ${SPLIT_TUNNEL} ${HUD} ${1}"
+    echo "${HYPR_GAMEMODE} & ${GAMEMODERUN} ${SPLIT_TUNNEL} ${HUD} ${1}"
 }
 
 applications() {

@@ -13,6 +13,8 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword monitor HDMI-A-1,disable;\
         keyword unbind ,mouse:276;\
         keyword unbind ,mouse:275"
+    dunstctl set-paused true
     exit
 fi
+dunstctl set-paused false
 hyprctl reload
