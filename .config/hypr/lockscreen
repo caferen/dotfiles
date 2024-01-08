@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ls -d -p $HOME/ssd/wallpapers/Black/* | sort -R | tail -1 | while read file; do
+ls -d -p $HOME/ssd/wallpapers/White/* | sort -R | tail -1 | while read file; do
     swaylock --image "$file"
 done
