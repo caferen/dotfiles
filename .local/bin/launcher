@@ -10,7 +10,7 @@ GAMEMODE="gamemoderun"
 
 
 GAME_TEMPLATE() {
-    echo "${HYPR_GAMEMODE} & ${GAMEMODERUN} ${SPLIT_TUNNEL} ${HUD} ${1}"
+    echo "${HYPR_GAMEMODE} & sleep 3 & ${GAMEMODERUN} ${SPLIT_TUNNEL} ${HUD} ${1}"
 }
 
 applications() {
