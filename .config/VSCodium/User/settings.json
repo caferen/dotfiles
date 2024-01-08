@@ -41,9 +41,9 @@
         "menu.background": "#000",
         "editorGutter.background": "#000",
     },
-    // "editor.tokenColorCustomizations": {
-    //     "variables": "#FFFFFF"
-    // },
+    "editor.tokenColorCustomizations": {
+        "variables": "#FFFFFF"
+    },
     "editor.lineNumbers": "relative",
     "editor.mouseWheelScrollSensitivity": 0.5,
     "git.enableStatusBarSync": false,
@@ -81,6 +81,6 @@
         "base16-default-dark",
         "base16-windows-95-dark"
     ],
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Base16 Windows 95 Dark",
     "git.openRepositoryInParentFolders": "never",
 }
