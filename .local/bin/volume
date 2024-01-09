@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function volume {
+    pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1
+}
+
+volume=$(volume)
+
+notify-send -t 750 -h string:x-dunst-stack-tag:volume_notif \
+    -h int:value:$volume " $volume%"

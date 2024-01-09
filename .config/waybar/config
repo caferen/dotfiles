@@ -1,27 +1,24 @@
 {
     "position": "top",
     "layer": "top",
-    "height": 16,
+    "height": 40,
     "output": ["DP-3"],
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
     "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
-    "modules-center": ["cpu", "memory", "temperature", "custom/gpu", "custom/gpu-power", "custom/gpu-temp"],
-    "modules-right": ["tray", "custom/randwall", "network", "wireplumber", "clock"],
-    // Modules configuration
+    "modules-center": ["cpu", "memory", "temperature", "clock", "custom/gpu", "custom/gpu-power", "custom/gpu-temp"],
+    "modules-right": ["tray"],
+
 	"clock": {
-		"format": " {:%H:%M}",
+		"format": "{:%d %b | %H:%M}",
 		"tooltip": "true",
-        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        	"format-alt": " {:%d/%m}"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 	},
-	
 
 	"hyprland/workspaces": {
-        "active-only": false,
-        "all-outputs": true,
+        "all-outputs": false,
         "disable-scroll": false,
         "on-scroll-up": "hyprctl dispatch workspace +1",
         "on-scroll-down": "hyprctl dispatch workspace -1",
@@ -31,8 +28,15 @@
 			"urgent": "",
 			"active": "",
 			"default": "󰧞",
-    "sort-by-number": true
-    },
+            "sort-by-number": true
+         },
+         "persistent-workspaces": {
+                "1": [],
+                "2": [],
+                "3": [],
+                "4": [],
+                "5": [],
+         },
     },
 
     "temperature": {
@@ -43,7 +47,6 @@
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
-
 
     "custom/playerctl": {
       "format": "{icon}",
@@ -86,32 +89,30 @@
   },
 
 	"network": {
-        	"format-wifi": "{bandwidthTotalBytes} 󰤨",
+        	"format-wifi": "󰤨",
         	"format-ethernet": " {ifname}: Aesthetic",
         	"format-linked": " {ifname} (No IP)",
         	"format-disconnected": "󰤭",
         	"format-alt": " {ifname}: {ipaddr}/{cidr}",
-          "tooltip-format": "{essid}",
+          "tooltip-format": "{bandwidthTotalBytes} {essid}",
           "on-click-right": "nm-connection-editor"
 	},
 
 	"tray": {
 		"icon-size": 21,
-		"spacing": 5
+		"spacing": 5,
+        "inactive": true,
 	},
 
 	"wireplumber": {
-		"format": "{icon} {volume}%",
-        "format-muted": "󰝟",
-		"format-icons": {
-			"default": ["󰖀", "󰕾"]
-		},
+		"format": "{volume}%",
   },
 
   "custom/launcher": {
     "format": "󰈸",
-    "on-click": "bash $HOME/.local/bin/run_launcher"
+    "on-click": "$HOME/.local/bin/run_launcher"
   },
+
   "custom/gpu": {
     "exec": "echo  $(nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits)%",
     "restart-interval": 3,
