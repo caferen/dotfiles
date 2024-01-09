@@ -25,7 +25,7 @@ get_dotfiles() {
     git clone https://github.com/caferen/dotfiles.git $HOME/dotfiles
     rsync -r $HOME/dotfiles/ $HOME
     rm -rf $HOME/dotfiles
-    sudo ln -s $HOME/utils/fonts/* /usr/share/fonts/TTF/
+    sudo ln -s $HOME/utils/fonts/* /usr/share/fonts/
 }
 
 configure_shell() {
@@ -64,9 +64,10 @@ hyprland() {
 
 desktop() {
     pacman_install networkmanager kdeconnect wl-clipboard bluez
+    yay_install brave-bin
 
     if [[ "$(sudo cat /sys/module/nvidia_drm/parameters/modeset)" == 'N' ]]; then
-        sudo sed -i 's/^MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
+        sudo sed -i 's/^MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
         echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia_drm.conf
         sudo mkinitcpio -P
     fi
@@ -140,24 +141,16 @@ ipv6.ip6-privacy=2" | sudo tee /etc/NetworkManager/conf.d/ip6-privacy.conf
 
 if [ "$1" == "--init" ]; then
     sudo pacman -Syu
-    pacman_install git base-devel man curl make neovim alacritty linux-zen-headers nvidia-dkms
+    pacman_install git base-devel man curl make alacritty linux-zen-headers nvidia-dkms usbutils \
+        python fzf ripgrep unzip steam syncthing mangohud gocryptfs gamemode
     install_yay
+    yay_install neovim-git
+    get_dotfiles
+    configure_shell
+    sekuurity
     desktop
     sudo systemctl enable --now systemd-resolved.service
-    exit 0
-fi
-
-if [ "$1" == "--bootstrap" ]; then
-    get_dotfiles
-    sekuurity
-    configure_shell
-
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    pacman_install python fzf ripgrep unzip steam syncthing mangohud gocryptfs gamemode
-
     systemctl enable --user --now syncthing.service
-
-    yay_install spotify mullvad-vpn-bin
 
     drive "703f4ec4-5cd5-4a7e-b3bc-d7429180151a" $HOME/ssd ",nosuid,nodev"
     drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup ",noexec,nosuid,nodev"
@@ -169,15 +162,13 @@ if [ "$1" == "--bootstrap" ]; then
     find $HOME/.config/systemd/root/ -maxdepth 1 -regextype egrep -regex \
         '.*(timer|path|service)' -exec sudo systemctl enable --now '{}' \;
 
-    echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
-    gsettings set org.gnome.desktop.wm.preferences button-layout ':maximize,close'
-
     exit 0
 fi
 
-if [ "$1" == "--finish" ]; then
+if [ "$1" == "--bootstrap" ]; then
+    if ! which rustup; then curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; fi
     pacman_install blender vlc signal-desktop libusb lm_sensors github-cli
-    yay_install cura-bin heroic-games-launcher-bin coolercontrol vscodium-bin neovim-git
+    yay_install cura-bin heroic-games-launcher-bin coolercontrol vscodium-bin spotify mullvad-vpn-bin
 
     [[ -f /etc/conf.d/lm_sensors ]] || sudo sensors-detect
     sudo systemctl enable --now coolercontrold.service
@@ -197,6 +188,9 @@ vadimcn.vscode-lldb" | xargs -L1 codium --install-extension &> /dev/null
     sudo passwd --lock root
     sudo pacman -Rdd geoclue
     pacman -Qtdq | sudo pacman -Rns -
+
+    # echo "unShaderBackgroundProcessingThreads $(nproc)" > $HOME/.local/share/Steam/steam_dev.cfg
+    gsettings set org.gnome.desktop.wm.preferences button-layout ':maximize,close'
 
     exit 0
 fi

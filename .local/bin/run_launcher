@@ -1,7 +1,4 @@
 #!/bin/bash
-#
-# use this instead:
-# https://raw.githubusercontent.com/i3/i3/next/i3-sensible-terminal
 
 isopen=$(pgrep -f LauncherTerminal | wc -w)
 
