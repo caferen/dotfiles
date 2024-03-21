@@ -1,0 +1,21 @@
+#!/bin/sh
+
+mkdir /tmp/proton-ge
+
+set -eo pipefail
+
+cd /tmp/proton-ge
+
+curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest -o latest.json
+
+curl -LOJ $(
+    jq -r '.assets | .[] | select(.name | contains("sha512sum")) | .browser_download_url' latest.json
+)
+
+curl -LOJ $(
+    jq -r '.assets | .[] | select(.name | contains("tar.gz")) | .browser_download_url' latest.json
+)
+
+sha512sum -c ./*.sha512sum
+
+tar -xvf GE-Proton*.tar.gz -C ~/.steam/root/compatibilitytools.d/

@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup configurations
+
+[Service]
+
+ExecStart=/home/eren/.config/systemd/user/dotfiles.sh
+WorkingDirectory=/home/eren/.dotfiles
+
+[Install]
+WantedBy=default.target

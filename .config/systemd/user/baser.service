@@ -1,0 +1,9 @@
+[Unit]
+Description=Build baser
+
+[Service]
+ExecStart=/home/eren/.dotfiles/arch/baser/build.sh
+WorkingDirectory=/home/eren/.dotfiles/arch/baser 
+
+[Install]
+WantedBy=default.target

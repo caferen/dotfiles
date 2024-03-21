@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Start Menu
+
+[Desktop Action Restart]
+Exec=systemctl reboot
+Name=Reboot
+
+[Desktop Action Shutdown]
+Exec=systemctl poweroff
+Name=Shutdown
+
+[Desktop Action Lock Screen]
+Exec=$BIN/lockscreen
+Name=Lock Screen

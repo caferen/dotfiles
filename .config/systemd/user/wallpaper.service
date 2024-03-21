@@ -1,0 +1,8 @@
+[Unit]
+Description=Change the wallpaper
+
+[Service]
+ExecStart=/home/eren/.local/bin/wallpaper
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,12 @@
+!.zshconf
+!.p10k.zsh
+!.ripgreprc
+!.config/nvim
+!.config/alacritty
+!.config/tmux
+!.config/skhd
+!.config/yabai
+!.config/VSCodium/User/keybindings.json
+!.config/VSCodium/User/settings.json
+*
+.config/nvim/lazy-lock*.json

@@ -1,0 +1,89 @@
+if [[ $(tty) == "/dev/tty1" ]]; then
+    exec Hyprland
+fi
+
+[[ -f $HOME/.p10k.zsh ]] && source $HOME/.p10k.zsh
+[[ -f $HOME/.secrets ]] && source $HOME/.secrets
+
+alias vi="nvim -n"
+alias cat="bat -p"
+alias claer="clear"
+alias disku="du --max-depth=1 --block-size=MB"
+
+setopt INC_APPEND_HISTORY
+unsetopt HIST_SAVE_BY_COPY
+unsetopt SHARE_HISTORY
+
+start() { sudo systemctl start "$@"; }
+stop() { sudo systemctl stop "$@"; }
+restart() { sudo systemctl restart "$@"; }
+status() { systemctl status "$@"; }
+
+ustart() { systemctl --user start "$@"; }
+ustop() { systemctl --user stop "$@"; }
+urestart() { systemctl --user restart "$@"; }
+ustatus() { systemctl --user status "$@"; }
+
+[[ -x "$(command -v codium)" ]] && alias code="codium \
+	--enable-features=UseOzonePlatform --ozone-platform=wayland"
+[[ -x "$(command -v pbpaste)" ]] && alias wl-paste="pbpaste"
+[[ -x "$(command -v pbcopy)" ]] && alias wl-copy="pbcopy"
+[[ -x "$(command -v gsed)" ]] && alias sed="gsed"
+
+ff() {
+    IFS=$'\n' files=($(fzf --query="$1" --multi --select-1 --exit-0 --scheme=path \
+                --preview 'bat --color=always -p {}' --preview-window=up,70%,border \
+        --bind 'ctrl-/:change-preview-window(70%|30%)'))
+    [[ -n "$files" ]] && ${EDITOR} -n "${files[@]}"
+}
+
+dc() {
+    IFS=$'\n' dir=($(rg --null "${1-$HOME}" 2>/dev/null \
+        | xargs -0 dirname | sort -u | fzf --scheme=path ))
+    [[ -n "$dir" ]] && cd "$dir"
+}
+
+gitsr() {
+    IFS=$'\n' commit=($(git log --format="%H %s %an %ah" \
+        | fzf --query="$1" --select-1 --exit-0))
+    hash=$(grep -o '^\S*' <<< "$commit")
+    [[ -n "$hash" ]] && read "?Soft reset to "$commit"? [yN]"
+    [[ "$REPLY" =~ ^[Yy]$ ]] && git reset --soft "$hash"
+}
+
+gitd() {
+    IFS=$'\n' commit_hashes=($(git log --format="%H %s %an %ah" \
+                | fzf --query="$1" --multi --select-1 --exit-0 \
+        | grep -o '^\S*' ))
+    [[ -n "$commit_hashes[2]" ]] || commit_hashes[2]=HEAD
+    [[ -n "$commit_hashes[1]" ]] && git difftool "$commit_hashes[1]" "$commit_hashes[2]"
+}
+
+gitc() {
+    git -C "$2" add -A \
+        && [[ -n "$1" ]] || git -C "$2" commit \
+        && git -C "$2" commit -m "$1"
+    read "?Push? [y/N/force]"
+    [[ "$REPLY" =~ ^[Yy]$ ]] && git -C "$2" push
+    [[ "$REPLY" == "force" ]] && git -C "$2" push --force
+}
+
+alax() {
+    sed -i "s/^\(x\s=\s\)[0-9]*$/\1$1/" \
+        $HOME/.config/alacritty/alacritty.toml
+}
+
+hist() {
+    command="$(cat $HISTFILE | fzf --tac --no-sort \
+		--query="$BUFFER" --scheme=history | awk '{$1=$1};NF' | wl-copy)"
+    LBUFFER="$(wl-paste)"
+}
+
+zle -N hist
+bindkey '^R' hist
+
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^b' edit-command-line
+
+typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\UE0A0 '
+typeset -g POWERLEVEL9K_VCS_VISUAL_IDENTIFIER_EXPANSION=''

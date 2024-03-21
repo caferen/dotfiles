@@ -1,0 +1,6 @@
+.gitattributes
+.stignore
+.git
+.gitignore
+arch
+nixos

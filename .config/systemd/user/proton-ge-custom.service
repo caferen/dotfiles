@@ -1,0 +1,8 @@
+[Unit]
+Description=Download the latest version of Proton GE Custom
+
+[Service]
+ExecStart=/home/eren/.local/bin/update-proton-ge
+
+[Install]
+WantedBy=default.target

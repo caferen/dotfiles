@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Epistory - Typing Chronicles
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/398850
+Icon=steam_icon_398850
+Terminal=false
+Type=Application
+Categories=Game;

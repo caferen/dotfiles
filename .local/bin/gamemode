@@ -1,0 +1,21 @@
+#!/bin/sh
+
+pgrep Hyprland || exit 0
+
+if [[ "$1" == "--start" ]]; then
+    xrandr --output $PRIMARY_MONITOR --primary
+    hyprctl keyword 'monitor HDMI-A-1,disable'
+    wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 0
+    hyprctl --batch "\
+		dispatch focusmonitor "$PRIMARY_MONITOR";\
+		keyword animations:enabled 0;\
+        keyword unbind ,mouse:276;\
+        keyword unbind ,mouse:275"
+    notify-send "Gamemode started"
+fi
+
+if [[ "$1" == "--end" ]]; then
+    hyprctl reload
+    wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 1
+    notify-send "Gamemode ended"
+fi

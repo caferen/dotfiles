@@ -1,0 +1,9 @@
+FZF_DEFAULT_COMMAND="rg --files"
+BIN=/home/eren/.local/bin
+BROWSER=firefox
+FLATPAK_USER_DIR=/home/eren/ssd/flatpak
+RIPGREP_CONFIG_PATH=/home/eren/.ripgreprc
+PRIMARY_MONITOR=DP-3
+SECONDARY_MONITOR=HDMI-A-1
+GTK_THEME=Adwaita:dark
+

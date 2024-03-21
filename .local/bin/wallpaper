@@ -1,0 +1,18 @@
+#!/bin/sh
+
+pgrep gamemode && exit 0
+
+set_paper() {
+    dir=$HOME/Pictures/wallpapers
+    file=$(ls "$dir" | shuf -n 1)
+
+    swww img "$dir/$file" \
+        --transition-bezier .43,1.19,1,.4 \
+        --transition-type any \
+        --transition-duration 0.7 \
+        --transition-fps 60 \
+        --outputs "$1"
+}
+
+set_paper "$PRIMARY_MONITOR"
+set_paper "$SECONDARY_MONITOR"

@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup configurations and files
+
+[Service]
+ExecStart=/home/eren/.config/systemd/user/backup.sh
+
+[Install]
+WantedBy=default.target

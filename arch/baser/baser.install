@@ -1,0 +1,66 @@
+#!/bin/sh
+
+USER=eren
+HOME=/home/$USER
+HOST=archlinux
+
+drive() {
+    [[ -d "$2" ]] || (mkdir "$2" && \
+        echo "UUID=${1}     $2  ext4    nofail$3 0 0" >> /etc/fstab)
+    chown $USER:$USER "$2" -R
+    mount "$2"
+}
+
+apparmor() {
+    sed -i '/.*apparmor.*/! s/\(^options.*\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1/' \
+        /boot/loader/entries/arch.conf
+    groupadd -r audit
+    gpasswd -a $USER audit
+}
+
+post_install() {
+    sed -i '/.*nvidia.*/! s/\(^options.*\)/\1 nvidia_drm.modeset=1 nvidia_drm.fbdev=1/' \
+        /boot/loader/entries/arch.conf
+
+    echo $HOST > /etc/hostname
+    useradd -m $USER -G wheel -s /bin/zsh
+    echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+
+    mkinitcpio -P
+
+    ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+    groupadd plugdev
+    usermod -aG plugdev,gamemode,nix-users $USER
+
+    git clone https://github.com/caferen/dotfiles.git $HOME/.dotfiles
+    find $HOME/.config/systemd/root -regextype egrep -regex \
+        '.*(timer|path|service)' -exec bash -c \
+        "realpath '{}' | xargs -L1 systemctl enable" \;
+
+    drive "a2533b5b-ab99-4a22-a5ab-6e462b75e61d" $HOME/ssd ",nosuid,nodev"
+    drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup ",noexec,nosuid,nodev"
+
+    ufw default deny incoming
+    ufw default allow outgoing
+
+    # kdeconnect
+    ufw allow from 192.168.1.0/24 to any port 1714:1764 proto udp
+    ufw allow from 192.168.1.0/24 to any port 1714:1764 proto tcp
+
+    # syncthing
+    ufw allow from 192.168.1.0/24 to any port 21027 proto udp
+    ufw allow from 192.168.1.0/24 to any port 22000 proto tcp
+
+    ufw enable
+
+    stow . --dir=$HOME/.dotfiles --target=$HOME
+    stow . --dir=$HOME/.data --target=$HOME
+
+    mkdir /etc/coolercontrol
+    ln -s $HOME/.config/coolercontrol.toml /etc/coolercontrol/config.toml
+
+    # firecfg
+    # apparmor_parser -r /etc/apparmor.d/firejail-default
+}

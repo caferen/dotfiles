@@ -1,0 +1,23 @@
+#!/bin/sh
+
+umount $HOME/.data
+gocryptfs $HOME/ssd/data-cipher $HOME/.data --passfile=$HOME/ssd/.password/data
+hyprctl dispatch focusmonitor "$PRIMARY_MONITOR"
+
+pkill waybar
+pgrep swww && pkill swww
+envsubst < $HOME/.config/waybar/config.jsonc > /tmp/waybar.jsonc
+
+mullvad connect
+
+waybar -c /tmp/waybar.jsonc &
+avizo-service &
+wl-clip-persist --clipboard both &
+signal-desktop --start-in-tray --enable-features=UseOzonePlatform --ozone-platform=wayland &
+mullvad-vpn &
+swww init
+wl-paste -t text -w sh -c \
+    '[ "$(xclip -selection clipboard -o)" = "$(wl-paste -n)" ] || xclip -selection clipboard' &
+systemctl --user start kdeconnect.service
+sleep 10
+systemctl --user start kdeconnect-indicator.service

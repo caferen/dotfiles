@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ghostrunner
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/18328259644172009472
+Icon=/home/eren/.config/heroic/icons/1957528513.png
+Terminal=false
+Type=Application
+Categories=Game;

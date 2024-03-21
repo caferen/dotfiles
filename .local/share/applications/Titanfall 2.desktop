@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Titanfall® 2
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1237970
+Icon=steam_icon_1237970
+Terminal=false
+Type=Application
+Categories=Game;

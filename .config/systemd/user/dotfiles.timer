@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup configurations
+
+[Timer]
+OnCalendar=hourly
+Unit=dotfiles.service
+
+[Install]
+WantedBy=default.target

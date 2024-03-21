@@ -1,0 +1,16 @@
+import = ["/home/eren/.config/alacritty/alacritty.toml"]
+
+[shell]
+program = "/home/eren/.local/bin/launcher"
+
+[window]
+decorations = "none"
+
+[window.dimensions]
+columns = 50
+lines = 8
+
+[window.padding]
+x = 5
+y = 5
+

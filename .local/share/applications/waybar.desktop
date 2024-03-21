@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Waybar
+Exec=envsubst < ~/.config/waybar/config.jsonc > /tmp/waybar.jsonc && waybar -c /tmp/waybar.jsonc
+
+[Desktop Action Kill]
+Name=Kill
+Exec=pkill waybar
+
+[Desktop Action Restart]
+Name=Restart
+Exec=pkill waybar && envsubst < ~/.config/waybar/config.jsonc > /tmp/waybar.jsonc && waybar -c /tmp/waybar.jsonc

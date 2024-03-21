@@ -1,0 +1,8 @@
+[Unit]
+Description=Rebuild launcher app cache
+
+[Service]
+ExecStart= /home/eren/.local/bin/launcher --cache
+
+[Install]
+WantedBy=default.target

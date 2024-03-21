@@ -1,0 +1,13 @@
+import = ["/home/eren/.config/alacritty/alacritty.toml"]
+
+[shell]
+args = ["-c", "tmux attach -t Dropdown || tmux new -s Dropdown"]
+program = "/bin/sh"
+
+[window]
+decorations = "none"
+
+[window.dimensions]
+columns = 125
+lines = 30
+

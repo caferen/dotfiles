@@ -1,0 +1,94 @@
+#!/bin/sh
+
+set -o allexport
+
+SPLIT_TUNNEL="mullvad-exclude"
+KILL_TMUX="tmux kill-session"
+WATCH_EXE="sleep 120 && pwait '.*.exe'"
+CACHE="$HOME/.cache/.apps"
+GAMEMODE="gamemoderun"
+MIC_VOLUME="while true; do wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1 && sleep 1; done"
+GAMESCOPE="gamescope -W 2560 -H 1440 -r 165 \
+	-S auto -F nis --expose-wayland \
+	--rt -e --force-windows-fullscreen \
+	-f -g --adaptive-sync --"
+
+applications() {
+    for application in $1/*.desktop; do
+        app_name=$(awk '/Desktop Entry/{f=1} f && /^Name=.*/ {print; exit}' "$application" \
+            | grep -Po '^Name=\K.*' -)
+        app_exec=$(awk '/Desktop Entry/{f=1} f && /^Exec=.*/ {print; exit}' "$application" \
+            | grep -Po '^Exec=\K.*' - | sed -e 's/%.$//')
+
+        echo "${app_name};${app_exec}" | tee -a $CACHE > /dev/null
+
+        IFS=$'\n' app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' \
+            "$application" | grep -Po '^Name=\K.*' -))
+        IFS=$'\n' app_action_execs=($(awk '/Desktop Action/{f=1} f && /^Exec=.*/ {print; next}' \
+            "$application" | grep -Po '^Exec=\K.*' - | sed -e 's/%.$//'))
+
+        for ((i=0; $i<${#app_action_names[@]}; i++))
+        do
+            echo "${app_name}: ${app_action_names[i]};${app_action_execs[i]}" \
+                | tee -a $CACHE > /dev/null
+        done
+    done
+}
+
+cache_flatpak() {
+    name=$(grep -o '.*\s' <<< "$1" | xargs)
+    exec="flatpak run --user $(grep -o '\S*\..*\..*$' <<< "$1")"
+
+    [[ "$name" == "Bottles Contributors" ]] && exec="${SPLIT_TUNNEL} ${exec}"
+
+    echo "${name};${exec}" | tee -a $CACHE > /dev/null
+}
+
+if [ "$1" == "--cache" ]; then
+    rm $CACHE & touch $CACHE
+    applications $HOME/.nix-profile/share/applications
+    applications $HOME/.local/share/applications
+    applications /usr/share/applications
+    flatpak list --user --columns=name,application --app \
+        | xargs -I {} bash -c 'cache_flatpak "$@"' _ {}
+    exit 0
+fi
+
+declare -A APPS_TO_COMMANDS
+while read line ; do
+    IFS=';' read -ra app <<< "$line"
+    APPS_TO_COMMANDS["${app[0]}"]="${app[1]}"
+done <$CACHE
+
+APP=$(printf "%s\n" "${!APPS_TO_COMMANDS[@]}" | fzf --query="$1" --select-1 --exit-0 \
+    --prompt=" " --pointer=" " --no-scrollbar --info=hidden --layout=reverse)
+
+[[ -n "$APP" ]] || exit 0
+
+COMMAND=${APPS_TO_COMMANDS[$APP]}
+
+TMUX_SESSION=$(echo "$APP" | tr .: _)
+
+tmux new -s "$TMUX_SESSION" -d || exit 1
+
+run() {
+    tmux send-keys -t "$TMUX_SESSION:${2:-1}" "$1" C-m
+}
+
+run "${COMMAND}"
+
+if [[ ! $(grep rungameid <<< "$COMMAND") = '' ]]; then
+    if ! [[ "$APP" = "Counter-Strike 2" ]]; then
+        tmux new-window -n watch-exe -t "$TMUX_SESSION"
+        tmux new-window -n mic -t "$TMUX_SESSION"
+
+        run "$MIC_VOLUME" "mic"
+
+        run "${WATCH_EXE}" "watch-exe"
+
+        pkill -f steam
+        run "${KILL_TMUX}" "watch-exe"
+    fi
+else
+    run "${KILL_TMUX}"
+fi

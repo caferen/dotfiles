@@ -1,0 +1,6 @@
+#!/bin/sh
+
+pgrep -f ApplicationLauncher && \
+    pkill -f ApplicationLauncher || \
+    alacritty --class ApplicationLauncher  \
+    --config-file $HOME/.config/alacritty/launcher.toml

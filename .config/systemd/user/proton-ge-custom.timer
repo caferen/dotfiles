@@ -1,0 +1,9 @@
+[Unit]
+Description=Download the latest version of Proton GE Custom
+
+[Timer]
+OnCalendar=hourly
+Unit=proton-ge-custom.service
+
+[Install]
+WantedBy=default.target

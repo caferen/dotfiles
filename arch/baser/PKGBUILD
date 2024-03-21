@@ -1,0 +1,95 @@
+pkgname=baser
+pkgver=git
+pkgrel=1
+pkgdesc='Minimal package set to define a basic Arch Linux installation'
+arch=('any')
+license=('GPL')
+install=$pkgname.install
+source=(
+    '50-zsa.rules'    '92-viia.rules'	'firejail.hook'	'firejail.config'	'firefox.local'		'parser.conf'
+    '20-deny_root.conf'		'51-kexec-restrict.conf'	'unp_user.conf'		'disable.conf'		'ip6-privacy.conf'
+    'wifi_rand_mac.conf'	'loader.conf'	'lm_sensors'	'nvidia.conf'	'resolved.conf'		'environment'
+    'path.sh'
+)
+sha256sums=(
+    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'
+    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'
+)
+depends=(
+    # Base
+    'base' 'base-devel'
+
+    # Linux
+    'linux-zen' 'linux-firmware' 'linux-zen-headers' 'intel-ucode'
+
+    # Nvidia
+    'nvidia-dkms' 'nvidia-settings'
+
+    # Pipewire
+    'pipewire' 'pipewire-alsa' 'pipewire-jack' 'pipewire-pulse' 'wireplumber'
+
+    # Wireless
+    'networkmanager' 'bluez' 'bluez-utils'
+
+    # Hyprland
+    'hyprland' 'xdg-desktop-portal-hyprland' 'waybar' 'dunst' 'grim'
+    'slurp' 'swaylock' 'ddcutil' 'wev' 'pavucontrol'
+
+    # Terminal
+    'alacritty' 'bat' 'jq' 'btop' 'wl-clipboard' 'man' 'curl' 'zsh' 'tmux'
+
+    # Files
+    'gocryptfs' 'nautilus' 'syncthing' 'rsync' 'stow' 'unzip' 'gvfs-mtp'
+
+    # Programming
+    'rustup' 'python' 'npm' 'python-pip' 'zig' 'nix'
+
+    # VCS
+    'git' 'github-cli' 'glab' 'git-crypt'
+
+    # Neovim
+    'fzf' 'ripgrep' 'usbutils'
+
+    # Gaming
+    'steam' 'gamemode' 'lib32-gamemode' 'mangohud' 'flatpak' 'xclip'
+
+    # Misc
+    'libusb' 'firefox' 'vlc' 'signal-desktop' 'blender' 'lm_sensors' 'reflector'
+
+    # Sekuurity
+    'ufw' 'macchanger' 'apparmor' 'firejail'
+)
+
+package() {
+    install -Dm644 50-zsa.rules "$pkgdir/etc/udev/rules.d/50-zsa.rules"
+    install -Dm644 92-viia.rules "$pkgdir/etc/udev/rules.d/92-viia.rules"
+    install -Dm644 20-deny_root.conf "$pkgdir/etc/ssh/sshd_config.d/20-deny_root.conf"
+
+    install -Dm644 parser.conf "$pkgdir/etc/apparmor/parser.conf"
+
+    # install -Dm644 firejail.hook "$pkgdir/etc/pacman.d/hooks/firejail.hook"
+    install -Dm644 firejail.config "$pkgdir/etc/firejail/firejail.config"
+    install -Dm644 firefox.local "$pkgdir/etc/firejail/firefox.local"
+
+    # https://wiki.archlinux.org/title/Security#Disable_kexec
+    install -Dm644 51-kexec-restrict.conf "$pkgdir/etc/sysctl.d/51-kexec-restrict.conf"
+
+    # https://wiki.archlinux.org/title/Security#Sandboxing_applications
+    # install -Dm644 unp_user.conf "$pkgdir/etc/sysctl.d/unp_user.conf"
+
+    # https://wiki.archlinux.org/title/Core_dump#Using_systemd
+    install -Dm644 disable.conf "$pkgdir/etc/systemd/coredump.conf.d/disable.conf"
+
+    # https://wiki.archlinux.org/title/IPv6#NetworkManager
+    install -Dm644 ip6-privacy.conf "$pkgdir/etc/NetworkManager/conf.d/ip6-privacy.conf"
+    # https://wiki.archlinux.org/title/NetworkManager#Configuring_MAC_address_randomization
+    install -Dm644 wifi_rand_mac.conf "$pkgdir/etc/NetworkManager/conf.d/wifi-rand-mac.conf"
+
+    install -Dm644 loader.conf "$pkgdir/boot/loader/loader.conf"
+    install -Dm644 lm_sensors "$pkgdir/etc/conf.d/lm_sensors"
+    install -Dm644 resolved.conf "$pkgdir/etc/systemd/resolved.conf"
+    # install -Dm644 nvidia_drm.conf "$pkgdir/etc/modprobe.d/nvidia_drm.conf"
+    install -Dm644 nvidia.conf "$pkgdir/etc/modprobe.d/nvidia.conf"
+    install -Dm644 environment "$pkgdir/etc/environment"
+    install -Dm644 path.sh "$pkgdir/etc/profile.d/path.sh"
+}
