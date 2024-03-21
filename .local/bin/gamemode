@@ -11,6 +11,7 @@ if [[ "$1" == "--start" ]]; then
 		keyword animations:enabled 0;\
         keyword unbind ,mouse:276;\
         keyword unbind ,mouse:275"
+    sleep 5
     notify-send "Gamemode started"
 fi
 

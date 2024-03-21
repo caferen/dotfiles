@@ -70,7 +70,7 @@ function = "0"
 uid = "6c575380-c465-4e74-906e-4b0ddc4b63c0"
 name = "Case Fans (CPU)"
 p_type = "Graph"
-speed_profile = [[20.0, 10], [50.0, 10], [60.0, 80], [70.0, 100], [100.0, 100]]
+speed_profile = [[20.0, 10], [60.0, 10], [80.0, 80], [100.0, 100]]
 temp_source = { temp_name = "temp1", device_uid = "1348bd4a12d055747ab9ace31f8fe3d6235c8d181c451bfad08d0f727d4284d8" }
 function_uid = "7583cc10-b8ab-4e3f-8701-63c606121e56"
 
