@@ -2,3 +2,4 @@ nixos/secrets.nix filter=git-crypt diff=git-crypt
 arch/baser/resolved.conf filter=git-crypt diff=git-crypt
 .config/dconf/dconf-settings.ini filter=git-crypt diff=git-crypt
 .zsh_history filter=git-crypt diff=git-crypt
+.config/kdeconnect/** filter=git-crypt diff=git-crypt
