@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Battlefield™ V
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1238810
+Icon=steam_icon_1238810
+Terminal=false
+Type=Application
+Categories=Game;

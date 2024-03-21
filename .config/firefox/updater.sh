@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/usr/bin/env bash
 
 ## arkenfox user.js updater for macOS and Linux
 

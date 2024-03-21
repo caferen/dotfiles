@@ -3,6 +3,7 @@
 !.ripgreprc
 !.config/nvim
 !.config/alacritty
+!.config/firefox
 !.config/tmux
 !.config/skhd
 !.config/yabai

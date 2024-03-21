@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/usr/bin/env bash
 
 ## prefs.js cleaner for Linux/Mac
 ## author: @claustromaniac
