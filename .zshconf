@@ -68,6 +68,8 @@ gitc() {
     [[ "$REPLY" == "force" ]] && git -C "$2" push --force
 }
 
+gtc() { cd ../"$1" }
+
 alax() {
     sed -i "s/^\(x\s=\s\)[0-9]*$/\1$1/" \
         $HOME/.config/alacritty/alacritty.toml
