@@ -51,7 +51,7 @@ f42333b13a2853dfb8e516c576470622e74a4659bfffe7ca229f68733beae979 = "iwlwifi_1"
 [device-settings]
 
 [device-settings.18517aee779eda4778fc7b5432bc39dff7d75c1a3a418c80a52457d40a4a9b90]
-fan2 = { profile_uid = "6c575380-c465-4e74-906e-4b0ddc4b63c0" }
+fan2 = { profile_uid = "652601cb-3ee0-4738-9cfe-938a6ab3f464" }
 fan1 = { speed_fixed = 50 }
 
 [device-settings.18bcd0e72e74ea4a58e28b7b1a5d8af55b22ddb3fbeb33aeed7cd5f5cbdba65d]
@@ -70,7 +70,7 @@ function = "0"
 uid = "6c575380-c465-4e74-906e-4b0ddc4b63c0"
 name = "Case Fans (CPU)"
 p_type = "Graph"
-speed_profile = [[20.0, 10], [60.0, 10], [80.0, 80], [100.0, 100]]
+speed_profile = [[20.0, 10], [60.0, 10], [70.0, 80], [100.0, 100]]
 temp_source = { temp_name = "temp1", device_uid = "1348bd4a12d055747ab9ace31f8fe3d6235c8d181c451bfad08d0f727d4284d8" }
 function_uid = "7583cc10-b8ab-4e3f-8701-63c606121e56"
 
@@ -78,7 +78,7 @@ function_uid = "7583cc10-b8ab-4e3f-8701-63c606121e56"
 uid = "0cabf6ce-1ab9-4580-af51-2cdc37bdfac8"
 name = "Case Fans (GPU)"
 p_type = "Graph"
-speed_profile = [[20.0, 10], [45.0, 30], [75.0, 100], [100.0, 100]]
+speed_profile = [[20.0, 10], [55.0, 10], [75.0, 100], [100.0, 100]]
 temp_source = { temp_name = "GPU Temp", device_uid = "18bcd0e72e74ea4a58e28b7b1a5d8af55b22ddb3fbeb33aeed7cd5f5cbdba65d" }
 function_uid = "7583cc10-b8ab-4e3f-8701-63c606121e56"
 
