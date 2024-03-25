@@ -1,0 +1,11 @@
+[Unit]
+Description=SSD mount
+
+[Mount]
+What=/dev/disk/by-uuid/a2533b5b-ab99-4a22-a5ab-6e462b75e61d
+Where=/home/eren/ssd
+Type=ext4
+Options=nosuid,nodev,nofail
+
+[Install]
+WantedBy=multi-user.target

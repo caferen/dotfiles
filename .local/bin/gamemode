@@ -4,7 +4,7 @@ pgrep Hyprland || exit 0
 
 if [[ "$1" == "--start" ]]; then
     xrandr --output $PRIMARY_MONITOR --primary
-    hyprctl keyword 'monitor HDMI-A-1,disable'
+    # hyprctl keyword 'monitor HDMI-A-1,disable'
     wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 0
     hyprctl --batch "\
 		dispatch focusmonitor "$PRIMARY_MONITOR";\

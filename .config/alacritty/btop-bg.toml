@@ -1,0 +1,7 @@
+import = ["/home/eren/.config/alacritty/alacritty.toml"]
+
+[shell]
+program = "/home/eren/bg.sh"
+
+[window.class]
+general = "cava"

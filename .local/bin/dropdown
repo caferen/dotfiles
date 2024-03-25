@@ -1,6 +1,0 @@
-#!/bin/sh
-
-pgrep -f DropdownTerminal \
-    && pkill -f DropdownTerminal \
-    || alacritty --class DropdownTerminal \
-    --config-file $HOME/.config/alacritty/dropdown.toml

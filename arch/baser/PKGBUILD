@@ -32,8 +32,8 @@ depends=(
     'networkmanager' 'bluez' 'bluez-utils'
 
     # Hyprland
-    'hyprland' 'xdg-desktop-portal-hyprland' 'waybar' 'dunst' 'grim'
-    'slurp' 'swaylock' 'ddcutil' 'wev' 'pavucontrol'
+    'hyprland' 'xdg-desktop-portal-hyprland' 'waybar' 'grim' 'meson'
+    'slurp' 'swaylock' 'ddcutil' 'wev' 'pavucontrol' 'cmake' 'cpio'
 
     # Terminal
     'alacritty' 'bat' 'jq' 'btop' 'wl-clipboard' 'man' 'curl' 'zsh' 'tmux'
@@ -42,7 +42,7 @@ depends=(
     'gocryptfs' 'nautilus' 'syncthing' 'rsync' 'stow' 'unzip' 'gvfs-mtp'
 
     # Programming
-    'rustup' 'python' 'npm' 'python-pip' 'zig' 'nix'
+    'rustup' 'python' 'npm' 'python-pip' 'zig' 'nix' 'go'
 
     # VCS
     'git' 'github-cli' 'glab' 'git-crypt'
@@ -51,10 +51,11 @@ depends=(
     'fzf' 'ripgrep' 'usbutils'
 
     # Gaming
-    'steam' 'gamemode' 'lib32-gamemode' 'mangohud' 'flatpak' 'xclip'
+    'steam' 'gamemode' 'lib32-gamemode' 'mangohud' 'flatpak' 'xclip' 'plasma-desktop'
+    'kscreen' 'xorg-xinit' 'xorg-server'
 
     # Misc
-    'libusb' 'firefox' 'vlc' 'signal-desktop' 'blender' 'lm_sensors' 'reflector'
+    'libusb' 'firefox' 'vlc' 'signal-desktop' 'blender' 'lm_sensors' 'reflector' 'obs-studio'
 
     # Sekuurity
     'ufw' 'macchanger' 'apparmor' 'firejail'

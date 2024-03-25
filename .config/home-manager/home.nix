@@ -21,7 +21,7 @@
       enable = true;
       syntaxHighlighting.enable = true;
       enableCompletion = true;
-      autosuggestion.enable = true;
+      # autosuggestion.enable = true;
       history = {
         expireDuplicatesFirst = true;
         ignoreAllDups = true;
@@ -41,6 +41,15 @@
         }
       ];
       initExtra = ''source ~/.zshconf'';
+      initExtraFirst = ''
+        	if [[ $(tty) == "/dev/tty1" ]]; then
+        		exec Hyprland
+        	fi
+
+        	if [[ $(tty) == "/dev/tty2" ]]; then
+        		exec startx /usr/bin/startplasma-x11
+        	fi
+      '';
     };
 
   services.kdeconnect = {
@@ -57,6 +66,7 @@
     wally-cli
     avizo
     wl-clip-persist
+    swaynotificationcenter
     (vscode-with-extensions.override {
       vscode = vscodium;
       vscodeExtensions = with vscode-extensions; [

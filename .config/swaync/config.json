@@ -1,0 +1,44 @@
+{
+  "positionX": "center",
+  "positionY": "bottom",
+  "fit-to-screen": false,
+  "control-center-height": 1000,
+  "notification-inline-replies": true,
+  "control-center-margin-bottom": 10,
+  "hide-on-clear": true,
+  "widgets": ["title", "notifications", "mpris", "buttons-grid"],
+  "widget-config": {
+    "volume": {
+      "show-per-app": true,
+      "show-per-app-icon": true
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "systemctl poweroff"
+        },
+        {
+          "label": "󰜉",
+          "command": "systemctl reboot"
+        },
+        {
+          "label": "󰗼",
+          "command": "pkill -KILL -u eren"
+        },
+        {
+          "label": "󰤄",
+          "command": "systemctl suspend"
+        },
+        {
+          "label": "󰍁",
+          "command": "swaylock -c 000000"
+        },
+        {
+          "label": "",
+          "command": "bluetoothctl connect 14:3F:A6:67:47:C4"
+        }
+      ]
+    }
+  }
+}

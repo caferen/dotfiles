@@ -7,6 +7,9 @@ program = "/bin/sh"
 [window]
 decorations = "none"
 
+[window.class]
+general = "DropdownTerminal"
+
 [window.dimensions]
 columns = 125
 lines = 30

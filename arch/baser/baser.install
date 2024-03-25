@@ -4,13 +4,6 @@ USER=eren
 HOME=/home/$USER
 HOST=archlinux
 
-drive() {
-    [[ -d "$2" ]] || (mkdir "$2" && \
-        echo "UUID=${1}     $2  ext4    nofail$3 0 0" >> /etc/fstab)
-    chown $USER:$USER "$2" -R
-    mount "$2"
-}
-
 apparmor() {
     sed -i '/.*apparmor.*/! s/\(^options.*\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1/' \
         /boot/loader/entries/arch.conf
@@ -38,9 +31,6 @@ post_install() {
     find $HOME/.config/systemd/root -regextype egrep -regex \
         '.*(timer|path|service)' -exec bash -c \
         "realpath '{}' | xargs -L1 systemctl enable" \;
-
-    drive "a2533b5b-ab99-4a22-a5ab-6e462b75e61d" $HOME/ssd ",nosuid,nodev"
-    drive "963da330-ae54-4d3f-b2fa-a055b98b9308" $HOME/backup ",noexec,nosuid,nodev"
 
     ufw default deny incoming
     ufw default allow outgoing

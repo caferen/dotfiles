@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup mount
+
+[Mount]
+What=/dev/disk/by-uuid/963da330-ae54-4d3f-b2fa-a055b98b9308 
+Where=/home/eren/backup
+Type=ext4
+Options=nosuid,nodev,nofail,noexec
+
+[Install]
+WantedBy=multi-user.target

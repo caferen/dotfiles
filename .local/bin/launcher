@@ -20,6 +20,7 @@ applications() {
         app_exec=$(awk '/Desktop Entry/{f=1} f && /^Exec=.*/ {print; exit}' "$application" \
             | grep -Po '^Exec=\K.*' - | sed -e 's/%.$//')
 
+        [[ "$app_name" == "Steam (Runtime)" ]] && app_exec="${SPLIT_TUNNEL} ${app_exec}"
         echo "${app_name};${app_exec}" | tee -a $CACHE > /dev/null
 
         IFS=$'\n' app_action_names=($(awk '/Desktop Action/{f=1} f && /^Name=.*/ {print; next}' \

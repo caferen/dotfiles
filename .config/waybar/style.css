@@ -1,26 +1,14 @@
 * {
-  font-size: 16px;
-  font-family: monospace;
+  font-size: 15px;
+  font-family: Monospace;
 }
 
 window#waybar {
   background: #000000;
   color: #fdf6e3;
+  margin: -1px;
 }
 
-#custom-right-arrow-dark,
-#custom-left-arrow-dark {
-  color: #292b2e;
-  font-size: 20px;
-}
-#custom-right-arrow-light,
-#custom-left-arrow-light {
-  color: #000000;
-  font-size: 20px;
-  background: #292b2e;
-}
-
-#workspaces,
 #clock,
 #pulseaudio,
 #memory,
@@ -32,50 +20,19 @@ window#waybar {
 #custom-gpu,
 #custom-gpu-temp,
 #custom-gpu-power,
-#custom-gpu-memory,
-#custom-power,
-#custom-quit,
-#custom-lock,
-#custom-reboot {
-  background: #292b2e;
+#custom-gpu-memory {
   padding: 0 10px;
 }
 
-#tray,
-#privacy,
-#systemd-failed-units {
-  background: #292b2e;
+#custom-menu {
+  padding: 0 15px;
+  font-size: 34px;
 }
 
-#tray {
-  padding-left: 10px;
-  padding-right: 5px;
+#workspaces {
+  font-size: 20px;
 }
 
-#privacy {
-  margin-left: -5px;
-  padding-right: 7px;
-}
-
-#systemd-failed-units {
-  padding: 0 7px;
-}
-
-#workspaces button {
-  padding: 0 3px;
-  color: #fdf6e3;
-}
 #workspaces button.active {
   color: #268bd2;
 }
-
-#custom-power,
-#custom-quit,
-#custom-lock,
-#custom-reboot {
-  font-size: 16px;
-}
-/**/
-/* #group-power { */
-/*   margin-right: 5px; */
-/* } */

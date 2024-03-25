@@ -6,6 +6,9 @@ program = "/home/eren/.local/bin/launcher"
 [window]
 decorations = "none"
 
+[window.class]
+general = "ApplicationLauncher"
+
 [window.dimensions]
 columns = 50
 lines = 8

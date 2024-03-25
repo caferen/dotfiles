@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pgrep gamemode && exit 0
+gamemoded -s | grep 'inactive$' || exit 0
 
 set_paper() {
     dir=$HOME/Pictures/wallpapers

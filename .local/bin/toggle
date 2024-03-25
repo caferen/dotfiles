@@ -1,0 +1,5 @@
+#!/bin/sh
+
+command="alacritty --config-file $HOME/.config/alacritty/$1.toml"
+
+pkill -f "$command" || eval "$command"

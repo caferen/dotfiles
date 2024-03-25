@@ -3,63 +3,18 @@
   "position": "bottom",
   "output": ["$PRIMARY_MONITOR"],
   "reload_style_on_change": true,
-  "height": 30,
 
-  "modules-left": [
-    "group/group-power",
-    "custom/right-arrow-dark",
-    "custom/right-arrow-light",
-    "hyprland/workspaces",
-    "custom/right-arrow-dark",
-  ],
-  "modules-center": [
-    "custom/left-arrow-dark",
-    "clock#1",
-    "custom/left-arrow-light",
-    "custom/left-arrow-dark",
-    "clock#2",
-    "custom/right-arrow-dark",
-    "custom/right-arrow-light",
-    "clock#3",
-    "custom/right-arrow-dark",
-  ],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/menu"],
   "modules-right": [
-    "custom/left-arrow-dark",
     "group/hardware",
-    "custom/left-arrow-light",
-    "custom/left-arrow-dark",
     "group/gpu",
-    "custom/left-arrow-light",
-    "custom/left-arrow-dark",
     "network",
-    "custom/left-arrow-light",
-    "custom/left-arrow-dark",
     "pulseaudio",
-    "custom/left-arrow-light",
-    "custom/left-arrow-dark",
-    "systemd-failed-units",
-    "custom/left-arrow-light",
-    "custom/left-arrow-dark",
     "tray",
     "privacy",
+    "clock",
   ],
-
-  "custom/left-arrow-dark": {
-    "format": "",
-    "tooltip": false,
-  },
-  "custom/left-arrow-light": {
-    "format": "",
-    "tooltip": false,
-  },
-  "custom/right-arrow-dark": {
-    "format": "",
-    "tooltip": false,
-  },
-  "custom/right-arrow-light": {
-    "format": "",
-    "tooltip": false,
-  },
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -76,51 +31,32 @@
     },
   },
 
-  "clock#1": {
-    "format": "{:%A}",
-    "tooltip": false,
-  },
-  "clock#2": {
-    "format": "{:%H:%M}",
-    "tooltip-format": "\n<span size='9pt'>{calendar}</span>",
-    "calendar": {
-      "mode": "year",
-      "mode-mon-col": 3,
-      "weeks-pos": "left",
-      "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
-      },
-    },
-  },
-  "clock#3": {
-    "format": "{:%d %B}",
-    "tooltip": false,
+  "clock": {
+    "format": "{:%H:%M %a, %b %d}",
   },
 
   "pulseaudio": {
     "format": "{volume:2}%",
-    "format-bluetooth": "{volume}% ",
     "format-muted": "MUTED",
     "on-click": "pgrep pavucontrol && pkill -9 pavucontrol || pavucontrol",
-    "scroll-step": 5,
   },
 
   "tray": {
-    "icon-size": 20,
+    "icon-size": 22,
   },
 
   "privacy": {
-    "icon-size": 16,
+    "icon-size": 20,
   },
 
   "systemd-failed-units": {
-    "hide-on-ok": false,
     "format": "✗ {nr_failed_system} ✗ {nr_failed_user}",
-    "format-ok": "✓",
+  },
+
+  "custom/menu": {
+    // "format": "󰣇",
+    "format": "",
+    "on-click": "swaync-client -t -sw",
   },
 
   "group/hardware": {
@@ -183,30 +119,5 @@
   "custom/gpu-memory": {
     "interval": 5,
     "exec": "printf 'Mem %sMB' $(nvidia-smi --query-gpu memory.used --format=csv,noheader,nounits)",
-  },
-
-  "group/group-power": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 500,
-      "transition-left-to-right": true,
-    },
-    "modules": ["custom/lock", "custom/power", "custom/quit", "custom/reboot"],
-  },
-  "custom/quit": {
-    "format": "󰗼",
-    "on-click": "pkill -KILL -u eren",
-  },
-  "custom/lock": {
-    "format": "󰍁",
-    "on-click": "swaylock -c 000000",
-  },
-  "custom/reboot": {
-    "format": "󰜉",
-    "on-click": "reboot",
-  },
-  "custom/power": {
-    "format": "",
-    "on-click": "shutdown now",
   },
 }
