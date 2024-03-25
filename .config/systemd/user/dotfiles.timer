@@ -2,7 +2,7 @@
 Description=Backup configurations
 
 [Timer]
-OnCalendar=hourly
+OnCalendar=daily
 Unit=dotfiles.service
 
 [Install]

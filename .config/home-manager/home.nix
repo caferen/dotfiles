@@ -57,6 +57,18 @@
     indicator = true;
   };
 
+  home.sessionVariables = {
+    "FZF_DEFAULT_COMMAND" = "rg --files";
+    "BIN" = "$HOME/.local/bin";
+    "RIPGREP_CONFIG_PATH" = "$HOME/.ripgreprc";
+  };
+
+  home.sessionPath = [
+    "$HOME/.local/bin"
+    "/opt/homebrew/bin"
+    "$HOME/.nix-profile/bin"
+  ];
+
   home.packages = with pkgs; [
     meslo-lgs-nf
     cozette
@@ -74,8 +86,8 @@
         eamodio.gitlens
         ms-python.python
         rust-lang.rust-analyzer
-        github.github-vscode-theme
         vadimcn.vscode-lldb
+        github.github-vscode-theme
         gitlab.gitlab-workflow
       ];
     })
@@ -84,3 +96,4 @@
   programs.home-manager.enable = true;
   home.stateVersion = "23.11"; # Don't change
 }
+
