@@ -42,11 +42,11 @@
   },
 
   "tray": {
-    "icon-size": 22,
+    "icon-size": 18,
   },
 
   "privacy": {
-    "icon-size": 20,
+    "icon-size": 16,
   },
 
   "systemd-failed-units": {
@@ -54,7 +54,6 @@
   },
 
   "custom/menu": {
-    // "format": "󰣇",
     "format": "",
     "on-click": "swaync-client -t -sw",
   },
@@ -81,8 +80,6 @@
     "path": "/",
   },
   "temperature": {
-    // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "format": "Temp {temperatureC}°C",
   },
   "network": {

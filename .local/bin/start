@@ -1,7 +1,8 @@
 #!/bin/sh
 
-umount $HOME/.data
-gocryptfs $HOME/ssd/data-cipher $HOME/.data --passfile=$HOME/ssd/.password/data
+# umount $HOME/.data
+# gocryptfs $HOME/ssd/data-cipher $HOME/.data --passfile=$HOME/ssd/.password/data
+
 hyprctl dispatch focusmonitor "$PRIMARY_MONITOR"
 
 hyprpm reload -n

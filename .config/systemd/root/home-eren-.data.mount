@@ -1,0 +1,11 @@
+[Unit]
+Description=Data mount
+
+[Mount]
+What=/home/eren/ssd/data-cipher
+Where=/home/eren/.data
+Type=fuse./usr/bin/gocryptfs
+Options=allow_other,passfile=/home/eren/ssd/.password/data
+
+[Install]
+WantedBy=multi-user.target
