@@ -6,7 +6,7 @@
   "notification-inline-replies": true,
   "control-center-margin-bottom": 10,
   "hide-on-clear": true,
-  "widgets": ["title", "notifications", "mpris", "buttons-grid"],
+  "widgets": ["title", "dnd", "notifications", "mpris", "buttons-grid"],
   "widget-config": {
     "volume": {
       "show-per-app": true,

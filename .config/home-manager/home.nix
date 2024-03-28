@@ -89,6 +89,7 @@
         vadimcn.vscode-lldb
         github.github-vscode-theme
         gitlab.gitlab-workflow
+        vscode-extensions.valentjn.vscode-ltex
       ];
     })
   ];

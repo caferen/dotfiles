@@ -35,13 +35,13 @@ local function toggle_visibility()
 	vim.o.showmode = not unhide
 	vim.wo.number = unhide
 	vim.o.relativenumber = unhide
-	if not unhide then
-		vim.o.foldcolumn = '9'
-		vim.o.signcolumn = 'yes:9'
-	else
-		vim.o.foldcolumn = '0'
-		vim.o.signcolumn = 'yes'
-	end
+	-- if not unhide then
+	-- 	vim.o.foldcolumn = '9'
+	-- 	vim.o.signcolumn = 'yes:9'
+	-- else
+	-- 	vim.o.foldcolumn = '0'
+	-- 	vim.o.signcolumn = 'yes'
+	-- end
 	unhide = not unhide
 end
 

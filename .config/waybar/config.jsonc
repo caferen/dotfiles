@@ -7,12 +7,12 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["custom/menu"],
   "modules-right": [
+    "tray",
+    "privacy",
     "group/hardware",
     "group/gpu",
     "network",
     "pulseaudio",
-    "tray",
-    "privacy",
     "clock",
   ],
 

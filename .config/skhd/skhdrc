@@ -38,4 +38,4 @@ alt - q : yabai --stop-service
 
 meh - t	: open -na /Applications/Alacritty.app
 meh - b : open -na /Applications/Brave\ Browser.app
-meh - d : open -na /Applications/Microsoft\ Teams\ classic.app
+meh - d : open -na /Applications/Microsoft\ Teams\ \(work\ or\ school\).app
