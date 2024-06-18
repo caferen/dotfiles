@@ -1,0 +1,13 @@
+[Unit]
+Description=Change the wallpaper
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+Wants=swww.service
+
+[Timer]
+OnCalendar= *-*-* *:00/3:00
+Unit=wallpaper.service
+
+[Install]
+WantedBy=hyprland-session.target

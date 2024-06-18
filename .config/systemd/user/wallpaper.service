@@ -1,0 +1,12 @@
+[Unit]
+Description=Change the wallpaper
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+Wants=swww.service
+
+[Service]
+ExecStart=%h/.local/bin/wallpaper
+
+[Install]
+WantedBy=hyprland-session.target

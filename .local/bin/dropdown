@@ -1,0 +1,5 @@
+#!/bin/sh
+
+command="wezterm-gui connect unix --class dropdown --workspace dropdown"
+
+pkill -f "$command" || eval "$command"

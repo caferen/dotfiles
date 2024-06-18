@@ -1,0 +1,12 @@
+#!/bin/sh
+
+systemctl --user start hyprland-session.target
+
+hyprctl dispatch focusmonitor "$PRIMARY_MONITOR"
+
+copyq --start-server &
+wl-paste -t text -w sh -c \
+    '[ "$(xclip -selection clipboard -o)" = "$(wl-paste -n)" ] || xclip -selection clipboard' &
+signal-desktop --start-in-tray --enable-features=UseOzonePlatform --ozone-platform=wayland &
+
+while true; do wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1 && sleep 1; done

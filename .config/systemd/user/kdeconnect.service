@@ -1,0 +1,12 @@
+[Unit]
+Description=Launch kdeconnect
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+ExecStart=sh -c "kdeconnectd & kdeconnect-indicator"
+Restart=on-failure
+
+[Install]
+WantedBy=hyprland-session.target

@@ -1,0 +1,121 @@
+pkgname=baser
+pkgver=git
+pkgrel=1
+pkgdesc='Minimal package set to define a basic Arch Linux installation'
+arch=('any')
+license=('GPL')
+install=$pkgname.install
+source=(
+    '50-zsa.rules'    '92-viia.rules'	'firejail.hook'	'firejail.config'	'parser.conf'
+    '20-deny_root.conf'		'51-kexec-restrict.conf'	'unp_user.conf'		'disable.conf'
+    'wifi_rand_mac.conf'	'loader.conf'	'lm_sensors'	'nvidia.conf'	'resolved.conf'
+	'ip6-privacy.conf'		'fallback_dns.conf' 'AlfaSlabOne-Regular.ttf'
+)
+sha256sums=(
+    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    'SKIP'    
+    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    'SKIP'    'SKIP'	  'SKIP'
+	'SKIP'
+)
+depends=(
+    # Base
+    'base' 'base-devel'
+
+    # Linux
+    'linux-zen' 'linux-firmware' 'linux-zen-headers' 'intel-ucode'
+
+    # Nvidia
+    'nvidia-beta-dkms' 'nvidia-settings' 'lib32-nvidia-utils-beta'
+
+    # Pipewire
+    'pipewire' 'pipewire-alsa' 'pipewire-jack' 'pipewire-pulse' 'wireplumber'
+
+    # Wireless
+    'networkmanager' 'bluez' 'bluez-utils' 'blueberry'
+
+    # Hyprland
+    'hyprland' 'hyprlock' 'hypridle' 'xdg-desktop-portal-hyprland' 'waybar'
+    'slurp' 'pavucontrol' 'rofi-wayland' 'ydotool' 'polkit-gnome' 'libnotify'
+	'swaync'
+
+    # Terminal
+    'wezterm' 'bat' 'jq' 'btop' 'man' 'curl' 'zsh' 'xclip' 'wl-clipboard'
+
+    # Files
+    'gocryptfs' 'nautilus' 'gvfs' 'syncthing' 'rsync' 'unzip' 'ffmpegthumbnailer' 'stow'
+
+    # Programming
+    'rustup' 'python' 'npm' 'python-pip' 'nix' 'zig'
+
+    # VCS
+    'git' 'github-cli' 'glab'
+
+    # Neovim
+    'neovim' 'fzf' 'ripgrep' 'usbutils'
+
+    # Gaming
+    'steam' 'gamemode' 'lib32-gamemode' 'mangohud'
+	'lutris' 'python-protobuf' 'vkd3d' 'lib32-vkd3d' 'vulkan-tools'
+
+	# https://github.com/lutris/docs/blob/master/WineDependencies.md
+	'giflib' 'lib32-giflib' 'libpng' 'lib32-libpng' 
+	'libldap' 'lib32-libldap' 'gnutls' 'lib32-gnutls' 'mpg123' 
+	'lib32-mpg123' 'openal' 'lib32-openal' 'v4l-utils' 'lib32-v4l-utils' 
+	'libpulse' 'lib32-libpulse' 'libgpg-error' 'lib32-libgpg-error' 
+	'alsa-plugins' 'lib32-alsa-plugins' 'alsa-lib' 'lib32-alsa-lib' 
+	'libjpeg-turbo' 'lib32-libjpeg-turbo' 'sqlite' 'lib32-sqlite' 
+	'libxcomposite' 'lib32-libxcomposite' 'libxinerama' 'lib32-libgcrypt' 
+	'libgcrypt' 'lib32-libxinerama' 'ncurses' 'lib32-ncurses' 'ocl-icd' 
+	'lib32-ocl-icd' 'libxslt' 'lib32-libxslt' 'libva' 'lib32-libva' 'gtk3' 
+	'lib32-gtk3' 'gst-plugins-base-libs' 'lib32-gst-plugins-base-libs' 
+	'vulkan-icd-loader' 'lib32-vulkan-icd-loader'
+
+	'lib32-sdl2' 'sane' 'libgphoto2' 'cups' 'samba' 'dosbox'
+
+    # Misc
+    'libusb' 'signal-desktop' 'blender' 'lm_sensors' 'ollama-cuda' 
+	'kdeconnect' 'cuda' 'torbrowser-launcher' 'tectonic' 'abiword'
+	'keepassxc' 'copyq' 'obs-studio' 'mpv' 'ttf-jetbrains-mono-nerd'
+
+    # Sekuurity
+    'ufw' 'apparmor' 'firejail'
+)
+
+optdepends=(
+    'yay'
+)
+
+package() {
+    install -Dm644 50-zsa.rules "$pkgdir/etc/udev/rules.d/50-zsa.rules"
+    install -Dm644 92-viia.rules "$pkgdir/etc/udev/rules.d/92-viia.rules"
+    install -Dm644 20-deny_root.conf "$pkgdir/etc/ssh/sshd_config.d/20-deny_root.conf"
+
+    install -Dm644 parser.conf "$pkgdir/etc/apparmor/parser.conf"
+
+    # install -Dm644 firejail.hook "$pkgdir/etc/pacman.d/hooks/firejail.hook"
+    install -Dm644 firejail.config "$pkgdir/etc/firejail/firejail.config"
+
+    # https://wiki.archlinux.org/title/Security#Disable_kexec
+    install -Dm644 51-kexec-restrict.conf "$pkgdir/etc/sysctl.d/51-kexec-restrict.conf"
+
+    # https://wiki.archlinux.org/title/Security#Sandboxing_applications
+    # install -Dm644 unp_user.conf "$pkgdir/etc/sysctl.d/unp_user.conf"
+
+    # https://wiki.archlinux.org/title/Core_dump#Using_systemd
+    install -Dm644 disable.conf "$pkgdir/etc/systemd/coredump.conf.d/disable.conf"
+
+    # https://wiki.archlinux.org/title/IPv6#NetworkManager
+    install -Dm644 ip6-privacy.conf "$pkgdir/etc/NetworkManager/conf.d/ip6-privacy.conf"
+    # https://wiki.archlinux.org/title/NetworkManager#Configuring_MAC_address_randomization
+    install -Dm644 wifi_rand_mac.conf "$pkgdir/etc/NetworkManager/conf.d/wifi-rand-mac.conf"
+
+	# https://wiki.archlinux.org/title/Systemd-resolved#Fallback
+    install -Dm644 resolved.conf "$pkgdir/etc/systemd/resolved.conf"
+    install -Dm644 fallback_dns.conf "$pkgdir/etc/systemd/resolved.conf.d/fallback_dns.conf"
+
+    install -Dm644 loader.conf "$pkgdir/boot/loader/loader.conf"
+    install -Dm644 lm_sensors "$pkgdir/etc/conf.d/lm_sensors"
+    # install -Dm644 nvidia_drm.conf "$pkgdir/etc/modprobe.d/nvidia_drm.conf"
+    install -Dm644 nvidia.conf "$pkgdir/etc/modprobe.d/nvidia.conf"
+
+    install -Dm644 AlfaSlabOne-Regular.ttf "$pkgdir/usr/local/share/fonts/AlfaSlabOne-Regular.ttf"
+}

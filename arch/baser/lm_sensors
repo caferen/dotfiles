@@ -1,0 +1,1 @@
+HWMON_MODULES="coretemp nct6775"

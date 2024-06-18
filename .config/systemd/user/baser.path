@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitor baser
+
+[Path]
+PathChanged=%h/arch/baser/
+Unit=baser.service
+
+[Install]
+WantedBy=default.target

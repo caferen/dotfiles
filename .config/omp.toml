@@ -1,0 +1,97 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+final_space = true
+version = 2
+
+[palette]
+base09 = "#66d9ef"
+base0D = "#f92672"
+base0E = "#fc54fc"
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+
+[[blocks.segments]]
+type = "path"
+style = "plain"
+foreground = "p:base0E"
+template = " [ {{ .Path }} ]"
+
+[blocks.segments.properties]
+style = "agnoster_short"
+max_depth = 3
+
+[[blocks.segments]]
+type = "git"
+style = "plain"
+foreground = "p:base0D"
+template = """[ \
+{{ .UpstreamIcon }}\
+{{ .HEAD }} \
+{{ if .Working.Deleted }}\
+-{{ .Working.Deleted }} \
+{{ end }}\
+{{ if .Working.Modified }}\
+!{{ .Working.Modified }} \
+{{ end }}\
+{{ if .Staging.Modified }}\
++{{ .Staging.Modified }} \
+{{ end }}\
+{{ if .Working.Untracked }}\
+?{{ .Working.Untracked }} \
+{{ end }}\
+{{ if .Ahead }}\
+↑{{ .Ahead }}\
+{{ end }}\
+{{ if .Behind }}\
+↓{{ .Behind }} \
+{{ end }}\
+]"""
+
+[blocks.segments.properties]
+fetch_status = true
+fetch_upstream_icon = true
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+newline = true
+
+# [[blocks.segments]]
+# type = "session"
+# style = "plain"
+# foreground = "p:base09"
+# template = "[{{ .UserName }}@{{ .HostName }}]"
+
+[[blocks.segments]]
+type = "status"
+style = "plain"
+foreground_templates = [ "{{ if eq .Code 0 }}p:base09{{ else }}p:base0D{{ end }}" ]
+template = " $"
+
+[blocks.segments.properties]
+always_enabled = true
+
+[[blocks]]
+type = "rprompt"
+alignment = "right"
+
+[[blocks.segments]]
+type = "executiontime"
+style = "plain"
+foreground = "p:base0E"
+template = "[ took {{ .FormattedMs }} ]"
+
+[blocks.segments.properties]
+style = "austin"
+threshold = 500
+
+[[blocks.segments]]
+type = "time"
+style = "plain"
+foreground = "p:base09"
+template = "[ at {{ .CurrentDate | date .Format }} ]"
+
+[transient_prompt]
+template = "  "
+

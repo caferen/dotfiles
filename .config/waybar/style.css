@@ -1,0 +1,49 @@
+* {
+  font-size: 13px;
+  font-family: Cozette;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 1);
+  color: #fdf6e3;
+  margin: -1px;
+  border-color: #fdf6e3;
+  border-width: 1px;
+  /* border-style: solid; */
+}
+
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#temperature,
+#network,
+#custom-gpu,
+#custom-gpu-temp,
+#custom-gpu-power,
+#custom-gpu-memory {
+  padding: 0 10px;
+}
+
+#bluetooth {
+  font-family: MesloLGS NF;
+  font-size: 14px;
+  padding-right: 3px;
+}
+
+#custom-menu {
+  padding: 5px 15px 5px 1px;
+  font-size: 20px;
+}
+
+#workspaces button {
+  color: #fdf6e3;
+}
+
+#workspaces button.active {
+  background: #fdf6e3;
+  color: #000;
+  border-radius: 0px;
+}

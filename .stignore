@@ -1,0 +1,12 @@
+!.zshrc
+!.ripgreprc
+!.config/nvim
+!.config/wezterm
+!.config/zellij
+!.config/skhd
+!.config/yabai
+!.config/omp.toml
+!.config/VSCodium/User/keybindings.json
+!.config/VSCodium/User/settings.json
+*
+.config/nvim/lazy-lock*.json

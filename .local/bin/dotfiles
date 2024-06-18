@@ -1,0 +1,6 @@
+#!/bin/sh
+
+dconf dump / > $HOME/.config/dconf/dconf-settings.ini && \
+git -C $HOME add -A && \
+git -C $HOME commit -m autosave && \
+git -C $HOME push

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if mount | grep $HOME/backup; then
+    /usr/bin/rsync -av --delete /home/data/drive-cipher $HOME/backup
+    /usr/bin/rsync -av --delete /home/data/media-cipher $HOME/backup
+    /usr/bin/rsync -av --delete /home/data/images $HOME/backup
+else
+    exit 1
+fi

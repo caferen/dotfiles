@@ -1,0 +1,5 @@
+#!/bin/sh
+
+yay
+nix-channel --update && home-manager switch
+flatpak update

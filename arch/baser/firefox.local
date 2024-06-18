@@ -1,0 +1,15 @@
+noblacklist ${HOME}/.config/firefox
+whitelist ${HOME}/.config/firefox
+
+# firefox requires a shell to launch on Arch - add the next line to your firefox.local to enable private-bin.
+private-bin bash,dbus-launch,dbus-send,env,firefox,sh,which
+
+# Add the next line to your firefox.local to enable private-etc support - note that this must be enabled in your firefox-common.local too.
+#private-etc firefox
+
+# Add the next line to your firefox.local to allow screen sharing under wayland.
+dbus-user.talk org.freedesktop.portal.Desktop
+
+# Add the next line to your firefox.local if screen sharing sharing still does not work
+# with the above lines (might depend on the portal implementation).
+#ignore noroot

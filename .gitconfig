@@ -1,0 +1,19 @@
+[user]
+	email = eren.simsek@tuta.io
+	name = Eren
+[push]
+	autoSetupRemote = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/env gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/env gh auth git-credential
+[credential "https://gitlab.com"]
+	helper = 
+	helper = !/usr/bin/env glab auth git-credential
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = nvim -n -d \"$LOCAL\" \"$REMOTE\"
+

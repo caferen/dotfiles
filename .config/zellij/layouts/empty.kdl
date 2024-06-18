@@ -1,0 +1,8 @@
+layout {
+    swap_floating_layout {
+        floating_panes {
+            pane x="7%" y="12%" height="75%" width="85%"
+        }
+    }
+    pane
+}

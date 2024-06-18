@@ -1,0 +1,24 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "meta+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusActiveEditorGroup",
+                "workbench.action.closePanel",
+            ]
+        }
+    },
+    {
+        "key": "meta+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                "terminal.focus",
+            ]
+        },
+        "when": "editorTextFocus"
+    },
+]

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+random() {
+    file=$(ls "$1" | shuf -n 1)
+	ffmpeg -i "$1/$file" "$HOME/.config/$(basename $1).png" -y
+}
+
+gamemoded -s | grep 'inactive$' || exit 0
+
+random /home/data/images/vertical
+random /home/data/images/wallpaper
+
+set_paper() {
+    swww img "$HOME/.config/${2}.png" \
+        --transition-bezier .43,1.19,1,.4 \
+        --transition-type any \
+        --transition-duration 1.0 \
+        --transition-fps 165 \
+        --outputs "$1"
+}
+
+set_paper "$SECONDARY_MONITOR" vertical
+set_paper "$PRIMARY_MONITOR" wallpaper

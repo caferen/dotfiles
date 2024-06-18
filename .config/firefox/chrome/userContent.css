@@ -1,0 +1,6 @@
+@-moz-document url("about:home"),
+url("about:newtab") {
+  body {
+    background: url("wallpaper/wallpaper.png") center/cover no-repeat fixed !important;
+  }
+}

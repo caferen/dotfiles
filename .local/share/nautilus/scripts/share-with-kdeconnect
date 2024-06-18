@@ -1,0 +1,8 @@
+#!/bin/sh
+
+DEVICE=$(kdeconnect-cli --list-devices \
+	| rg -o '[a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*')
+
+echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read -r filename; do
+	kdeconnect-cli --device="$DEVICE" --share="$filename"	 
+done

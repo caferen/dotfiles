@@ -1,0 +1,41 @@
+#!/bin/sh
+
+set -eo pipefail
+
+COMPATIBILITY_TOOLS_DIR="$HOME/.steam/root/compatibilitytools.d"
+
+mkdir -p /tmp/proton-ge
+mkdir -p "$COMPATIBILITY_TOOLS_DIR"
+
+cd /tmp/proton-ge
+
+curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest -o latest.json
+
+AUTHOR_LOGIN=$(jq -r '.author | .login' latest.json)
+AUTHOR_ID=$(jq -r '.author | .id' latest.json)
+
+if [[ "$AUTHOR_LOGIN" != "GloriousEggroll" || AUTHOR_ID -ne 11287837 ]]; then
+    notify-send "Unknown author!" "login: $AUTHOR_LOGIN id: $AUTHOR_ID"
+    exit 1
+fi
+
+VERSION=$(jq -r '.tag_name' latest.json)
+
+if [[ -d "$COMPATIBILITY_TOOLS_DIR/$VERSION" ]]; then
+    notify-send "Already up-to-date!" "Current version is $VERSION"
+    exit 0
+fi
+
+curl -LOJ $(
+    jq -r '.assets | .[] | select(.name | contains("sha512sum")) | .browser_download_url' latest.json
+)
+
+curl -LOJ $(
+    jq -r '.assets | .[] | select(.name | contains("tar.gz")) | .browser_download_url' latest.json
+)
+
+sha512sum -c ./*.sha512sum
+
+tar -xvf GE-Proton*.tar.gz -C "$COMPATIBILITY_TOOLS_DIR"
+
+notify-send "Success" "$VERSION installed at $COMPATIBILITY_TOOLS_DIR"

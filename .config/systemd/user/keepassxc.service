@@ -1,0 +1,13 @@
+[Unit]
+Description=Launch keepassxc
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+Wants=waybar.service
+
+[Service]
+ExecStart=bash -c "sleep 5 && keepassxc"
+Restart=on-failure
+
+[Install]
+WantedBy=hyprland-session.target

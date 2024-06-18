@@ -1,0 +1,50 @@
+#!/bin/sh
+
+USER=eren
+HOME=/home/$USER
+HOST=archlinux
+
+apparmor() {
+    sed -i '/.*apparmor.*/! s/\(^options.*\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1/' \
+        /boot/loader/entries/arch.conf
+    groupadd -r audit
+    gpasswd -a $USER audit
+}
+
+post_install() {
+    sed -i '/.*nvidia.*/! s/\(^options.*\)/\1 nvidia_drm.modeset=1 nvidia_drm.fbdev=1/' \
+        /boot/loader/entries/*.conf
+
+    if [[ ! -d $HOME ]]; then
+        echo $HOST > /etc/hostname
+        useradd -m $USER -G wheel -s /bin/zsh
+        echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+    fi
+
+    mkinitcpio -P
+
+    ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+    groupadd plugdev
+    usermod -aG plugdev $USER
+    usermod -aG gamemode $USER
+    usermod -aG nix-users $USER
+
+    ufw default deny incoming
+    ufw default allow outgoing
+
+    # kdeconnect
+    ufw allow from 192.168.1.0/24 to any port 1714:1764 proto udp
+    ufw allow from 192.168.1.0/24 to any port 1714:1764 proto tcp
+
+    # syncthing
+    ufw allow from 192.168.1.0/24 to any port 21027 proto udp
+    ufw allow from 192.168.1.0/24 to any port 22000 proto tcp
+
+    ufw enable
+
+    mkdir /etc/coolercontrol
+
+    # firecfg
+    # apparmor_parser -r /etc/apparmor.d/firejail-default
+}

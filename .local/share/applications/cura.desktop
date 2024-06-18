@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=Graphics;
+Comment[en_US]=Cura converts 3D models into paths for a 3D printer. It prepares your print for maximum accuracy, minimum printing time and good reliability with many extra features that make your print come out great.
+Comment=Cura converts 3D models into paths for a 3D printer. It prepares your print for maximum accuracy, minimum printing time and good reliability with many extra features that make your print come out great.
+Exec=env QT_QPA_PLATFORM=xcb flatpak run com.ultimaker.cura -platformtheme gtk3
+GenericName[en_US]=3D Printing Software
+GenericName=3D Printing Software
+GenericName[de]=3D-Druck-Software
+GenericName[nl]=3D-Print Software
+Icon=cura-icon
+Keywords=3D;Printing;
+MimeType=model/stl;model/gltf+json;model/gltf-binary;model/3mf;image/png;image/jpeg;image/gif;image/bmp;
+Name[en_US]=UltiMaker Cura
+Name=UltiMaker Cura
+Name[de]=UltiMaker Cura
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-AppImage-Version=5.4.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

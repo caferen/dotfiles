@@ -1,0 +1,35 @@
+pane_frames false
+session_serialization false
+default_layout "empty"
+
+keybinds clear-defaults=true {
+    normal {
+        bind "Alt n" { GoToPreviousTab; }
+        bind "Alt o" { GoToNextTab; }
+        bind "Alt Right" { MoveFocus "Right"; }
+        bind "Alt Left" { MoveFocus "Left"; }
+        bind "Alt Up" { MoveFocus "Up"; }
+        bind "Alt Down" { MoveFocus "Down"; }
+        bind "Ctrl t" { SwitchToMode "Tab"; }
+        bind "Ctrl p" { SwitchToMode "Pane"; }
+    }
+    pane {
+        bind "n" { NewPane; SwitchToMode "Normal"; }
+    }
+    tab {
+        bind "w" { NewTab; SwitchToMode "Normal"; }
+        bind "x" { CloseTab; SwitchToMode "Normal"; }
+		bind "f" { ToggleFloatingPanes; SwitchToMode "Normal"; }
+        bind "t" {
+            LaunchOrFocusPlugin "session-manager" {
+                floating true
+                move_to_focused_tab true
+            };
+            SwitchToMode "Normal"
+        }
+    }
+    shared_except "normal" {
+        bind "Esc" { SwitchToMode "Normal"; }
+    }
+}
+
