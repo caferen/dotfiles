@@ -7,8 +7,8 @@ configuration {
 }
 
 * {
-    font:                        "MesloLGS NF 10";
-    background:                  rgba(0, 0, 0, 0.5);
+    font:                        "MesloLGS Nerd Font 10";
+    background:                  rgba(0, 0, 0, 0.3);
     background-alt:              #252525;
     foreground:                  #FFFFFF;
     selected:                    #505050;
@@ -26,7 +26,7 @@ window {
     y-offset:                    0px;
 
     enabled:                     true;
-    border-radius:               15px;
+    border-radius:               16px;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -36,27 +36,25 @@ mainbox {
     spacing:                     0px;
     background-color:            transparent;
     orientation:                 horizontal;
-    children:                    [ "imagebox"];
+    children:                    [ "imagebox" ];
 }
 
 paddingbox {
     background-color:            transparent;
-    orientation:                 horizontal;
 }
 
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/.config/wallpaper.png", height);
     orientation:                 horizontal;
-    children:                    [ "listbox" ];
+    children:                    [ "paddingbox", "listbox", "paddingbox" ];
 }
 
 listbox {
     spacing:                     20px;
     padding:                     20px;
     background-color:            @background;
-	border-radius:				 12px;
+	border-radius:				 16px;
     orientation:                 vertical;
     children:                    [ "inputbar", "message", "listview" ];
 }

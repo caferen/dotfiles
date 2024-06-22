@@ -1,5 +1,5 @@
 #!/bin/sh
 
-command="wezterm-gui connect unix --class dropdown --workspace dropdown"
+command="wezterm-gui --config initial_cols=120 --config initial_rows=30 start -- zellij a -c Dropdown"
 
 pkill -f "$command" || eval "$command"

@@ -6,15 +6,21 @@ arch=('any')
 license=('GPL')
 install=$pkgname.install
 source=(
-    '50-zsa.rules'    '92-viia.rules'	'firejail.hook'	'firejail.config'	'parser.conf'
-    '20-deny_root.conf'		'51-kexec-restrict.conf'	'unp_user.conf'		'disable.conf'
-    'wifi_rand_mac.conf'	'loader.conf'	'lm_sensors'	'nvidia.conf'	'resolved.conf'
-	'ip6-privacy.conf'		'fallback_dns.conf' 'AlfaSlabOne-Regular.ttf'
+	# udev
+    '50-zsa.rules' '92-viia.rules'
+
+	# Sekuurity
+    '20-deny_root.conf' '51-kexec-restrict.conf' 'unp_user.conf' 'disable.conf'
+
+	# Network	
+    'wifi_rand_mac.conf' 'resolved.conf' 'ip6-privacy.conf' 'fallback_dns.conf' 
+
+	# Misc
+	'loader.conf' 'lm_sensors' 'nvidia.conf'
 )
 sha256sums=(
-    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    'SKIP'    
-    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    'SKIP'    'SKIP'	  'SKIP'
-	'SKIP'
+    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    
+    'SKIP'    'SKIP'    'SKIP'    'SKIP'	'SKIP'    'SKIP'
 )
 depends=(
     # Base
@@ -30,33 +36,59 @@ depends=(
     'pipewire' 'pipewire-alsa' 'pipewire-jack' 'pipewire-pulse' 'wireplumber'
 
     # Wireless
-    'networkmanager' 'bluez' 'bluez-utils' 'blueberry'
+    'networkmanager' 'bluez' 'bluez-utils'
 
     # Hyprland
     'hyprland' 'hyprlock' 'hypridle' 'xdg-desktop-portal-hyprland' 'waybar'
-    'slurp' 'pavucontrol' 'rofi-wayland' 'ydotool' 'polkit-gnome' 'libnotify'
-	'swaync'
+    'rofi-wayland' 'polkit-gnome'
 
     # Terminal
-    'wezterm' 'bat' 'jq' 'btop' 'man' 'curl' 'zsh' 'xclip' 'wl-clipboard'
+    'wezterm' 'bat' 'man' 'curl' 'zsh' 'xclip' 'wl-clipboard' 'zellij'
 
     # Files
-    'gocryptfs' 'nautilus' 'gvfs' 'syncthing' 'rsync' 'unzip' 'ffmpegthumbnailer' 'stow'
-
-    # Programming
-    'rustup' 'python' 'npm' 'python-pip' 'nix' 'zig'
+    'nautilus' 'rsync' 'stow'
 
     # VCS
-    'git' 'github-cli' 'glab'
+    'git'
 
     # Neovim
     'neovim' 'fzf' 'ripgrep' 'usbutils'
 
-    # Gaming
-    'steam' 'gamemode' 'lib32-gamemode' 'mangohud'
-	'lutris' 'python-protobuf' 'vkd3d' 'lib32-vkd3d' 'vulkan-tools'
+    # Sekuurity
+    'ufw'
 
-	# https://github.com/lutris/docs/blob/master/WineDependencies.md
+	# Misc 
+	'nix' 'firefox'
+)
+
+optdepends=(
+	# AUR
+    'yay'
+
+	# Wireless
+	'blueberry'
+
+	# Hyprland
+	'pavucontrol' 'grim' 'slurp' 'swaync' 'ydotool' 'libnotify' 'copyq' 
+
+	# Terminal
+	'jq' 'tree' 'btop'
+
+    # Files
+    'gocryptfs' 'syncthing' 'unzip' 'ffmpegthumbnailer'
+
+    # Programming
+    'rustup' 'python' 'npm' 'python-pip' 'zig'
+
+    # VCS
+    'glab' 'github-cli'
+
+    # Gaming
+    'steam' 'gamemode' 'lib32-gamemode' 'mangohud' 'obs-studio' 
+	'lutris' 'python-protobuf' 'vkd3d' 'lib32-vkd3d' 'vulkan-tools'
+	'wine-staging' 'winetricks'
+
+	## https://github.com/lutris/docs/blob/master/WineDependencies.md
 	'giflib' 'lib32-giflib' 'libpng' 'lib32-libpng' 
 	'libldap' 'lib32-libldap' 'gnutls' 'lib32-gnutls' 'mpg123' 
 	'lib32-mpg123' 'openal' 'lib32-openal' 'v4l-utils' 'lib32-v4l-utils' 
@@ -69,30 +101,16 @@ depends=(
 	'lib32-gtk3' 'gst-plugins-base-libs' 'lib32-gst-plugins-base-libs' 
 	'vulkan-icd-loader' 'lib32-vulkan-icd-loader'
 
-	'lib32-sdl2' 'sane' 'libgphoto2' 'cups' 'samba' 'dosbox'
-
-    # Misc
-    'libusb' 'signal-desktop' 'blender' 'lm_sensors' 'ollama-cuda' 
-	'kdeconnect' 'cuda' 'torbrowser-launcher' 'tectonic' 'abiword'
-	'keepassxc' 'copyq' 'obs-studio' 'mpv' 'ttf-jetbrains-mono-nerd'
-
-    # Sekuurity
-    'ufw' 'apparmor' 'firejail'
-)
-
-optdepends=(
-    'yay'
+	# Misc
+	'ollama-cuda' 'cuda' 'torbrowser-launcher' 'blender' 'tectonic'
+	'abiword' 'signal-desktop' 'newsflash' 'kdeconnect' 'keepassxc'
+	'mpv' 'ttf-meslo-nerd' 'spotify-launcher' 'zsa-wally-cli'
 )
 
 package() {
     install -Dm644 50-zsa.rules "$pkgdir/etc/udev/rules.d/50-zsa.rules"
     install -Dm644 92-viia.rules "$pkgdir/etc/udev/rules.d/92-viia.rules"
     install -Dm644 20-deny_root.conf "$pkgdir/etc/ssh/sshd_config.d/20-deny_root.conf"
-
-    install -Dm644 parser.conf "$pkgdir/etc/apparmor/parser.conf"
-
-    # install -Dm644 firejail.hook "$pkgdir/etc/pacman.d/hooks/firejail.hook"
-    install -Dm644 firejail.config "$pkgdir/etc/firejail/firejail.config"
 
     # https://wiki.archlinux.org/title/Security#Disable_kexec
     install -Dm644 51-kexec-restrict.conf "$pkgdir/etc/sysctl.d/51-kexec-restrict.conf"
@@ -114,8 +132,5 @@ package() {
 
     install -Dm644 loader.conf "$pkgdir/boot/loader/loader.conf"
     install -Dm644 lm_sensors "$pkgdir/etc/conf.d/lm_sensors"
-    # install -Dm644 nvidia_drm.conf "$pkgdir/etc/modprobe.d/nvidia_drm.conf"
     install -Dm644 nvidia.conf "$pkgdir/etc/modprobe.d/nvidia.conf"
-
-    install -Dm644 AlfaSlabOne-Regular.ttf "$pkgdir/usr/local/share/fonts/AlfaSlabOne-Regular.ttf"
 }

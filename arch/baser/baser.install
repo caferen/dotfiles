@@ -4,13 +4,6 @@ USER=eren
 HOME=/home/$USER
 HOST=archlinux
 
-apparmor() {
-    sed -i '/.*apparmor.*/! s/\(^options.*\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1/' \
-        /boot/loader/entries/arch.conf
-    groupadd -r audit
-    gpasswd -a $USER audit
-}
-
 post_install() {
     sed -i '/.*nvidia.*/! s/\(^options.*\)/\1 nvidia_drm.modeset=1 nvidia_drm.fbdev=1/' \
         /boot/loader/entries/*.conf
@@ -44,7 +37,4 @@ post_install() {
     ufw enable
 
     mkdir /etc/coolercontrol
-
-    # firecfg
-    # apparmor_parser -r /etc/apparmor.d/firejail-default
 }

@@ -20,6 +20,8 @@ nix-channel --update
 nix-shell '<home-manager>' -A install
 home-manager switch
 
+pacman -Qqi baser | rg -v ':' -o | rg -v 'installed' | tr -d ' \t' | sudo pacman -S --asdeps -
+
 rustup default stable
 
 flatpak remote-add --user --if-not-exists flathub \

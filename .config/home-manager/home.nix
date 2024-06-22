@@ -12,12 +12,8 @@ in
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    meslo-lgs-nf
-    cozette
-    ungoogled-chromium
+    brave
     swww
-    spotify
-    wally-cli
     avizo
     candy-icons
     freetube
@@ -25,7 +21,6 @@ in
     oh-my-posh
     wlogout
     coolercontrol.coolercontrold
-    webcord
     (colloid-gtk-theme.override {
       themeVariants = [ "default" ];
       colorVariants = [ "dark" ];
