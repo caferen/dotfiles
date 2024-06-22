@@ -10,12 +10,15 @@
   order: -1 !important;
 }
 
-.tabbrowser-tab {
+.tabbrowser-tab:not([selected]) {
   max-width: 0px !important;
 }
-.tabbrowser-tab .tab-close-button {
+.tabbrowser-tab:not([selected]) .tab-close-button {
   display: none;
 }
-.tabbrowser-tab .tab-label-container {
+.tabbrowser-tab:not([selected]) .tab-label-container {
   display: none;
+}
+.tab-background:not([selected]) {
+  border: 1px solid rgba(255, 0, 0, 0.5) !important;
 }

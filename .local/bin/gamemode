@@ -44,11 +44,11 @@ GSYNC="G-SYNC"
 HYPR_GAMEMODE="Hypr Gamemode"
 DISCORD="Discord"
 UNMUTE_MIC="Unmute the Microphone"
+DND="Do not Disturb"
 
 declare -A features
 
 xrandr --output $PRIMARY_MONITOR --primary
-swaync-client -dn
 
 if [ -n $(pgrep Hyprland) >/dev/null ]; then
 	features[$HYPR_GAMEMODE]="hypr_gamemode"
@@ -63,8 +63,9 @@ fi
 features[$REPLAY_BUFFER]="replay_buffer"
 features[$DISCORD]="webcord -m"
 features[$UNMUTE_MIC]="volumectl -m -d unmute"
+features[$DND]="swaync-client -dn"
 
-default_features=("$REPLAY_BUFFER" "$GSYNC" "$HYPR_GAMEMODE")
+default_features=("$REPLAY_BUFFER" "$GSYNC" "$HYPR_GAMEMODE" "$DND")
 
 function is_default() {
 	if grep -q "$1" <(printf "%s\n" "${default_features[@]}"); then

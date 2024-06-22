@@ -1,11 +1,9 @@
 {
-  "positionX": "right",
+  "positionX": "center",
   "positionY": "top",
-  "control-center-margin-top": 35,
-  "control-center-margin-right": 5,
+  "control-center-margin-top": 5,
   "fit-to-screen": false,
-  "control-center-height": 1000,
-  "notification-inline-replies": true,
-  "hide-on-clear": true,
+  "control-center-height": 750,
+  "hide-on-action": false,
   "widgets": ["title", "dnd", "notifications", "mpris", "buttons-grid"]
 }

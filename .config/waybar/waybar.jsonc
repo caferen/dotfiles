@@ -4,21 +4,17 @@
   "output": ["$PRIMARY_MONITOR"],
   "reload_style_on_change": true,
   "height": 36,
-  "mode": "hide",
+  // "mode": "hide",
 
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": [],
+  "modules-center": ["clock"],
   "modules-right": [
     "group/hardware",
     "group/gpu",
     "network",
     "pulseaudio",
-    "systemd-failed-units",
-    "clock",
-    "bluetooth",
-    "tray",
     "privacy",
-    "custom/menu",
+    "group/menu",
   ],
 
   "hyprland/workspaces": {
@@ -36,33 +32,37 @@
     },
   },
   "clock": {
-    "format": "{:%a, %b %d %H:%M}",
+    "format": "{:%a, %b %d | %H:%M:%S}",
+    "on-click": "swaync-client -t -sw",
+    "interval": 1,
   },
   "pulseaudio": {
-    "format": "{volume:2}%",
+    "format": "VOL {volume:2}%",
     "format-muted": "MUTED",
     "on-click": "pkill pavucontrol || pavucontrol",
-  },
-  "tray": {
-    "icon-size": 16,
   },
   "privacy": {
     "icon-size": 14,
   },
-  "bluetooth": {
-    "format": "󰂯",
-    "format-connected": "",
-    "format-disabled": "󰂲",
-    "tooltip-format-connected": "{device_alias}",
-    "on-click": "pkill blueberry || blueberry",
-  },
   "systemd-failed-units": {
     "format": "✗ {nr_failed_system} ✗ {nr_failed_user}",
   },
-  "custom/menu": {
-    // "format": "",
-    "format": "󰣇",
-    "on-click": "swaync-client -t -sw",
+  "group/menu": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+    },
+    "modules": ["custom/logo", "tray"],
+  },
+  "custom/logo": {
+    "interval": "once",
+    "exec": "echo ",
+    "on-click": "wlogout",
+  },
+  "tray": {
+    "icon-size": 16,
+    "show-passive-items": true,
   },
   "group/hardware": {
     "orientation": "inherit",
@@ -81,12 +81,12 @@
   },
   "memory#ram": {
     "interval": 5,
-    "format": "Mem {used:0.1f}GiB",
+    "format": "MEM {used:0.1f}GiB",
     "tooltip-format": "{total:0.1f}GiB",
   },
   "memory#swap": {
     "interval": 5,
-    "format": "Swap {swapUsed:0.1f}GiB",
+    "format": "SWAP {swapUsed:0.1f}GiB",
     "tooltip-format": "{swapTotal:0.1f}GiB",
   },
   "cpu": {
@@ -95,20 +95,22 @@
   },
   "disk#root": {
     "interval": 5,
-    "format": "Root {percentage_used:2}%",
+    "format": "ROOT {percentage_used:2}%",
     "path": "/",
   },
   "disk#home": {
     "interval": 5,
-    "format": "Home {percentage_used:2}%",
+    "format": "HOME {percentage_used:2}%",
     "path": "/home",
   },
   "temperature": {
-    "format": "Temp {temperatureC}°C",
+    "format": "TEMP {temperatureC}°C",
+    "thermal_zone": 1,
   },
   "network": {
-    "format": "{bandwidthDownBytes}",
+    "format": "NET {bandwidthDownBytes}",
     "format-disconnected": "Disconnected",
+    "tooltip-format": "{essid}",
     "interval": 3,
   },
   "group/gpu": {
@@ -130,14 +132,14 @@
   },
   "custom/gpu-temp": {
     "interval": 5,
-    "exec": "printf 'Temp %sC°' $(nvidia-smi --query-gpu temperature.gpu --format=csv,noheader,nounits)",
+    "exec": "printf 'TEMP %sC°' $(nvidia-smi --query-gpu temperature.gpu --format=csv,noheader,nounits)",
   },
   "custom/gpu-power": {
     "interval": 5,
-    "exec": "printf 'Power %sW' $(nvidia-smi --query-gpu power.draw.instant --format=csv,noheader,nounits)",
+    "exec": "printf 'POWER %sW' $(nvidia-smi --query-gpu power.draw.instant --format=csv,noheader,nounits)",
   },
   "custom/gpu-memory": {
     "interval": 5,
-    "exec": "printf 'Mem %sMB' $(nvidia-smi --query-gpu memory.used --format=csv,noheader,nounits)",
+    "exec": "printf 'MEM %sMB' $(nvidia-smi --query-gpu memory.used --format=csv,noheader,nounits)",
   },
 }

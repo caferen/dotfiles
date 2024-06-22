@@ -24,18 +24,7 @@ window#waybar {
 #custom-gpu-temp,
 #custom-gpu-power,
 #custom-gpu-memory {
-  padding: 0 10px;
-}
-
-#bluetooth {
-  font-family: MesloLGS NF;
-  font-size: 14px;
-  padding-right: 3px;
-}
-
-#custom-menu {
-  padding: 5px 15px 5px 1px;
-  font-size: 20px;
+  padding: 0 7px;
 }
 
 #workspaces button {
@@ -46,4 +35,10 @@ window#waybar {
   background: #fdf6e3;
   color: #000;
   border-radius: 0px;
+}
+
+#custom-logo {
+  font-size: 26px;
+  padding-right: 7px;
+  padding-bottom: 1.5px;
 }
