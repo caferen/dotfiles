@@ -21,7 +21,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       1000px;
+    width:                       750;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -36,18 +36,7 @@ mainbox {
     spacing:                     0px;
     background-color:            transparent;
     orientation:                 horizontal;
-    children:                    [ "imagebox" ];
-}
-
-paddingbox {
-    background-color:            transparent;
-}
-
-imagebox {
-    padding:                     20px;
-    background-color:            transparent;
-    orientation:                 horizontal;
-    children:                    [ "paddingbox", "listbox", "paddingbox" ];
+    children:                    [ "listbox" ];
 }
 
 listbox {
@@ -71,7 +60,7 @@ inputbar {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "";
+    str:                         " ";
     background-color:            transparent;
     text-color:                  inherit;
 }
@@ -87,7 +76,7 @@ entry {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       8;
+    lines:                       2;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
