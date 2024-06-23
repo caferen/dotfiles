@@ -9,7 +9,6 @@ if [[ "$1" == "--stop" ]]; then
 		zenity  --question --timeout 10 --ok-label "Don't mute!" --cancel-label "Mute now." \
 			--title "Muting the microphone in 10 seconds..." || { 
 			volumectl -m -d mute
-			pkill -f -9 webcord
 		}
 	fi
 	exit 0
@@ -35,14 +34,12 @@ function hypr_gamemode() {
         keyword decoration:blur:enabled 0;\
         keyword general:gaps_in 0;\
         keyword general:gaps_out 0;\
-        keyword general:border_size 1;\
         keyword decoration:rounding 0"
 }
 
 REPLAY_BUFFER="Replay Buffer"
 GSYNC="G-SYNC"
 HYPR_GAMEMODE="Hypr Gamemode"
-DISCORD="Discord"
 UNMUTE_MIC="Unmute the Microphone"
 DND="Do not Disturb"
 
@@ -61,7 +58,6 @@ if [ -n $(pgrep Hyprland) >/dev/null ]; then
 fi
 
 features[$REPLAY_BUFFER]="replay_buffer"
-features[$DISCORD]="webcord -m"
 features[$UNMUTE_MIC]="volumectl -m -d unmute"
 features[$DND]="swaync-client -dn"
 

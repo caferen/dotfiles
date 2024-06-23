@@ -108,7 +108,6 @@ optdepends=(
 	'ollama-cuda' 'cuda' 'torbrowser-launcher' 'blender' 'tectonic'
 	'abiword' 'signal-desktop' 'newsflash' 'kdeconnect' 'keepassxc'
 	'mpv' 'spotify-launcher' 'zsa-wally-cli'
-
 )
 
 package() {

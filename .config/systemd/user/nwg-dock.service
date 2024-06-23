@@ -5,7 +5,7 @@ After=graphical-session.target
 ConditionEnvironment=WAYLAND_DISPLAY
 
 [Service]
-ExecStart=sh -c "%h/.nix-profile/bin/nwg-dock-hyprland -c 'ydotool key 125:1 57:1 125:0 57:0' -ico %h/.local/share/icons/candy-icons/apps/scalable/distributor-logo-archlinux.svg -r"
+ExecStart=sh -c "%h/.nix-profile/bin/nwg-dock-hyprland -o $PRIMARY_MONITOR -c 'ydotool key 125:1 57:1 125:0 57:0' -ico %h/.local/share/icons/candy-icons/apps/scalable/distributor-logo-archlinux.svg -r"
 Restart=on-failure
 RestartSec=1
 
