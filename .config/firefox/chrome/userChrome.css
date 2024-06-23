@@ -1,20 +1,110 @@
-@import url("floating_search.css");
-@import url("oneliner.css");
-@import url("bookmarks_on_hover.css");
+/* Based on: https://github.com/Naezr/ShyFox */
+#urlbar[focused] {
+  #urlbar-input {
+    font-size: 24px !important;
+  }
+  #urlbar-input-container {
+    height: 55px !important;
+  }
+  #urlbar-background {
+    border-radius: 20px !important;
+    outline: none !important;
+  }
 
-* {
-  font-family: "Cozette" !important;
+  position: fixed !important;
+  z-index: 999999 !important;
+
+  bottom: auto !important;
+  top: 20vh !important;
+
+  left: 18vw !important;
+  right: 18vw !important;
+  width: 64vw !important;
+}
+
+#urlbar:not([focused]) {
+  max-width: 0px !important;
+}
+
+/* Based on: https://github.com/mimipile/firefoxCSS */
+
+#PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+  order: -2 !important;
+  margin: 2px !important;
+}
+
+#identity-box.extensionPage #identity-icon-label {
+  visibility: collapse !important;
+}
+
+#alltabs-button {
+  display: none !important;
+}
+
+#urlbar .search-one-offs {
+  display: none !important;
+}
+
+:root {
+  --NavbarWidth: 16; /*  Default values: 36 - 43  */
+  --TabsHeight: 36; /*  Minimum: 30  */ /*  Default: 36  */
+  --TabsBorder: 8; /*  Doesnt do anything on small layout  */ /*  Default: 8  */
+}
+
+:root #nav-bar {
+  margin-top: calc(
+    var(--TabsHeight) * -1px - var(--TabsBorder) * 1px
+  ) !important;
+  height: calc(var(--TabsHeight) * 1px + var(--TabsBorder) * 1px);
+}
+#TabsToolbar {
+  margin-left: calc(1325px / 100 * var(--NavbarWidth)) !important;
+}
+#nav-bar {
+  margin-right: calc(
+    100vw - calc(1325px / 100 * var(--NavbarWidth))
+  ) !important;
+  vertical-align: center !important;
+}
+toolbarspring {
+  display: none !important;
+}
+
+#nav-bar,
+#PersonalToolbar {
+  background-color: #0000 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+#nav-bar {
+  margin-left: 3px;
+}
+.tab-background,
+.tab-stack {
+  min-height: calc(var(--TabsHeight) * 1px) !important;
+}
+
+/*  Removes annoying border  */
+#navigator-toolbox {
+  border: none !important;
+}
+
+/* Remove fullscreen warning border */
+#fullscreen-warning {
+  border: none !important;
+  background: -moz-Dialog !important;
 }
 
 #unified-extensions-button {
   order: -1 !important;
 }
 
+.tabbrowser-tab .tab-close-button {
+  display: none;
+}
 .tabbrowser-tab:not([selected]) {
   max-width: 0px !important;
-}
-.tabbrowser-tab:not([selected]) .tab-close-button {
-  display: none;
 }
 .tabbrowser-tab:not([selected]) .tab-label-container {
   display: none;

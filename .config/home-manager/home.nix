@@ -25,7 +25,7 @@ in
       themeVariants = [ "default" ];
       colorVariants = [ "dark" ];
       sizeVariants = [ "standard" ];
-      tweaks = [ "black" "rimless" "normal" ];
+      tweaks = [ "black" "rimless" ];
     })
     (graphite-gtk-theme.override {
       themeVariants = [ "default" ];

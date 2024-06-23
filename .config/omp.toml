@@ -93,5 +93,5 @@ foreground = "p:base09"
 template = "[ at {{ .CurrentDate | date .Format }} ]"
 
 [transient_prompt]
-template = "  "
+template = " > "
 

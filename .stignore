@@ -5,6 +5,7 @@
 !.config/zellij
 !.config/skhd
 !.config/yabai
+!.config/firefox
 !.config/omp.toml
 !.config/VSCodium/User/keybindings.json
 !.config/VSCodium/User/settings.json

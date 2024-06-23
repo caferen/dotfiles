@@ -86,7 +86,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
 			require('plugin.git')
 		end
 
-		if is_in_git_dir and not is_directory then
+		local home_dir = os.getenv('HOME')
+		if is_in_git_dir and not is_directory and git_dir ~= home_dir then
 			path = git_dir
 		end
 
