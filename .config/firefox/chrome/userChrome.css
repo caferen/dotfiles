@@ -100,7 +100,7 @@ toolbarspring {
   order: -1 !important;
 }
 
-.tabbrowser-tab .tab-close-button {
+.tabbrowser-tab:not([selected]) .tab-close-button {
   display: none;
 }
 .tabbrowser-tab:not([selected]) {

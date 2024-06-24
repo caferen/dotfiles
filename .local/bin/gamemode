@@ -34,7 +34,9 @@ function hypr_gamemode() {
         keyword decoration:blur:enabled 0;\
         keyword general:gaps_in 0;\
         keyword general:gaps_out 0;\
-        keyword decoration:rounding 0"
+        keyword decoration:rounding 0;\"
+		keyword unbind ,mouse:276;\
+		keyword unbind ,mouse:275"
 }
 
 REPLAY_BUFFER="Replay Buffer"
@@ -51,10 +53,7 @@ if [ -n $(pgrep Hyprland) >/dev/null ]; then
 	features[$HYPR_GAMEMODE]="hypr_gamemode"
 	features[$GSYNC]="hyprctl keyword 'monitor $SECONDARY_MONITOR,disable'"
 
-	hyprctl --batch "\
-			dispatch focusmonitor "$PRIMARY_MONITOR";\
-			keyword unbind ,mouse:276;\
-			keyword unbind ,mouse:275"
+	hyprctl dispatch focusmonitor "$PRIMARY_MONITOR"
 fi
 
 features[$REPLAY_BUFFER]="replay_buffer"

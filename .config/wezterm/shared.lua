@@ -4,7 +4,6 @@ local act = wezterm.action
 local shared = {}
 
 function shared.set_config(config)
-	config.font = wezterm.font 'MesloLGS Nerd Font'
 	config.enable_tab_bar = false
 	config.max_fps = 165
 	config.disable_default_key_bindings = true

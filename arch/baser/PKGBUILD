@@ -69,7 +69,7 @@ optdepends=(
 	'blueberry'
 
 	# Hyprland
-	'pavucontrol' 'grim' 'slurp' 'swaync' 'ydotool' 'libnotify' 'copyq' 
+	'pavucontrol' 'grim' 'slurp' 'swaync' 'ydotool' 'libnotify' 'copyq' 'swww'
 
 	# Terminal
 	'jq' 'tree' 'btop'

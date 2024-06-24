@@ -1,6 +1,8 @@
+local wezterm = require 'wezterm'
 local linux = {}
 
 function linux.set_config(config)
+	config.font = wezterm.font 'MesloLGS Nerd Font'
 	config.default_prog = { 'zellij' }
 	config.window_padding = { bottom = 0, left = 0 }
 	config.font_size = 14.0

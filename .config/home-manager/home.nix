@@ -13,7 +13,6 @@ in
 
   home.packages = with pkgs; [
     brave
-    swww
     avizo
     candy-icons
     freetube

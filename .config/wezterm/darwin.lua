@@ -1,8 +1,8 @@
 local wezterm = require 'wezterm'
-local act = wezterm.action
 local darwin = {}
 
 function darwin.set_config(config)
+	config.font = wezterm.font 'MesloLGS NF'
 	config.default_prog = { '/opt/homebrew/bin/zellij' }
 	config.window_padding = {
 		left = 0,
