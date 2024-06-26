@@ -1,0 +1,14 @@
+[Unit]
+Description=Enable secondary monitor after graphical login to make Xwayland recognise correct primary monitor, then disable it on shutdown
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=bash -c "sed -i 's/^\(monitor = \$SECONDARY_MONITOR,\).*$/\11920x1080@75,2560x0,1,transform,1/' $HOME/.config/hypr/hyprland.conf"
+ExecStop=bash -c "sed -i 's/^\(monitor = \$SECONDARY_MONITOR,\).*$/\1disable/' $HOME/.config/hypr/hyprland.conf"
+
+[Install]
+WantedBy=hyprland-session.target

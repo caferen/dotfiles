@@ -1,11 +1,15 @@
 #!/bin/sh
 
-git clone https://github.com/caferen/dotfiles.git $HOME/dots
+git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
+(
+	cd /tmp/yay-bin
+	makepkg -si
+)
 
-rsync -rlptH $HOME/dots/.** $HOME/
-rsync -rlptH $HOME/dots/** $HOME/
+git clone https://github.com/caferen/dotfiles.git /tmp/dots
 
-rm -rf $HOME/dots
+rsync -rlptH /tmp/dots/.** $HOME/
+rsync -rlptH /tmp/dots/** $HOME/
 
 find $HOME/.config/systemd/system -regextype egrep -regex \
     '.*(timer|path|service)' -exec bash -c \

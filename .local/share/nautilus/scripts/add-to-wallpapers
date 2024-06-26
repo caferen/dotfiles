@@ -1,5 +1,5 @@
 #!/bin/sh
 
 echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read -r filename; do
-    ln -sf "$filename" /home/data/images/wallpaper
+    ln -sf "$filename" /home/data/Gallery/Wallpapers/wallpaper
 done

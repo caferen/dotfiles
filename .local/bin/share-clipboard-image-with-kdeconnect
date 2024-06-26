@@ -1,0 +1,10 @@
+#!/bin/sh
+
+DEVICE=$(kdeconnect-cli --list-devices \
+	| rg -o '[a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*')
+
+filename="/tmp/ss.png"
+
+wl-paste > $filename
+
+kdeconnect-cli --device="$DEVICE" --share="$filename" 

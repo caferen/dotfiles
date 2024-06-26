@@ -1277,9 +1277,6 @@ user_pref("network.cookie.cookieBehavior", 1);
 user_pref("browser.startup.homepage", "about:home");
 user_pref("browser.startup.firstrunSkipsHomepage", false);
 user_pref("browser.startup.page", 1);
-
-user_pref("svg.context-properties.content.enabled", true);
-user_pref("widget.gtk.rounded-bottom-corners.enabled", true);
-ser_pref("browser.newtabpage.enabled", true);
+user_pref("browser.newtabpage.enabled", true);
 
 user_pref("_user.js.parrot", "SUCCESS: Overrides loaded");

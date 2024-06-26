@@ -5,7 +5,7 @@ After=graphical-session.target
 ConditionEnvironment=WAYLAND_DISPLAY
 
 [Service]
-ExecStart=%h/.nix-profile/bin/swww-daemon
+ExecStart=swww-daemon
 Restart=on-failure
 RestartSec=1
 
