@@ -3,7 +3,7 @@
 git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
 (
 	cd /tmp/yay-bin
-	makepkg -si
+	makepkg -si --asdeps
 )
 
 git clone https://github.com/caferen/dotfiles.git /tmp/dots

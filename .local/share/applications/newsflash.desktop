@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Torified NewsFlash
+GenericName=RSS Reader
+Comment=Faster than flash to deliver you the latest news from your subscribed feeds
+Type=Application
+Exec=torsocks io.gitlab.news_flash.NewsFlash
+Terminal=false
+X-GNOME-UsesNotifications=true
+Categories=GNOME;GTK;Network;Feed;
+Keywords=Gnome;GTK;RSS;Feed;
+Icon=io.gitlab.news_flash.NewsFlash
+StartupNotify=true
+X-Purism-FormFactor=Workstation;Mobile;

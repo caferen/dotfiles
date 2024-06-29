@@ -13,6 +13,8 @@ env_vars[PRIMARY_MONITOR]="DP-3"
 env_vars[SECONDARY_MONITOR]="HDMI-A-1"
 env_vars[FZF_DEFAULT_COMMAND]="rg --files"
 env_vars[RIPGREP_CONFIG_PATH]="$HOME/.ripgreprc"
+env_vars[XDG_PICTURES_DIR]="/home/data/Gallery"
+env_vars[GRIM_DEFAULT_DIR]="$env_vars[XDG_PICTURES_DIR]/Screenshots"
 
 for var value in ${(kv)env_vars}; do
 	export "$var"="$value"

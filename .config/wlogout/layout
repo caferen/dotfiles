@@ -11,7 +11,7 @@
 }
 {
     "label" : "logout",
-    "action" : "loginctl terminate-user $USER",
+    "action" : "systemctl soft-reboot",
     "text" : "Logout",
 }
 {

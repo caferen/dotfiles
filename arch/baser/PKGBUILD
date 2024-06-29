@@ -30,7 +30,7 @@ depends=(
     'linux-zen' 'linux-firmware' 'linux-zen-headers' 'intel-ucode'
 
     # Nvidia
-    'nvidia-beta-dkms' 'nvidia-settings' 'lib32-nvidia-utils-beta'
+    'nvidia-dkms' 'nvidia-settings' 'lib32-nvidia-utils'
 
     # Pipewire
     'pipewire' 'pipewire-alsa' 'pipewire-jack' 'pipewire-pulse' 'wireplumber'
@@ -107,7 +107,7 @@ optdepends=(
 	# Misc
 	'ollama-cuda' 'cuda' 'torbrowser-launcher' 'blender' 'tectonic'
 	'abiword' 'signal-desktop' 'newsflash' 'kdeconnect' 'keepassxc'
-	'mpv' 'spotify-launcher' 'zsa-wally-cli' 'flatpak'
+	'mpv' 'spotify-launcher' 'zsa-wally-cli' 'flatpak' 'torsocks'
 )
 
 package() {

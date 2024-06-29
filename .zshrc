@@ -28,6 +28,7 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_BY_COPY
 setopt HIST_LEX_WORDS
 setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config $HOME/.config/omp.toml)"
@@ -59,6 +60,7 @@ alias vi="nvim -n"
 if [[ $(uname) == "Linux" ]]; then
     alias code="codium --enable-features=UseOzonePlatform --ozone-platform=wayland"
     alias disku="du --max-depth=1 --block-size=MB --human-readable --all"
+	. torsocks on > /dev/null
 fi
 
 if [[ $(uname) == "Darwin" ]]; then

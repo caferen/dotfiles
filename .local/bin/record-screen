@@ -3,7 +3,7 @@
 if pgrep -x obs; then
 	for i in $(seq 1 10);
 	do
-		ydotool key 29:1 42:1 60:1 29:0 42:0 60:0
+		ydotool key 29:1 42:1 60:1 29:0 42:0 60:0 # SHIFT+CONTROL+F2
 		sleep 0.1
 	done
 	sleep 0.5 && pkill -SIGTERM -x obs
@@ -25,6 +25,6 @@ else
 
 	sleep 5
 
-	ydotool key 29:1 42:1 59:1 29:0 42:0 59:0
+	ydotool key 29:1 42:1 59:1 29:0 42:0 59:0 # SHIFT+CONTROL+F1
 	playerctl play
 fi
