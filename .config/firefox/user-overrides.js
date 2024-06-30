@@ -10,5 +10,6 @@ user_pref("browser.startup.homepage", "about:home");
 user_pref("browser.startup.firstrunSkipsHomepage", false);
 user_pref("browser.startup.page", 1);
 user_pref("browser.newtabpage.enabled", true);
+user_pref("media.peerconnection.enabled", false);
 
 user_pref("_user.js.parrot", "SUCCESS: Overrides loaded");

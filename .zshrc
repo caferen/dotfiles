@@ -60,7 +60,6 @@ alias vi="nvim -n"
 if [[ $(uname) == "Linux" ]]; then
     alias code="codium --enable-features=UseOzonePlatform --ozone-platform=wayland"
     alias disku="du --max-depth=1 --block-size=MB --human-readable --all"
-	. torsocks on > /dev/null
 fi
 
 if [[ $(uname) == "Darwin" ]]; then
